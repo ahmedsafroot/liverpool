@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('profile');
 });
+Route::resource('profile', 'ProfileController');
+Route::post('step1','ProfileController@store_profile'
+);

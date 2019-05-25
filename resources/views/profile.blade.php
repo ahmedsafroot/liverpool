@@ -11,7 +11,7 @@
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
     </head>
-    <script src="./js/profile.js"></script>
+    <script src="{{asset('public/js/profile.js')}}"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -23,6 +23,12 @@
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+
+
 
     <body>
         <!--Container for top page (logo and title)-->
@@ -162,19 +168,19 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-control"
+                            <input type="text" class="form-control"
                                 id="userExport" placeholder="Direct Export">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control"
+                            <input type="text" class="form-control"
                                 id="userImport" placeholder="Imports">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control"
+                            <input type="text" class="form-control"
                                 id="userContact" placeholder="Contact Person">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control"
+                            <input type="text" class="form-control"
                                 id="userContactNo"
                                 placeholder="Contact Person Telephone No">
                         </div>
@@ -185,35 +191,35 @@
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1"
                                     name="customRadio"
-                                    class="custom-control-input">
+                                    class="custom-control-input" valaue="1">
                                 <label class="custom-control-label"
                                     for="customRadio1">Startup</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio2"
                                     name="customRadio"
-                                    class="custom-control-input">
+                                    class="custom-control-input" valaue="2">
                                 <label class="custom-control-label"
                                     for="customRadio2">Established</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio3"
                                     name="customRadio"
-                                    class="custom-control-input">
+                                    class="custom-control-input" valaue="3">
                                 <label class="custom-control-label"
                                     for="customRadio3">Competitive</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio4"
                                     name="customRadio"
-                                    class="custom-control-input">
+                                    class="custom-control-input" valaue="4">
                                 <label class="custom-control-label"
                                     for="customRadio4">Market leader</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio5"
                                     name="customRadio"
-                                    class="custom-control-input"
+                                    class="custom-control-input" valaue="5"
                                     onclick="getCompanyStatus()">
                                 <label class="custom-control-label"
                                     for="customRadio5">Other:</label>
@@ -229,37 +235,37 @@
                             <label class="mainLabel">Legal Structure</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio6"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="structure"
+                                    class="custom-control-input" value="1">
                                 <label class="custom-control-label"
                                     for="customRadio6">Limited</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio7"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="structure"
+                                    class="custom-control-input" value="2">
                                 <label class="custom-control-label"
                                     for="customRadio7">Sole trader</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio8"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="structure"
+                                    class="custom-control-input" value="3">
                                 <label class="custom-control-label"
                                     for="customRadio8">Limited Liability
                                     Partnership</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio9"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="structure"
+                                    class="custom-control-input" value="4">
                                 <label class="custom-control-label"
                                     for="customRadio9">Corporation</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio10"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="structure"
+                                    class="custom-control-input" value="5">
                                 <label class="custom-control-label"
                                     for="customRadio10">Non-profit</label>
                             </div>
@@ -271,29 +277,29 @@
                             <label class="mainLabel">Business Structure</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio11"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="business"
+                                    class="custom-control-input" value="1">
                                 <label class="custom-control-label"
                                     for="customRadio11">Functional</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio12"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="business"
+                                    class="custom-control-input" value="2">
                                 <label class="custom-control-label"
                                     for="customRadio12">Divisional</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio12"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="business"
+                                    class="custom-control-input" value="3">
                                 <label class="custom-control-label"
                                     for="customRadio12">Matrix</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio13"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="business"
+                                    class="custom-control-input" value="4">
                                 <label class="custom-control-label"
                                     for="customRadio13">Hybrid</label>
                             </div>
@@ -304,29 +310,29 @@
                             <label class="mainLabel">Market Structure</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio14"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="market"
+                                    class="custom-control-input" value="1">
                                 <label class="custom-control-label"
                                     for="customRadio14">Monopoly</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio15"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="market"
+                                    class="custom-control-input" value="2">
                                 <label class="custom-control-label"
                                     for="customRadio15">Oligopoly</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio16"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="market"
+                                    class="custom-control-input" value="3">
                                 <label class="custom-control-label"
                                     for="customRadio16">Competitive</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio17"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="market"
+                                    class="custom-control-input" value="4">
                                 <label class="custom-control-label"
                                     for="customRadio17">Contestable</label>
                             </div>
@@ -334,7 +340,7 @@
 
                         <!--Locations-->
                         <div class="form-group">
-                            <input type="email" class="form-control"
+                            <input type="text" class="form-control"
                                 id="userLocation" placeholder="Location(s)">
                         </div>
 
@@ -364,39 +370,39 @@
                                         </th>
                                         <td><input type="radio"
                                                 name="prod1"
-                                                value="prod1_btn1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod1"
-                                                value="prod1_btn2"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod1"
-                                                value="prod1_btn3"></td>
+                                                value="3"></td>
                                     </tr>
                                     <tr id="secondRow">
                                         <th scope="row" class="tableH">Product
                                             Line 2 </th>
                                         <td><input type="radio"
                                                 name="prod2"
-                                                value="prod2_btn1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod2"
-                                                value="prod2_btn1"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod2"
-                                                value="prod2_btn1"></td>
+                                                value="3"></td>
                                     </tr>
                                     <tr id="thirdRow">
                                         <th scope="row" class="tableH">Product
                                             Line 3 </th>
                                         <td><input type="radio"
                                                 name="prod3"
-                                                value="prod3_btn1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod3"
-                                                value="prod3_btn2"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod3"
-                                                value="prod3_btn3"></td>
+                                                value="3"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -409,29 +415,29 @@
                                 products/services?</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio18"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="services"
+                                    class="custom-control-input" value="1">
                                 <label class="custom-control-label"
                                     for="customRadio18">Conventional</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio19"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="services"
+                                    class="custom-control-input" value="2">
                                 <label class="custom-control-label"
                                     for="customRadio19">Specialised</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio20"
-                                    name="customRadio"
-                                    class="custom-control-input">
+                                    name="services"
+                                    class="custom-control-input" value="3">
                                 <label class="custom-control-label"
                                     for="customRadio20">Advanced</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio21"
-                                    name="customRadio"
-                                    class="custom-control-input"
+                                    name="services"
+                                    class="custom-control-input" value="4"
                                     onclick="getCompanyProd()">
                                 <label class="custom-control-label"
                                     for="customRadio21">Other:</label>
@@ -610,22 +616,22 @@
                                         </th>
                                         <td><input type="radio"
                                                 name="prod11"
-                                                value="prod1_per1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod11"
-                                                value="prod1_per2"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod11"
-                                                value="prod1_per3"></td>
+                                                value="3"></td>
                                         <td><input type="radio"
                                                 name="prod11"
-                                                value="prod1_per4"></td>
+                                                value="4"></td>
                                         <td><input type="radio"
                                                 name="prod11"
-                                                value="prod1_per5"></td>
+                                                value="5"></td>
                                         <td><input type="radio"
                                                 name="prod11"
-                                                value="prod1_per6"></td>
+                                                value="6"></td>
                                     </tr>
 
                                     <tr id="secondRow">
@@ -634,22 +640,22 @@
                                         </th>
                                         <td><input type="radio"
                                                 name="prod22"
-                                                value="prod2_per1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod22"
-                                                value="prod2_per2"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod22"
-                                                value="prod2_per3"></td>
+                                                value="3"></td>
                                         <td><input type="radio"
                                                 name="prod22"
-                                                value="prod2_per4"></td>
+                                                value="4"></td>
                                         <td><input type="radio"
                                                 name="prod22"
-                                                value="prod2_per5"></td>
+                                                value="5"></td>
                                         <td><input type="radio"
                                                 name="prod22"
-                                                value="prod2_per6"></td>
+                                                value="6"></td>
                                     </tr>
 
                                     <tr id="thirdRow">
@@ -658,22 +664,22 @@
                                         </th>
                                         <td><input type="radio"
                                                 name="prod33"
-                                                value="prod3_per1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod3_per1"
-                                                value="prod3_per2"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod33"
-                                                value="prod3_per3"></td>
+                                                value="3"></td>
                                         <td><input type="radio"
                                                 name="prod33"
-                                                value="prod3_per4"></td>
+                                                value="4"></td>
                                         <td><input type="radio"
                                                 name="prod33"
-                                                value="prod3_per5"></td>
+                                                value="5"></td>
                                         <td><input type="radio"
                                                 name="prod33"
-                                                value="prod3_per6"></td>
+                                                value="6"></td>
                                     </tr>
 
                                     <tr id="thirdRow">
@@ -682,22 +688,22 @@
                                         </th>
                                         <td><input type="radio"
                                                 name="prod44"
-                                                value="prod4_per1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod44"
-                                                value="prod4_per2"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod44"
-                                                value="prod4_per3"></td>
+                                                value="3"></td>
                                         <td><input type="radio"
                                                 name="prod44"
-                                                value="prod4_per4"></td>
+                                                value="4"></td>
                                         <td><input type="radio"
                                                 name="prod44"
-                                                value="prod4_per5"></td>
+                                                value="5"></td>
                                         <td><input type="radio"
                                                 name="prod44"
-                                                value="prod4_per6"></td>
+                                                value="6"></td>
                                     </tr>
 
                                     <tr id="thirdRow">
@@ -706,22 +712,22 @@
                                         </th>
                                         <td><input type="radio"
                                                 name="prod55"
-                                                value="prod5_per1"></td>
+                                                value="1"></td>
                                         <td><input type="radio"
                                                 name="prod55"
-                                                value="prod5_per2"></td>
+                                                value="2"></td>
                                         <td><input type="radio"
                                                 name="prod55"
-                                                value="prod5_per3"></td>
+                                                value="3"></td>
                                         <td><input type="radio"
                                                 name="prod55"
-                                                value="prod5_per4"></td>
+                                                value="4"></td>
                                         <td><input type="radio"
                                                 name="prod55"
-                                                value="prod5_per5"></td>
+                                                value="5"></td>
                                         <td><input type="radio"
                                                 name="prod55"
-                                                value="prod5_per6"></td>
+                                                value="6"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -771,7 +777,7 @@
                                 </label>
                             </div>
                         </div>
-                        <button class="btn btn-primary mb-4" type="submit">Save</button>
+                        <button class="btn btn-primary mb-4" onclick="return profileForm()">Save</button>
                     </form>
                 </div>
                 <div class="col-md-1"></div>
