@@ -11,7 +11,6 @@
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
     </head>
-    <script src="{{asset('public/js/profile.js')}}"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -25,7 +24,7 @@
         crossorigin="anonymous"></script>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-
+        
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 
@@ -191,35 +190,35 @@
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1"
                                     name="customRadio"
-                                    class="custom-control-input" valaue="1">
+                                    class="custom-control-input" value="1">
                                 <label class="custom-control-label"
                                     for="customRadio1">Startup</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio2"
                                     name="customRadio"
-                                    class="custom-control-input" valaue="2">
+                                    class="custom-control-input" value="2">
                                 <label class="custom-control-label"
                                     for="customRadio2">Established</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio3"
                                     name="customRadio"
-                                    class="custom-control-input" valaue="3">
+                                    class="custom-control-input" value="3">
                                 <label class="custom-control-label"
                                     for="customRadio3">Competitive</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio4"
                                     name="customRadio"
-                                    class="custom-control-input" valaue="4">
+                                    class="custom-control-input" value="4">
                                 <label class="custom-control-label"
                                     for="customRadio4">Market leader</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="customRadio5"
                                     name="customRadio"
-                                    class="custom-control-input" valaue="5"
+                                    class="custom-control-input" value="5"
                                     onclick="getCompanyStatus()">
                                 <label class="custom-control-label"
                                     for="customRadio5">Other:</label>
@@ -801,6 +800,11 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            var APP_URL = {!! json_encode(url('/')) !!};
+        </script>
+        <script src="{{asset('public/js/profile.js')}}"></script>
+
     </body>
 
 
