@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Profile;
 use Session;
-
+use App\auditTool;
 class ProfileController extends Controller
 {
     /**
@@ -178,6 +178,73 @@ class ProfileController extends Controller
         $profile->nonProfit=$data->nonProfit;
         $profile->save();
         Session::put('profileid', $profile->id);
+        return $ret;
+    }
+    public function store_audit_tool(Request $request)
+    {
+       
+            $ret= $this->create_audit_tool($request);
+            if($ret==1)
+            {
+                $message="Audit Tool Edited Succefully";
+            }
+            else
+            {
+                $message="new Audit Tool created Succefully";
+            }
+         
+
+        return response()->json(['success'=>$message]);
+
+    }
+
+    public function create_audit_tool($data)
+    {
+        if(session()->has('audit_tool_id'))
+        {
+            $audit=auditTool::find(Session::get('audit_tool_id'));
+            $ret=1;
+        }
+        else
+        {
+            $audit =new auditTool;
+            $ret=2;
+        }
+        if(session()->has('profileid'))
+        {
+            $audit->profileid=Session::get('profileid');
+        }
+        else
+        {
+            $audit->profileid=0;   
+        }
+        $audit->question1=$data->question1;
+        $audit->question2=$data->question2;
+        $audit->question3=$data->question3;
+        $audit->question4=$data->question4;
+        $audit->question5=$data->question5;
+        $audit->question6=$data->question6;
+        $audit->question7=$data->question7;
+        $audit->question8=$data->question8;
+        $audit->question9=$data->question9;
+        $audit->question10=$data->question10;
+        $audit->question11=$data->question11;
+        $audit->question12=$data->question12;
+        $audit->question13=$data->question13;
+        $audit->question14=$data->question14;
+        $audit->question15=$data->question15;
+        $audit->question16=$data->question16;
+        $audit->question17=$data->question17;
+        $audit->question18=$data->question18;
+        $audit->question19=$data->question19;
+        $audit->question20=$data->question20;
+        $audit->question21=$data->question21;
+        $audit->question22=$data->question22;
+        $audit->question23=$data->question23;
+
+
+        $audit->save();
+        Session::put('audit_tool_id', $audit->id);
         return $ret;
     }
 }

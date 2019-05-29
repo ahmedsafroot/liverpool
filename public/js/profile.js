@@ -66,6 +66,8 @@ function formValidation() {
   }
 }
 
+
+
 function profileForm(){
   var mydata=[];
    mydata["userName"]=$("#userName").val();
@@ -450,11 +452,189 @@ function profileForm(){
       },
 
     success:function(mymessage){
-
        alert(mymessage.success);
     }
 
  });
 
   return false;
+}
+function audit_tool() {
+  var question1=$('input[name=question1]:checked').val();
+  if(!question1)
+    question1=0;
+
+    var question2=$('input[name=question2]:checked').val();
+  if(!question2)
+    question2=0;
+
+    var question3=$('input[name=question3]:checked').val();
+  if(!question3)
+    question3=0;
+
+    var question4=$('input[name=question4]:checked').val();
+  if(!question4)
+    question4=0;
+
+    var question5=$('input[name=question5]:checked').val();
+  if(!question5)
+    question5=0;
+
+    var question6=$('input[name=question6]:checked').val();
+  if(!question6)
+    question6=0;
+
+    var question7=$('input[name=question7]:checked').val();
+  if(!question7)
+    question7=0;
+
+    var question8=$('input[name=question8]:checked').val();
+  if(!question8)
+    question8=0;
+
+    var question9=$('input[name=question9]:checked').val();
+  if(!question9)
+    question9=0;
+
+    var question10=$('input[name=question10]:checked').val();
+  if(!question10)
+    question10=0;
+
+    var question11=$('input[name=question11]:checked').val();
+  if(!question11)
+    question11=0;
+
+    var question12=$('input[name=question12]:checked').val();
+  if(!question12)
+    question12=0;
+
+    var question13=$('input[name=question13]:checked').val();
+  if(!question13)
+    question13=0;
+
+    var question14=$('input[name=question14]:checked').val();
+  if(!question14)
+    question14=0;
+
+    var question15=$('input[name=question15]:checked').val();
+  if(!question15)
+    question15=0;
+
+    var question16=$('input[name=question16]:checked').val();
+  if(!question16)
+    question16=0;
+
+  var question17=$('input[name=question17]:checked').val();
+  if(!question17)
+    question17=0;
+
+  var question18=$('input[name=question18]:checked').val();
+  if(!question18)
+    question18=0;
+
+  var question19=$('input[name=question19]:checked').val();
+  if(!question19)
+    question19=0;
+
+  var question20=$('input[name=question20]:checked').val();
+  if(!question20)
+    question20=0;
+
+  var question21=$('input[name=question21]:checked').val();
+  if(!question21)
+    question21=0;
+
+  var question22=$('input[name=question22]:checked').val();
+  if(!question22)
+    question22=0;
+
+  var question23=$('input[name=question23]:checked').val();
+  if(!question23)
+    question23=0;
+
+  var total=parseInt(question1)+parseInt(question2)+parseInt(question3)+parseInt(question4)+parseInt(question5)+parseInt(question6)+
+  parseInt(question7)+parseInt(question8)+parseInt(question9)+parseInt(question10)+parseInt(question11)+parseInt(question12)+
+  parseInt(question13)+parseInt(question14)+parseInt(question15)+parseInt(question16)+parseInt(question17)+parseInt(question18)+
+  parseInt(question19)+parseInt(question20)+parseInt(question21)+parseInt(question22)+parseInt(question23);
+
+  indeuction="";
+  what_to_do="";
+  if(23<=total && total<=46)
+    {
+      var indeuction="YOU ARE DOING WELL";
+      var what_to_do="DO NOT NEED TO DO MUCH BUT KEEP THE STRENGTH UP AND GOING";
+    }
+    else if(70<=total && total<=92)
+    {
+      var indeuction="THERE ARE AREAS OF VOLUNERABILITY,HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS";
+      var what_to_do="LOOK CLOSELY ATTHE SCORES YOU ACHIEVED FOR EACH SECTION;FIND OUT AREAS IN NEED OF ATTENTION WORK ON THOS AREAS IN A STRCUTURED WAY";
+    }
+    else if(92<total && total<=115)
+    {
+      var indeuction="CONSIDERABLE SCOPE FOR IMPROVING BUSINESS";
+      var what_to_do="ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS";
+    }
+     
+
+            $.ajaxSetup({
+              headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+              }
+          });
+             var url=APP_URL+"/step2";
+            
+             $.ajax({
+          
+              type:'POST',
+          
+              url:url,
+          
+              data:{
+                   
+                question1:question1,
+                question2:question2,
+                question3:question3,
+                question4:question4,
+                question5:question5,
+                question6:question6,
+                question7:question7,
+                question8:question8,
+                question9:question9,
+                question10:question10,
+                question11:question11,
+                question12:question12,
+                question13:question13,
+                question14:question14,
+                question15:question15,
+                question16:question16,
+                question17:question17,
+                question18:question18,
+                question19:question19,
+                question20:question20,
+                question21:question21,
+                question22:question22,
+                question23:question23,
+
+               
+                },
+          
+              success:function(mymessage){
+                $(".modal-body form").html("");
+                 var title="OUTCOME ANALYSIS";
+                 $(".modal-title").text(title);
+                 var element=$('<div class="form-group"><label class="col-form-label">Score:</label><span class="form-control">'+total+'</span></div>');
+                 $(".modal-body form").append(element);
+
+                 var element_induction=$('<div class="form-group"><label class="col-form-label">Induction:</label><span class="form-control">'+indeuction+'</span></div>');
+                 $(".modal-body form").append(element_induction);
+
+                 var element_to_do=$('<div class="form-group"><label class="col-form-label">What To Do:</label><span class="form-control">'+what_to_do+'</span></div>');
+                 $(".modal-body form").append(element_to_do);
+              }
+          
+           });
+          
+            return false;
+
+
 }

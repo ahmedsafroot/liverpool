@@ -1,88 +1,156 @@
 body{
-   max-width: 100% !important;
-}
-.title h2{
-    text-align: center !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    margin-top: 5% !important;
-}
-.title p{
-    text-align: center !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    font-size: 12px !important;
-    color: #1D3C78 !important;
-}
-.questionsRow{
-    margin-top: 5% !important;
-}
-.sectionTitle{
-    text-align: left !important;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
-    font-size: 21px !important;
-}
-
-.form-group ,.mainLabel {
-    margin-top: 3% !important;
-}
-.form-check-input{
-    width: 15px !important;
-    height: 15px !important;
-}
-.form-check{
-    margin-bottom: 3% !important;
-}
-.marketOtherStyle{
-    display: inline !important;
-    width: 42% !important;
-    height: 32px !important;
-}
-.custom-radio ,.custom-checkbox{
-    margin-bottom: 3% !important;
-}
-.mainLabel{
-    font-size: 21px !important;
-    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif ;
-}
-.table{
-    margin-top: 4% !important;
-}
-.table ,th,tr,td{
-    border-top-style:none !important;
-    border-bottom-style:none !important;
-
-}
-tr{
-    padding: 3% !important;
-}
-.tableH{
-    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif !important;
-    font-size: 13px !important;
-    font-weight: lighter !important;
-}
-.btn-primary{
-    float: right !important;
-}
-.card-footer{
-    margin-top: 5% !important;
-    background-color: #eee !important;
-    color: black !important;
-    text-align: center !important;
-}
-.errorMsg{
-    font-size: 14px ;
-    color: tomato;
-}
-.container{
-    width: 100% !important;
-}
-.col-12{
-    padding: 0 !important;
-}
-.ProductLines{
-    width: 100% !important;
-}
-@media only screen and (max-width: 600px) {
-    .btn-primary {
-        margin-right: 3% !important;
-    }
-  }
+    max-width: 100% !important;
+ }
+ .title h2{
+     text-align: center !important;
+     font-family: 'Courier New', Courier, monospace !important;
+     margin-top: 5% !important;
+ }
+ .title p{
+     text-align: center !important;
+     font-family: 'Courier New', Courier, monospace !important;
+     font-size: 12px !important;
+     color: #1D3C78 !important;
+ }
+ .questionsRow{
+     margin-top: 5% !important;
+ }
+ .sectionTitle{
+     text-align: left !important;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+     font-size: 21px !important;
+ }
+ .descParagrah{
+     font-size: 14px !important;
+     color: #1D3C78 !important;
+ }
+ .form-group ,.mainLabel {
+     margin-top: 3% !important;
+ }
+ .form-check-input{
+     width: 15px !important;
+     height: 15px !important;
+ }
+ .form-check{
+     margin-bottom: 3% !important;
+ }
+ .marketOtherStyle{
+     display: inline !important;
+     width: 42% !important;
+     height: 32px !important;
+ }
+ .custom-radio ,.custom-checkbox{
+     margin-bottom: 3% !important;
+ }
+ .mainLabel{
+     font-size: 21px !important;
+     font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif ;
+ }
+ .table{
+     margin-top: 2% !important;
+ }
+ .table ,th,tr,td{
+     border-top-style:none !important;
+     border-bottom-style:none !important;
+ 
+ }
+ tr{
+     padding: 3% !important;
+ }
+ .tableH{
+     font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif !important;
+     font-size: 11px !important;
+     font-weight: lighter !important;
+     padding: 2% !important;
+ }
+ .btn-primary{
+ }
+ .card-footer{
+     margin-top: 1% !important;
+     background-color: #eee !important;
+     color: black !important;
+     text-align: center !important;
+ }
+ .errorMsg{
+     font-size: 14px ;
+     color: tomato;
+ }
+ .container{
+     width: 100% !important;
+ }
+ .col-12{
+     padding: 0 !important;
+ }
+ .ProductLines{
+     width: 100% !important;
+ }
+ @media only screen and (max-width: 600px) {
+     .btn-primary {
+         margin-right: 3% !important;
+     }
+   }
+   .tab {
+     display: none;
+   }
+   .stepParent{
+       margin-right: 36% !important;
+   }
+   .step {
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbbbbb;
+     border: none;  
+     border-radius: 50%;
+     display: inline-block;
+     opacity: 0.5;
+   }
+   
+   .step.active {
+     opacity: 1;
+   }
+   
+   /* Mark the steps that are finished and valid: */
+   .step.finish {
+     background-color: #4CAF50;
+   }
+   .nextBtn{
+       float: right !important;
+       margin:2% 1% 0 0 !important;
+       border-radius: 50% !important;
+       font-weight: 800 !important;
+       color: black !important;
+       font-size: 26px !important;
+       overflow: auto !important;
+   }
+   .nextBtn:hover{
+       background-color: #1D3C78 !important;
+       color: white !important;
+   }
+   .submitBtn{
+       border: none !important;
+       font-weight: lighter !important;
+       color: white !important;
+       font-size: 16px !important;
+       border-radius: 0% !important;
+       margin-right: 6.5% !important;
+   }
+   .submitBtn:focus{
+       border:none !important;
+   }
+   .prevBtn{
+       float: left !important;
+       margin:2% 0 0 1% !important;
+       border-radius: 50% !important;
+       font-weight: 800 !important;
+       color: black !important;
+       font-size: 26px !important;
+       overflow: auto !important;
+   }
+   .prevBtn:hover{
+     background-color: #1D3C78 !important;
+     color: white !important;
+ }
+ #indBtn{
+     display: none !important;
+ }

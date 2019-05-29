@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('profile');
 });
 Route::resource('profile', 'ProfileController');
-Route::post('step1','ProfileController@store_profile'
-);
+Route::post('step1','ProfileController@store_profile');
+Route::post('step2','ProfileController@store_audit_tool');
