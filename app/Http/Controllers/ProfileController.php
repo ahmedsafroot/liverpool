@@ -16,6 +16,8 @@ class ProfileController extends Controller
     public function index()
     {
         //
+        Session::flush();
+        return view('profile');
     }
 
     /**
@@ -94,11 +96,11 @@ class ProfileController extends Controller
             $ret= $this->create_profile($request);
             if($ret==1)
             {
-                $message="profile Edited Succefully";
+                $message="Profile Edited Succefully";
             }
             else
             {
-                $message="new profile created Succefully";
+                $message="New Profile Created Succefully";
             }
          }
 

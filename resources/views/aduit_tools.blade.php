@@ -690,7 +690,7 @@
             <div class="col-12 col-sm-12">
                 <button type="button" class="btn btn-lg
                     nextBtn"
-                    id="nextBtn1" onclick="viewInductionModal()"
+                    id="nextBtn1" onclick="viewInductionModal(0)"
                     data-toggle="tooltip"
                     data-placement="left"
                     title="Next">&#8250;</button>

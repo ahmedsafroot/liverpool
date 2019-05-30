@@ -30,7 +30,8 @@
                 <div class="row questionsRow">
                     <div class="col-12 col-md-7 col-sm-12">
                         <form id="submitForm">
-    
+                            {!! csrf_field() !!}
+
                          @include('company_details')
                          @include('aduit_tools')
                         </form>
@@ -96,7 +97,12 @@
                 </div>
             </div>
         </body>
+        <script type="text/javascript">
+            var APP_URL = {!! json_encode(url('/')) !!};
+        </script>
+        <script src="{{asset('public/js/profile.js')}}"></script>
         <script>
+                
                 var currentTab = 0; // Current tab is set to be the first tab (0)
                 showTab(currentTab); // Display the current tab
                 
@@ -150,10 +156,28 @@
                   //... and adds the "active" class on the current step:
                   x[n].className += " active";
                 }
-                function viewInductionModal(){
+                
+                function viewInductionModal(n=0){
                     $(document).ready(function(){
                        $("#nextBtn1").click(function(){
+                           if(n==0)
+                           {
+                            debugger;
+                            $(".modal-footer").show();
+                            $(".modal-body form").html("");
+                            var title="OUTCOME ANALYSIS";
+                            $(".modal-title").text(title);
+                            var element=$('<div class="form-group"><label class="col-form-label">Score:</label><span class="form-control">'+total+'</span></div>');
+                            $(".modal-body form").append(element);
+
+                            var element_induction=$('<div class="form-group"><label class="col-form-label">Induction:</label><span class="form-control">'+indeuction+'</span></div>');
+                            $(".modal-body form").append(element_induction);
+
+                            var element_to_do=$('<div class="form-group"><label class="col-form-label">What To Do:</label><span class="form-control">'+what_to_do+'</span></div>');
+                            $(".modal-body form").append(element_to_do);
+                           }
                        $("#myModal").modal();
+
                        });
                     });
                     document.getElementById('okBtnModal').setAttribute("data-dismiss", "modal");
@@ -169,11 +193,9 @@
                     nextBtn.innerHTML = "&#8250;";
                     var styleArr=['btn-sm','btn-primary','submitBtn'];
                     nextBtn.classList.remove(...styleArr);
+                    
                     nextBtn.classList.add('nextBtn');
                 }
         </script>
-        <script type="text/javascript">
-            var APP_URL = {!! json_encode(url('/')) !!};
-        </script>
-        <script src="{{asset('public/js/profile.js')}}"></script>
+       
 </html>

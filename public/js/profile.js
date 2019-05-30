@@ -1,3 +1,6 @@
+var total=0;
+var indeuction="";
+var what_to_do="";
 function getChecked() {
   var checkedValue = document.getElementById("marketCK5").checked;
   if (checkedValue == true) {
@@ -452,7 +455,15 @@ function profileForm(){
       },
 
     success:function(mymessage){
-       alert(mymessage.success);
+       //alert(mymessage.success);
+       $(".modal-body form").html("");
+       var title="Company Profile";
+       $(".modal-title").text(title);
+       var element=$('<div class="form-group"><label class="col-form-label">'+mymessage.success+'</label></div>');
+       $(".modal-body form").append(element);
+       $(".modal-footer").hide();
+       $('#myModal').modal('show');
+
     }
 
  });
@@ -552,7 +563,7 @@ function audit_tool() {
   if(!question23)
     question23=0;
 
-  var total=parseInt(question1)+parseInt(question2)+parseInt(question3)+parseInt(question4)+parseInt(question5)+parseInt(question6)+
+   total=parseInt(question1)+parseInt(question2)+parseInt(question3)+parseInt(question4)+parseInt(question5)+parseInt(question6)+
   parseInt(question7)+parseInt(question8)+parseInt(question9)+parseInt(question10)+parseInt(question11)+parseInt(question12)+
   parseInt(question13)+parseInt(question14)+parseInt(question15)+parseInt(question16)+parseInt(question17)+parseInt(question18)+
   parseInt(question19)+parseInt(question20)+parseInt(question21)+parseInt(question22)+parseInt(question23);
@@ -561,18 +572,18 @@ function audit_tool() {
   what_to_do="";
   if(23<=total && total<=46)
     {
-      var indeuction="YOU ARE DOING WELL";
-      var what_to_do="DO NOT NEED TO DO MUCH BUT KEEP THE STRENGTH UP AND GOING";
+       indeuction="YOU ARE DOING WELL";
+       what_to_do="DO NOT NEED TO DO MUCH BUT KEEP THE STRENGTH UP AND GOING";
     }
     else if(70<=total && total<=92)
     {
-      var indeuction="THERE ARE AREAS OF VOLUNERABILITY,HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS";
-      var what_to_do="LOOK CLOSELY ATTHE SCORES YOU ACHIEVED FOR EACH SECTION;FIND OUT AREAS IN NEED OF ATTENTION WORK ON THOS AREAS IN A STRCUTURED WAY";
+       indeuction="THERE ARE AREAS OF VOLUNERABILITY,HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS";
+       what_to_do="LOOK CLOSELY ATTHE SCORES YOU ACHIEVED FOR EACH SECTION;FIND OUT AREAS IN NEED OF ATTENTION WORK ON THOS AREAS IN A STRCUTURED WAY";
     }
     else if(92<total && total<=115)
     {
-      var indeuction="CONSIDERABLE SCOPE FOR IMPROVING BUSINESS";
-      var what_to_do="ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS";
+       indeuction="CONSIDERABLE SCOPE FOR IMPROVING BUSINESS";
+       what_to_do="ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS";
     }
      
 
@@ -619,7 +630,7 @@ function audit_tool() {
                 },
           
               success:function(mymessage){
-                $(".modal-body form").html("");
+                /*$(".modal-body form").html("");
                  var title="OUTCOME ANALYSIS";
                  $(".modal-title").text(title);
                  var element=$('<div class="form-group"><label class="col-form-label">Score:</label><span class="form-control">'+total+'</span></div>');
@@ -629,11 +640,20 @@ function audit_tool() {
                  $(".modal-body form").append(element_induction);
 
                  var element_to_do=$('<div class="form-group"><label class="col-form-label">What To Do:</label><span class="form-control">'+what_to_do+'</span></div>');
-                 $(".modal-body form").append(element_to_do);
+                 $(".modal-body form").append(element_to_do);*/
+                 $(".modal-body form").html("");
+                  var title="OUTCOME ANALYSIS";
+                  $(".modal-title").text(title);
+                  var element=$('<div class="form-group"><label class="col-form-label">'+mymessage.success+'</label></div>');
+                  $(".modal-body form").append(element);
+                  $(".modal-footer").hide();
+                  $('#myModal').modal('show');
+                
+                 
               }
           
            });
-          
+            
             return false;
 
 
