@@ -658,3 +658,68 @@ function audit_tool() {
 
 
 }
+function leadership() {
+
+  var count=$("#count").val();
+  var factor = [];
+  var attractive=[];
+  var sector=[];
+  var effort=[];
+  var position=[];
+  var comment=[];
+  for (var i = 0; i < count; i++) {
+      factor[i]=$("#factor"+i).val();
+      attractive[i]=$("#attractive"+i).val();
+      sector[i]=$("#sector"+i).val();
+      effort[i]=$("#effort"+i).val();
+      position[i]=$("#position"+i).val();
+      comment[i]=$("#comment"+i).val();
+      //draw progress bar here
+      
+    
+  }
+
+  $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+   var url=APP_URL+"/step2";
+  
+   $.ajax({
+
+    type:'POST',
+
+    url:url,
+
+    data:{
+         
+      factor:factor,
+      sector:sector,
+      attractive:attractive,
+      effort:effort,
+      position:position,
+      comment:comment,
+      count:count,
+   
+
+     
+      },
+
+    success:function(mymessage){
+       $(".modal-body form").html("");
+        var title="Industry LeaderShip";
+        $(".modal-title").text(title);
+        var element=$('<div class="form-group"><label class="col-form-label">'+mymessage.success+'</label></div>');
+        $(".modal-body form").append(element);
+        $(".modal-footer").hide();
+        $('#myModal').modal('show');
+      
+       
+    }
+
+ });
+  
+  return false;
+  
+}
