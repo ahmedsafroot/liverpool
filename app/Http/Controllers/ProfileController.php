@@ -92,20 +92,26 @@ class ProfileController extends Controller
        if(empty($request->userName))
          {
              $message="Profile Name is Required";
+             $background="bg-danger";
          }
          else{
             $ret= $this->create_profile($request);
             if($ret==1)
             {
                 $message="Profile Edited Succefully";
+                $background="bg-success";
+
             }
             else
             {
                 $message="New Profile Created Succefully";
+                $background="bg-success";
+
             }
          }
 
-        return response()->json(['success'=>$message]);
+         return response()->json(['success'=>$message,'background'=>$background]);
+
 
     }
      public function create_profile($data)
@@ -190,19 +196,24 @@ class ProfileController extends Controller
             if($ret==3)
             {
                 $message="You Must create Profile before";
+                $background="bg-danger";
 
             }
             else if($ret==1)
             {
                 $message="Audit Tool Edited Succefully";
+                $background="bg-success";
+
             }
             else
             {
                 $message="new Audit Tool created Succefully";
+                $background="bg-success";
+
             }
          
 
-        return response()->json(['success'=>$message]);
+        return response()->json(['success'=>$message,'background'=>$background]);
 
     }
 
@@ -210,7 +221,7 @@ class ProfileController extends Controller
     {
         if(session()->has('profileid'))
         {
-            $audit->profileid=Session::get('profileid');
+            $profileid=Session::get('profileid');
         }
         else
         {
@@ -226,7 +237,7 @@ class ProfileController extends Controller
             $audit =new auditTool;
             $ret=2;
         }
-       
+        $audit->profileid=$profileid;
         $audit->question1=$data->question1;
         $audit->question2=$data->question2;
         $audit->question3=$data->question3;
@@ -264,19 +275,21 @@ class ProfileController extends Controller
             if($ret==3)
             {
                 $message="You Must create Profile before";
-
+                $background="bg-danger";
             }
             else if($ret==1)
             {
                 $message="Industry LeaderShip Edited Succefully";
+                $background="bg-success";
             }
             else
             {
                 $message="New Industry LeaderShip Created Succefully";
+                $background="bg-success";
             }
          
 
-        return response()->json(['success'=>$message]);
+            return response()->json(['success'=>$message,'background'=>$background]);
 
     }
 
@@ -288,7 +301,7 @@ class ProfileController extends Controller
         $effort=$data->effort;
         $position=$data->position;
         $comment=$data->comment;
-        $count=$data->count;
+        $count=count($factor);
         if(session()->has('profileid'))
         {
             $profileid=Session::get('profileid');
@@ -323,7 +336,7 @@ class ProfileController extends Controller
             $newLeaderShip->save();
         }
       
-        Session::put('audit_tool_id', 1);
+        Session::put('leader_ship_id', 1);
         return $ret;
     }
 
@@ -887,6 +900,8 @@ class ProfileController extends Controller
     {
        $audit=auditTool::where("profileid",$id)->first();
        $myvalues=array("Not at all for us","Only slightly true for us","Moderately true for us","Mostly True for us","Absolutely True for us");
+       if($audit!=NULL)
+       {
        if($audit->question1!=0)
        $audit->question1=$myvalues[$audit->question1-1];
        else
@@ -1001,6 +1016,7 @@ class ProfileController extends Controller
        $audit->question23=$myvalues[$audit->question23-1];
        else
        $audit->question23="";
+       }
 
        return view("audit_details",compact('audit'));
     }

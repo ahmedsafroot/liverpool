@@ -82,7 +82,7 @@
         $(document).ready( function () {
             $('#profile').DataTable( {
                 dom: 'lBfrtip',
-
+                "ordering": false,
                 buttons: [
                     'copyHtml5', 'excelHtml5', 'pdfHtml5', 'csvHtml5'
                 ]

@@ -57,12 +57,12 @@
                     @foreach ($ships as $ship)
                         
                     <tr>
-                    <th>{{$ship->question}}</th>
-                    <th>{{$ship->attractiveness}}</th>
-                    <th>{{$ship->sector}}</th>
-                    <th>{{$ship->mainting}}</th>
-                    <th>{{$ship->position}}</th>
-                    <th>{{$ship->comment}}</th>
+                    <td>{{$ship->question}}</td>
+                    <td style="text-align:center">{{$ship->attractiveness}}</td>
+                    <td style="text-align:center">{{$ship->sector}}</td>
+                    <td style="text-align:center">{{$ship->mainting}}</td>
+                    <td style="text-align:center">{{$ship->position}}</td>
+                    <td style="text-align:center">{{$ship->comment}}</td>
 
                     </tr>
 

@@ -459,7 +459,7 @@ function profileForm(){
        $(".modal-body form").html("");
        var title="Company Profile";
        $(".modal-title").text(title);
-       var element=$('<div class="form-group"><label class="col-form-label">'+mymessage.success+'</label></div>');
+       var element=$('<div class="form-group '+mymessage.background+'"><label class="col-form-label">'+mymessage.success+'</label></div>');
        $(".modal-body form").append(element);
        $(".modal-footer").hide();
        $('#myModal').modal('show');
@@ -644,7 +644,7 @@ function audit_tool() {
                  $(".modal-body form").html("");
                   var title="OUTCOME ANALYSIS";
                   $(".modal-title").text(title);
-                  var element=$('<div class="form-group"><label class="col-form-label">'+mymessage.success+'</label></div>');
+                  var element=$('<div class="form-group '+mymessage.background+'"><label class="col-form-label">'+mymessage.success+'</label></div>');
                   $(".modal-body form").append(element);
                   $(".modal-footer").hide();
                   $('#myModal').modal('show');
@@ -659,7 +659,6 @@ function audit_tool() {
 
 }
 function leadership() {
-
   var count=$("#count").val();
   var factor = [];
   var attractive=[];
@@ -667,14 +666,38 @@ function leadership() {
   var effort=[];
   var position=[];
   var comment=[];
-  for (var i = 0; i < count; i++) {
-      factor[i]=$("#factor"+i).val();
-      attractive[i]=$("#attractive"+i).val();
-      sector[i]=$("#sector"+i).val();
-      effort[i]=$("#effort"+i).val();
-      position[i]=$("#position"+i).val();
-      comment[i]=$("#comment"+i).val();
-      //draw progress bar here
+  var total;
+  var prog_sector;
+  var prog_attractive;
+  var prog_effort;
+  var prog_position;
+  for (var i = 1; i <= count; i++) {
+    if ($('[name=factor'+i+']').length)
+    {
+      factor.push($('[name=factor'+i+']').val());
+      attractive.push($('[name=x'+i+']').val());
+      sector.push($('[name=y'+i+']').val());
+      effort.push($('[name=z'+i+']').val());
+      position.push($('[name=k'+i+']').val());
+      comment.push($('[name=comment'+i+']').val());
+
+       total=parseInt($('[name=x'+i+']').val())+parseInt($('[name=y'+i+']').val())
+                +parseInt($('[name=z'+i+']').val())+parseInt($('[name=k'+i+']').val());
+       prog_sector=(parseInt($('[name=x'+i+']').val())/total)*100;
+       prog_attractive=(parseInt($('[name=y'+i+']').val())/total)*100;
+       prog_effort=(parseInt($('[name=z'+i+']').val())/total)*100;
+       prog_position=(parseInt($('[name=k'+i+']').val())/total)*100;
+       $('#prog_sector'+i).attr("style","width:"+prog_sector+"%");
+       $('#prog_attractive'+i).attr("style","width:"+prog_attractive+"%");
+       $('#prog_effort'+i).attr("style","width:"+prog_effort+"%");
+       $('#prog_position'+i).attr("style","width:"+prog_position+"%");
+       $('#prog_sector'+i).text($('[name=x'+i+']').val());
+       $('#prog_attractive'+i).text($('[name=y'+i+']').val());
+       $('#prog_effort'+i).text($('[name=z'+i+']').val());
+       $('#prog_position'+i).text($('[name=k'+i+']').val());
+
+
+    }
       
     
   }
@@ -684,7 +707,7 @@ function leadership() {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
 });
-   var url=APP_URL+"/step2";
+   var url=APP_URL+"/step3";
   
    $.ajax({
 
@@ -707,10 +730,11 @@ function leadership() {
       },
 
     success:function(mymessage){
-       $(".modal-body form").html("");
+        $(".hideMe").css('display', 'table-cell');
+        $(".modal-body form").html("");
         var title="Industry LeaderShip";
         $(".modal-title").text(title);
-        var element=$('<div class="form-group"><label class="col-form-label">'+mymessage.success+'</label></div>');
+        var element=$('<div class="form-group '+mymessage.background+'"><label class="col-form-label">'+mymessage.success+'</label></div>');
         $(".modal-body form").append(element);
         $(".modal-footer").hide();
         $('#myModal').modal('show');
