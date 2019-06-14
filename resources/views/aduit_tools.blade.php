@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <div class="container-fluid">
+=======
+<div class="container-fluid ">
+>>>>>>> 90f78858f5789c266a9ce2c37c64345f45fe4cc8
     <!--second tab-->
     <div class="tab animated">
         <p class="sectionTitle">Agility Audit Tool</p>
@@ -416,7 +420,11 @@
             <!--accordion-->
         </div>
 
+<<<<<<< HEAD
         <span class="btn btn-primary mb-4 mt-3 ml-4" onclick="audit_tool()">Save</span>
+=======
+        <span class="btn btn-primary mb-4 mt-3 ml-4" onclick="heh()">Save</span>
+>>>>>>> 90f78858f5789c266a9ce2c37c64345f45fe4cc8
 
 
         <!--OUTCOME ANALYSIS ,Score ,Induction,What To Do-->
