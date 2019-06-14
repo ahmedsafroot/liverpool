@@ -1,24 +1,15 @@
- <!--second tab-->
- <div class="tab">
+<div class="container">
+<!--second tab-->
+<div class="tab">
     <p class="sectionTitle">Agility Audit Tool</p>
     <hr>
-    <p class="descParagrah">This quick Audit tool is
-        designed to get you
-        thinking seriously about issues that may be
-        affecting your business. The philosophy here is
-        that the more able you are to supply products
-        and services tailored to the needs of your
-        customers, quickly and cost-effectively, the
-        more likely that you can win the competition,
-        and consequently grow.
+    <p class="descParagrah">This quick Audit tool is designed to get you thinking seriously about issues that may be affecting your business. The philosophy here is that the more able you are to supply products and services tailored to the needs of your customers, quickly and
+        cost-effectively, the more likely that you can win the competition, and consequently grow.
     </p>
 
     <p class="sectionTitle mt-4">Instructions</p>
     <hr>
-    <p class="descParagrah">Please read through the
-        questions
-        and indicate how true you feel each statement to
-        be for your business and its operations.</p>
+    <p class="descParagrah">Please read through the questions and indicate how true you feel each statement to be for your business and its operations.</p>
     <!--First Table-->
     <!--Section One: Business and Marketing Strategy-->
     <div class="ProductLines">
@@ -28,133 +19,63 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col" class="tableH">Not
-                        at all for us</th>
-                    <th scope="col" class="tableH">Only
-                        slightly true for us</th>
-                    <th scope="col" class="tableH">Moderately
-                        true for us</th>
-                    <th scope="col" class="tableH">Mostly
-                        True for us</th>
-                    <th scope="col" class="tableH">Absolutely
-                        True for us
+                    <th scope="col" class="tableH">Not at all for us</th>
+                    <th scope="col" class="tableH">Only slightly true for us</th>
+                    <th scope="col" class="tableH">Moderately true for us</th>
+                    <th scope="col" class="tableH">Mostly True for us</th>
+                    <th scope="col" class="tableH">Absolutely True for us
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="sec1-firstRow">
-                    <th scope="row" class="tableH">We
-                        have a reasonably good idea
-                        where we want our business to be
-                        in 3-5 years
+                    <th scope="row" class="tableH">We have a reasonably good idea where we want our business to be in 3-5 years
                     </th>
-                    <td><input type="radio"
-                            name="question1"
-                            value="1"></td>
-                    <td><input type="radio"
-                            name="question1"
-                            value="2"></td>
-                    <td><input type="radio"
-                            name="question1"
-                            value="3"></td>
-                    <td><input type="radio"
-                            name="question1"
-                            value="4"></td>
-                    <td><input type="radio"
-                            name="question1"
-                            value="5"></td>
+                    <td><input type="radio" name="question1" value="1"></td>
+                    <td><input type="radio" name="question1" value="2"></td>
+                    <td><input type="radio" name="question1" value="3"></td>
+                    <td><input type="radio" name="question1" value="4"></td>
+                    <td><input type="radio" name="question1" value="5"></td>
                 </tr>
 
                 <tr id="sec1-secondRow">
-                    <th scope="row" class="tableH">Strategically,
-                        we tend to be proactive,
-                        constantly seeking new areas of
-                        growth
+                    <th scope="row" class="tableH">Strategically, we tend to be proactive, constantly seeking new areas of growth
                     </th>
-                    <td><input type="radio"
-                        name="question2"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question2"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question2"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question2"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question2"
-                        value="5"></td>
+                    <td><input type="radio" name="question2" value="1"></td>
+                    <td><input type="radio" name="question2" value="2"></td>
+                    <td><input type="radio" name="question2" value="3"></td>
+                    <td><input type="radio" name="question2" value="4"></td>
+                    <td><input type="radio" name="question2" value="5"></td>
                 </tr>
 
                 <tr id="sec1-thirdRow">
-                    <th scope="row" class="tableH">We
-                        are prepared to trade-off short
-                        term goals in the interest of
-                        long run growth
+                    <th scope="row" class="tableH">We are prepared to trade-off short term goals in the interest of long run growth
                     </th>
-                    <td><input type="radio"
-                        name="question3"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question3"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question3"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question3"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question3"
-                        value="5"></td>
+                    <td><input type="radio" name="question3" value="1"></td>
+                    <td><input type="radio" name="question3" value="2"></td>
+                    <td><input type="radio" name="question3" value="3"></td>
+                    <td><input type="radio" name="question3" value="4"></td>
+                    <td><input type="radio" name="question3" value="5"></td>
                 </tr>
 
                 <tr id="sec1-forthRow">
-                    <th scope="row" class="tableH">Our
-                        business and marketing
-                        objectives provide clear
-                        guidelines for market planning
+                    <th scope="row" class="tableH">Our business and marketing objectives provide clear guidelines for market planning
                     </th>
-                    <td><input type="radio"
-                        name="question4"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question4"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question4"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question4"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question4"
-                        value="5"></td>
+                    <td><input type="radio" name="question4" value="1"></td>
+                    <td><input type="radio" name="question4" value="2"></td>
+                    <td><input type="radio" name="question4" value="3"></td>
+                    <td><input type="radio" name="question4" value="4"></td>
+                    <td><input type="radio" name="question4" value="5"></td>
                 </tr>
 
                 <tr id="sec1-fiveRow">
-                    <th scope="row" class="tableH">We
-                        have specific targets (volume,
-                        profit, ROI) for our strategic
-                        objectives
+                    <th scope="row" class="tableH">We have specific targets (volume, profit, ROI) for our strategic objectives
                     </th>
-                    <td><input type="radio"
-                        name="question5"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question5"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question5"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question5"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question5"
-                        value="5"></td>
+                    <td><input type="radio" name="question5" value="1"></td>
+                    <td><input type="radio" name="question5" value="2"></td>
+                    <td><input type="radio" name="question5" value="3"></td>
+                    <td><input type="radio" name="question5" value="4"></td>
+                    <td><input type="radio" name="question5" value="5"></td>
                 </tr>
             </tbody>
         </table>
@@ -169,134 +90,63 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col" class="tableH">Not
-                        at all for us</th>
-                    <th scope="col" class="tableH">Only
-                        slightly true for us</th>
-                    <th scope="col" class="tableH">Moderately
-                        true for us</th>
-                    <th scope="col" class="tableH">Mostly
-                        True for us</th>
-                    <th scope="col" class="tableH">Absolutely
-                        True for us
+                    <th scope="col" class="tableH">Not at all for us</th>
+                    <th scope="col" class="tableH">Only slightly true for us</th>
+                    <th scope="col" class="tableH">Moderately true for us</th>
+                    <th scope="col" class="tableH">Mostly True for us</th>
+                    <th scope="col" class="tableH">Absolutely True for us
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="sec2-firstRow">
-                    <th scope="row" class="tableH">It is
-                        relatively easy for anyone to
-                        track the progress of any order
-                        in the system
+                    <th scope="row" class="tableH">It is relatively easy for anyone to track the progress of any order in the system
                     </th>
-                    <td><input type="radio"
-                        name="question6"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question6"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question6"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question6"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question6"
-                        value="5"></td>
+                    <td><input type="radio" name="question6" value="1"></td>
+                    <td><input type="radio" name="question6" value="2"></td>
+                    <td><input type="radio" name="question6" value="3"></td>
+                    <td><input type="radio" name="question6" value="4"></td>
+                    <td><input type="radio" name="question6" value="5"></td>
                 </tr>
 
                 <tr id="sec2-secondRow">
-                    <th scope="row" class="tableH">Our
-                        machines (any type you use) are
-                        well maintained and never tend
-                        to break down
+                    <th scope="row" class="tableH">Our machines (any type you use) are well maintained and never tend to break down
                     </th>
-                    <td><input type="radio"
-                        name="question7"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question7"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question7"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question7"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question7"
-                        value="5"></td>
+                    <td><input type="radio" name="question7" value="1"></td>
+                    <td><input type="radio" name="question7" value="2"></td>
+                    <td><input type="radio" name="question7" value="3"></td>
+                    <td><input type="radio" name="question7" value="4"></td>
+                    <td><input type="radio" name="question7" value="5"></td>
                 </tr>
 
                 <tr id="sec2-thirdRow">
-                    <th scope="row" class="tableH">We
-                        have a labelling system to
-                        identify physical items
-                        (materials, tools, products,
-                        etc.)
+                    <th scope="row" class="tableH">We have a labelling system to identify physical items (materials, tools, products, etc.)
                     </th>
-                    <td><input type="radio"
-                        name="question8"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question8"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question8"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question8"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question8"
-                        value="5"></td>
+                    <td><input type="radio" name="question8" value="1"></td>
+                    <td><input type="radio" name="question8" value="2"></td>
+                    <td><input type="radio" name="question8" value="3"></td>
+                    <td><input type="radio" name="question8" value="4"></td>
+                    <td><input type="radio" name="question8" value="5"></td>
                 </tr>
 
                 <tr id="sec2-forthRow">
-                    <th scope="row" class="tableH">Our
-                        processes (material, product,
-                        service, orders, …) flow
-                        smoothly, rarely delayed
+                    <th scope="row" class="tableH">Our processes (material, product, service, orders, …) flow smoothly, rarely delayed
                     </th>
-                    <td><input type="radio"
-                        name="question9"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question9"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question9"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question9"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question9"
-                        value="5"></td>
+                    <td><input type="radio" name="question9" value="1"></td>
+                    <td><input type="radio" name="question9" value="2"></td>
+                    <td><input type="radio" name="question9" value="3"></td>
+                    <td><input type="radio" name="question9" value="4"></td>
+                    <td><input type="radio" name="question9" value="5"></td>
                 </tr>
 
                 <tr id="sec2-fiveRow">
-                    <th scope="row" class="tableH">It is
-                        very rare for us to amend our
-                        schedules (for production or
-                        service delivery)
+                    <th scope="row" class="tableH">It is very rare for us to amend our schedules (for production or service delivery)
                     </th>
-                    <td><input type="radio"
-                        name="question10"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question10"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question10"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question10"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question10"
-                        value="5"></td>
+                    <td><input type="radio" name="question10" value="1"></td>
+                    <td><input type="radio" name="question10" value="2"></td>
+                    <td><input type="radio" name="question10" value="3"></td>
+                    <td><input type="radio" name="question10" value="4"></td>
+                    <td><input type="radio" name="question10" value="5"></td>
                 </tr>
             </tbody>
         </table>
@@ -311,133 +161,64 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col" class="tableH">Not
-                        at all for us</th>
-                    <th scope="col" class="tableH">Only
-                        slightly true for us</th>
-                    <th scope="col" class="tableH">Moderately
-                        true for us</th>
-                    <th scope="col" class="tableH">Mostly
-                        True for us</th>
-                    <th scope="col" class="tableH">Absolutely
-                        True for us
+                    <th scope="col" class="tableH">Not at all for us</th>
+                    <th scope="col" class="tableH">Only slightly true for us</th>
+                    <th scope="col" class="tableH">Moderately true for us</th>
+                    <th scope="col" class="tableH">Mostly True for us</th>
+                    <th scope="col" class="tableH">Absolutely True for us
                     </th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr id="sec3-firstRow">
-                    <th scope="row" class="tableH">We
-                        have a “right first time” policy
-                        for outputs (products/services)
-                        and achieve them
+                    <th scope="row" class="tableH">We have a “right first time” policy for outputs (products/services) and achieve them
                     </th>
-                    <td><input type="radio"
-                        name="question11"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question11"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question11"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question11"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question11"
-                        value="5"></td>
+                    <td><input type="radio" name="question11" value="1"></td>
+                    <td><input type="radio" name="question11" value="2"></td>
+                    <td><input type="radio" name="question11" value="3"></td>
+                    <td><input type="radio" name="question11" value="4"></td>
+                    <td><input type="radio" name="question11" value="5"></td>
                 </tr>
 
                 <tr id="sec3-secondRow">
-                    <th scope="row" class="tableH">Quality
-                        of products/services are
-                        consistently inspected before
-                        delivery
+                    <th scope="row" class="tableH">Quality of products/services are consistently inspected before delivery
                     </th>
-                    <td><input type="radio"
-                        name="question12"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question12"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question12"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question12"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question12"
-                        value="5"></td>
+                    <td><input type="radio" name="question12" value="1"></td>
+                    <td><input type="radio" name="question12" value="2"></td>
+                    <td><input type="radio" name="question12" value="3"></td>
+                    <td><input type="radio" name="question12" value="4"></td>
+                    <td><input type="radio" name="question12" value="5"></td>
                 </tr>
 
                 <tr id="sec3-thirdRow">
-                    <th scope="row" class="tableH">Quality
-                        of purchased items/services from
-                        suppliers are inspected
-                        consistently
+                    <th scope="row" class="tableH">Quality of purchased items/services from suppliers are inspected consistently
                     </th>
-                    <td><input type="radio"
-                        name="question13"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question13"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question13"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question13"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question13"
-                        value="5"></td>
+                    <td><input type="radio" name="question13" value="1"></td>
+                    <td><input type="radio" name="question13" value="2"></td>
+                    <td><input type="radio" name="question13" value="3"></td>
+                    <td><input type="radio" name="question13" value="4"></td>
+                    <td><input type="radio" name="question13" value="5"></td>
                 </tr>
 
                 <tr id="sec3-forthRow">
-                    <th scope="row" class="tableH">We
-                        rarely have to change the design
-                        of our new products or services
+                    <th scope="row" class="tableH">We rarely have to change the design of our new products or services
                     </th>
-                    <td><input type="radio"
-                        name="question14"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question14"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question14"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question14"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question14"
-                        value="5"></td>
+                    <td><input type="radio" name="question14" value="1"></td>
+                    <td><input type="radio" name="question14" value="2"></td>
+                    <td><input type="radio" name="question14" value="3"></td>
+                    <td><input type="radio" name="question14" value="4"></td>
+                    <td><input type="radio" name="question14" value="5"></td>
                 </tr>
 
                 <tr id="sec3-fiveRow">
-                    <th scope="row" class="tableH">It is
-                        rare to receive returned
-                        products or rejected services
-                        from customers
+                    <th scope="row" class="tableH">It is rare to receive returned products or rejected services from customers
                     </th>
-                    <td><input type="radio"
-                        name="question15"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question15"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question15"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question15"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question15"
-                        value="5"></td>
+                    <td><input type="radio" name="question15" value="1"></td>
+                    <td><input type="radio" name="question15" value="2"></td>
+                    <td><input type="radio" name="question15" value="3"></td>
+                    <td><input type="radio" name="question15" value="4"></td>
+                    <td><input type="radio" name="question15" value="5"></td>
                 </tr>
             </tbody>
         </table>
@@ -453,109 +234,54 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col" class="tableH">Not
-                        at all for us</th>
-                    <th scope="col" class="tableH">Only
-                        slightly true for us</th>
-                    <th scope="col" class="tableH">Moderately
-                        true for us</th>
-                    <th scope="col" class="tableH">Mostly
-                        True for us</th>
-                    <th scope="col" class="tableH">Absolutely
-                        True for us
+                    <th scope="col" class="tableH">Not at all for us</th>
+                    <th scope="col" class="tableH">Only slightly true for us</th>
+                    <th scope="col" class="tableH">Moderately true for us</th>
+                    <th scope="col" class="tableH">Mostly True for us</th>
+                    <th scope="col" class="tableH">Absolutely True for us
                     </th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr id="sec4-firstRow">
-                    <th scope="row" class="tableH">In
-                        our firm, exceptional service is
-                        defined clearly
+                    <th scope="row" class="tableH">In our firm, exceptional service is defined clearly
                     </th>
-                    <td><input type="radio"
-                        name="question16"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question16"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question16"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question16"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question16"
-                        value="5"></td>
+                    <td><input type="radio" name="question16" value="1"></td>
+                    <td><input type="radio" name="question16" value="2"></td>
+                    <td><input type="radio" name="question16" value="3"></td>
+                    <td><input type="radio" name="question16" value="4"></td>
+                    <td><input type="radio" name="question16" value="5"></td>
                 </tr>
 
                 <tr id="sec4-secondRow">
-                    <th scope="row" class="tableH">Performance
-                        of our employees is regularly
-                        measured and monitored
+                    <th scope="row" class="tableH">Performance of our employees is regularly measured and monitored
                     </th>
-                    <td><input type="radio"
-                        name="question17"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question17"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question17"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question17"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question17"
-                        value="5"></td>
+                    <td><input type="radio" name="question17" value="1"></td>
+                    <td><input type="radio" name="question17" value="2"></td>
+                    <td><input type="radio" name="question17" value="3"></td>
+                    <td><input type="radio" name="question17" value="4"></td>
+                    <td><input type="radio" name="question17" value="5"></td>
                 </tr>
 
                 <tr id="sec4-thirdRow">
-                    <th scope="row" class="tableH">Satisfying
-                        customers’ needs and desires is
-                        well understood by all our
-                        employees
+                    <th scope="row" class="tableH">Satisfying customers’ needs and desires is well understood by all our employees
                     </th>
-                    <td><input type="radio"
-                        name="question18"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question18"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question18"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question18"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question18"
-                        value="5"></td>
+                    <td><input type="radio" name="question18" value="1"></td>
+                    <td><input type="radio" name="question18" value="2"></td>
+                    <td><input type="radio" name="question18" value="3"></td>
+                    <td><input type="radio" name="question18" value="4"></td>
+                    <td><input type="radio" name="question18" value="5"></td>
                 </tr>
 
                 <tr id="sec4-forthRow">
-                    <th scope="row" class="tableH">Our
-                        employees really understand that
-                        their behaviour reflects the
-                        firm’s image
+                    <th scope="row" class="tableH">Our employees really understand that their behaviour reflects the firm’s image
                     </th>
-                    <td><input type="radio"
-                        name="question19"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question19"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question19"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question19"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question19"
-                        value="5"></td>
+                    <td><input type="radio" name="question19" value="1"></td>
+                    <td><input type="radio" name="question19" value="2"></td>
+                    <td><input type="radio" name="question19" value="3"></td>
+                    <td><input type="radio" name="question19" value="4"></td>
+                    <td><input type="radio" name="question19" value="5"></td>
                 </tr>
 
             </tbody>
@@ -571,137 +297,99 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col" class="tableH">Not
-                        at all for us</th>
-                    <th scope="col" class="tableH">Only
-                        slightly true for us</th>
-                    <th scope="col" class="tableH">Moderately
-                        true for us</th>
-                    <th scope="col" class="tableH">Mostly
-                        True for us</th>
-                    <th scope="col" class="tableH">Absolutely
-                        True for us
+                    <th scope="col" class="tableH">Not at all for us</th>
+                    <th scope="col" class="tableH">Only slightly true for us</th>
+                    <th scope="col" class="tableH">Moderately true for us</th>
+                    <th scope="col" class="tableH">Mostly True for us</th>
+                    <th scope="col" class="tableH">Absolutely True for us
                     </th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr id="sec5-firstRow">
-                    <th scope="row" class="tableH">One
-                        of our strengths is that we
-                        respond rapidly to threatening
-                        competitive actions
+                    <th scope="row" class="tableH">One of our strengths is that we respond rapidly to threatening competitive actions
                     </th>
-                    <td><input type="radio"
-                        name="question20"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question20"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question20"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question20"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question20"
-                        value="5"></td>
+                    <td><input type="radio" name="question20" value="1"></td>
+                    <td><input type="radio" name="question20" value="2"></td>
+                    <td><input type="radio" name="question20" value="3"></td>
+                    <td><input type="radio" name="question20" value="4"></td>
+                    <td><input type="radio" name="question20" value="5"></td>
                 </tr>
 
                 <tr id="sec5-secondRow">
-                    <th scope="row" class="tableH">We
-                        differentiate ourselves from
-                        competition very well
+                    <th scope="row" class="tableH">We differentiate ourselves from competition very well
                     </th>
-                    <td><input type="radio"
-                        name="question21"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question21"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question21"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question21"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question21"
-                        value="5"></td>
+                    <td><input type="radio" name="question21" value="1"></td>
+                    <td><input type="radio" name="question21" value="2"></td>
+                    <td><input type="radio" name="question21" value="3"></td>
+                    <td><input type="radio" name="question21" value="4"></td>
+                    <td><input type="radio" name="question21" value="5"></td>
                 </tr>
 
                 <tr id="sec5-thirdRow">
-                    <th scope="row" class="tableH">We
-                        consistently discuss and monitor
-                        our competitors’ strengths and
-                        strategies
+                    <th scope="row" class="tableH">We consistently discuss and monitor our competitors’ strengths and strategies
                     </th>
-                    <td><input type="radio"
-                        name="question22"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question22"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question22"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question22"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question22"
-                        value="5"></td>
+                    <td><input type="radio" name="question22" value="1"></td>
+                    <td><input type="radio" name="question22" value="2"></td>
+                    <td><input type="radio" name="question22" value="3"></td>
+                    <td><input type="radio" name="question22" value="4"></td>
+                    <td><input type="radio" name="question22" value="5"></td>
                 </tr>
 
                 <tr id="sec5-forthRow">
-                    <th scope="row" class="tableH">We
-                        target customers where we have
-                        an opportunity for competitive
-                        advantage
+                    <th scope="row" class="tableH">We target customers where we have an opportunity for competitive advantage
                     </th>
-                    <td><input type="radio"
-                        name="question23"
-                        value="1"></td>
-                <td><input type="radio"
-                        name="question23"
-                        value="2"></td>
-                <td><input type="radio"
-                        name="question23"
-                        value="3"></td>
-                <td><input type="radio"
-                        name="question23"
-                        value="4"></td>
-                <td><input type="radio"
-                        name="question23"
-                        value="5"></td>
+                    <td><input type="radio" name="question23" value="1"></td>
+                    <td><input type="radio" name="question23" value="2"></td>
+                    <td><input type="radio" name="question23" value="3"></td>
+                    <td><input type="radio" name="question23" value="4"></td>
+                    <td><input type="radio" name="question23" value="5"></td>
                 </tr>
 
             </tbody>
         </table>
     </div>
-    
-        <button class="btn btn-primary mb-4" onclick="return audit_tool()">Save</button>
+
+    <span class="btn btn-primary mb-4 mt-3" onclick="heh()">Save</span>
 
 
+    <!--OUTCOME ANALYSIS ,Score ,Induction,What To Do-->
+    <div class="dialog">
+        <p style="text-align: center !important;">OUTCOME ANALYSIS
+        </p>
+        <hr>
+        <span class="close-thik" onclick="removeDialog()"></span>
+        <form id="scoreForm">
+            <div class="scoreParent">
+                <label> Score:</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="scoreInput" aria-describedby="emailHelp">
+                </div>
+                <label> Induction:</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inductionInput" aria-describedby="emailHelp">
+                </div>
+                <label> What To Do:</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="toDoInput" aria-describedby="emailHelp">
+                </div>
+            </div>
+        </form>
+    </div>
     <!--Next and prev-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-12">
                 <button type="button" class="btn btn-lg
-                    nextBtn"
-                    id="nextBtn1" onclick="viewInductionModal(0)"
-                    data-toggle="tooltip"
-                    data-placement="left"
-                    title="Next">&#8250;</button>
+                    nextBtn" id="nextBtn1" onclick="viewInductionModal(0)" data-toggle="tooltip" data-placement="left" title="Next">&#8250;</button>
                 <button type="button" class="btn btn-lg
-                    prevBtn"
-                    id="prevBtn" onclick="nextPrev(-1)"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Previous">&#8249;</button>
+                    prevBtn" id="prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">&#8249;</button>
             </div>
         </div>
     </div>
 </div>
 <!--second tab-->
+
+<!--container-->
+</div>
