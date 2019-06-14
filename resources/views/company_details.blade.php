@@ -1,6 +1,6 @@
 <!--first tab-->
 <div class="tab">
-    <div class="container-fluid">
+    <div class="container-fluid animated">
         <div class="row">
             <!--First Collapse for company info-->
             <div id="accordion" class="accordion mb-3 ml-2 mt-6 col-md-8">
@@ -522,7 +522,7 @@
 
             <!--row-->
         </div>
-        <button class="btn btn-primary mb-4 mt-3" onclick="return profileForm()">Save</button>
+        <button class="btn btn-primary mb-4 mt-3 ml-4" onclick="return profileForm()">Save</button>
 
         <!--container-->
     </div>

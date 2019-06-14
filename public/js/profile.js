@@ -554,8 +554,8 @@ function audit_tool() {
              $(".modal-body form").append(element_to_do);*/
 
             /*This is to diplay the div of outcomes analysis */
-            $(".dialog").css('display', 'block');
-            $(".dialog").addClass('animated fadeInLeft');
+            $(".myDialog").css('display', 'block');
+            $(".myDialog").addClass('animated fadeInLeft');
 
             $(".modal-body form").html("");
             var title = "OUTCOME ANALYSIS";

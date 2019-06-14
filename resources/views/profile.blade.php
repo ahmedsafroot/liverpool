@@ -73,6 +73,8 @@
     var me = this;
     $(document).ready(function() {
 
+        $(".animated").addClass('fadeInUp');
+
         /* This is for add new row in step3*/
         $(".add-more").click(function(e) {
             e.preventDefault();
@@ -201,10 +203,9 @@
 
     function nextPrev(n) {
         //to back the page opened at the top .
+        $(".animated").addClass('fadeInUp');
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-        $(".dialog").css('display', 'block');
-        $(".dialog").addClass('fadeInLeft');
         // This function will figure out which tab to display
         var x = document.getElementsByClassName("tab");
         // Exit the function if any field in the current tab is invalid:
@@ -292,13 +293,13 @@
         $("#tooltip").remove();
     }
 
-    /* function heh() {
-         $(".dialog").css('display', 'block');
-         $(".dialog").addClass('animated fadeInLeft');
-     }*/
+    function heh() {
+        $(".myDialog").css('display', 'block');
+        $(".myDialog").addClass('animated fadeInLeft');
+    }
 
     function removeDialog() {
-        $(".dialog").css('display', 'none');
+        $(".myDialog").css('display', 'none');
     }
     $('.panel-collapse').on('show.bs.collapse', function() {
         $(this).siblings('.panel-heading').addClass('active');

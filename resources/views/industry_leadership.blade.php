@@ -1,5 +1,5 @@
 <!--Third Tab-->
-<div class="tab">
+<div class="tab animated">
     <div class="ProductLines">
         <label class="mainLabel" style="margin-left: 5%;">Industry Leadership</label>
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                 <table class="table table-striped step3Table col-md-7" id="example">
                     <thead>
                         <tr>
-                            <th scope="col" class="tableH boldText">Differentiation factors
+                            <th scope="col" class="tableH boldText" width="25%">Differentiation factors
                             </th>
                             <th scope="col" class="tableH">Attractiveness to customer (Low:1 - High:5)
                                 <span class="progressFactor col1">m</span>
@@ -22,7 +22,7 @@
                             <th scope="col" class="tableH">Position (Qualifier:1 or Order winner:2)
                                 <span class="progressFactor col4">m</span>
                             </th>
-                            <th scope="col" class="tableH factors" style="width:20%;">Comments
+                            <th scope="col" class="tableH factors" style="width:30%;">Comments
                             </th>
                             <th></th>
                         </tr>
