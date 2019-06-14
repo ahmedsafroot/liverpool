@@ -902,6 +902,7 @@ class ProfileController extends Controller
        $myvalues=array("Not at all for us","Only slightly true for us","Moderately true for us","Mostly True for us","Absolutely True for us");
        if($audit!=NULL)
        {
+           
        if($audit->question1!=0)
        $audit->question1=$myvalues[$audit->question1-1];
        else
@@ -1017,6 +1018,7 @@ class ProfileController extends Controller
        else
        $audit->question23="";
        }
+       
 
        return view("audit_details",compact('audit'));
     }

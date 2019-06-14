@@ -84,7 +84,6 @@ tr {
     font-size: 11px !important;
     font-weight: lighter !important;
     padding: 2% !important;
-    width: 200px !important;
 }
 
 .factors {
@@ -138,7 +137,7 @@ textarea {
     font-size: 10px !important;
     background-color: white !important;
     border: none !important;
-    height: 100px;
+    height: 80px;
 }
 
 .tab {
@@ -249,8 +248,8 @@ textarea {
 }
 
 .progressFactor.col3 {
-    background-color: yellow;
-    color: yellow;
+    background-color: rgba(63,203,226,1);
+    color: rgba(63,203,226,1);
 }
 
 .progressFactor.col4 {
@@ -273,7 +272,7 @@ textarea {
     height: 60px;
 }
 
-.dialog {
+.myDialog {
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -281,10 +280,9 @@ textarea {
     position: relative;
     width: 390px;
     bottom: 83px;
-    left: 50px;
+    left: 78px;
     text-align: left;
     font-size: 14px !important;
-    display: none !important;
 }
 
 .close-thik:after {
@@ -308,11 +306,11 @@ textarea {
     top: 5px;
 }
 
-.dialog .form-control {
+.myDialog .form-control {
     width: 90% !important;
 }
 
-.dialog .form-group {
+.myDialog .form-group {
     margin-bottom: 2% !important;
 }
 
@@ -365,6 +363,11 @@ textarea {
     float: right !important;
     font-size: 20px !important;
     font-weight: 800 !important;
+}
+
+.card-header:hover {
+    color: #0080FF !important;
+    cursor: pointer;
 }
 
 #accordion {

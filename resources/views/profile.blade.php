@@ -65,13 +65,15 @@
     </div>
 </body>
 <script type="text/javascript">
-    var APP_URL = {!!json_encode(url('/')) !!
-    };
+    var APP_URL = {!!json_encode(url('/')) !!};
 </script>
+<script src="{{asset('public/js/createCharts.js')}}"></script>
 <script src="{{asset('public/js/profile.js')}}"></script>
 <script>
     var me = this;
     $(document).ready(function() {
+
+        $(".animated").addClass('fadeInUp');
 
         /* This is for add new row in step3*/
         $(".add-more").click(function(e) {
@@ -91,7 +93,7 @@
                                             <th scope="row" class="tableH factors">
                                                 <textarea type="text"  class="form-control dynamicArea" name="factor${next}" ></textarea>
                                             </th>
-                                            <td><select name='x${next}'>
+                                            <td><select name='x${next}' class="dataset" dataset="0">
                                                         
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -99,7 +101,7 @@
                                                         <option value="4">4</option>
                                                         <option value="4">5</option>
                                                     </select></td>
-                                            <td><select name='y${next}'>
+                                            <td><select name='y${next}' class="dataset" dataset="1">
                                                         
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -107,7 +109,7 @@
                                                         <option value="4">4</option>
                                                         <option value="4">5</option>
                                                     </select></td>
-                                            <td><select name='z${next}'>
+                                            <td><select name='z${next}' class="dataset" dataset="2">
                                                       
                                                         <option value="5">5</option>
                                                         <option value="4">4</option>
@@ -115,28 +117,15 @@
                                                         <option value="2">2</option>
                                                         <option value="1">1</option>
                                                     </select></td>
-                                            <td><select name='k${next}'>
+                                            <td><select name='k${next}' class="dataset" dataset="3">
                                                         
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                    
                                                     </select></td>
                                                     <td scope="row" class="tableH">
-                                                        <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment${next}" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title="Hooray!"></textarea>
-                                                    </td>
-                                                    <td class="hideMe">
-                                                    <div class="progress">
-                                                        <div class="progress-bar" role="progressbar" style="width:25%" aria-valuenow="15"
-                                                            aria-valuemin="0" aria-valuemax="100" value="5" id="prog_sector${next}"></div>
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
-                                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" id="prog_attractive${next}"></div>
-                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 25%"
-                                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" id="prog_effort${next}"></div>
-                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="20"
-                                                            aria-valuemin="0" aria-valuemax="100" id="prog_position${next}"></div>
-                                                    </div>
-                                                </td>
-                                              
+                                                        <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment${next}" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                                    </td>                                            
                                                     <td id='delete-td${next}'>
                                                     </td>
         
@@ -148,6 +137,8 @@
             $(addto).after(newInput);
             $(addRemove).append(removeButton);
             $('.remove-me').click(function(e, next) {
+                var label=$(elem).parent().parent().index();
+                remove_label(label);
                 e.preventDefault();
                 var fieldNum = 0;
                 if (myNext > 9) {
@@ -162,13 +153,16 @@
                 $(this).remove();
                 $(fieldID).remove();
             });
+            add_label("New Label");
         });
 
     });
 
 
     /* This is for add new row in step3*/
-    function deleteRow(id) {
+    function deleteRow(elem,id) {
+        var label=$(elem).parent().parent().index();
+        remove_label(label);
         var fieldNum = id;
         console.log("fieldNumkkk", fieldNum);
         var fieldID = "#field" + fieldNum;
@@ -201,10 +195,9 @@
 
     function nextPrev(n) {
         //to back the page opened at the top .
+        $(".animated").addClass('fadeInUp');
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-        $(".dialog").css('display', 'block');
-        $(".dialog").addClass('fadeInLeft');
         // This function will figure out which tab to display
         var x = document.getElementsByClassName("tab");
         // Exit the function if any field in the current tab is invalid:
@@ -278,12 +271,14 @@
     }
 
     function createTooltip(obj) {
+        
         $(obj).after("<div id='tooltip'></>");
     }
 
     function theFocus(obj) {
         var tooltip = document.getElementById("tooltip");
-        tooltip.innerHTML = obj.title;
+        tooltip.innerHTML = $(obj).val().trim();
+;
         tooltip.style.display = "block";
 
     }
@@ -292,13 +287,13 @@
         $("#tooltip").remove();
     }
 
-    /* function heh() {
-         $(".dialog").css('display', 'block');
-         $(".dialog").addClass('animated fadeInLeft');
-     }*/
+    function heh() {
+        $(".myDialog").css('display', 'block');
+        $(".myDialog").addClass('animated fadeInLeft');
+    }
 
     function removeDialog() {
-        $(".dialog").css('display', 'none');
+        $(".myDialog").css('display', 'none');
     }
     $('.panel-collapse').on('show.bs.collapse', function() {
         $(this).siblings('.panel-heading').addClass('active');
@@ -308,6 +303,5 @@
         $(this).siblings('.panel-heading').removeClass('active');
     });
 </script>
-<script src="{{asset('public/js/createCharts.js')}}"></script>
 
 </html>

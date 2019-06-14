@@ -53,98 +53,98 @@
                 <tbody>
                     <tr>
                       <td>We have a reasonably good idea where we want our business to be in 3-5 years</td>
-                      <td>{{$audit->question1}}</td>
+                      <td>{{$audit->question1 ?? ""}}</td>
 
                     </tr>
 
                     <tr>
                             <td>Strategically, we tend to be proactive, constantly seeking new areas of growth</td>
-                            <td>{{$audit->question2}}</td>
+                            <td>{{$audit->question2 ?? ""}}</td>
       
                     </tr>
                     <tr>
                             <td>We are prepared to trade-off short term goals in the interest of long run growth</td>
-                            <td>{{$audit->question3}}</td>
+                            <td>{{$audit->question3 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Our business and marketing objectives provide clear guidelines for market planning</td>
-                            <td>{{$audit->question4}}</td>
+                            <td>{{$audit->question4 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>We have specific targets (volume, profit, ROI) for our strategic objectives</td>
-                            <td>{{$audit->question5}}</td>
+                            <td>{{$audit->question5 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>It is relatively easy for anyone to track the progress of any order in the system</td>
-                            <td>{{$audit->question6}}</td>
+                            <td>{{$audit->question6 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Our machines (any type you use) are well maintained and never tend to break down	</td>
-                            <td>{{$audit->question7}}</td>
+                            <td>{{$audit->question7 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>We have a labelling system to identify physical items (materials, tools, products, etc.)	</td>
-                            <td>{{$audit->question8}}</td>
+                            <td>{{$audit->question8 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Our processes (material, product, service, orders, …) flow smoothly, rarely delayed	</td>
-                            <td>{{$audit->question9}}</td>
+                            <td>{{$audit->question9 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>It is very rare for us to amend our schedules (for production or service delivery)	</td>
-                            <td>{{$audit->question10}}</td>
+                            <td>{{$audit->question10 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>We have a “right first time” policy for outputs (products/services) and achieve them	</td>
-                            <td>{{$audit->question11}}</td>
+                            <td>{{$audit->question11 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Quality of products/services are consistently inspected before delivery	</td>
-                            <td>{{$audit->question12}}</td>
+                            <td>{{$audit->question12 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Quality of purchased items/services from suppliers are inspected consistently	</td>
-                            <td>{{$audit->question13}}</td>
+                            <td>{{$audit->question13 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>We rarely have to change the design of our new products or services	</td>
-                            <td>{{$audit->question14}}</td>
+                            <td>{{$audit->question14 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>It is rare to receive returned products or rejected services from customers	</td>
-                            <td>{{$audit->question15}}</td>
+                            <td>{{$audit->question15 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>In our firm, exceptional service is defined clearly	</td>
-                            <td>{{$audit->question16}}</td>
+                            <td>{{$audit->question16 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Performance of our employees is regularly measured and monitored	</td>
-                            <td>{{$audit->question17}}</td>
+                            <td>{{$audit->question17 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Satisfying customers’ needs and desires is well understood by all our employees	</td>
-                            <td>{{$audit->question18}}</td>
+                            <td>{{$audit->question18 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>Our employees really understand that their behaviour reflects the firm’s image	</td>
-                            <td>{{$audit->question19}}</td>
+                            <td>{{$audit->question19 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>One of our strengths is that we respond rapidly to threatening competitive actions	</td>
-                            <td>{{$audit->question20}}</td>
+                            <td>{{$audit->question20 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>We differentiate ourselves from competition very well	</td>
-                            <td>{{$audit->question21}}</td>
+                            <td>{{$audit->question21 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>We consistently discuss and monitor our competitors’ strengths and strategies	</td>
-                            <td>{{$audit->question22}}</td>
+                            <td>{{$audit->question22 ?? ""}}</td>
                     </tr>
                     <tr>
                             <td>We target customers where we have an opportunity for competitive advantage	</td>
-                            <td>{{$audit->question23}}</td>
+                            <td>{{$audit->question23 ?? ""}}</td>
                     </tr>
                     
                 </tbody>

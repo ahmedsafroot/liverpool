@@ -554,9 +554,10 @@ function audit_tool() {
              $(".modal-body form").append(element_to_do);*/
 
             /*This is to diplay the div of outcomes analysis */
-            $(".dialog").css('display', 'block');
-            $(".dialog").addClass('animated fadeInLeft');
-
+            /*$(".myDialog").css('display', 'block');
+            $(".myDialog").addClass('animated fadeInLeft');*/
+           if(mymessage.background=="bg-danger")
+           {
             $(".modal-body form").html("");
             var title = "OUTCOME ANALYSIS";
             $(".modal-title").text(title);
@@ -564,7 +565,15 @@ function audit_tool() {
             $(".modal-body form").append(element);
             $(".modal-footer").hide();
             $('#myModal').modal('show');
-
+           }
+            else
+            {
+            $("#scoreInput").val(total);
+            $("#inductionInput").val(indeuction);
+            $("#toDoInput").val(what_to_do);
+            $(".myDialog").css('display', 'block');
+            $(".myDialog").addClass('animated fadeInLeft');
+            }
 
         }
 
@@ -663,3 +672,50 @@ function leadership() {
     return false;
 
 }
+
+function remove_label(label)
+{
+debugger;
+myChart1.data.datasets[0].data.splice(label,1);
+
+myChart1.data.datasets[1].data.splice(label,1);
+myChart1.data.datasets[2].data.splice(label,1);
+myChart1.data.datasets[3].data.splice(label,1);
+myChart1.data.labels.splice(label,1);
+myChart1.update();
+
+}
+function update_label(label,datast,value) {
+ myChart1.data.datasets[datast].data[label]=value; 
+ myChart1.update();
+
+}
+
+function add_label(label)
+{
+myChart1.config.data.labels.push(label); 
+myChart1.config.data.datasets[0].data.push(1); 
+myChart1.config.data.datasets[1].data.push(1); 
+myChart1.config.data.datasets[2].data.push(5); 
+myChart1.config.data.datasets[3].data.push(1); 
+
+myChart1.update();
+
+}
+$(document).on("change",".dataset",function() {
+    debugger;
+    var label=$(this).parent().parent().index();
+    var datast=$(this).attr("dataset");
+    var value=$(this).val();
+    update_label(label,datast,value);
+});
+$(document).on("keyup",".factors .dynamicArea",function() {
+    var index=$(this).parent().parent().index();
+    myChart1.data.labels[index]=$(this).val();
+    myChart1.update();
+});
+
+/*$(document).on("keyup",".comments",function() {
+    var value=$(this).val().trim();
+    $(this).attr("title",value);
+});*/
