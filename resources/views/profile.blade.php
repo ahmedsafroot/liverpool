@@ -124,7 +124,7 @@
                                                    
                                                     </select></td>
                                                     <td scope="row" class="tableH">
-                                                        <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment${next}" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                                        <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment${next}" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                                     </td>                                            
                                                     <td id='delete-td${next}'>
                                                     </td>

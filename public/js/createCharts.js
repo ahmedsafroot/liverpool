@@ -40,7 +40,7 @@ var barOptions_stacked = {
         onComplete: function() {
             var chartInstance = this.chart;
             var ctx = chartInstance.ctx;
-            ctx.textAlign = "left";
+            ctx.textAlign = "center";
             ctx.font = "9px Open Sans";
             ctx.fillStyle = "#fff";
 
@@ -49,7 +49,7 @@ var barOptions_stacked = {
                 Chart.helpers.each(meta.data.forEach(function(bar, index) {
                     data = dataset.data[index];
                     if (i == 0) {
-                        ctx.fillText(data, 50, bar._model.y + 4);
+                        ctx.fillText(data, bar._model.x - 25, bar._model.y + 4);
                     } else {
                         ctx.fillText(data, bar._model.x - 25, bar._model.y + 4);
                     }

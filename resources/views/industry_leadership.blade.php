@@ -64,7 +64,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" class="form-control dynamicArea comments" name="comment1" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title="">
+                                    <textarea type="text" class="form-control dynamicArea comments" name="comment1" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title="">
                                 </textarea>
 
                                 </td>
@@ -108,7 +108,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" class="form-control dynamicArea comments" name="comment2" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title="">
+                                    <textarea type="text" class="form-control dynamicArea comments" name="comment2" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title="">
                                         </textarea>
                                 </td>
                                 <td id='delete-td2'>
@@ -151,7 +151,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" class="form-control dynamicArea comments" name="comment3" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title="">
+                                    <textarea type="text" class="form-control dynamicArea comments" name="comment3" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title="">
                                         </textarea>
                                 </td>
                                 <td id='delete-td3'>
@@ -194,7 +194,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment4" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment4" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td4'>
                                     <button id="remove4" class="btn" onclick="deleteRow(this,4)">delete</button>
@@ -235,7 +235,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" class="form-control dynamicArea comments" name="comment5" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" class="form-control dynamicArea comments" name="comment5" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td5'>
                                     <button id="remove5" class="btn" onclick="deleteRow(this,5)">delete</button>
@@ -277,7 +277,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment6" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment6" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td6'>
                                     <button id="remove6" class="btn" onclick="deleteRow(this,6)">delete</button>
@@ -319,7 +319,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment7" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment7" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td7'>
                                     <button id="remove7" class="btn" onclick="deleteRow(this,7)">delete</button>
@@ -361,7 +361,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment8" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment8" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td8'>
                                     <button id="remove8" class="btn" onclick="deleteRow(this,8)">delete</button>
@@ -404,7 +404,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment9" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment9" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td9'>
                                     <button id="remove9" class="btn" onclick="deleteRow(this,9)">delete</button>
@@ -447,7 +447,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment10" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment10" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td10'>
                                     <button id="remove10" class="btn" onclick="deleteRow(this,10)">delete</button>
@@ -491,7 +491,7 @@
     
                                 </select></td>
                                 <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment11" onfocus="createTooltip(this)" onkeypress="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment11" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
                                 </td>
                                 <td id='delete-td11'>
                                     <button id="remove11" class="btn" onclick="deleteRow(this,11)">delete</button>
