@@ -516,15 +516,25 @@
         </div>
         <button id="b1" class="btn add-more" type="button">add other factor</button>
 
-        <div class="container-fluid">
+         <!--Next and prev-->
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <button type="button" class="btn btn-lg
+                    nextBtn" id="nextBtn1" onclick="nextPrev(1)" data-toggle="tooltip" data-placement="left" title="Next">&#8250;</button>
+                    <button type="button" class="btn btn-lg
+                    prevBtn" id="prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">&#8249;</button>
+                </div>
+            </div>
+        </div>
+       <!-- <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-12">
                     <button type="button" class="btn btn-primary btn-md" style="float:right !important;" onclick="leadership()">Save</button>
                     <button type="button" class="btn btn-lg prevBtn" id="prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">&#8249;</button>
                 </div>
             </div>
-            <!--nextPrev-->
-        </div>
+        </div>-->
         <!--productLines-->
     </div>
     <!--Third Tab-->

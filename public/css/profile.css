@@ -71,6 +71,11 @@ tr,
     border-bottom-style: none !important;
 }
 
+.table td,
+.table th {
+    vertical-align: middle !important;
+}
+
 .table-striped tbody tr {
     background-color: rgba(0, 0, 0, .05) !important;
 }
@@ -248,8 +253,8 @@ textarea {
 }
 
 .progressFactor.col3 {
-    background-color: rgba(63,203,226,1);
-    color: rgba(63,203,226,1);
+    background-color: rgba(63, 203, 226, 1);
+    color: rgba(63, 203, 226, 1);
 }
 
 .progressFactor.col4 {
