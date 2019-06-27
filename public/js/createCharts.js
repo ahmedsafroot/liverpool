@@ -61,6 +61,8 @@ var barOptions_stacked = {
     scaleFontFamily: "Quadon Extra Bold",
 };
 
+
+//chart of industary leadership
 var ctx1 = document.getElementById("chart1");
 var myChart1 = new Chart(ctx1, {
     type: 'horizontalBar',

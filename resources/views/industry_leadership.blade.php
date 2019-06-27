@@ -540,3 +540,86 @@
     <!--Third Tab-->
 </div>
 <!--container-->
+
+<script>
+  /* This is for add new row in step3*/
+  $(".add-more").click(function(e) {
+            e.preventDefault();
+            var count = $("#count").val();
+            count = parseInt(count) + 1;
+            $("#count").val(count);
+            var getLastChild = $("#example tr").last().attr('id');
+            var splitLastChild = getLastChild.split("field");
+            var myNext = splitLastChild[1];
+            console.log("getLastChild", myNext);
+            var next = Number(myNext);
+            var addto = "#field" + next;
+            next = next + 1;
+            var addRemove = "#delete-td" + (next);
+            var markup = `<tr id="field${next}">
+                                            <th scope="row" class="tableH factors">
+                                                <textarea type="text"  class="form-control dynamicArea" name="factor${next}" ></textarea>
+                                            </th>
+                                            <td><select name='x${next}' class="dataset" dataset="0">
+                                                        
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="4">5</option>
+                                                    </select></td>
+                                            <td><select name='y${next}' class="dataset" dataset="1">
+                                                        
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="4">5</option>
+                                                    </select></td>
+                                            <td><select name='z${next}' class="dataset" dataset="2">
+                                                        <option value="5">5</option>
+                                                        <option value="4">4</option>
+                                                        <option value="3">3</option>
+                                                        <option value="2">2</option>
+                                                        <option value="1">1</option>
+                                                    </select></td>
+                                            <td><select name='k${next}' class="dataset" dataset="3">
+                                                        
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                   
+                                                    </select></td>
+                                                    <td scope="row" class="tableH">
+                                                        <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment${next}" onfocus="createTooltip(this)" onkeyup="theFocus(this);" onchange="theBlur()" title=""></textarea>
+                                                    </td>                                            
+                                                    <td id='delete-td${next}'>
+                                                    </td>
+        
+                                        </tr>`
+            var newIn = markup;
+            var newInput = $(newIn);
+            var removeBtn = '<button id="remove' + next + '" class="btn remove-me" >delete</button></div><div id="delete-td">';
+            var removeButton = $(removeBtn);
+            $(addto).after(newInput);
+            $(addRemove).append(removeButton);
+            $('.remove-me').click(function(e, next) {
+                var label = $(elem).parent().parent().index();
+                remove_label(label);
+                e.preventDefault();
+                var fieldNum = 0;
+                if (myNext > 9) {
+                    fieldNum = this.id.slice(-2);
+                } else {
+                    fieldNum = this.id.slice(-1);
+                }
+
+                console.log("fieldNum", fieldNum);
+                var fieldID = "#field" + fieldNum;
+                console.log("fieldIDfieldID", fieldID);
+                $(this).remove();
+                $(fieldID).remove();
+            });
+            add_label("New Label");
+        });
+
+</script>
