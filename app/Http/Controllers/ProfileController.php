@@ -7,6 +7,7 @@ use App\Profile;
 use Session;
 use App\auditTool;
 use App\leaderShip;
+use App\trend;
 class ProfileController extends Controller
 {
     /**
@@ -337,6 +338,80 @@ class ProfileController extends Controller
         }
       
         Session::put('leader_ship_id', 1);
+        return $ret;
+    }
+    
+    public function store_market_trend(Request $request)
+    {
+       
+            $ret= $this->create_market_trend($request);
+            if($ret==3)
+            {
+                $message="You Must create Profile before";
+                $background="bg-danger";
+            }
+            else if($ret==1)
+            {
+                $message="Market Trends Edited Succefully";
+                $background="bg-success";
+            }
+            else
+            {
+                $message="New Market Trend Created Succefully";
+                $background="bg-success";
+            }
+         
+
+            return response()->json(['success'=>$message,'background'=>$background]);
+
+    }
+
+    public function create_market_trend($data)
+    {
+        $observe=$data->observe;
+        $cont=$data->cont;
+        $revenue=$data->revenue;
+        $cost=$data->cost;
+        $growth=$data->growth;
+        $comp=$data->comp;
+        $comment=$data->comment;
+        $count=count($observe);
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('market_trend_id'))
+        {
+            trend::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $trend=new trend;
+            $trend->profileid=$profileid;
+            $trend->observed=$observe[$i];
+            $trend->cont=$cont[$i];
+            $trend->revenue=$revenue[$i];
+            $trend->cost=$cost[$i];
+            $trend->growth=$growth[$i];
+            $trend->comp=$comp[$i];
+            if(!empty($comment[$i]))
+            $trend->notes=$comment[$i];
+            else
+            $trend->notes="";
+
+            $trend->save();
+        }
+      
+        Session::put('market_trend_id', 1);
         return $ret;
     }
 
@@ -1026,6 +1101,13 @@ class ProfileController extends Controller
     {
        $ships=leaderShip::where("profileid",$id)->get();
        return view("leaderships_details",compact('ships'));
+
+    }
+
+    public function market_trends_details($id)
+    {
+       $trends=trend::where("profileid",$id)->get();
+       return view("trends_details",compact('trends'));
 
     }
 }
