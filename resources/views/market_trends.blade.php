@@ -326,7 +326,7 @@ var myMarketChart1 = new Chart(marketChart1, {
             $(addto).after(newInput);
             $(addRemove).append(removeButton);
             $('.market_remove-me').click(function(e, next) {
-                var label = $(elem).parent().parent().index();
+                var label = $(e).parent().parent().index();
                 remove_label(label);
                 e.preventDefault();
                 var fieldNum = 0;

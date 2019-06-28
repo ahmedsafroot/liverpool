@@ -92,7 +92,7 @@
         console.log("fieldNumkkk", fieldNum);
         var fieldID = "#field" + fieldNum;
         console.log("fieldID", fieldID);
-        $(fieldID).remove();
+        $(elem).closest("tr").remove();
     }
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
