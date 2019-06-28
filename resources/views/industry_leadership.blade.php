@@ -603,7 +603,7 @@
             $(addto).after(newInput);
             $(addRemove).append(removeButton);
             $('.remove-me').click(function(e, next) {
-                var label = $(elem).parent().parent().index();
+                var label = $(e).parent().parent().index();
                 remove_label(label);
                 e.preventDefault();
                 var fieldNum = 0;
