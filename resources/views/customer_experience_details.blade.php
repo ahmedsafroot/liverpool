@@ -45,26 +45,20 @@
         <table id="profile" class="display">
                 <thead>
                     <tr>
-                        <th>Observed Trend</th>
-                        <th>Likely to continue</th>
-                        <th>Revenue</th>
-                        <th>Cost</th>
-                        <th>Growth</th>
-                        <th>Vs competitor</th>
-                        <th>Notes</th>
+                        <th>Interface/activity</th>
+                        <th>How?</th>
+                        <th>Potential for differentiation</th>
+                      
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($trends as $trend)
+                    @foreach ($factors as $factor)
                         
                     <tr>
-                    <td>{{$trend->observed}}</td>
-                    <td style="text-align:center">{{$trend->cont}}</td>
-                    <td style="text-align:center">{{$trend->revenue}}</td>
-                    <td style="text-align:center">{{$trend->cost}}</td>
-                    <td style="text-align:center">{{$trend->growth}}</td>
-                    <td style="text-align:center">{{$trend->comp}}</td>
-                    <td style="text-align:center">{{$trend->notes}}</td>
+                    <td>{{$factor->Interface}}</td>
+                    <td style="text-align:center">{{$factor->how}}</td>
+                    <td style="text-align:center">{{$factor->poten}}</td>
+            
 
                     </tr>
 

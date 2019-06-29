@@ -56,7 +56,7 @@
                         <th>Agility Audit Tool</th>
                         <th>Industry LeaderShip</th>
                         <th>Market Trends</th>
-
+                        <th>Customer Experience</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -73,6 +73,7 @@
                             <th><a href="{{ route('audit_tools.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('industry_leadership.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('market_trends.details',['id' => $profile->id] ) }}">see more</a></th>
+                            <th><a href="{{ route('customer_experience.details',['id' => $profile->id] ) }}">see more</a></th>
 
                     </tr>
                     @endforeach

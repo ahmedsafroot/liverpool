@@ -837,3 +837,67 @@ function market_trends() {
     return false;
 
 }
+
+
+function customer_experience() {
+    var count = $("#count_customer").val();
+    var interface = [];
+    var how = [];
+    var poten = [];
+  ;
+ 
+    for (var i = 1; i <= count; i++) {
+        if ($('[name=factor_interface' + i + ']').length) {
+            interface.push($('[name=factor_interface' + i + ']').val());
+            how.push($('[name=how' + i + ']').val());
+            poten.push($('[name=poten' + i + ']').val());
+
+
+
+        }
+
+
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step5";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            interface: interface,
+            how: how,
+            poten: poten,
+           
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "Customer Experience";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+        }
+
+    });
+
+    return false;
+
+}
