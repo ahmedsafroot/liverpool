@@ -515,6 +515,7 @@
             <!--container-->
         </div>
         <button id="b1" class="btn add-more" type="button">add other factor</button>
+        <button class="btn btn-primary mb-4 mt-3 ml-4">Save</button>
 
          <!--Next and prev-->
          <div class="container-fluid">

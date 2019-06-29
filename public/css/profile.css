@@ -382,3 +382,26 @@ textarea {
 #chart-td {
     width: 500px !important;
 }
+
+.customer_tableH {
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: lighter !important;
+    padding: 2% !important;
+}
+
+.fontSize {
+    font-size: 14px !important;
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1058px) {
+    .market_factor {
+        margin-top: -30% !important;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    .market_factor {
+        margin-top: -50% !important;
+    }
+}

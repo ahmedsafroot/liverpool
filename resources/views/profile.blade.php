@@ -30,9 +30,12 @@
         @include('aduit_tools')
         @include('industry_leadership')
         @include('market_trends')
+        @include('customer_experience')
     </form>
     <!--Indecators-->
     <div style="text-align:center;">
+        <span class="step"></span>
+        <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
@@ -202,7 +205,7 @@
 
     function theFocus(obj) {
         var tooltip = document.getElementById("tooltip");
-        tooltip.innerHTML = $(obj).val().trim();;
+        tooltip.innerHTML = $(obj).val().trim();
         tooltip.style.display = "block";
 
     }
