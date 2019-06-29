@@ -33,11 +33,7 @@
                             <tr id="marketField1">
                                 <th scope="row" class="tableH factors">
                                     <textarea type="text" class="form-control
-<<<<<<< HEAD:resources/views/market_trends.php
-                                        dynamicArea" name="market_factor1"></textarea>
-=======
                                         dynamicArea" name="factor_trend1"></textarea>
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
                                 </th>
                                 <td><select name='cont1' class="datasetTrend" datasetTrend="0">
 
@@ -101,12 +97,7 @@
                                 </td>
 
                                 <td id='market_delete-td1'>
-<<<<<<< HEAD:resources/views/market_trends.php
-                                    <button id="market_remove1" class="btn
-                                        market_remove-me" onclick="deleteRow(this,1)">delete</button>
-=======
                                     <button id="market_remove1" class="btn market_remove-me" onclick="deleteRow(this,1,1)">delete</button>
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
                                 </td>
                             </tr>
 
@@ -129,18 +120,11 @@
 
                 </div>
                 <div>
-                    <button id="b2" class="btn add-moreTrends" type="button">add
-                        other
-                        factor</button>
-                    <button class="btn btn-primary mb-4 mt-3 ml-4">Save</button>
+                    <button id="b2" class="btn add-moreTrends" type="button">add other factor</button>
+                    <button class="btn btn-primary mb-4 mt-3 ml-4" onclick="market_trends()">Save</button>
                 </div>
                 <!--row-->
             </div>
-<<<<<<< HEAD:resources/views/market_trends.php
-=======
-            <button id="b2" class="btn add-moreTrends" type="button">add other
-                Trend</button>
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
             <!--container-->
         </div>
 
@@ -156,12 +140,7 @@
             </div>
         </div>
 
-         <div class="row">
-                <div class="col-12 col-sm-12">
-                    <button type="button" class="btn btn-primary btn-md"  onclick="market_trends()">Save</button>
-                    <button type="button" class="btn btn-lg prevBtn" id="prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">&#8249;</button>
-                </div>
-         </div>
+
         <!--productLines-->
     </div>
     <!--Third Tab-->
@@ -169,26 +148,6 @@
 <!--container-->;
 
 <script>
-<<<<<<< HEAD:resources/views/market_trends.php
-    //chart of market trends
-    var marketChart = document.getElementById("market_trends_chart");
-    var myMarketChart = new Chart(marketChart, {
-        type: 'bar',
-        data: {
-            labels: ["Trend1[Example1]", "Trend2[Example2]", "Trend3[Example3]", "Trend4[Example4]", "Trend5[Example5]", "Trend6[Example6]"],
-
-            datasets: [{
-                    label: 'Likely To Continu (Low:1- High:5)',
-                    data: [5, 6, 10, 3, 4, 2],
-                    type: 'line',
-                    backgroundColor: "orange",
-                    fill: false,
-                }, {
-                    label: "Total Impact",
-                    data: [5, 6, 1, 2, 8, -1],
-                    backgroundColor: "#0080FF",
-                    hoverBackgroundColor: "#0080FF",
-=======
 //chart of market trends
 var marketChart = document.getElementById("market_trends_chart");
 var myMarketChart = new Chart(marketChart, {
@@ -207,7 +166,6 @@ var myMarketChart = new Chart(marketChart, {
                 data: [3],
                 backgroundColor: "#0080FF",
                 hoverBackgroundColor: "#0080FF",
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
 
                 },
 
@@ -236,70 +194,30 @@ var myMarketChart = new Chart(marketChart, {
     });
 
 
-<<<<<<< HEAD:resources/views/market_trends.php
-    var marketChart1 = document.getElementById("market1_trends_chart");
-    var myMarketChart1 = new Chart(marketChart1, {
-        type: 'bar',
-        data: {
-            labels: ["Trend1[Example1]", "Trend2[Example2]", "Trend3[Example3]", "Trend4[Example4]", "Trend5[Example5]", "Trend6[Example6]"],
-            datasets: [{
-=======
 var marketChart1 = document.getElementById("market1_trends_chart");
 var myMarketChart1 = new Chart(marketChart1, {
     type: 'bar',
     data: {
         labels: ["Trend1[Example1]"],
         datasets: [{
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
                 label: "Revenue",
                 backgroundColor: "#0080FF",
                 data: [-1],
             }, {
                 label: "Cost",
                 backgroundColor: "orange",
-<<<<<<< HEAD:resources/views/market_trends.php
-                data: [5, 6, 10, 3, 4, 2],
-            }, {
-                label: "Growth",
-                backgroundColor: "grey",
-                data: [5, 6, 10, 3, 4, 2],
-            }]
-        },
-        options: {
-            title: {
-                display: true,
-                text: 'Trends Vs Impact'
-=======
                 data: [-1],
             },
             {
                 label: "Growth",
                 backgroundColor: "grey",
                 data: [-1],
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
             }
-        }
+         ]
+        },
     });
 
 
-<<<<<<< HEAD:resources/views/market_trends.php
-    $(".add-moreTrends").click(function(e) {
-        e.preventDefault();
-        var count = $("#count").val();
-        count = parseInt(count) + 1;
-        $("#count").val(count);
-        var getLastChild = $("#trends tr").last().attr('id');
-        var splitLastChild = getLastChild.split("marketField");
-        var myNext = splitLastChild[1];
-        console.log("getLastChild", myNext);
-        var next = Number(myNext);
-        var addto = "#marketField" + next;
-        next = next + 1;
-        var addRemove = "#market_delete-td" + (next);
-        var markup = `<tr id="marketField${next}">
-                                            <th scope="row" class="tableH factors">
-                                                <textarea type="text"  class="form-control dynamicArea" name="market_factor${next}" ></textarea>
-=======
         $(".add-moreTrends").click(function(e) {
             e.preventDefault();
             var count = $("#count_trend").val();
@@ -316,7 +234,6 @@ var myMarketChart1 = new Chart(marketChart1, {
             var markup = `<tr id="marketField${next}">
                                             <th scope="row" class="tableH factors">
                                                 <textarea type="text"  class="form-control dynamicArea" name="factor_trend${next}" ></textarea>
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
                                             </th>
                                             <td><select name='cont${next}' class="datasetTrend" datasetTrend="0">                                               
                                                         <option value="1">1</option>
@@ -384,33 +301,6 @@ var myMarketChart1 = new Chart(marketChart1, {
                                                     </td>
         
                                         </tr>`
-<<<<<<< HEAD:resources/views/market_trends.php
-        var newIn = markup;
-        var newInput = $(newIn);
-        var removeBtn = '<button id="market_remove' + next + '" class="btn market_remove-me" >delete</button></div><div id="market_delete-td">';
-        var removeButton = $(removeBtn);
-        $(addto).after(newInput);
-        $(addRemove).append(removeButton);
-        $('.market_remove-me').click(function(e, next) {
-            var label = $(elem).parent().parent().index();
-            remove_label(label);
-            e.preventDefault();
-            var fieldNum = 0;
-            if (myNext > 9) {
-                fieldNum = this.id.slice(-2);
-            } else {
-                fieldNum = this.id.slice(-1);
-            }
-
-            console.log("fieldNum", fieldNum);
-            var fieldID = "#marketField" + fieldNum;
-            console.log("fieldIDfieldID", fieldID);
-            $(this).remove();
-            $(fieldID).remove();
-        });
-        add_label("New Label");
-    });
-=======
             var newIn = markup;
             var newInput = $(newIn);
             $(addto).after(newInput);
@@ -460,5 +350,4 @@ var myMarketChart1 = new Chart(marketChart1, {
         });
 
 
->>>>>>> 490fdead16b957be55a6cc45779b9134332aee43:resources/views/market_trends.blade.php
 </script>
