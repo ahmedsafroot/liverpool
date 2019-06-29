@@ -72,8 +72,7 @@
     </div>
 </body>
 <script type="text/javascript">
-    var APP_URL = {!!json_encode(url('/')) !!
-    };
+    var APP_URL = {!!json_encode(url('/')) !!};
 </script>
 <script src="{{asset('public/js/createCharts.js')}}"></script>
 <script src="{{asset('public/js/profile.js')}}"></script>
@@ -88,14 +87,22 @@
 
 
     /* This is for add new row in step3*/
-    function deleteRow(elem, id) {
+    function deleteRow(elem, id,chart=0) {
         var label = $(elem).parent().parent().index();
+        debugger;
+        if(chart==0)
+        {
         remove_label(label);
+        }
+        else
+        {
+        remove_label_trend(label);
+        }
         var fieldNum = id;
         console.log("fieldNumkkk", fieldNum);
         var fieldID = "#field" + fieldNum;
         console.log("fieldID", fieldID);
-        $(fieldID).remove();
+        $(elem).closest("tr").remove();
     }
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab

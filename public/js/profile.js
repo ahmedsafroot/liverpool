@@ -697,6 +697,47 @@ function add_label(label) {
     myChart1.update();
 
 }
+function add_label_trend(label) {
+    myMarketChart.config.data.labels.push(label);
+    myMarketChart.config.data.datasets[0].data.push(1);
+    myMarketChart.config.data.datasets[1].data.push(3);
+    myMarketChart.update();
+
+    myMarketChart1.config.data.labels.push(label);
+    myMarketChart1.config.data.datasets[0].data.push(-1);
+    myMarketChart1.config.data.datasets[1].data.push(-1);
+    myMarketChart1.config.data.datasets[2].data.push(-1);
+
+    myMarketChart1.update();
+
+}
+function update_label_trend(label, datast, value,chart) {
+    if(chart==1)
+    {
+    myMarketChart.data.datasets[datast].data[label] = value;
+    myMarketChart.update();
+    }
+    else
+    {
+    myMarketChart1.data.datasets[datast].data[label] = value;
+    myMarketChart1.update();
+    }
+    
+
+}
+function remove_label_trend(label) {
+    myMarketChart.data.datasets[0].data.splice(label, 1);
+    myMarketChart.data.datasets[1].data.splice(label, 1);
+    myMarketChart.data.labels.splice(label, 1);
+    myMarketChart.update();
+
+    myMarketChart1.data.datasets[0].data.splice(label, 1);
+    myMarketChart1.data.datasets[1].data.splice(label, 1);
+    myMarketChart1.data.datasets[2].data.splice(label, 1);
+    myMarketChart1.data.labels.splice(label, 1);
+    myMarketChart1.update();
+
+}
 $(document).on("change", ".dataset", function() {
     var label = $(this).parent().parent().index();
     var datast = $(this).attr("dataset");
@@ -709,7 +750,154 @@ $(document).on("keyup", ".factors .dynamicArea", function() {
     myChart1.update();
 });
 
+$(document).on("keyup", "[name*='factor_trend']", function() {
+    var index = $(this).parent().parent().index();
+    myMarketChart.data.labels[index] = $(this).val();
+    myMarketChart.update();
+
+    myMarketChart1.data.labels[index] = $(this).val();
+    myMarketChart1.update();
+});
+
 /*$(document).on("keyup",".comments",function() {
     var value=$(this).val().trim();
     $(this).attr("title",value);
 });*/
+
+
+function market_trends() {
+    var count = $("#count_trend").val();
+    var observe = [];
+    var cont = [];
+    var revenue = [];
+    var cost = [];
+    var growth = [];
+    var comp = [];
+    var comment = [];
+ 
+    for (var i = 1; i <= count; i++) {
+        if ($('[name=factor_trend' + i + ']').length) {
+            observe.push($('[name=factor_trend' + i + ']').val());
+            cont.push($('[name=cont' + i + ']').val());
+            revenue.push($('[name=revenue' + i + ']').val());
+            cost.push($('[name=cost' + i + ']').val());
+            growth.push($('[name=growth' + i + ']').val());
+            comp.push($('[name=comp' + i + ']').val());
+            comment.push($('[name=comment_trend' + i + ']').val());
+
+
+        }
+
+
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step4";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            observe: observe,
+            cont: cont,
+            revenue: revenue,
+            cost: cost,
+            growth: growth,
+            comp:comp,
+            comment: comment,
+            count: count,
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "Market Trends";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+        }
+
+    });
+
+    return false;
+
+}
+
+
+function customer_experience() {
+    var count = $("#count_customer").val();
+    var interface = [];
+    var how = [];
+    var poten = [];
+  ;
+ 
+    for (var i = 1; i <= count; i++) {
+        if ($('[name=factor_interface' + i + ']').length) {
+            interface.push($('[name=factor_interface' + i + ']').val());
+            how.push($('[name=how' + i + ']').val());
+            poten.push($('[name=poten' + i + ']').val());
+
+
+
+        }
+
+
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step5";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            interface: interface,
+            how: how,
+            poten: poten,
+           
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "Customer Experience";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+        }
+
+    });
+
+    return false;
+
+}

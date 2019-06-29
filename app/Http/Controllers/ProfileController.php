@@ -7,6 +7,8 @@ use App\Profile;
 use Session;
 use App\auditTool;
 use App\leaderShip;
+use App\trend;
+use App\experience;
 class ProfileController extends Controller
 {
     /**
@@ -338,6 +340,141 @@ class ProfileController extends Controller
       
         Session::put('leader_ship_id', 1);
         return $ret;
+    }
+    
+    public function store_market_trend(Request $request)
+    {
+       
+            $ret= $this->create_market_trend($request);
+            if($ret==3)
+            {
+                $message="You Must create Profile before";
+                $background="bg-danger";
+            }
+            else if($ret==1)
+            {
+                $message="Market Trends Edited Succefully";
+                $background="bg-success";
+            }
+            else
+            {
+                $message="New Market Trend Created Succefully";
+                $background="bg-success";
+            }
+         
+
+            return response()->json(['success'=>$message,'background'=>$background]);
+
+    }
+
+    public function create_market_trend($data)
+    {
+        $observe=$data->observe;
+        $cont=$data->cont;
+        $revenue=$data->revenue;
+        $cost=$data->cost;
+        $growth=$data->growth;
+        $comp=$data->comp;
+        $comment=$data->comment;
+        $count=count($observe);
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('market_trend_id'))
+        {
+            trend::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $trend=new trend;
+            $trend->profileid=$profileid;
+            $trend->observed=$observe[$i];
+            $trend->cont=$cont[$i];
+            $trend->revenue=$revenue[$i];
+            $trend->cost=$cost[$i];
+            $trend->growth=$growth[$i];
+            $trend->comp=$comp[$i];
+            if(!empty($comment[$i]))
+            $trend->notes=$comment[$i];
+            else
+            $trend->notes="";
+
+            $trend->save();
+        }
+      
+        Session::put('market_trend_id', 1);
+        return $ret;
+    }
+    public function store_customer_experience()
+    {
+        $ret= $this->create_customer_experience($request);
+        if($ret==3)
+        {
+            $message="You Must create Profile before";
+            $background="bg-danger";
+        }
+        else if($ret==1)
+        {
+            $message="Customer Experience Edited Succefully";
+            $background="bg-success";
+        }
+        else
+        {
+            $message="New Customer Experience Created Succefully";
+            $background="bg-success";
+        }
+     
+
+        return response()->json(['success'=>$message,'background'=>$background]);
+    }
+    public function create_customer_experience()
+    {
+        $interface=$data->interface;
+        $how=$data->how;
+        $poten=$data->poten;
+     
+        $count=count($interface);
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('customer_experience_id'))
+        {
+            experience::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $experience=new experience;
+            $experience->profileid=$profileid;
+            $experience->interface=$interface[$i];
+            $experience->how=$how[$i];
+            $experience->potientail=$poten[$i];
+     
+
+            $experience->save();
+        }
+      
+        Session::put('customer_experience_id', 1);
+        return $ret;   
     }
 
     public function report()
@@ -1022,10 +1159,23 @@ class ProfileController extends Controller
 
        return view("audit_details",compact('audit'));
     }
+
     public function industry_leadership_details($id)
     {
        $ships=leaderShip::where("profileid",$id)->get();
        return view("leaderships_details",compact('ships'));
 
+    }
+
+    public function market_trends_details($id)
+    {
+       $trends=trend::where("profileid",$id)->get();
+       return view("trends_details",compact('trends'));
+
+    }
+    public function customer_experience_details($id)
+    {
+        $factors=experience::where("profileid",$id)->get();
+        return view("customer_experience_details",compact('factors'));  
     }
 }
