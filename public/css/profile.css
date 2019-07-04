@@ -95,6 +95,14 @@ tr {
     width: 12% !important;
 }
 
+.tru_factors {
+    width: 16% !important;
+}
+
+.tru_factors textarea {
+    font-size: 12px !important;
+}
+
 .btn-primary {}
 
 .card-footer {
@@ -404,4 +412,8 @@ textarea {
     .market_factor {
         margin-top: -50% !important;
     }
+}
+
+.supplyWidth {
+    width: 116px;
 }

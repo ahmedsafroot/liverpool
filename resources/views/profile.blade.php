@@ -29,11 +29,13 @@
         @include('company_details')
         @include('aduit_tools')
         @include('industry_leadership')
-        @include('market_trends')
-        @include('customer_experience')
+        @include('market_trends')    
+        @include('customer_experience')     
+        @include('turbulence_impact')
     </form>
     <!--Indecators-->
     <div style="text-align:center;">
+        <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
