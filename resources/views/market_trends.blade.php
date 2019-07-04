@@ -120,10 +120,8 @@
 
                 </div>
                 <div>
-                    <button id="b2" class="btn add-moreTrends" type="button">add
-                        other
-                        factor</button>
-                        <button type="button" class="btn btn-primary btn-md"  onclick="market_trends()">Save</button>
+                    <button id="b2" class="btn add-moreTrends" type="button">add other factor</button>
+                    <button class="btn btn-primary mb-4 mt-3 ml-4" onclick="market_trends()">Save</button>
                 </div>
                 <!--row-->
             </div>
@@ -166,6 +164,24 @@
             var label = $(this).parent().parent().index();
             var value = sum;
             update_label_trend(label, 1, value,1);
+//chart of market trends
+var marketChart = document.getElementById("market_trends_chart");
+var myMarketChart = new Chart(marketChart, {
+    type: 'bar',
+    data: {
+        labels: ["Trend1[Example1]"],
+
+        datasets: [{
+                label: 'Likely To Continu (Low:1- High:5)',
+                data: [1],
+                type: 'line',
+                backgroundColor: "orange",
+                fill: false,
+            }, {
+                label: "Total Impact",
+                data: [3],
+                backgroundColor: "#0080FF",
+                hoverBackgroundColor: "#0080FF",
 
             if($(this).attr("name").indexOf('cont') > -1)
              {
@@ -187,10 +203,32 @@
                 update_label_trend(label,2, $(this).val(),2);
 
              }
+var marketChart1 = document.getElementById("market1_trends_chart");
+var myMarketChart1 = new Chart(marketChart1, {
+    type: 'bar',
+    data: {
+        labels: ["Trend1[Example1]"],
+        datasets: [{
+                label: "Revenue",
+                backgroundColor: "#0080FF",
+                data: [-1],
+            }, {
+                label: "Cost",
+                backgroundColor: "orange",
+                data: [-1],
+            },
+            {
+                label: "Growth",
+                backgroundColor: "grey",
+                data: [-1],
+            }
+         ]
+        },
+    });
 
         });
 
-         $(".add-moreTrends").click(function(e) {
+        $(".add-moreTrends").click(function(e) {
             e.preventDefault();
             var count = $("#count_trend").val();
             count = parseInt(count) + 1;

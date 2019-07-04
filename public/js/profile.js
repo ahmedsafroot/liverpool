@@ -844,7 +844,6 @@ function customer_experience() {
     var interface = [];
     var how = [];
     var poten = [];
-  ;
  
     for (var i = 1; i <= count; i++) {
         if ($('[name=factor_interface' + i + ']').length) {

@@ -163,7 +163,7 @@
             <button id="b2" class="btn  add-moreCustomer" type="button">add
                 other
                 factor</button>
-            <button class="btn btn-primary mb-4 mt-3 ml-4">Save</button>
+                <button class="btn btn-primary mb-4 mt-3 ml-4" onclick="customer_experience()">Save</button>
         </div>
 
         <!--Next and prev-->
