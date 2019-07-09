@@ -14,7 +14,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="SUPPLY1" class="card-body collapse" data-parent="#factor1">
-                    <input type="hidden" value="1" id="count_BEA">
+                    <input type="hidden" value="16" id="count_supply">
                     <table class="table table-striped col-md-7" id="supply_BEA">
                         <thead>
                             <tr>
@@ -75,8 +75,7 @@
                                     </td>
 
                                     <td id='supply_delete-td1'>
-                                        <button id="supply_remove1" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove1" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -121,8 +120,7 @@
                                     </td>
 
                                     <td id='supply_delete-td2'>
-                                        <button id="supply_remove2" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove2" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -167,8 +165,7 @@
                                     </td>
 
                                     <td id='supply_delete-td3'>
-                                        <button id="supply_remove3" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove3" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -213,8 +210,7 @@
                                     </td>
 
                                     <td id='supply_delete-td4'>
-                                        <button id="supply_remove4" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove4" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -259,8 +255,7 @@
                                     </td>
 
                                     <td id='supply_delete-td5'>
-                                        <button id="supply_remove5" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove5" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -305,8 +300,7 @@
                                     </td>
 
                                     <td id='supply_delete-td6'>
-                                        <button id="supply_remove6" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove6" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -351,8 +345,7 @@
                                     </td>
 
                                     <td id='supply_delete-td7'>
-                                        <button id="supply_remove7" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove7" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -397,8 +390,7 @@
                                     </td>
 
                                     <td id='supply_delete-td8'>
-                                        <button id="supply_remove8" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove8" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -443,8 +435,7 @@
                                     </td>
 
                                     <td id='supply_delete-td9'>
-                                        <button id="supply_remove9" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove9" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -489,8 +480,7 @@
                                     </td>
 
                                     <td id='supply_delete-td10'>
-                                        <button id="supply_remove10" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove10" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -535,8 +525,7 @@
                                     </td>
 
                                     <td id='supply_delete-td11'>
-                                        <button id="supply_remove11" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove11" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -581,8 +570,7 @@
                                     </td>
 
                                     <td id='supply_delete-td12'>
-                                        <button id="supply_remove12" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove12" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -627,8 +615,7 @@
                                     </td>
 
                                     <td id='supply_delete-td13'>
-                                        <button id="supply_remove13" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove13" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -673,8 +660,7 @@
                                     </td>
 
                                     <td id='supply_delete-td14'>
-                                        <button id="supply_remove14" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove14" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -719,8 +705,7 @@
                                     </td>
 
                                     <td id='supply_delete-td15'>
-                                        <button id="supply_remove15" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove15" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -765,8 +750,7 @@
                                     </td>
 
                                     <td id='supply_delete-td16'>
-                                        <button id="supply_remove16" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove16" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -799,7 +783,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="CUST_REQ" class="card-body collapse" data-parent="#factor2">
-                    <input type="hidden" value="1" id="cust_req_BEA">
+                    <input type="hidden" value="27" id="count_req">
                     <table class="table table-striped col-md-7" id="customerReq_BEA">
                         <thead>
                             <tr>
@@ -860,8 +844,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td1'>
-                                        <button id="cust_req_remove1" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove1" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -906,8 +889,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td2'>
-                                        <button id="cust_req_remove2" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove2" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -952,8 +934,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td3'>
-                                        <button id="cust_req_remove3" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove3" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -998,8 +979,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td4'>
-                                        <button id="cust_req_remove4" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove4" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1044,8 +1024,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td5'>
-                                        <button id="cust_req_remove5" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove5" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1090,8 +1069,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td6'>
-                                        <button id="cust_req_remove6" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove6" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1136,8 +1114,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td7'>
-                                        <button id="cust_req_remove7" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove7" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1182,8 +1159,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td8'>
-                                        <button id="cust_req_remove8" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove8" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1228,8 +1204,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td9'>
-                                        <button id="cust_req_remove9" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove9" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1274,8 +1249,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td10'>
-                                        <button id="cust_req_remove10" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove10" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1320,8 +1294,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td11'>
-                                        <button id="cust_req_remove11" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove11" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1366,8 +1339,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td12'>
-                                        <button id="cust_req_remove12" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove12" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1412,8 +1384,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td13'>
-                                        <button id="cust_req_remove13" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove13" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1458,8 +1429,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td14'>
-                                        <button id="cust_req_remove14" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove14" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1504,8 +1474,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td15'>
-                                        <button id="cust_req_remove15" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove15" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1550,8 +1519,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td16'>
-                                        <button id="cust_req_remove16" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove16" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1596,8 +1564,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td17'>
-                                        <button id="cust_req_remove17" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove17" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1642,8 +1609,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td18'>
-                                        <button id="cust_req_remove18" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove18" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1689,8 +1655,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td19'>
-                                        <button id="cust_req_remove19" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove19" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1735,8 +1700,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td20'>
-                                        <button id="cust_req_remove20" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove20" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1781,8 +1745,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td21'>
-                                        <button id="cust_req_remove21" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove21" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1827,8 +1790,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td22'>
-                                        <button id="cust_req_remove22" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove22" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1873,8 +1835,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td23'>
-                                        <button id="cust_req_remove23" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove23" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1919,8 +1880,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td24'>
-                                        <button id="cust_req_remove24" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove24" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -1966,8 +1926,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td25'>
-                                        <button id="cust_req_remove25" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove25" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2013,8 +1972,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td26'>
-                                        <button id="cust_req_remove26" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove26" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2059,8 +2017,7 @@
                                     </td>
 
                                     <td id='cust_req_delete-td27'>
-                                        <button id="cust_req_remove27" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove27" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
                             </div>
@@ -2092,7 +2049,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="RIVALRY" class="card-body collapse" data-parent="#factor3">
-                    <input type="hidden" value="1" id="rivalry_BEA">
+                    <input type="hidden" value="18" id="count_rivalry">
                     <table class="table table-striped col-md-7" id="rivalry_BEATable">
                         <thead>
                             <tr>
@@ -2153,8 +2110,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td1'>
-                                        <button id="rivalry_remove1" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove1" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2199,8 +2155,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td2'>
-                                        <button id="rivalry_remove2" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove2" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2245,8 +2200,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td3'>
-                                        <button id="rivalry_remove3" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove3" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2291,8 +2245,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td4'>
-                                        <button id="rivalry_remove4" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove4" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2337,8 +2290,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td5'>
-                                        <button id="rivalry_remove5" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove5" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2383,8 +2335,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td6'>
-                                        <button id="rivalry_remove6" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove6" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2429,8 +2380,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td7'>
-                                        <button id="rivalry_remove7" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove7" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2475,8 +2425,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td8'>
-                                        <button id="rivalry_remove8" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove8" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2521,8 +2470,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td9'>
-                                        <button id="rivalry_remove9" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove9" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2567,8 +2515,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td10'>
-                                        <button id="rivalry_remove10" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove10" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2613,8 +2560,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td11'>
-                                        <button id="rivalry_remove11" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove11" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2659,8 +2605,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td12'>
-                                        <button id="rivalry_remove12" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove12" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2705,8 +2650,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td13'>
-                                        <button id="rivalry_remove13" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove13" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2751,8 +2695,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td14'>
-                                        <button id="rivalry_remove14" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove14" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2797,8 +2740,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td15'>
-                                        <button id="rivalry_remove15" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove15" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2843,8 +2785,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td16'>
-                                        <button id="rivalry_remove16" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove16" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2889,8 +2830,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td17'>
-                                        <button id="rivalry_remove17" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove17" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2935,8 +2875,7 @@
                                     </td>
 
                                     <td id='rivalry_delete-td18'>
-                                        <button id="rivalry_remove18" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove18" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -2969,7 +2908,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="PURCHASING" class="card-body collapse" data-parent="#factor4">
-                    <input type="hidden" value="1" id="purchasing_BEA">
+                    <input type="hidden" value="10" id="count_purchasing">
                     <table class="table table-striped col-md-7" id="purchasing_BEATable">
                         <thead>
                             <tr>
@@ -3030,8 +2969,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td1'>
-                                        <button id="purchasing_remove1" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove1" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3076,8 +3014,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td2'>
-                                        <button id="purchasing_remove2" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove2" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3122,8 +3059,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td3'>
-                                        <button id="purchasing_remove3" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove3" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3168,8 +3104,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td4'>
-                                        <button id="purchasing_remove4" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove4" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3214,8 +3149,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td5'>
-                                        <button id="purchasing_remove5" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove5" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3260,8 +3194,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td6'>
-                                        <button id="purchasing_remove6" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove6" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3306,8 +3239,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td7'>
-                                        <button id="purchasing_remove7" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove7" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3352,8 +3284,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td8'>
-                                        <button id="purchasing_remove8" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove8" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3398,8 +3329,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td9'>
-                                        <button id="purchasing_remove9" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove9" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3444,8 +3374,7 @@
                                     </td>
 
                                     <td id='purchasing_delete-td10'>
-                                        <button id="purchasing_remove10" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove10" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3478,7 +3407,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="TechChanges" class="card-body collapse" data-parent="#factor5">
-                    <input type="hidden" value="1" id="TechChanges_BEA">
+                    <input type="hidden" value="5" id="count_tech">
                     <table class="table table-striped col-md-7" id="TechChanges_BEATable">
                         <thead>
                             <tr>
@@ -3539,8 +3468,7 @@
                                     </td>
 
                                     <td id='TechChanges_delete-td1'>
-                                        <button id="TechChanges_remove1" class="btn
-                                            TechChanges_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="removeRow1" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3585,8 +3513,7 @@
                                     </td>
 
                                     <td id='TechChanges_delete-td2'>
-                                        <button id="TechChanges_remove2" class="btn
-                                            TechChanges_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="removeRow2" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3631,8 +3558,7 @@
                                     </td>
 
                                     <td id='TechChanges_delete-td3'>
-                                        <button id="TechChanges_remove3" class="btn
-                                            TechChanges_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="removeRow3" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3677,8 +3603,7 @@
                                     </td>
 
                                     <td id='TechChanges_delete-td4'>
-                                        <button id="TechChanges_remove4" class="btn
-                                            TechChanges_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="removeRow4" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3723,8 +3648,7 @@
                                     </td>
 
                                     <td id='TechChanges_delete-td5'>
-                                        <button id="TechChanges_remove5" class="btn
-                                            TechChanges_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="removeRow5" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>
 
@@ -3773,9 +3697,9 @@
     //add more supply factors
     $(".add-moreSupply").click(function(e) {
         e.preventDefault();
-        var count = $("#count_BEA").val();
+        var count = $("#count_supply").val();
         count = parseInt(count) + 1;
-        $("#count_BEA").val(count);
+        $("#count_supply").val(count);
         var getLastChild = $("#supply_BEA tr").last().attr('id');
         var splitLastChild = getLastChild.split("supply");
         var myNext = splitLastChild[1];
@@ -3825,22 +3749,20 @@
                                     </td>
 
                                     <td id='supply_delete-td${next}'>
-                                        <button id="supply_remove${next}" class="btn
-                                            supply_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="supply_remove${next}" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 
     $(".add-moreCustomer").click(function(e) {
         e.preventDefault();
-        var count = $("#customerReq_BEA").val();
+        var count = $("#count_req").val();
         count = parseInt(count) + 1;
-        $("#customerReq_BEA").val(count);
+        $("#count_req").val(count);
         var getLastChild = $("#customerReq_BEA tr").last().attr('id');
         var splitLastChild = getLastChild.split("cust_req");
         var myNext = splitLastChild[1];
@@ -3890,22 +3812,20 @@
                                     </td>
 
                                     <td id='cust_req_delete-td${next}'>
-                                        <button id="cust_req_remove${next}" class="btn
-                                            cust_req_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cust_req_remove${next}" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 
     $(".add-morerivalry").click(function(e) {
         e.preventDefault();
-        var count = $("#rivalry_BEA").val();
+        var count = $("#count_rivalry").val();
         count = parseInt(count) + 1;
-        $("#rivalry_BEA").val(count);
+        $("#count_rivalry").val(count);
         var getLastChild = $("#rivalry_BEATable tr").last().attr('id');
         var splitLastChild = getLastChild.split("rivalry");
         var myNext = splitLastChild[1];
@@ -3955,22 +3875,20 @@
                                     </td>
 
                                     <td id='rivalry_delete-td${next}'>
-                                        <button id="rivalry_remove${next}" class="btn
-                                            rivalry_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="rivalry_remove${next}" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 
     $(".add-morePurchasing").click(function(e) {
         e.preventDefault();
-        var count = $("#purchasing_BEA").val();
+        var count = $("#count_purchasing").val();
         count = parseInt(count) + 1;
-        $("#purchasing_BEA").val(count);
+        $("#count_purchasing").val(count);
         var getLastChild = $("#purchasing_BEATable tr").last().attr('id');
         var splitLastChild = getLastChild.split("purchasing");
         var myNext = splitLastChild[1];
@@ -4020,22 +3938,20 @@
                                     </td>
 
                                     <td id='purchasing_delete-td${next}'>
-                                        <button id="purchasing_remove${next}" class="btn
-                                            purchasing_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="purchasing_remove${next}" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 
     $(".add-moreTechChanges").click(function(e) {
         e.preventDefault();
-        var count = $("#TechChanges_BEA").val();
+        var count = $("#count_tech").val();
         count = parseInt(count) + 1;
-        $("#TechChanges_BEA").val(count);
+        $("#count_tech").val(count);
         var getLastChild = $("#TechChanges_BEATable tr").last().attr('id');
         var splitLastChild = getLastChild.split("TechChanges");
         var myNext = splitLastChild[1];
@@ -4085,14 +4001,12 @@
                                     </td>
 
                                     <td id='TechChanges_delete-td${next}'>
-                                        <button id="TechChanges_remove${next}" class="btn
-                                            TechChanges_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="removeRow${next}" class="btn removeRow" >delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 </script>
