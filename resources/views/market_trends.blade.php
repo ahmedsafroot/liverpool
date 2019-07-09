@@ -144,248 +144,210 @@
     </div>
     <!--Third Tab-->
 </div>
-<!--container-->;
+<!--container-->
 
 <script>
-
-     var previous;
-        $(document).on("change", ".datasetTrend", function() {
-            var elements=$(this).closest("tr").children("td");
-            var sum=0;
-            elements.each(function(i, obj) {
-                if($(obj).children(".datasetTrend").length!=0)
-                  {
-                    sum+=parseInt($(obj).children(".datasetTrend").val());
-                  }
-            });
-
-            $(this).parent().siblings().children("input[name*='total_impact']").val(sum);
-            debugger;
-            var label = $(this).parent().parent().index();
-            var value = sum;
-            update_label_trend(label, 1, value,1);
-//chart of market trends
-var marketChart = document.getElementById("market_trends_chart");
-var myMarketChart = new Chart(marketChart, {
-    type: 'bar',
-    data: {
-        labels: ["Trend1[Example1]"],
-
-        datasets: [{
-                label: 'Likely To Continu (Low:1- High:5)',
-                data: [1],
-                type: 'line',
-                backgroundColor: "orange",
-                fill: false,
-            }, {
-                label: "Total Impact",
-                data: [3],
-                backgroundColor: "#0080FF",
-                hoverBackgroundColor: "#0080FF",
-
-            if($(this).attr("name").indexOf('cont') > -1)
-             {
-                update_label_trend(label,0, $(this).val(),1);
-
-             }
-             if($(this).attr("name").indexOf('revenue') > -1)
-             {
-                update_label_trend(label,0, $(this).val(),2);
-
-             }
-             if($(this).attr("name").indexOf('cost') > -1)
-             {
-                update_label_trend(label,1, $(this).val(),2);
-
-             }
-             if($(this).attr("name").indexOf('growth') > -1)
-             {
-                update_label_trend(label,2, $(this).val(),2);
-
-             }
-var marketChart1 = document.getElementById("market1_trends_chart");
-var myMarketChart1 = new Chart(marketChart1, {
-    type: 'bar',
-    data: {
-        labels: ["Trend1[Example1]"],
-        datasets: [{
-                label: "Revenue",
-                backgroundColor: "#0080FF",
-                data: [-1],
-            }, {
-                label: "Cost",
-                backgroundColor: "orange",
-                data: [-1],
-            },
-            {
-                label: "Growth",
-                backgroundColor: "grey",
-                data: [-1],
-            }
-         ]
-        },
-    });
-
-        });
-
-        $(".add-moreTrends").click(function(e) {
-            e.preventDefault();
-            var count = $("#count_trend").val();
-            count = parseInt(count) + 1;
-            $("#count_trend").val(count);
-            var getLastChild = $("#trends tr").last().attr('id');
-            var splitLastChild = getLastChild.split("marketField");
-            var myNext = splitLastChild[1];
-            console.log("getLastChild", myNext);
-            var next = Number(myNext);
-            var addto = "#marketField" + next;
-            next = next + 1;
-            var addRemove = "#market_delete-td" + (next);
-            var markup = `<tr id="marketField${next}">
-                                            <th scope="row" class="tableH factors">
-                                                <textarea type="text"  class="form-control dynamicArea" name="factor_trend${next}" ></textarea>
-                                            </th>
-                                            <td><select name='cont${next}' class="datasetTrend" datasetTrend="0">                                               
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                            <td><select name='revenue${next}' class="datasetTrend" datasetTrend="1">
+            //chart of market trends
+            var marketChart = document.getElementById("market_trends_chart");
+            var myMarketChart = new Chart(marketChart, {
+                type: 'bar',
+                data: {
+                    labels: ["Trend1[Example1]"],
+            
+                    datasets: [{
+                            label: 'Likely To Continu (Low:1- High:5)',
+                            data: [1],
+                            type: 'line',
+                            backgroundColor: "orange",
+                            fill: false,
+                        }, {
+                            label: "Total Impact",
+                            data: [3],
+                            backgroundColor: "#0080FF",
+                            hoverBackgroundColor: "#0080FF",
+            
+                            },
+            
+            
+                        ]
+                    },
+                    options: {
+                        elements: {
+                            line: {
+                                tension: 0 // disables bezier curves
+                            }
+                        },
+                        scales: {
+                            xAxes: [{
+                                stacked: true,
+                            }],
+                            yAxes: [{
+                                stacked: true
+                            }]
+                        },
+                        title: {
+                            display: true,
+                            text: 'Total Impact Vs Contineous Probability'
+                        }
+                    },
+                });
+            
+            
+            var marketChart1 = document.getElementById("market1_trends_chart");
+            var myMarketChart1 = new Chart(marketChart1, {
+                type: 'bar',
+                data: {
+                    labels: ["Trend1[Example1]"],
+                    datasets: [{
+                            label: "Revenue",
+                            backgroundColor: "#0080FF",
+                            data: [-1],
+                        }, {
+                            label: "Cost",
+                            backgroundColor: "orange",
+                            data: [-1],
+                        },
+                        {
+                            label: "Growth",
+                            backgroundColor: "grey",
+                            data: [-1],
+                        }
+                     ]
+                    },
+                });
+            
+            
+                    $(".add-moreTrends").click(function(e) {
+                        e.preventDefault();
+                        var count = $("#count_trend").val();
+                        count = parseInt(count) + 1;
+                        $("#count_trend").val(count);
+                        var getLastChild = $("#trends tr").last().attr('id');
+                        var splitLastChild = getLastChild.split("marketField");
+                        var myNext = splitLastChild[1];
+                        console.log("getLastChild", myNext);
+                        var next = Number(myNext);
+                        var addto = "#marketField" + next;
+                        next = next + 1;
+                        var addRemove = "#market_delete-td" + (next);
+                        var markup = `<tr id="marketField${next}">
+                                                        <th scope="row" class="tableH factors">
+                                                            <textarea type="text"  class="form-control dynamicArea" name="factor_trend${next}" ></textarea>
+                                                        </th>
+                                                        <td><select name='cont${next}' class="datasetTrend" datasetTrend="0">                                               
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select></td>
+                                                        <td><select name='revenue${next}' class="datasetTrend" datasetTrend="1">
+                                                                    <option value="-1">-1</option>
+                                                                    <option value="-2">-2</option>
+                                                                    <option value="-3">-3</option>
+                                                                    <option value="-4">-4</option>
+                                                                    <option value="-5">-5</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select></td>
+                                                        <td><select name='cost${next}' class="datasetTrend" datasetTrend="2">
                                                         <option value="-1">-1</option>
-                                                        <option value="-2">-2</option>
-                                                        <option value="-3">-3</option>
-                                                        <option value="-4">-4</option>
-                                                        <option value="-5">-5</option>
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                            <td><select name='cost${next}' class="datasetTrend" datasetTrend="2">
-                                            <option value="-1">-1</option>
-                                                        <option value="-2">-2</option>
-                                                        <option value="-3">-3</option>
-                                                        <option value="-4">-4</option>
-                                                        <option value="-5">-5</option>
-                                                        <option value="0">0</option>
-                                                        <option value="5">5</option>
-                                                        <option value="4">4</option>
-                                                        <option value="3">3</option>
-                                                        <option value="2">2</option>
-                                                        <option value="1">1</option>
-                                                    </select></td>
-                                                    <td><select name='growth${next}' class="datasetTrend" datasetTrend="2">
-                                            <option value="-1">-1</option>
-                                                        <option value="-2">-2</option>
-                                                        <option value="-3">-3</option>
-                                                        <option value="-4">-4</option>
-                                                        <option value="-5">-5</option>
-                                                        <option value="0">0</option>
-                                                        <option value="5">5</option>
-                                                        <option value="4">4</option>
-                                                        <option value="3">3</option>
-                                                        <option value="2">2</option>
-                                                        <option value="1">1</option>
-                                                    </select></td>
-                                                    <td><select name='comp${next}' class="datasetTrend" datasetTrend="2">
-                                                      
-                                                        <option value="5">5</option>
-                                                        <option value="3">3</option>
-                                                        <option value="1">1</option>
-                                                    </select></td>
-                                                    <td scope="row" class="tableH">
-                                                        <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment_trend${next}"></textarea>
-                                                    </td> 
+                                                                    <option value="-2">-2</option>
+                                                                    <option value="-3">-3</option>
+                                                                    <option value="-4">-4</option>
+                                                                    <option value="-5">-5</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="1">1</option>
+                                                                </select></td>
+                                                                <td><select name='growth${next}' class="datasetTrend" datasetTrend="2">
+                                                        <option value="-1">-1</option>
+                                                                    <option value="-2">-2</option>
+                                                                    <option value="-3">-3</option>
+                                                                    <option value="-4">-4</option>
+                                                                    <option value="-5">-5</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="1">1</option>
+                                                                </select></td>
+                                                                <td><select name='comp${next}' class="datasetTrend" datasetTrend="2">
+                                                                  
+                                                                    <option value="5">5</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="1">1</option>
+                                                                </select></td>
+                                                                <td scope="row" class="tableH">
+                                                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment_trend${next}"></textarea>
+                                                                </td> 
+            
+                                                        <td>
+                                                <input type="text" readonly style="width:30px;" value="3" name="total_impact${next}">
+                                            </td>
+                                                                                                           
+                                                                <td id='market_delete-td${next}'>
+                                                                    <button id="market_remove${next}" class="btn market_remove-me" onclick="deleteRow(this,${next},1)">delete</button>
+            
+                                                                </td>
+                    
+                                                    </tr>`
+                        var newIn = markup;
+                        var newInput = $(newIn);
+                        $(addto).after(newInput);
+                       
+                        add_label_trend("New Label");
+                    });
+            
+                    var previous;
+            
+                    $(document).on("change", ".datasetTrend", function() {
+                        var elements=$(this).closest("tr").children("td");
+                        var sum=0;
+                        elements.each(function(i, obj) {
+                            if($(obj).children(".datasetTrend").length!=0)
+                              {
+                                sum+=parseInt($(obj).children(".datasetTrend").val());
+                              }
+                        });
+            
+                        $(this).parent().siblings().children("input[name*='total_impact']").val(sum);
+                        debugger;
+                        var label = $(this).parent().parent().index();
+                        var value = sum;
+                        update_label_trend(label, 1, value,1);
+            
+                        if($(this).attr("name").indexOf('cont') > -1)
+                         {
+                            update_label_trend(label,0, $(this).val(),1);
+            
+                         }
+                         if($(this).attr("name").indexOf('revenue') > -1)
+                         {
+                            update_label_trend(label,0, $(this).val(),2);
+            
+                         }
+                         if($(this).attr("name").indexOf('cost') > -1)
+                         {
+                            update_label_trend(label,1, $(this).val(),2);
+            
+                         }
+                         if($(this).attr("name").indexOf('growth') > -1)
+                         {
+                            update_label_trend(label,2, $(this).val(),2);
+            
+                         }
+            
+                    });
+            
+            
+            </script>
 
-                                            <td>
-                                    <input type="text" readonly style="width:30px;" value="3" name="total_impact${next}">
-                                </td>
-                                                                                               
-                                                    <td id='market_delete-td${next}'>
-                                                        <button id="market_remove${next}" class="btn market_remove-me" onclick="deleteRow(this,${next},1)">delete</button>
-
-                                                    </td>
-        
-                                        </tr>`
-            var newIn = markup;
-            var newInput = $(newIn);
-            $(addto).after(newInput);
-           
-            add_label_trend("New Label");
-        });
-        
-//chart of market trends
-var marketChart = document.getElementById("market_trends_chart");
-var myMarketChart = new Chart(marketChart, {
-    type: 'bar',
-    data: {
-        labels: ["Trend1[Example1]"],
-
-        datasets: [{
-                label: 'Likely To Continu (Low:1- High:5)',
-                data: [1],
-                type: 'line',
-                backgroundColor: "orange",
-                fill: false,
-            }, {
-                label: "Total Impact",
-                data: [3],
-                backgroundColor: "#0080FF",
-                hoverBackgroundColor: "#0080FF",
-
-                },
-
-
-            ]
-        },
-        options: {
-            elements: {
-                line: {
-                    tension: 0 // disables bezier curves
-                }
-            },
-            scales: {
-                xAxes: [{
-                    stacked: true,
-                }],
-                yAxes: [{
-                    stacked: true
-                }]
-            },
-            title: {
-                display: true,
-                text: 'Total Impact Vs Contineous Probability'
-            }
-        },
-    });
-
-
-var marketChart1 = document.getElementById("market1_trends_chart");
-var myMarketChart1 = new Chart(marketChart1, {
-    type: 'bar',
-    data: {
-        labels: ["Trend1[Example1]"],
-        datasets: [{
-                label: "Revenue",
-                backgroundColor: "#0080FF",
-                data: [-1],
-            }, {
-                label: "Cost",
-                backgroundColor: "orange",
-                data: [-1],
-            },
-            {
-                label: "Growth",
-                backgroundColor: "grey",
-                data: [-1],
-            }
-        }
-    });
-       
-       
-
-</script>

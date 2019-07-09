@@ -415,7 +415,7 @@ class ProfileController extends Controller
         Session::put('market_trend_id', 1);
         return $ret;
     }
-    public function store_customer_experience()
+    public function store_customer_experience(Request $request)
     {
         $ret= $this->create_customer_experience($request);
         if($ret==3)
@@ -437,7 +437,7 @@ class ProfileController extends Controller
 
         return response()->json(['success'=>$message,'background'=>$background]);
     }
-    public function create_customer_experience()
+    public function create_customer_experience($data)
     {
         $interface=$data->interface;
         $how=$data->how;

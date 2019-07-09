@@ -17,7 +17,7 @@ Route::post('step1','ProfileController@store_profile');
 Route::post('step2','ProfileController@store_audit_tool');
 Route::post('step3','ProfileController@store_industry_leadership');
 Route::post('step4','ProfileController@store_market_trend');
-//Route::post('step5','ProfileController@store_customer_experience');
+Route::post('step5','ProfileController@store_customer_experience');
 
 Route::get("/report",'ProfileController@report');
 Route::get('/details/{id}', 'ProfileController@profile_details')->name('profile.details');

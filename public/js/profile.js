@@ -900,3 +900,7 @@ function customer_experience() {
     return false;
 
 }
+
+$(document).on("click", ".removeRow", function() {
+    $(this).closest("tr").remove();
+});
