@@ -38,32 +38,30 @@
                                         <textarea type="text" class="form-control bea_txtarea" name="supply1_txtarea">Labour force
                                             size</textarea>
                                     </th>
-                                    <td><select name='supply1_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply1_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply1_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply1_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply1_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply1_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply1_score" value="3">
                                     </td>
-                                    <td><select name='supply1_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply1_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply1_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply1_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -83,32 +81,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply2_txtarea">Training needs</textarea>
                                     </th>
-                                    <td><select name='supply2_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply2_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply2_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply2_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply2_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply2_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply2_score" value="3">
                                     </td>
-                                    <td><select name='supply2_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply2_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply2_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply2_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -128,32 +124,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply3_txtarea">Multi-skilled personnel requirements</textarea>
                                     </th>
-                                    <td><select name='supply3_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply3_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply3_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply3_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply3_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply3_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply3_score" value="3">
                                     </td>
-                                    <td><select name='supply3_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply3_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply3_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply3_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -173,32 +167,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply4_txtarea">Staff turnover (staff leaving over a period of time)</textarea>
                                     </th>
-                                    <td><select name='supply4_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply4_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply4_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply4_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply4_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply4_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply4_score" value="3">
                                     </td>
-                                    <td><select name='supply4_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply4_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply4_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply4_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -218,32 +210,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply5_txtarea">Labour cost</textarea>
                                     </th>
-                                    <td><select name='supply5_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply5_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply5_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply5_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply5_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply5_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply5_score" value="3">
                                     </td>
-                                    <td><select name='supply5_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply5_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply5_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply5_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -263,32 +253,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply6_txtarea">Labour force productivity</textarea>
                                     </th>
-                                    <td><select name='supply6_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply6_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply6_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply6_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply6_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply6_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply6_score" value="3">
                                     </td>
-                                    <td><select name='supply6_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply6_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply6_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply6_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -308,32 +296,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply7_txtarea">Turnover per employee</textarea>
                                     </th>
-                                    <td><select name='supply7_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply7_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply7_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply7_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply7_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply7_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply7_score" value="3">
                                     </td>
-                                    <td><select name='supply7_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply7_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply7_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply7_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -353,32 +339,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply8_txtarea">% of defects per employee</textarea>
                                     </th>
-                                    <td><select name='supply8_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply8_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply8_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply8_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply8_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply8_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply8_score" value="3">
                                     </td>
-                                    <td><select name='supply8_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply8_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply8_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply8_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -398,32 +382,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply9_txtarea">Throughput ration to capacity</textarea>
                                     </th>
-                                    <td><select name='supply9_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply9_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply9_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply9_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply9_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply9_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply9_score" value="3">
                                     </td>
-                                    <td><select name='supply9_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply9_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply9_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply9_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -443,32 +425,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply10_txtarea">Number of changes for process improvement</textarea>
                                     </th>
-                                    <td><select name='supply10_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply10_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply10_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply10_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply10_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply10_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply10_score" value="3">
                                     </td>
-                                    <td><select name='supply10_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply10_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply10_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply10_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -488,32 +468,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply11_txtarea">Number of Machine Breakdowns</textarea>
                                     </th>
-                                    <td><select name='supply11_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply11_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply11_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply11_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply11_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply11_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply11_score" value="3">
                                     </td>
-                                    <td><select name='supply11_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply11_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply11_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply11_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -533,32 +511,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply12_txtarea">Schedule changes</textarea>
                                     </th>
-                                    <td><select name='supply12_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply12_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply12_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply12_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply12_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply12_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply12_score" value="3">
                                     </td>
-                                    <td><select name='supply12_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply12_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply12_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply12_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -578,32 +554,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply13_txtarea">% of occasions of stock out</textarea>
                                     </th>
-                                    <td><select name='supply13_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply13_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply13_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply13_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply13_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply13_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply13_score" value="3">
                                     </td>
-                                    <td><select name='supply13_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply13_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply13_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply13_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -623,32 +597,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply14_txtarea">Packaging variation per product</textarea>
                                     </th>
-                                    <td><select name='supply14_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply14_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply14_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply14_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply14_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply14_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply14_score" value="3">
                                     </td>
-                                    <td><select name='supply14_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply14_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply14_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply14_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -668,32 +640,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply15_txtarea">No of live jobs at any one time</textarea>
                                     </th>
-                                    <td><select name='supply15_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply15_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply15_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply15_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply15_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply15_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply15_score" value="3">
                                     </td>
-                                    <td><select name='supply15_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply15_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply15_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply15_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -713,32 +683,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply16_txtarea">No of occasions incorrect stocks identified</textarea>
                                     </th>
-                                    <td><select name='supply16_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply16_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply16_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply16_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply16_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply16_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply16_score" value="3">
                                     </td>
-                                    <td><select name='supply16_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply16_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply16_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply16_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -807,32 +775,30 @@
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req1_txtarea">No of customers in the company’s customer base
                                             size</textarea>
                                     </th>
-                                    <td><select name='cust_req1_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req1_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req1_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req1_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req1_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req1_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req1_score" value="3">
                                     </td>
-                                    <td><select name='cust_req1_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req1_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req1_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req1_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -852,32 +818,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req2_txtarea">No of customers % of customers dictating delivery time</textarea>
                                     </th>
-                                    <td><select name='cust_req2_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req2_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req2_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req2_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req2_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req2_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req2_score" value="3">
                                     </td>
-                                    <td><select name='cust_req2_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req2_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req2_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req2_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -897,32 +861,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req3_txtarea">No of customers % of customers dictating batch size</textarea>
                                     </th>
-                                    <td><select name='cust_req3_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req3_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req3_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req3_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req3_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req3_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req3_score" value="3">
                                     </td>
-                                    <td><select name='cust_req3_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req3_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req3_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req3_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -942,32 +904,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req4_txtarea">Share of sales to min/major customers</textarea>
                                     </th>
-                                    <td><select name='cust_req4_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req4_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req4_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req4_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req4_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req4_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req4_score" value="3">
                                     </td>
-                                    <td><select name='cust_req4_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req4_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req4_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req4_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -987,32 +947,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req5_txtarea">% of customers you are the preferred supplier for</textarea>
                                     </th>
-                                    <td><select name='cust_req5_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req5_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req5_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req5_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req5_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req5_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req5_score" value="3">
                                     </td>
-                                    <td><select name='cust_req5_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req5_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req5_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req5_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1032,32 +990,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req6_txtarea">Market utilisation (over-capacity hence power with customer vice versa)</textarea>
                                     </th>
-                                    <td><select name='cust_req6_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req6_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req6_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req6_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req6_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req6_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req6_score" value="3">
                                     </td>
-                                    <td><select name='cust_req6_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req6_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req6_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req6_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1077,32 +1033,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req7_txtarea">Customer loyalty (% of customers returning)</textarea>
                                     </th>
-                                    <td><select name='cust_req7_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req7_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req7_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req7_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req7_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req7_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req7_score" value="3">
                                     </td>
-                                    <td><select name='cust_req7_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req7_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req7_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req7_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1122,32 +1076,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req8_txtarea">% of cases price is negotiated by customers (customer influence)</textarea>
                                     </th>
-                                    <td><select name='cust_req8_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req8_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req8_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req8_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req8_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req8_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req8_score" value="3">
                                     </td>
-                                    <td><select name='cust_req8_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req8_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req8_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req8_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1167,32 +1119,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req9_txtarea">% of orders amended by customers</textarea>
                                     </th>
-                                    <td><select name='cust_req9_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req9_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req9_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req9_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req9_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req9_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req9_score" value="3">
                                     </td>
-                                    <td><select name='cust_req9_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req9_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req9_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req9_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1212,32 +1162,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req10_txtarea">% of orders cancelled</textarea>
                                     </th>
-                                    <td><select name='cust_req10_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req10_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req10_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req10_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req10_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req10_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req10_score" value="3">
                                     </td>
-                                    <td><select name='cust_req10_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req10_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req10_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req10_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1257,32 +1205,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req11_txtarea">% of orders lost due to price negotiation</textarea>
                                     </th>
-                                    <td><select name='cust_req11_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req11_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req11_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req11_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req11_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req11_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req11_score" value="3">
                                     </td>
-                                    <td><select name='cust_req11_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req11_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req11_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req11_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1302,32 +1248,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req12_txtarea">% of orders lost due to not meeting delivery time request</textarea>
                                     </th>
-                                    <td><select name='cust_req12_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req12_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req12_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req12_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req12_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req12_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req12_score" value="3">
                                     </td>
-                                    <td><select name='cust_req12_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req12_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req12_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req12_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1347,32 +1291,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req13_txtarea">Delayed customers payments</textarea>
                                     </th>
-                                    <td><select name='cust_req13_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req13_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req13_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req13_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req13_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req13_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req13_score" value="3">
                                     </td>
-                                    <td><select name='cust_req13_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req13_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req13_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req13_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1392,32 +1334,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req14_txtarea">Lead time requested by customers</textarea>
                                     </th>
-                                    <td><select name='cust_req14_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req14_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req14_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req14_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req14_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req14_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req14_score" value="3">
                                     </td>
-                                    <td><select name='cust_req14_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req14_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req14_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req14_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1437,32 +1377,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req15_txtarea">Customer specified suppliers (% of occasions)</textarea>
                                     </th>
-                                    <td><select name='cust_req15_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req15_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req15_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req15_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req15_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req15_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req15_score" value="3">
                                     </td>
-                                    <td><select name='cust_req15_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req15_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req15_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req15_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1482,32 +1420,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req16_txtarea">Customers specified materials</textarea>
                                     </th>
-                                    <td><select name='cust_req16_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req16_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req16_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req16_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req16_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req16_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req16_score" value="3">
                                     </td>
-                                    <td><select name='cust_req16_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req16_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req16_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req16_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1527,32 +1463,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req17_txtarea">Customers order volumes</textarea>
                                     </th>
-                                    <td><select name='cust_req17_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req17_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req17_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req17_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req17_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req17_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req17_score" value="3">
                                     </td>
-                                    <td><select name='cust_req17_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req17_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req17_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req17_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1572,32 +1506,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req18_txtarea">Customers order frequencies</textarea>
                                     </th>
-                                    <td><select name='cust_req18_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req18_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req18_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req18_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req18_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req18_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req18_score" value="3">
                                     </td>
-                                    <td><select name='cust_req18_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req18_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req18_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req18_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1618,32 +1550,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req19_txtarea">Online customer orders</textarea>
                                     </th>
-                                    <td><select name='cust_req19_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req19_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req19_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req19_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req19_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req19_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req19_score" value="3">
                                     </td>
-                                    <td><select name='cust_req19_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req19_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req19_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req19_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1663,32 +1593,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req20_txtarea">% of customers involved in design stage</textarea>
                                     </th>
-                                    <td><select name='cust_req20_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req20_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req20_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req20_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req20_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req20_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req20_score" value="3">
                                     </td>
-                                    <td><select name='cust_req20_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req20_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req20_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req20_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1708,32 +1636,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req21_txtarea">% of concept changes</textarea>
                                     </th>
-                                    <td><select name='cust_req21_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req21_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req21_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req21_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req21_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req21_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req21_score" value="3">
                                     </td>
-                                    <td><select name='cust_req21_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req21_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req21_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req21_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1753,32 +1679,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req22_txtarea">% of prototypes generated for customer evaluation</textarea>
                                     </th>
-                                    <td><select name='cust_req22_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req22_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req22_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req22_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req22_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req22_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req22_score" value="3">
                                     </td>
-                                    <td><select name='cust_req22_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req22_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req22_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req22_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1798,32 +1722,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req23_txtarea">% of products that are maintenance free</textarea>
                                     </th>
-                                    <td><select name='cust_req23_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req23_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req23_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req23_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req23_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req23_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req23_score" value="3">
                                     </td>
-                                    <td><select name='cust_req23_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req23_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req23_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req23_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1843,32 +1765,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req24_txtarea">% of products requiring installation/commissioning</textarea>
                                     </th>
-                                    <td><select name='cust_req24_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req24_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req24_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req24_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req24_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req24_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req24_score" value="3">
                                     </td>
-                                    <td><select name='cust_req24_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req24_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req24_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req24_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1889,32 +1809,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req25_txtarea">% of products that are reconfigurable</textarea>
                                     </th>
-                                    <td><select name='cust_req25_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req25_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req25_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req25_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req25_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req25_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req25_score" value="3">
                                     </td>
-                                    <td><select name='cust_req25_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req25_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req25_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req25_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1935,32 +1853,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req26_txtarea">% of bespoke products</textarea>
                                     </th>
-                                    <td><select name='cust_req26_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req26_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req26_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req26_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req26_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req26_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req26_score" value="3">
                                     </td>
-                                    <td><select name='cust_req26_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req26_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req26_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req26_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -1980,32 +1896,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req27_txtarea">% of products dependent on external products</textarea>
                                     </th>
-                                    <td><select name='cust_req27_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req27_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req27_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req27_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req27_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req27_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req27_score" value="3">
                                     </td>
-                                    <td><select name='cust_req27_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req27_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req27_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req27_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2073,32 +1987,30 @@
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry1_txtarea">No of competitors
                                         </textarea>
                                     </th>
-                                    <td><select name='rivalry1_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry1_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry1_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry1_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry1_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry1_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry1_score" value="3">
                                     </td>
-                                    <td><select name='rivalry1_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry1_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry1_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry1_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2118,32 +2030,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry2_txtarea">No of Mergers/Acquisitions</textarea>
                                     </th>
-                                    <td><select name='rivalry2_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry2_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry2_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry2_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry2_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry2_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry2_score" value="3">
                                     </td>
-                                    <td><select name='rivalry2_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry2_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry2_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry2_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2163,32 +2073,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry3_txtarea">Market size</textarea>
                                     </th>
-                                    <td><select name='rivalry3_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry3_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry3_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry3_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry3_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry3_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry3_score" value="3">
                                     </td>
-                                    <td><select name='rivalry3_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry3_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry3_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry3_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2208,32 +2116,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry4_txtarea">No of customers</textarea>
                                     </th>
-                                    <td><select name='rivalry4_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry4_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry4_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry4_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry4_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry4_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry4_score" value="3">
                                     </td>
-                                    <td><select name='rivalry4_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry4_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry4_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry4_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2253,32 +2159,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry5_txtarea">Product pricing</textarea>
                                     </th>
-                                    <td><select name='rivalry5_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry5_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry5_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry5_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry5_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry5_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry5_score" value="3">
                                     </td>
-                                    <td><select name='rivalry5_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry5_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry5_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry5_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2298,32 +2202,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry6_txtarea">Average product pricing</textarea>
                                     </th>
-                                    <td><select name='rivalry6_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry6_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry6_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry6_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry6_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry6_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry6_score" value="3">
                                     </td>
-                                    <td><select name='rivalry6_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry6_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry6_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry6_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2343,32 +2245,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry7_txtarea">Number of new products to market and their associated services</textarea>
                                     </th>
-                                    <td><select name='rivalry7_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry7_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry7_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry7_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry7_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry7_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry7_score" value="3">
                                     </td>
-                                    <td><select name='rivalry7_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry7_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry7_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry7_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2388,32 +2288,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry8_txtarea">Average industry/sector time to market</textarea>
                                     </th>
-                                    <td><select name='rivalry8_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry8_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry8_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry8_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry8_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry8_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry8_score" value="3">
                                     </td>
-                                    <td><select name='rivalry8_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry8_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry8_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry8_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2433,32 +2331,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry9_txtarea">Promotional expenditure (gap with industry average)</textarea>
                                     </th>
-                                    <td><select name='rivalry9_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry9_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry9_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry9_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry9_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry9_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry9_score" value="3">
                                     </td>
-                                    <td><select name='rivalry9_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry9_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry9_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry9_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2478,32 +2374,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry10_txtarea">R&D expenditure within market</textarea>
                                     </th>
-                                    <td><select name='rivalry10_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry10_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry10_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry10_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry10_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry10_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry10_score" value="3">
                                     </td>
-                                    <td><select name='rivalry10_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry10_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry10_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry10_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2523,32 +2417,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry11_txtarea">New product success rate</textarea>
                                     </th>
-                                    <td><select name='rivalry11_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry11_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry11_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry11_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry11_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry11_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry11_score" value="3">
                                     </td>
-                                    <td><select name='rivalry11_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry11_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry11_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry11_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2568,32 +2460,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry12_txtarea">Market delivery time (Vs industry average)</textarea>
                                     </th>
-                                    <td><select name='rivalry12_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry12_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry12_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry12_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry12_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry12_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry12_score" value="3">
                                     </td>
-                                    <td><select name='rivalry12_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry12_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry12_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry12_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2613,32 +2503,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry13_txtarea">Number of markets targeted</textarea>
                                     </th>
-                                    <td><select name='rivalry13_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry13_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry13_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry13_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry13_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry13_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry13_score" value="3">
                                     </td>
-                                    <td><select name='rivalry13_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry13_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry13_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry13_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2658,32 +2546,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry14_txtarea">No of brand names company sells under</textarea>
                                     </th>
-                                    <td><select name='rivalry14_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry14_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry14_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry14_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry14_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry14_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry14_score" value="3">
                                     </td>
-                                    <td><select name='rivalry14_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry14_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry14_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry14_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2703,32 +2589,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry15_txtarea">No of first-to-market</textarea>
                                     </th>
-                                    <td><select name='rivalry15_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry15_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry15_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry15_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry15_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry15_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry15_score" value="3">
                                     </td>
-                                    <td><select name='rivalry15_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry15_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry15_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry15_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2748,32 +2632,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry16_txtarea">Life-cycle of products</textarea>
                                     </th>
-                                    <td><select name='rivalry16_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry16_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry16_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry16_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry16_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry16_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry16_score" value="3">
                                     </td>
-                                    <td><select name='rivalry16_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry16_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry16_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry16_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2793,32 +2675,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry17_txtarea">Sales at reduced costs</textarea>
                                     </th>
-                                    <td><select name='rivalry17_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry17_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry17_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry17_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry17_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry17_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry17_score" value="3">
                                     </td>
-                                    <td><select name='rivalry17_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry17_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry17_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry17_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2838,32 +2718,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry18_txtarea">Order winning services (No of occasions orders won due to services)</textarea>
                                     </th>
-                                    <td><select name='rivalry18_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry18_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry18_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry18_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry18_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry18_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry18_score" value="3">
                                     </td>
-                                    <td><select name='rivalry18_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry18_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry18_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry18_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2932,32 +2810,30 @@
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing1_txtarea">No of active suppliers
                                         </textarea>
                                     </th>
-                                    <td><select name='purchasing1_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing1_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing1_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing1_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing1_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing1_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing1_score" value="3">
                                     </td>
-                                    <td><select name='purchasing1_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing1_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing1_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing1_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -2977,32 +2853,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing2_txtarea">% of products with only ONE supplier</textarea>
                                     </th>
-                                    <td><select name='purchasing2_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing2_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing2_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing2_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing2_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing2_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing2_score" value="3">
                                     </td>
-                                    <td><select name='purchasing2_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing2_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing2_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing2_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3022,32 +2896,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing3_txtarea">Inward supplies defects (rate)</textarea>
                                     </th>
-                                    <td><select name='purchasing3_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing3_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing3_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing3_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing3_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing3_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing3_score" value="3">
                                     </td>
-                                    <td><select name='purchasing3_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing3_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing3_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing3_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3067,32 +2939,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing4_txtarea">% of suppliers involved in new product development</textarea>
                                     </th>
-                                    <td><select name='purchasing4_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing4_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing4_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing4_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing4_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing4_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing4_score" value="3">
                                     </td>
-                                    <td><select name='purchasing4_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing4_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing4_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing4_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3112,32 +2982,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing5_txtarea">% of preferred suppliers</textarea>
                                     </th>
-                                    <td><select name='purchasing5_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing5_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing5_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing5_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing5_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing5_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing5_score" value="3">
                                     </td>
-                                    <td><select name='purchasing5_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing5_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing5_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing5_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3157,32 +3025,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing6_txtarea">% of suppliers the company is the main customer</textarea>
                                     </th>
-                                    <td><select name='purchasing6_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing6_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing6_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing6_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing6_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing6_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing6_score" value="3">
                                     </td>
-                                    <td><select name='purchasing6_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing6_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing6_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing6_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3202,32 +3068,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing7_txtarea">% of suppliers’ prices negotiated</textarea>
                                     </th>
-                                    <td><select name='purchasing7_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing7_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing7_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing7_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing7_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing7_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing7_score" value="3">
                                     </td>
-                                    <td><select name='purchasing7_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing7_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing7_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing7_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3247,32 +3111,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing8_txtarea">Suppliers lead time</textarea>
                                     </th>
-                                    <td><select name='purchasing8_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing8_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing8_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing8_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing8_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing8_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing8_score" value="3">
                                     </td>
-                                    <td><select name='purchasing8_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing8_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing8_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing8_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3292,32 +3154,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing9_txtarea">% of suppliers’ delivery time negotiated</textarea>
                                     </th>
-                                    <td><select name='purchasing9_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing9_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing9_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing9_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing9_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing9_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing9_score" value="3">
                                     </td>
-                                    <td><select name='purchasing9_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing9_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing9_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing9_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3337,32 +3197,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing10_txtarea">New suppliers being sourced</textarea>
                                     </th>
-                                    <td><select name='purchasing10_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing10_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing10_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing10_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing10_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing10_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing10_score" value="3">
                                     </td>
-                                    <td><select name='purchasing10_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing10_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing10_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing10_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3431,32 +3289,30 @@
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges1_txtarea">Product technology changes
                                         </textarea>
                                     </th>
-                                    <td><select name='TechChanges1_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='TechChanges1_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='TechChanges1_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='TechChanges1_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='TechChanges1_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges1_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges1_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges1_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges1_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='TechChanges1_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges1_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3476,32 +3332,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges2_txtarea">Process technology changes</textarea>
                                     </th>
-                                    <td><select name='TechChanges2_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='TechChanges2_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='TechChanges2_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='TechChanges2_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='TechChanges2_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges2_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges2_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges2_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges2_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='TechChanges2_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges2_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3521,32 +3375,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges3_txtarea">% turnover spent on technology change</textarea>
                                     </th>
-                                    <td><select name='TechChanges3_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='TechChanges3_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='TechChanges3_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='TechChanges3_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='TechChanges3_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges3_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges3_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges3_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges3_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='TechChanges3_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges3_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3566,32 +3418,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges4_txtarea">Technologies available to the company</textarea>
                                     </th>
-                                    <td><select name='TechChanges4_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='TechChanges4_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='TechChanges4_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='TechChanges4_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='TechChanges4_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges4_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges4_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges4_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges4_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='TechChanges4_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges4_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3611,32 +3461,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges5_txtarea">Support services improvements</textarea>
                                     </th>
-                                    <td><select name='TechChanges5_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='TechChanges5_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='TechChanges5_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='TechChanges5_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='TechChanges5_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges5_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges5_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges5_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges5_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='TechChanges5_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges5_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3671,7 +3519,7 @@
 
         <!--Save Data Section-->
         <div>
-            <button type="button" class="btn btn-primary btn-md ml-4">Save</button>
+            <button type="button" class="btn btn-primary btn-md ml-4" onclick="turbulence_impact()">Save</button>
         </div>
 
 
@@ -3712,32 +3560,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply${next}_txtarea"></textarea>
                                     </th>
-                                    <td><select name='supply${next}_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='supply${next}_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='supply${next}_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='supply${next}_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='supply${next}_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply${next}_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply${next}_score" value="3">
                                     </td>
-                                    <td><select name='supply${next}_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply${next}_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='supply${next}_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='supply${next}_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3775,32 +3621,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req${next}_txtarea"></textarea>
                                     </th>
-                                    <td><select name='cust_req${next}_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='cust_req${next}_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='cust_req${next}_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='cust_req${next}_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='cust_req${next}_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req${next}_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req${next}_score" value="3">
                                     </td>
-                                    <td><select name='cust_req${next}_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req${next}_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='cust_req${next}_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='cust_req${next}_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3838,32 +3682,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry${next}_txtarea"></textarea>
                                     </th>
-                                    <td><select name='rivalry${next}_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='rivalry${next}_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='rivalry${next}_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='rivalry${next}_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='rivalry${next}_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry${next}_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry${next}_score" value="3">
                                     </td>
-                                    <td><select name='rivalry${next}_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry${next}_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='rivalry${next}_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='rivalry${next}_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3901,32 +3743,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing${next}_txtarea"></textarea>
                                     </th>
-                                    <td><select name='purchasing${next}_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='purchasing${next}_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='purchasing${next}_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='purchasing${next}_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='purchasing${next}_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing${next}_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing${next}_score" value="3">
                                     </td>
-                                    <td><select name='purchasing${next}_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing${next}_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='purchasing${next}_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='purchasing${next}_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -3964,32 +3804,30 @@
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges${next}_txtarea"></textarea>
                                     </th>
-                                    <td><select name='TechChanges${next}_timeLen' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='TechChanges${next}_timeLen' class="beaSelect" beaSelect="0">
 
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select></td>
-                                    <td><select name='TechChanges${next}_increase' class="datasetTrend" datasetTrend="1">
+                                    <td><select name='TechChanges${next}_increase' class="beaSelect" beaSelect="1">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                         </select></td>
-                                    <td><select name='TechChanges${next}_frequency' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges${next}_frequency' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
-                                            <option value="4">4</option>
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges${next}_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges${next}_threat' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges${next}_threat' class="beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
                                         </select></td>
-                                    <td><select name='TechChanges${next}_Severity' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='TechChanges${next}_Severity' class="beaSelect" beaSelect="2">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>

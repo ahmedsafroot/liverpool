@@ -9,6 +9,7 @@ use App\auditTool;
 use App\leaderShip;
 use App\trend;
 use App\experience;
+use App\Bea;
 class ProfileController extends Controller
 {
     /**
@@ -1177,5 +1178,83 @@ class ProfileController extends Controller
     {
         $factors=experience::where("profileid",$id)->get();
         return view("customer_experience_details",compact('factors'));  
+    }
+
+
+    public function store_bea(Request $request)
+    {
+        $ret= $this->create_bea($request);
+        if($ret==3)
+        {
+            $message="You Must create Profile before";
+            $background="bg-danger";
+        }
+        else if($ret==1)
+        {
+            $message="BEA-Trublance Impact Edited Succefully";
+            $background="bg-success";
+        }
+        else
+        {
+            $message="New BEA-Trublance Impact Created Succefully";
+            $background="bg-success";
+        }
+     
+
+        return response()->json(['success'=>$message,'background'=>$background]);
+    }
+    public function create_bea($data)
+    {
+            $factor=$data->factor;
+            $timeLenght=$data->timeLenght;
+            $inc_dec=$data->inc_dec;
+            $freq=$data->freq;
+            $thread_oper=$data->thread_oper;
+            $sev=$data->sev;
+            $type=$data->type;
+     
+        $count=count($factor);
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('bea_id'))
+        {
+            Bea::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $bea=new Bea;
+            $bea->profileid=$profileid;
+            $bea->factor=$factor[$i];
+            $bea->timeLenght=$timeLenght[$i];
+            $bea->inc_dec=$inc_dec[$i];
+            $bea->freq=$freq[$i];
+            $bea->thread_oper=$thread_oper[$i];
+            $bea->sev=$sev[$i];
+            $bea->type=$type[$i];
+
+
+            $bea->save();
+        }
+      
+        Session::put('bea_id', 1);
+        return $ret;   
+    }
+
+    public function bea_details($id)
+    {
+       $beas=Bea::where("profileid",$id)->get();
+       return view("bea_details",compact('beas'));
+
     }
 }
