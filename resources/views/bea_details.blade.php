@@ -45,41 +45,35 @@
         <table id="profile" class="display">
                 <thead>
                     <tr>
-                        <th>Company Name</th>
-                        <th>Parent Company</th>
-                        <th>Address</th>
-                        <th>Telephone</th>
-                        <th>Fax</th>
-                        <th>Url</th>
-                        <th>Number Of Employees</th>
-                        <th>Product Portoflio</th>
-                        <th>Agility Audit Tool</th>
-                        <th>Industry LeaderShip</th>
-                        <th>Market Trends</th>
-                        <th>Customer Experience</th>
-                        <th>BEA-Turbance Impact</th>
+                        <th>Turbulance Factors</th>
+                        <th>Type</th>
+                        <th>Time Length</th>
+                        <th>Increasing/Decreasing</th>
+                        <th>Frequency Cycles </th>
+                        <th>Threat/Opportunity</th>
+                        <th>Severity</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($profiles as $profile)
+                    @foreach ($beas as $bea)
+                        
                     <tr>
-                            <td><a href="{{ route('profile.details',['id' => $profile->id] ) }}">{{$profile->userName}}</a></td>
-                            <td>{{$profile->userParent}}</td>
-                            <td>{{$profile->userAddress}}</td>
-                            <td>{{$profile->userTelephone}}</td>
-                            <td>{{$profile->userFax}}</td>
-                            <td>{{$profile->userUrl}}</td>
-                            <td>{{$profile->userNum}}</td>
-                            <td>{{$profile->userPortfolio}}</td>
-                            <th><a href="{{ route('audit_tools.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('industry_leadership.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('market_trends.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('customer_experience.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('bea.details',['id' => $profile->id] ) }}">see more</a></th>
-
+                    <td>{{$bea->factor}}</td>
+                    <td>{{$bea->type}}</td>
+                    <td style="text-align:center">{{$bea->timeLenght}}</td>
+                    <td style="text-align:center">{{$bea->inc_dec}}</td>
+                    <td style="text-align:center">{{$bea->freq}}</td>
+                    @if($bea->thread_oper==1)
+                    <td style="text-align:center">Thread</td>
+                    @else
+                    <td style="text-align:center">Opportunity</td>
+                    @endif
+                    <td style="text-align:center">{{$bea->sev}}</td>
                     </tr>
+
                     @endforeach
 
+                    
                 </tbody>
             </table>
 
@@ -87,8 +81,14 @@
 
         $(document).ready( function () {
             $('#profile').DataTable( {
-                dom: 'lBfrtip',
+                aLengthMenu: [
+                    [5,10,25, 50, 100, 200, -1],
+                    [5,10,25, 50, 100, 200, "All"]
+                ],
+                iDisplayLength: -1,
                 "ordering": false,
+                dom: 'lBfrtip',
+
                 buttons: [
                     'copyHtml5', 'excelHtml5', 'pdfHtml5', 'csvHtml5'
                 ]

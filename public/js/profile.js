@@ -900,3 +900,152 @@ function customer_experience() {
     return false;
 
 }
+
+function turbulence_impact() {
+    var count_supply = $("#count_supply").val();
+    var count_req = $("#count_req").val();
+    var count_rivalry = $("#count_rivalry").val();
+    var count_purchasing = $("#count_purchasing").val();
+    var count_tech = $("#count_tech").val();
+
+    var factor = [];
+    var type = [];
+    var timeLenght = [];
+    var inc_dec = [];
+    var freq = [];
+    var thread_oper = [];
+    var sev = [];
+
+    for (var i = 1; i <= count_supply; i++) {
+        if ($('[name=supply'+i+'_txtarea]').length) {
+            factor.push($('[name=supply'+i+'_txtarea]').val());
+            timeLenght.push($('[name=supply'+i+'_timeLen]').val());
+            inc_dec.push($('[name=supply'+i+'_increase]').val());
+            freq.push($('[name=supply'+i+'_frequency]').val());
+            thread_oper.push($('[name=supply'+i+'_threat]').val());
+            sev.push($('[name=supply'+i+'_Severity]').val());
+            type.push("SUPPLY CHAIN");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_req; i++) {
+        if ($('[name=cust_req'+i+'_txtarea]').length) {
+            factor.push($('[name=cust_req'+i+'_txtarea]').val());
+            timeLenght.push($('[name=cust_req'+i+'_timeLen]').val());
+            inc_dec.push($('[name=cust_req'+i+'_increase]').val());
+            freq.push($('[name=cust_req'+i+'_frequency]').val());
+            thread_oper.push($('[name=cust_req'+i+'_threat]').val());
+            sev.push($('[name=cust_req'+i+'_Severity]').val());
+            type.push("DYNAMIC CUSTOMER REQUIREMENTS");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_rivalry; i++) {
+        if ($('[name=rivalry'+i+'_txtarea]').length) {
+            factor.push($('[name=rivalry'+i+'_txtarea]').val());
+            timeLenght.push($('[name=rivalry'+i+'_timeLen]').val());
+            inc_dec.push($('[name=rivalry'+i+'_increase]').val());
+            freq.push($('[name=rivalry'+i+'_frequency]').val());
+            thread_oper.push($('[name=rivalry'+i+'_threat]').val());
+            sev.push($('[name=rivalry'+i+'_Severity]').val());
+            type.push("RIVALRY/COMPTETION");
+
+        }
+
+
+    }
+    
+    for (var i = 1; i <= count_purchasing; i++) {
+        if ($('[name=purchasing'+i+'_txtarea]').length) {
+            factor.push($('[name=purchasing'+i+'_txtarea]').val());
+            timeLenght.push($('[name=purchasing'+i+'_timeLen]').val());
+            inc_dec.push($('[name=purchasing'+i+'_increase]').val());
+            freq.push($('[name=purchasing'+i+'_frequency]').val());
+            thread_oper.push($('[name=purchasing'+i+'_threat]').val());
+            sev.push($('[name=purchasing'+i+'_Severity]').val());
+            type.push("PURCHASING");
+
+        }
+
+
+    }
+
+    for (var i = 1; i <= count_tech; i++) {
+        if ($('[name=TechChanges'+i+'_txtarea]').length) {
+            factor.push($('[name=TechChanges'+i+'_txtarea]').val());
+            timeLenght.push($('[name=TechChanges'+i+'_timeLen]').val());
+            inc_dec.push($('[name=TechChanges'+i+'_increase]').val());
+            freq.push($('[name=TechChanges'+i+'_frequency]').val());
+            thread_oper.push($('[name=TechChanges'+i+'_threat]').val());
+            sev.push($('[name=TechChanges'+i+'_Severity]').val());
+            type.push("TECHNOLOGICAL CHANGES");
+        }
+
+
+    }
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step6";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            factor: factor,
+            timeLenght: timeLenght,
+            inc_dec: inc_dec,
+            freq: freq,
+            thread_oper: thread_oper,
+            sev: sev,
+            type: type,
+           
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "BEA-TRUBLANCE IMPACT";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+        }
+
+    });
+
+    return false;
+}
+
+$(document).on("click", ".removeRow", function() {
+    $(this).closest("tr").remove();
+});
+$(document).on("change", ".beaSelect", function() {
+    var name=$(this).closest("tr").attr("id");
+    var timeLenght=parseInt($('[name='+name+'_timeLen]').val());
+    var inc=parseInt($('[name='+name+'_increase]').val());
+    var freq=parseInt($('[name='+name+'_frequency]').val());
+    var sev=parseInt($('[name='+name+'_Severity]').val());
+
+    var score=timeLenght+inc+freq;
+    var total=sev*score;
+    $('[name='+name+'_score]').val(score);
+    $('[name='+name+'_total]').val(total);
+
+});

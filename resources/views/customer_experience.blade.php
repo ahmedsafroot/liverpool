@@ -4,7 +4,7 @@
         <label class="mainLabel" style="margin-left: 5%;">CUSTOMER EXPERIENCE</label>
         <div class="container-fluid">
             <div class="row">
-                <input type="hidden" value="1" id="customer_exp">
+                <input type="hidden" value="13" id="count_customer">
                 <!--company's main product lines table of radio buttons-->
                 <div class="ProductLines col-md-8">
                     <table class="table table-striped" id="customer_exp_tabel">
@@ -20,134 +20,134 @@
                             <div id="customerField">
                                 <tr id="customerField1">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="awareness_txtarea">Awareness of company</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface1">Awareness of company</textarea>
 
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="awareness1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="awareness2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how1" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten1" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td1'>
-                                        <button id="customerField_remove1" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
 
                                 <tr id="customerField2">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="evaluation_txtarea">Search and evaluation</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface2">Search and evaluation</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="evaluation1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="evaluation2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten2" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td2'>
-                                        <button id="customerField_remove2" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove2" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField3">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="purchase_txtarea">Order and purchase</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface3">Order and purchase</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="purchase1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="purchase2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how3" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten3" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td3'>
-                                        <button id="customerField_remove3" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove3" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField4">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="management_txtarea">Management of project</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface4">Management of project</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="management1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="management2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how4" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten4" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td4'>
-                                        <button id="customerField_remove4" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove4" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField5">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="packaging_txtarea">Packaging</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface5">Packaging</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="packaging1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="packaging2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how5" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten5" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td5'>
-                                        <button id="customerField_remove5" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove5" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField6">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="packaging_txtarea">payment</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface6">payment</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="payment1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="payment2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how6" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten6" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td6'>
-                                        <button id="customerField_remove6" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove6" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField7">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="financing_txtarea">Financing</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface7">Financing</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="financing1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="financing2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how7" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten7" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td7'>
-                                        <button id="customerField_remove7" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove7" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField8">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="transport_txtarea">Storage and transport</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface8">Storage and transport</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="transport1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="transport2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how8" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten8" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td8'>
-                                        <button id="customerField_remove8" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove8" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField9">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="installation_txtarea">Installation/assembly</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface9">Installation/assembly</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="installation1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="installation2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how9" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten9" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td9'>
-                                        <button id="customerField_remove9" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove9" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField10">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="product_txtarea">Product in use</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface10">Product in use</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="product1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="product2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how10" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten10" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td10'>
-                                        <button id="customerField_remove10" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove10" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField11">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="service_txtarea">Service</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface11">Service</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="service1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="service2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how11" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten11" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td11'>
-                                        <button id="customerField_remove11" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove11" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField12">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="returns_txtarea">Repairs and returns</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface12">Repairs and returns</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="returns1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="returns2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how12" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten12" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td12'>
-                                        <button id="customerField_remove12" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove12" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="customerField13">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="disposal_txtarea">Final Disposal</textarea>
+                                    <textarea type="text" class="form-control" name="factor_interface13">Final Disposal</textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="disposal1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="disposal2" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how13" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten13" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td13'>
-                                        <button id="customerField_remove13" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove13" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                             </div>
@@ -185,9 +185,9 @@
 <script>
     $(".add-moreCustomer").click(function(e) {
         e.preventDefault();
-        var count = $("#customer_exp").val();
+        var count = $("#count_customer").val();
         count = parseInt(count) + 1;
-        $("#customer_exp").val(count);
+        $("#count_customer").val(count);
         var getLastChild = $("#customer_exp_tabel tr").last().attr('id');
         var splitLastChild = getLastChild.split("customerField");
         var myNext = splitLastChild[1];
@@ -197,18 +197,17 @@
         next = next + 1;
         var addRemove = "#customerField_delete-td" + (next);
         var markup = ` <tr id="customerField${next}">
-                                    <th scope="row" class="customer_tableH"><textarea class="dynamicArea fontSize" name="customer_name${next}" cols="30" rows="10"></textarea>
+                                    <th scope="row" class="customer_tableH"><textarea class="dynamicArea fontSize" name="factor_interface${next}" cols="30" rows="10"></textarea>
                                     </th>
-                                    <td><textarea class="dynamicArea fontSize" name="customer_how${next}" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="customer_desc${next}" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="how${next}" cols="30" rows="10"></textarea></td>
+                                    <td><textarea class="dynamicArea fontSize" name="poten${next}" cols="30" rows="10"></textarea></td>
                                     <td id='customerField_delete-td${next}'>
-                                        <button id="customerField_remove${next}" class="btn customer_remove-me">delete</button>
+                                        <button id="customerField_remove${next}" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>`
                                 var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 </script>

@@ -55,9 +55,9 @@
                     @foreach ($factors as $factor)
                         
                     <tr>
-                    <td>{{$factor->Interface}}</td>
-                    <td style="text-align:center">{{$factor->how}}</td>
-                    <td style="text-align:center">{{$factor->poten}}</td>
+                    <td>{{$factor->interface}}</td>
+                    <td>{{$factor->how}}</td>
+                    <td>{{$factor->potientail}}</td>
             
 
                     </tr>
