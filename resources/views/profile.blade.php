@@ -25,16 +25,28 @@
 
     <!--Container for questions-->
     <form id="submitForm">
-        {!! csrf_field() !!} 
+     
         @include('company_details')
         @include('aduit_tools')
         @include('industry_leadership')
         @include('market_trends')    
         @include('customer_experience')     
         @include('turbulence_impact')
+        @include('turbulence_tool')
+        @include('sw')
+        @include('focus_worksheet')
+        @include('anshof')
+        @include('actions')
+
+
     </form>
     <!--Indecators-->
     <div style="text-align:center;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
