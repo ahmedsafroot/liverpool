@@ -15,7 +15,7 @@
                 </div>
                 <div id="SUPPLY1" class="card-body collapse" data-parent="#factor1">
                     <input type="hidden" value="16" id="count_supply">
-                    <table class="table table-striped col-md-7" id="supply_BEA">
+                    <table class="table table-striped col-md-7" id="supply_BEAS">
                         <thead>
                             <tr>
                                 <th scope="col"></th>
@@ -3548,7 +3548,7 @@
         var count = $("#count_supply").val();
         count = parseInt(count) + 1;
         $("#count_supply").val(count);
-        var getLastChild = $("#supply_BEA tr").last().attr('id');
+        var getLastChild = $("#supply_BEAS tr").last().attr('id');
         var splitLastChild = getLastChild.split("supply");
         var myNext = splitLastChild[1];
         console.log("getLastChild", myNext);
