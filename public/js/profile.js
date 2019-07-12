@@ -1191,3 +1191,230 @@ $(document).on("change", ".tru_select_box", function() {
     }
 
 });
+
+
+function ansoff() {
+    var count_penetration = $("#anshof1-input").val();
+    var count_development = $("#anshof2-input").val();
+    var count_service = $("#anshof3-input").val();
+    var count_diversification = $("#anshof4-input").val();
+
+    var factor = [];
+    var type = [];
+    var potential = [];
+    var control = [];
+    var urgency = [];
+    var risk = [];
+    var time = [];
+    var resource = [];
+    var invest = [];
+
+    for (var i = 1; i <= count_penetration; i++) {
+        if ($('[name=anshof_penetration'+i+']').length) {
+            factor.push($('[name=anshof_penetration'+i+']').val());
+            potential.push($('[name=anshof_penetration_Potential_'+i+']').val());
+            control.push($('[name=anshof_penetration_control_'+i+']').val());
+            urgency.push($('[name=anshof_penetration_urgency_'+i+']').val());
+            risk.push($('[name=anshof_penetration_risk_'+i+']').val());
+            time.push($('[name=anshof_penetration_time_'+i+']').val());
+            resource.push($('[name=anshof_penetration_resource_'+i+']').val());
+            invest.push($('[name=anshof_penetration_invest_'+i+']').val());
+            type.push("Market Penetration (Existing Products in Existing Markets/Customers)");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_development; i++) {
+        if ($('[name=anshof_development'+i+']').length) {
+            factor.push($('[name=anshof_development'+i+']').val());
+            potential.push($('[name=anshof_development_Potential_'+i+']').val());
+            control.push($('[name=anshof_development_control_'+i+']').val());
+            urgency.push($('[name=anshof_development_urgency_'+i+']').val());
+            risk.push($('[name=anshof_development_risk_'+i+']').val());
+            time.push($('[name=anshof_development_time_'+i+']').val());
+            resource.push($('[name=anshof_development_resource_'+i+']').val());
+            invest.push($('[name=anshof_development_invest_'+i+']').val());
+            type.push("Market Development (Existing Products in New Markets/Customers)");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_service; i++) {
+        if ($('[name=anshof_service'+i+']').length) {
+            factor.push($('[name=anshof_service'+i+']').val());
+            potential.push($('[name=anshof_service_Potential_'+i+']').val());
+            control.push($('[name=anshof_service_control_'+i+']').val());
+            urgency.push($('[name=anshof_service_urgency_'+i+']').val());
+            risk.push($('[name=anshof_service_risk_'+i+']').val());
+            time.push($('[name=anshof_service_time_'+i+']').val());
+            resource.push($('[name=anshof_service_resource_'+i+']').val());
+            invest.push($('[name=anshof_service_invest_'+i+']').val());
+            type.push("Product/Service Development (New/Extended Products in Existing Markets/Customers)");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_diversification; i++) {
+        if ($('[name=anshof_diversification'+i+']').length) {
+            factor.push($('[name=anshof_diversification'+i+']').val());
+            potential.push($('[name=anshof_diversification_Potential_'+i+']').val());
+            control.push($('[name=anshof_diversification_control_'+i+']').val());
+            urgency.push($('[name=anshof_diversification_urgency_'+i+']').val());
+            risk.push($('[name=anshof_diversification_risk_'+i+']').val());
+            time.push($('[name=anshof_diversification_time_'+i+']').val());
+            resource.push($('[name=anshof_diversification_resource_'+i+']').val());
+            invest.push($('[name=anshof_diversification_invest_'+i+']').val());
+            type.push("Diversification (New/Extended Products in New Markets/Customers)");
+
+        }
+
+
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step10";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            factor: factor,
+            potential: potential,
+            control: control,
+            urgency: urgency,
+            risk: risk,
+            time: time,
+            type: type,
+            resource: resource,
+            invest: invest,
+
+           
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "ansoff";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+
+        }
+
+    });
+
+    return false;
+}
+
+$(document).on("change", ".anshof_select", function() {
+    var name=$(this).closest("tr").attr("id");
+    if(name.indexOf("market_penetration") != -1){
+        var prefix="anshof_penetration_";
+    }
+    else if(name.indexOf("market_development") != -1)
+    {
+        var prefix="anshof_development_";
+
+    }
+    else if(name.indexOf("service_development") != -1)
+    {
+        var prefix="anshof_service_";
+
+    }
+    else if(name.indexOf("diversification") != -1)
+    {
+        var prefix="anshof_diversification_";
+
+    }
+     var rowNumber = name[name.length - 1];
+    var poten=parseInt($('[name='+prefix+'Potential_'+rowNumber+']').val());
+    var control=parseInt($('[name='+prefix+'control_'+rowNumber+']').val());
+    var urgency=parseInt($('[name='+prefix+'urgency_'+rowNumber+']').val());
+    var risk=parseInt($('[name='+prefix+'risk_'+rowNumber+']').val());
+    var time=parseInt($('[name='+prefix+'time_'+rowNumber+']').val());
+    var resource=parseInt($('[name='+prefix+'resource_'+rowNumber+']').val());
+    var invest=parseInt($('[name='+prefix+'invest_'+rowNumber+']').val());
+
+
+    var total=poten+control+urgency+risk+time+resource+invest;
+    $(this).parent().siblings().children(".anshof_total").val(total);
+   
+
+});
+
+function actions() {
+    var count = $("#decisions-input").val();
+    var task = [];
+    var owner = [];
+    var date = [];
+ 
+    for (var i = 1; i <= count; i++) {
+        if ($('[name=task' + i + ']').length) {
+            task.push($('[name=task' + i + ']').val());
+            owner.push($('[name=owner' + i + ']').val());
+            date.push($('[name=date' + i + ']').val());
+
+
+        }
+
+
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step11";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            task: task,
+            owner: owner,
+            date: date,
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "Actions";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+        }
+
+    });
+
+    return false;
+
+}

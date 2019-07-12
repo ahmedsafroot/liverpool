@@ -23,7 +23,7 @@
                                     <td><textarea class="dynamicArea fontSize" name="owner1" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="date1" cols="30" rows="10"></textarea></td>                                   
                                     <td id='decisions_delete-td1'>
-                                        <button id="decisions1_remove1" class="btn customer_remove-me">delete</button>
+                                        <button id="decisions1_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
 
@@ -40,7 +40,7 @@
             <button id="b2" class="btn  add-decisions" type="button">add
                 other
                 factor</button>
-                <button class="btn btn-primary mb-4 mt-3 ml-4" >Save</button>
+                <button class="btn btn-primary mb-4 mt-3 ml-4" onclick="actions()">Save</button>
         </div>
 
         <!--Next and prev-->
@@ -78,7 +78,7 @@
                                     <td><textarea class="dynamicArea fontSize" name="owner${next}" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="date${next}" cols="30" rows="10"></textarea></td>                                   
                                     <td id='decisions_delete-td${next}'>
-                                        <button id="decisions${next}_remove${next}" class="btn customer_remove-me">delete</button>
+                                        <button id="decisions${next}_remove${next}" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
 `
@@ -86,6 +86,5 @@
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 </script>

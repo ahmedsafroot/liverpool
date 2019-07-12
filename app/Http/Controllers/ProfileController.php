@@ -11,6 +11,8 @@ use App\trend;
 use App\experience;
 use App\Bea;
 use App\Turbulences;
+use App\Ansoff;
+use App\action;
 class ProfileController extends Controller
 {
     /**
@@ -1334,5 +1336,161 @@ class ProfileController extends Controller
     {
         $trubs=Turbulences::where("profileid",$id)->get();
         return view("trubs_details",compact('trubs'));
+    }
+
+    public function store_ansoff(Request $request)
+    {
+       
+            $ret= $this->create_ansoff($request);
+            if($ret==3)
+            {
+                $message="You Must create Profile before";
+                $background="bg-danger";
+            }
+            else if($ret==1)
+            {
+                $message="Ansoff Edited Succefully";
+                $background="bg-success";
+            }
+            else
+            {
+                $message="New Ansoff Created Succefully";
+                $background="bg-success";
+            }
+         
+
+            return response()->json(['success'=>$message,'background'=>$background]);
+
+    }
+
+    public function create_ansoff($data)
+    {
+        $factor=$data->factor;
+        $potential=$data->potential;
+        $control=$data->control;
+        $urgency=$data->urgency;
+        $risk=$data->risk;
+        $time=$data->time;
+        $type=$data->type;
+        $resource=$data->resource;
+        $invest=$data->invest;
+
+        if($factor!=NULL)
+        $count=count($factor);
+        else
+        $count=0;
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('ansoff_id'))
+        {
+            Ansoff::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $Ansoff=new Ansoff;
+            $Ansoff->profileid=$profileid;
+            $Ansoff->factor=$factor[$i];
+            $Ansoff->potential=$potential[$i];
+            $Ansoff->resource=$resource[$i];
+            $Ansoff->control=$control[$i];
+            $Ansoff->invest=$invest[$i];
+            $Ansoff->risk=$risk[$i];
+            $Ansoff->urgency=$urgency[$i];
+            $Ansoff->time=$time[$i];
+            $Ansoff->type=$type[$i];
+            $Ansoff->save();
+        }
+      
+        Session::put('ansoff_id', 1);
+        return $ret;
+    }
+    public function ansoff_details($id)
+    {
+        $ansoffs=Ansoff::where("profileid",$id)->get();
+       return view("ansoff_details",compact('ansoffs'));
+   
+    }
+
+    public function store_action(Request $request)
+    {
+       
+            $ret= $this->create_action($request);
+            if($ret==3)
+            {
+                $message="You Must create Profile before";
+                $background="bg-danger";
+            }
+            else if($ret==1)
+            {
+                $message="Actions Edited Succefully";
+                $background="bg-success";
+            }
+            else
+            {
+                $message="New Actions Created Succefully";
+                $background="bg-success";
+            }
+         
+
+            return response()->json(['success'=>$message,'background'=>$background]);
+
+    }
+
+    public function create_action($data)
+    {
+        $task=$data->task;
+        $owner=$data->cont;
+        $date=$data->date;
+        $count=count($task);
+
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('action_id'))
+        {
+            action::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $action=new action;
+            $action->profileid=$profileid;
+            $action->task=$task[$i];
+            $action->owner=$owner[$i];
+            $action->dueDate=$date[$i];
+
+
+            $action->save();
+        }
+      
+        Session::put('action_id', 1);
+        return $ret;
+    }
+
+    public function action_details($id)
+    {
+        $actions=action::where("profileid",$id)->get();
+        return view("action_details",compact('actions'));
+   
     }
 }

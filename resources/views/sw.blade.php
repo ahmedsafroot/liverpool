@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <!--second tab-->
     <div class="tab animated">
-        <p class="sectionTitle mt-4">Turbulance Factors</p>
+        <p class="sectionTitle mt-4">SW</p>
         <hr>
         <input type="hidden" value="1" id="sw_input">
         <div class="mb-3 ml-2 mt-6 col-md-10">
@@ -461,6 +461,5 @@
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
     });
 </script>

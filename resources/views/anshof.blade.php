@@ -14,7 +14,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="anshof1" class="card-body collapse" data-parent="#anshof1_factor1">
-                    <input type="hidden" value="1" id="anshof1-input">
+                    <input type="hidden" value="7" id="anshof1-input">
                     <table class="table table-striped col-md-7" id="anshof1-tabel">
                         <thead>
                             <tr>
@@ -38,22 +38,24 @@
                         <tbody>
                             <div id="market_penetration">
                                 <tr id="market_penetration1">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="market_penetration_txtarea">Increase
-                                                sales</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration1">Increase sales</textarea>
                                     </th>
-                                    <td><select name='market_penetration-td1' class="datasetTrend" datasetTrend="0">
+                                    <td><select name='anshof_penetration_Potential_1' class="anshof_select">
+                                                <option value="3">3</option>
+                                                <option value="2">2</option>
+                                                <option value="1">1</option>        
                                                 <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
+
                                             </select></td>
-                                    <td><select name='market_penetration-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
+                                    <td><select name='anshof_penetration_control_1' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='market_penetration-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_1' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -61,7 +63,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='market_penetration-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_1' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -69,21 +71,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='market_penetration-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_1' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='market_penetration-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_1' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='market_penetration-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_1' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -91,33 +93,34 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="market_penetration-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="market_penetration-td8">
                                     </td>
 
 
                                     <td id='market_penetration-td1'>
-                                        <button id="market_penetration_remove1" class="btn
-                                                market_penetration_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="market_penetration_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
 
                                 <tr id="market_penetration2">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="cross-selling_txtarea">Cross
-                                                selling</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration2">Cross selling</textarea>
                                     </th>
-                                    <td><select name='cross-selling-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
+                                    <td><select name='anshof_penetration_Potential_2' class="anshof_select">
+                                        <option value="3">3</option>
+                                        <option value="2">2</option>
+                                        <option value="1">1</option>        
+                                        <option value="0">0</option>
+
+                                    </select></td>
+                                    <td><select name='anshof_penetration_control_2' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='cross-selling-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='cross-selling-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_2' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -125,7 +128,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='cross-selling-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_2' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -133,21 +136,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='cross-selling-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_2' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='cross-selling-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_2' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='cross-selling-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_2' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -155,31 +158,33 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="cross-selling-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="cross-selling-td8">
                                     </td>
 
 
                                     <td id='cross-selling-td1'>
-                                        <button id="cross-selling_remove1" class="btn
-                                                cross-selling_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="cross-selling_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_penetration3">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="up-selling_txtarea">Up-Selling</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration3">Up-Selling</textarea>
                                     </th>
-                                    <td><select name='up-selling-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
+                                    <td><select name='anshof_penetration_Potential_3' class="anshof_select">
+                                        <option value="3">3</option>
+                                        <option value="2">2</option>
+                                        <option value="1">1</option>        
+                                        <option value="0">0</option>
+
+                                    </select></td>
+                                    <td><select name='anshof_penetration_control_3' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='up-selling-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='up-selling-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_3' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -187,7 +192,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='up-selling-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_3' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -195,21 +200,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='up-selling-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_3' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='up-selling-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_3' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='up-selling-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_3' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -217,31 +222,33 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="up-selling-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="up-selling-td8">
                                     </td>
 
 
                                     <td id='up-selling-td1'>
-                                        <button id="up-selling_remove1" class="btn
-                                                up-selling_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="up-selling_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_penetration4">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="add-ons_txtarea">Add-ons</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration4">Add-ons</textarea>
                                     </th>
-                                    <td><select name='add-ons-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
+                                    <td><select name='anshof_penetration_Potential_4' class="anshof_select">
+                                        <option value="3">3</option>
+                                        <option value="2">2</option>
+                                        <option value="1">1</option>        
+                                        <option value="0">0</option>
+
+                                    </select></td>
+                                    <td><select name='anshof_penetration_control_4' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='add-ons-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='add-ons-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_4' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -249,7 +256,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='add-ons-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_4' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -257,21 +264,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='add-ons-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_4' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='add-ons-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_4' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='add-ons-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_4' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -279,32 +286,33 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="add-ons-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="add-ons-td8">
                                     </td>
 
 
                                     <td id='add-ons-td1'>
-                                        <button id="add-ons_remove1" class="btn
-                                                add-ons_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="add-ons_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_penetration5">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="services_txtarea">Additional
-                                                Services</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration5">Additional Services</textarea>
                                     </th>
-                                    <td><select name='services-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
+                                    <td><select name='anshof_penetration_Potential_5' class="anshof_select">
+                                        <option value="3">3</option>
+                                        <option value="2">2</option>
+                                        <option value="1">1</option>        
+                                        <option value="0">0</option>
+
+                                    </select></td>
+                                    <td><select name='anshof_penetration_control_5' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='services-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='services-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_5' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -312,7 +320,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='services-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_5' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -320,21 +328,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='services-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_5' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='services-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_5' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='services-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_5' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -342,32 +350,33 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="services-td8">
+                                <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="anshof_services-td8">
                                     </td>
 
 
                                     <td id='services-td1'>
-                                        <button id="services_remove1" class="btn
-                                                services_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="services_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_penetration6">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="offers_txtarea">Promotion/special
-                                                offers</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration6">Promotion/special offers</textarea>
                                     </th>
-                                    <td><select name='offers-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
+                                    <td><select name='anshof_penetration_Potential_6' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
+
+                                        </select></td>
+                                    <td><select name='anshof_penetration_control_6' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='offers-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='offers-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_6' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -375,7 +384,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='offers-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_6' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -383,21 +392,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='offers-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_6' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='offers-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_6' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='offers-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_6' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -405,32 +414,33 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="offers-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="offers-td8">
                                     </td>
 
 
                                     <td id='offers-td1'>
-                                        <button id="offers_remove1" class="btn
-                                                offers_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="offers_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_penetration7">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="brand_txtarea">Brand
-                                                differentiation</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration7">Brand differentiation</textarea>
                                     </th>
-                                    <td><select name='brand-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
+                                    <td><select name='anshof_penetration_Potential_7' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
+
+                                        </select></td>
+                                    <td><select name='anshof_penetration_control_7' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='brand-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='brand-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_7' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -438,7 +448,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='brand-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_7' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -446,21 +456,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='brand-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_7' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='brand-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_7' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='brand-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_7' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -468,13 +478,12 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="brand-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="brand-td8">
                                     </td>
 
 
                                     <td id='brand-td1'>
-                                        <button id="brand_remove1" class="btn
-                                                brand_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="brand_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
 
@@ -506,7 +515,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="anshof2" class="card-body collapse" data-parent="#anshof_factor2">
-                    <input type="hidden" value="1" id="anshof2-input">
+                    <input type="hidden" value="5" id="anshof2-input">
                     <table class="table table-striped col-md-7" id="anshof2-tabel">
                         <thead>
                             <tr>
@@ -530,324 +539,324 @@
                         <tbody>
                             <div id="market_development">
                                 <tr id="market_development1">
-                                    <th scope="row" class="tableH
-                                                tru_factors">
-                                        <textarea type="text" class="form-control
-                                                    bea_txtarea" name="attract_txtarea">Attract
-                                                    non-user in existing sector</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_development1">Attract non-user in existing sector</textarea>
                                     </th>
-                                    <td><select name='attract-td1' class="datasetTrend" datasetTrend="0">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select></td>
-                                    <td><select name='attract-td2' class="datasetTrend" datasetTrend="1">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                </select></td>
-                                    <td><select name='attract-td3' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_Potential_1' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='attract-td4' class="datasetTrend" datasetTrend="2">
+                                        </select></td>
+                                    <td><select name='anshof_development_control_1' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_urgency_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
 
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='attract-td5' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='attract-td6' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='attract-td7' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_risk_1' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_time_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_resource_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_invest_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="attract-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="attract-td8">
                                     </td>
 
 
                                     <td id='attract-td1'>
-                                        <button id="attract_remove1" class="btn
-                                                    attract_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="attract_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
 
                                 <tr id="market_development2">
-                                    <th scope="row" class="tableH
-                                                tru_factors">
-                                        <textarea type="text" class="form-control
-                                                    bea_txtarea" name="competitors_txtarea">Attract
-                                                    competitors customers</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_development2">Attract competitors customers</textarea>
                                     </th>
-                                    <td><select name='competitors-td1' class="datasetTrend" datasetTrend="0">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select></td>
-                                    <td><select name='competitors-td2' class="datasetTrend" datasetTrend="1">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                </select></td>
-                                    <td><select name='competitors-td3' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_Potential_2' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='competitors-td4' class="datasetTrend" datasetTrend="2">
+                                        </select></td>
+                                    <td><select name='anshof_development_control_2' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_urgency_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
 
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='competitors-td5' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='competitors-td6' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='competitors-td7' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_risk_2' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_time_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_resource_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_invest_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="competitors-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="competitors-td8">
                                     </td>
 
 
                                     <td id='competitors-td1'>
-                                        <button id="competitors_remove1" class="btn
-                                                    competitors_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="competitors_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_development3">
-                                    <th scope="row" class="tableH
-                                                tru_factors">
-                                        <textarea type="text" class="form-control
-                                                    bea_txtarea" name="overseas_txtarea">Expand
-                                                    into overseas markets</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_development3">Expand into overseas markets</textarea>
                                     </th>
-                                    <td><select name='overseas-td1' class="datasetTrend" datasetTrend="0">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select></td>
-                                    <td><select name='overseas-td2' class="datasetTrend" datasetTrend="1">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                </select></td>
-                                    <td><select name='overseas-td3' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_Potential_3' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='overseas-td4' class="datasetTrend" datasetTrend="2">
+                                        </select></td>
+                                    <td><select name='anshof_development_control_3' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_urgency_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
 
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='overseas-td5' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='overseas-td6' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='overseas-td7' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_risk_3' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_time_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_resource_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_invest_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="overseas-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="overseas-td8">
                                     </td>
 
 
                                     <td id='overseas-td1'>
-                                        <button id="overseas_remove1" class="btn
-                                                    overseas_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="overseas_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_development4">
-                                    <th scope="row" class="tableH
-                                                tru_factors">
-                                        <textarea type="text" class="form-control
-                                                    bea_txtarea" name="niches_txtarea">Move
-                                                    into new market niches</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_development4">Move into new market niches</textarea>
                                     </th>
-                                    <td><select name='niches-td1' class="datasetTrend" datasetTrend="0">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select></td>
-                                    <td><select name='niches-td2' class="datasetTrend" datasetTrend="1">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                </select></td>
-                                    <td><select name='niches-td3' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_Potential_4' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='niches-td4' class="datasetTrend" datasetTrend="2">
+                                        </select></td>
+                                    <td><select name='anshof_development_control_4' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_urgency_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
 
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='niches-td5' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='niches-td6' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='niches-td7' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_risk_4' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_time_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_resource_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_invest_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="niches-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="niches-td8">
                                     </td>
 
 
                                     <td id='niches-td1'>
-                                        <button id="niches_remove1" class="btn
-                                                    niches_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="niches_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="market_development5">
-                                    <th scope="row" class="tableH
-                                                tru_factors">
-                                        <textarea type="text" class="form-control
-                                                    bea_txtarea" name="ventures_txtarea">Joint
-                                                    ventures/collaborations</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_development5">Joint ventures/collaborations</textarea>
                                     </th>
-                                    <td><select name='ventures-td1' class="datasetTrend" datasetTrend="0">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select></td>
-                                    <td><select name='ventures-td2' class="datasetTrend" datasetTrend="1">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                </select></td>
-                                    <td><select name='ventures-td3' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_Potential_5' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='ventures-td4' class="datasetTrend" datasetTrend="2">
+                                        </select></td>
+                                    <td><select name='anshof_development_control_5' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_urgency_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
 
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='ventures-td5' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='ventures-td6' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
-                                    <td><select name='ventures-td7' class="datasetTrend" datasetTrend="2">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select></td>
+                                    <td><select name='anshof_development_risk_5' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_time_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_resource_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_invest_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="ventures-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="ventures-td8">
                                     </td>
 
 
                                     <td id='ventures-td1'>
-                                        <button id="ventures_remove1" class="btn
-                                                    ventures_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="ventures_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                             </div>
@@ -879,7 +888,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="anshof3" class="card-body collapse" data-parent="#anshof_factor3">
-                    <input type="hidden" value="1" id="anshof3-input">
+                    <input type="hidden" value="6" id="anshof3-input">
                     <table class="table table-striped col-md-7" id="anshof3-tabel">
                         <thead>
                             <tr>
@@ -911,385 +920,388 @@
                         <tbody>
                             <div id="service_development">
                                 <tr id="service_development1">
-                                    <th scope="row" class="tableH
-                                                    tru_factors">
-                                        <textarea type="text" class="form-control
-                                                        bea_txtarea" name="capability_txtarea">Extend
-                                                        process capability</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_service1">Extend process capability</textarea>
                                     </th>
-                                    <td><select name='capability-td1' class="datasetTrend" datasetTrend="0">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select></td>
-                                    <td><select name='capability-td2' class="datasetTrend" datasetTrend="1">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select></td>
-                                    <td><select name='capability-td3' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                    <td><select name='anshof_service_Potential_1' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='capability-td4' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='capability-td5' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='capability-td6' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='capability-td7' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                        </select></td>
+                                    <td><select name='anshof_service_control_1' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_urgency_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+
+                                    <td><select name='anshof_service_risk_1' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_time_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_resource_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_invest_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="capability-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="capability-td8">
                                     </td>
 
 
                                     <td id='capability-td1'>
-                                        <button id="capability_remove1" class="btn
-                                                        capability_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="capability_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
 
                                 <tr id="service_development2">
-                                    <th scope="row" class="tableH
-                                                    tru_factors">
-                                        <textarea type="text" class="form-control
-                                                        bea_txtarea" name="ranges_txtarea">Develop
-                                                        additional product
-                                                        ranges</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_service2">Develop additional product ranges</textarea>
                                     </th>
-                                    <td><select name='ranges-td1' class="datasetTrend" datasetTrend="0">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select></td>
-                                    <td><select name='ranges-td2' class="datasetTrend" datasetTrend="1">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select></td>
-                                    <td><select name='ranges-td3' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                    <td><select name='anshof_service_Potential_2' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='ranges-td4' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='ranges-td5' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='ranges-td6' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='ranges-td7' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                        </select></td>
+                                    <td><select name='anshof_service_control_2' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_urgency_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+
+                                    <td><select name='anshof_service_risk_2' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_time_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_resource_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_invest_2' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="ranges-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="ranges-td8">
                                     </td>
 
 
                                     <td id='ranges-td1'>
-                                        <button id="ranges_remove1" class="btn
-                                                        ranges_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="ranges_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="service_development3">
-                                    <th scope="row" class="tableH
-                                                    tru_factors">
-                                        <textarea type="text" class="form-control
-                                                        bea_txtarea" name="existing-customers_txtarea">New
-                                                        products for existing
-                                                        customers</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_service3">New products for existing customers</textarea>
                                     </th>
-                                    <td><select name='existing-customers-td1' class="datasetTrend" datasetTrend="0">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select></td>
-                                    <td><select name='existing-customers-td2' class="datasetTrend" datasetTrend="1">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select></td>
-                                    <td><select name='existing-customers-td3' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                    <td><select name='anshof_service_Potential_3' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='existing-customers-td4' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='existing-customers-td5' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='existing-customers-td6' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='existing-customers-td7' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                        </select></td>
+                                    <td><select name='anshof_service_control_3' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_urgency_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+
+                                    <td><select name='anshof_service_risk_3' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_time_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_resource_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_invest_3' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="existing-customers-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="existing-customers-td8">
                                     </td>
 
 
                                     <td id='existing-customers-td1'>
-                                        <button id="existing-customers_remove1" class="btn
-                                                        existing-customers_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="existing-customers_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="service_development4">
-                                    <th scope="row" class="tableH
-                                                    tru_factors">
-                                        <textarea type="text" class="form-control
-                                                        bea_txtarea" name="new-services_txtarea">New
-                                                        services</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_service4">New services</textarea>
                                     </th>
-                                    <td><select name='new-services-td1' class="datasetTrend" datasetTrend="0">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select></td>
-                                    <td><select name='new-services-td2' class="datasetTrend" datasetTrend="1">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select></td>
-                                    <td><select name='new-services-td3' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                    <td><select name='anshof_service_Potential_4' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='new-services-td4' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='new-services-td5' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='new-services-td6' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='new-services-td7' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                        </select></td>
+                                    <td><select name='anshof_service_control_4' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_urgency_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+
+                                    <td><select name='anshof_service_risk_4' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_time_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_resource_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_invest_4' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="new-services-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-services-td8">
                                     </td>
 
 
                                     <td id='new-services-td1'>
-                                        <button id="new-services_remove1" class="btn
-                                                        new-services_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="new-services_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                                 <tr id="service_development5">
-                                    <th scope="row" class="tableH
-                                                    tru_factors">
-                                        <textarea type="text" class="form-control
-                                                        bea_txtarea" name="complementary_txtarea">Source
-                                                        add-on/complementary
-                                                        products.</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_service5">Source add-on/complementary products.</textarea>
                                     </th>
-                                    <td><select name='complementary-td1' class="datasetTrend" datasetTrend="0">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select></td>
-                                    <td><select name='complementary-td2' class="datasetTrend" datasetTrend="1">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select></td>
-                                    <td><select name='complementary-td3' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                    <td><select name='anshof_service_Potential_5' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='complementary-td4' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='complementary-td5' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='complementary-td6' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='complementary-td7' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                        </select></td>
+                                    <td><select name='anshof_service_control_5' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_urgency_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+
+                                    <td><select name='anshof_service_risk_5' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_time_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_resource_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_invest_5' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="complementary-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="complementary-td8">
                                     </td>
 
 
                                     <td id='complementary-td1'>
-                                        <button id="complementary_remove1" class="btn
-                                                        complementary_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="complementary_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
-                                <tr id="service_development5">
-                                    <th scope="row" class="tableH
-                                                    tru_factors">
-                                        <textarea type="text" class="form-control
-                                                        bea_txtarea" name="simplify-products_txtarea">Simplify
-                                                        products</textarea>
+                                <tr id="service_development6">
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_service6">Simplify products</textarea>
                                     </th>
-                                    <td><select name='simplify-products-td1' class="datasetTrend" datasetTrend="0">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select></td>
-                                    <td><select name='simplify-products-td2' class="datasetTrend" datasetTrend="1">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select></td>
-                                    <td><select name='simplify-products-td3' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                    <td><select name='anshof_service_Potential_6' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='simplify-products-td4' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='simplify-products-td5' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='simplify-products-td6' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='simplify-products-td7' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                        </select></td>
+                                    <td><select name='anshof_service_control_6' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_urgency_6' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+
+                                    <td><select name='anshof_service_risk_6' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_time_6' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_resource_6' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_invest_6' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="simplify-products-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="simplify-products-td8">
                                     </td>
 
 
                                     <td id='simplify-products-td1'>
-                                        <button id="simplify-products_remove1" class="btn
-                                                        simplify-products_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="simplify-products_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                             </div>
@@ -1297,8 +1309,7 @@
                         </tbody>
                     </table>
                     <div>
-                        <button id="supply_add" class="btn
-                                        add-service_development" type="button">add
+                        <button id="supply_add" class="btn add-service_development" type="button">add
                                         other
                                         factor</button>
                     </div>
@@ -1325,11 +1336,9 @@
                         <thead>
                             <tr>
                                 <th scope="col"></th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
+                                <th scope="col" class="tableH supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
                                 </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Degree of control</th>
+                                <th scope="col" class="tableH supplyWidth">Degree of control</th>
                                 <th scope="col" class="tableH
                                             supplyWidth">Importance urgency
                                 </th>
@@ -1352,65 +1361,67 @@
                         <tbody>
                             <div id="diversification">
                                 <tr id="diversification1">
-                                    <th scope="row" class="tableH
-                                                    tru_factors">
-                                        <textarea type="text" class="form-control
-                                                        bea_txtarea" name="new-products_txtarea">New products or services in new markets.</textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_diversification1">New products or services in new markets.</textarea>
                                     </th>
-                                    <td><select name='new-products-td1' class="datasetTrend" datasetTrend="0">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select></td>
-                                    <td><select name='new-products-td2' class="datasetTrend" datasetTrend="1">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select></td>
-                                    <td><select name='new-products-td3' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                    <td><select name='anshof_diversification_Potential_1' class="anshof_select">
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>        
+                                            <option value="0">0</option>
 
-                                    <td><select name='new-products-td4' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='new-products-td5' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='new-products-td6' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
-                                    <td><select name='new-products-td7' class="datasetTrend" datasetTrend="2">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select></td>
+                                        </select></td>
+                                    <td><select name='anshof_diversification_control_1' class="anshof_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_diversification_urgency_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+
+                                    <td><select name='anshof_diversification_risk_1' class="anshof_select">
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_diversification_time_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_diversification_resource_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+                                    <td><select name='anshof_diversification_invest_1' class="anshof_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="new-products-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-products-td8">
                                     </td>
 
 
                                     <td id='new-products-td1'>
-                                        <button id="new-products_remove1" class="btn
-                                                        new-products_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="new-products_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>
                             </div>
@@ -1431,7 +1442,7 @@
         </div>
         <div>
             <button type="button" class="btn btn-primary btn-md
-                            ml-4">Save</button>
+                            ml-4" onclick="ansoff()">Save</button>
         </div>
 
 
@@ -1467,23 +1478,25 @@
         var next = Number(myNext);
         var addto = "#market_penetration" + next;
         next = next + 1;
-        var addRemove = "#market_penetration_delete-td" + (next);
+        var addRemove = "#market_penetration_removeRow-td" + (next);
         var markup = `  <tr id="market_penetration${next}">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="new-factor${next}_txtarea"></textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_penetration${next}"></textarea>
                                     </th>
-                                    <td><select name='new-market${next}-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
+                                    <td><select name='anshof_penetration_Potential_${next}' class="anshof_select">
+                                                <option value="3">3</option>
+                                                <option value="2">2</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                            </select></td>
+                                    <td><select name='anshof_penetration_control_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='new-market${next}-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_urgency_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1491,7 +1504,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='new-market${next}-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_risk_${next}' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -1499,21 +1512,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_time_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_resource_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_penetration_invest_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1521,20 +1534,19 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
                                     </td>
 
 
                                     <td id='new-market${next}-td9'>
-                                        <button id="new-market${next}_remove1" class="btn
-                                                new-market${next}_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="new-market${next}_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
+        
     });
 
     $(".add-market_development").click(function(e) {
@@ -1549,23 +1561,25 @@
         var next = Number(myNext);
         var addto = "#market_development" + next;
         next = next + 1;
-        var addRemove = "#market_development_delete-td" + (next);
+        var addRemove = "#market_development_removeRow-td" + (next);
         var markup = `  <tr id="market_development${next}">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="new-factor${next}_txtarea"></textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_development${next}"></textarea>
                                     </th>
-                                    <td><select name='new-market${next}-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
+                                    <td><select name='anshof_development_Potential_${next}' class="anshof_select">
+                                                <option value="3">3</option>
+                                                <option value="2">2</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                            </select></td>
+                                    <td><select name='anshof_development_control_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='new-market${next}-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_development_urgency_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1573,7 +1587,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='new-market${next}-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_development_risk_${next}' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -1581,21 +1595,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_development_time_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_development_resource_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_development_invest_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1603,20 +1617,19 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
                                     </td>
 
 
                                     <td id='new-market${next}-td9'>
-                                        <button id="new-market${next}_remove1" class="btn
-                                                new-market${next}_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="new-market${next}_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
+        
     });
 
     $(".add-service_development").click(function(e) {
@@ -1631,23 +1644,25 @@
         var next = Number(myNext);
         var addto = "#service_development" + next;
         next = next + 1;
-        var addRemove = "#service_development_delete-td" + (next);
+        var addRemove = "#service_development_removeRow-td" + (next);
         var markup = `  <tr id="service_development${next}">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="new-factor${next}_txtarea"></textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_service${next}"></textarea>
                                     </th>
-                                    <td><select name='new-market${next}-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
+                                    <td><select name='anshof_service_Potential_${next}' class="anshof_select">
+                                                <option value="3">3</option>
+                                                <option value="2">2</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                            </select></td>
+                                    <td><select name='anshof_service_control_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='new-market${next}-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_service_urgency_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1655,7 +1670,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='new-market${next}-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_service_risk_${next}' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -1663,21 +1678,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_service_time_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_service_resource_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_service_invest_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1685,20 +1700,19 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
                                     </td>
 
 
                                     <td id='new-market${next}-td9'>
-                                        <button id="new-market${next}_remove1" class="btn
-                                                new-market${next}_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="new-market${next}_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
+        
     });
 
 
@@ -1714,23 +1728,25 @@
         var next = Number(myNext);
         var addto = "#diversification" + next;
         next = next + 1;
-        var addRemove = "#diversification_delete-td" + (next);
+        var addRemove = "#diversification_removeRow-td" + (next);
         var markup = `  <tr id="diversification${next}">
-                                    <th scope="row" class="tableH
-                                            tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="new-factor${next}_txtarea"></textarea>
+                                    <th scope="row" class="tableH tru_factors">
+                                        <textarea type="text" class="form-control bea_txtarea" name="anshof_diversification${next}"></textarea>
                                     </th>
-                                    <td><select name='new-market${next}-td1' class="datasetTrend" datasetTrend="0">
-                                                <option value="0">0</option>
+                                    <td><select name='anshof_diversification_Potential_${next}' class="anshof_select">
+                                                <option value="3">3</option>
+                                                <option value="2">2</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                            </select></td>
+                                    <td><select name='anshof_diversification_control_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td2' class="datasetTrend" datasetTrend="1">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                            </select></td>
-                                    <td><select name='new-market${next}-td3' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_diversification_urgency_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1738,7 +1754,7 @@
                                                 <option value="5">5</option>
                                             </select></td>
 
-                                    <td><select name='new-market${next}-td4' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_diversification_risk_${next}' class="anshof_select">
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -1746,21 +1762,21 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td5' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_diversification_time_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td6' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_diversification_resource_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='new-market${next}-td7' class="datasetTrend" datasetTrend="2">
+                                    <td><select name='anshof_diversification_invest_${next}' class="anshof_select">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -1768,19 +1784,18 @@
                                                 <option value="5">5</option>
                                             </select></td>
                                     <td>
-                                        <input type="text" style="width:30px;" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
                                     </td>
 
 
                                     <td id='new-market${next}-td9'>
-                                        <button id="new-market${next}_remove1" class="btn
-                                                new-market${next}_remove-me" onclick="deleteRow(this,1,1)">delete</button>
+                                        <button id="new-market${next}_remove1" class="btn removeRow">delete</button>
                                     </td>
                                 </tr>`
         var newIn = markup;
         var newInput = $(newIn);
         $(addto).after(newInput);
 
-        add_label_trend("New Label");
+        
     });
 </script>
