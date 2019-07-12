@@ -1024,7 +1024,56 @@ function turbulence_impact() {
             $(".modal-body form").append(element);
             $(".modal-footer").hide();
             $('#myModal').modal('show');
-
+            $(".trublance_tools").children().remove();
+            var x=1;
+            $('.total_score').each(function(i, obj) {
+                if($(this).val()>20)
+                {
+                    var factor_text=$(this).parent().siblings(".tableH").children("textarea").val();
+                    var thread_op=$(this).parent().siblings().children(".threat_op").val();
+                   var elem='<tr id="trub_factor'+x+'"><th scope="row" class="tableH tru_factors"><textarea type="text" class="form-control bea_txtarea" name="trub_factor'+x+'txtarea" readonly>'+factor_text+'</textarea></th>'
+                           +'<td><select name="trub_factor'+x+'_Revenue" class="tru_select_box">'
+                            +'<option value="1">1</option>'+
+                            '<option value="2">2</option>'+
+                            '<option value="3">3</option>'+
+                            '<option value="4">4</option>'+
+                            '<option value="5">5</option></select></td>'
+                            +'<td><select name="trub_factor'+x+'_Cost" class="tru_select_box">'
+                                +'<option value="1">1</option>'
+                                +'<option value="2">2</option>'
+                                +'<option value="3">3</option>'
+                                +'<option value="4">4</option>'
+                                +'<option value="5">5</option></select></td>'+
+                   '<td><select name="trub_factor'+x+'_Growth" class="tru_select_box">'+
+                           '<option value="1">1</option>'+
+                           '<option value="2">2</option>'+
+                           '<option value="3">3</option>'+
+                           '<option value="4">4</option>'+
+                           '<option value="5">5</option></select></td>'+
+                   '<td><select name="trub_factor'+x+'_Control" class="tru_select_box">'+
+                               '<option value="-1">-1</option>'+
+                               '<option value="1">1</option>'+
+                               '<option value="2">2</option></select></td>'+
+                   '<td><select name="trub_factor'+x+'_competitor" class="tru_select_box">'+
+                                   '<option value="1">1</option>'+
+                                   '<option value="2">2</option>'+
+                                   '<option value="3">3</option></select></td>';
+                    if(thread_op==1)
+                    {
+                        var threadOp='<td> <input type="text" readonly style="width:30px;" class="threadop" name="trub_factor'+x+'_threat" value="-3"></td>'+
+                        '<td> <input type="text" readonly style="width:30px;" class="threadop" name="trub_factor'+x+'_opportunity" value="0"></td></tr>';
+                    }
+                    else
+                    {
+                        var threadOp='<td> <input type="text" readonly style="width:30px;" class="threadop" name="trub_factor'+x+'_threat" value="0"></td>'+
+                        '<td> <input type="text" readonly style="width:30px;" class="threadop" name="trub_factor'+x+'_opportunity" value="-3"></td></tr>';
+                    }
+                    elem=elem+threadOp;
+                    x++;
+                    $(".trublance_tools").append(elem);
+                }
+                $("#tru_impac").val(x);
+            });
 
         }
 
@@ -1047,5 +1096,98 @@ $(document).on("change", ".beaSelect", function() {
     var total=sev*score;
     $('[name='+name+'_score]').val(score);
     $('[name='+name+'_total]').val(total);
+
+});
+
+function trublance_tool() {
+    var count = $("#tru_impac").val();
+    var factor = [];
+    var revenue = [];
+    var cost = [];
+    var growth = [];
+    var control = [];
+    var comp = [];
+
+    for (var i = 1; i <= count; i++) {
+        if ($('[name=trub_factor'+i+'txtarea]').length) {
+            factor.push($('[name=trub_factor'+i+'txtarea]').val());
+            revenue.push($('[name=trub_factor'+i+'_Revenue]').val());
+            cost.push($('[name=trub_factor'+i+'_Cost]').val());
+            growth.push($('[name=trub_factor'+i+'_Growth]').val());
+            control.push($('[name=trub_factor'+i+'_Control]').val());
+            comp.push($('[name=trub_factor'+i+'_competitor]').val());
+
+
+
+
+        }
+
+
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step7";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            factor: factor,
+            revenue: revenue,
+            cost: cost,
+            growth: growth,
+            control: control,
+            comp: comp
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "Turbulence Factors";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+        }
+
+    });
+
+    return false;
+
+}
+
+$(document).on("change", ".tru_select_box", function() {
+    var name=$(this).closest("tr").attr("id");
+    var rev=parseInt($('[name='+name+'_Revenue]').val());
+    var cost=parseInt($('[name='+name+'_Cost]').val());
+    var growth=parseInt($('[name='+name+'_Growth]').val());
+    var control=parseInt($('[name='+name+'_Control]').val());
+    var comp=parseInt($('[name='+name+'_competitor]').val());
+
+    var score=rev+cost+growth;
+    var total=score*control*comp;
+    if(parseInt($('[name='+name+'_threat]').val())!=0)
+    {
+        $('[name='+name+'_threat]').val(total);
+    }
+    else
+    {
+        $('[name='+name+'_opportunity]').val(total);
+
+    }
 
 });

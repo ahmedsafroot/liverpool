@@ -3,6 +3,7 @@
     <div class="tab animated">
         <p class="sectionTitle mt-4">Turbulance Factors</p>
         <hr>
+        <input type="hidden" value="0" id="tru_impac">
         <div class=" mb-3 ml-2 mt-6 col-md-10">
             <table class="table table-striped col-md-7" id="supply_BEA">
                 <thead>
@@ -23,61 +24,14 @@
                     </tr>
                 </thead>
 
-                <tbody>
-                    <div id="trub_factors">
-                        <tr id="trub_factor1">
-                            <th scope="row" class="tableH tru_factors">
-                                <textarea type="text" class="form-control
-                                bea_txtarea" name="trub_factor1_txtarea" readonly>Labour
-                                force size</textarea>
-                            </th>
-                            <td><select name='trub_factor1_Revenue' class="datasetTrend" datasetTrend="0">
-
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="3">4</option>
-                                <option value="3">5</option>
-
-                            </select></td>
-                            <td><select name='trub_factor1_Cost' class="datasetTrend" datasetTrend="2">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select></td>
-                            <td><select name='trub_factor1_Growth' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-
-                            <td><select name='trub_factor1_Control' class="datasetTrend" datasetTrend="2">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select></td>
-
-                            <td><select name='trub_factor1_competitor' class="datasetTrend" datasetTrend="2">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select></td>
-                            <td> <input type="text" readonly style="width:30px;" name="trub_factor1_threat" value="3">
-                            </td>
-
-                            <td> <input type="text" readonly style="width:30px;" name="trub_factor1_opportunity" value="3">
-                            </td>
-                        </tr>
+                <tbody class="trublance_tools">
 
                 </tbody>
             </table>
             </div>
             <!--Save Data Section-->
             <div>
-                <button type="button" class="btn btn-primary btn-md ml-4">Save</button>
+                <button type="button" class="btn btn-primary btn-md ml-4" onclick="trublance_tool()">Save</button>
             </div>
             <!--Next and prev-->
             <div class="container-fluid">

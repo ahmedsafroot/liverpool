@@ -56,7 +56,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply1_score" value="3">
                                     </td>
-                                    <td><select name='supply1_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply1_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -69,7 +69,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply1_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply1_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td1'>
@@ -99,7 +99,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply2_score" value="3">
                                     </td>
-                                    <td><select name='supply2_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply2_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -112,7 +112,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply2_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply2_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td2'>
@@ -142,7 +142,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply3_score" value="3">
                                     </td>
-                                    <td><select name='supply3_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply3_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -155,7 +155,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply3_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply3_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td3'>
@@ -185,7 +185,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply4_score" value="3">
                                     </td>
-                                    <td><select name='supply4_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply4_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -198,7 +198,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply4_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply4_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td4'>
@@ -228,7 +228,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply5_score" value="3">
                                     </td>
-                                    <td><select name='supply5_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply5_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -241,7 +241,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply5_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply5_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td5'>
@@ -271,7 +271,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply6_score" value="3">
                                     </td>
-                                    <td><select name='supply6_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply6_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -284,7 +284,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply6_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply6_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td6'>
@@ -314,7 +314,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply7_score" value="3">
                                     </td>
-                                    <td><select name='supply7_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply7_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -327,7 +327,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply7_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply7_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td7'>
@@ -357,7 +357,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply8_score" value="3">
                                     </td>
-                                    <td><select name='supply8_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply8_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -370,7 +370,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply8_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply8_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td8'>
@@ -400,7 +400,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply9_score" value="3">
                                     </td>
-                                    <td><select name='supply9_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply9_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -413,7 +413,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply9_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply9_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td9'>
@@ -443,7 +443,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply10_score" value="3">
                                     </td>
-                                    <td><select name='supply10_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply10_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -456,7 +456,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply10_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply10_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td10'>
@@ -486,7 +486,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply11_score" value="3">
                                     </td>
-                                    <td><select name='supply11_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply11_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -499,7 +499,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply11_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply11_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td11'>
@@ -529,7 +529,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply12_score" value="3">
                                     </td>
-                                    <td><select name='supply12_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply12_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -542,7 +542,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply12_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply12_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td12'>
@@ -572,7 +572,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply13_score" value="3">
                                     </td>
-                                    <td><select name='supply13_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply13_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -585,7 +585,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply13_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply13_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td13'>
@@ -615,7 +615,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply14_score" value="3">
                                     </td>
-                                    <td><select name='supply14_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply14_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -628,7 +628,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply14_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply14_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td14'>
@@ -658,7 +658,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply15_score" value="3">
                                     </td>
-                                    <td><select name='supply15_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply15_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -671,7 +671,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply15_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply15_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td15'>
@@ -701,7 +701,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply16_score" value="3">
                                     </td>
-                                    <td><select name='supply16_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply16_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -714,7 +714,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply16_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply16_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td16'>
@@ -793,7 +793,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req1_score" value="3">
                                     </td>
-                                    <td><select name='cust_req1_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req1_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -806,7 +806,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req1_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req1_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td1'>
@@ -836,7 +836,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req2_score" value="3">
                                     </td>
-                                    <td><select name='cust_req2_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req2_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -849,7 +849,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req2_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req2_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td2'>
@@ -879,7 +879,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req3_score" value="3">
                                     </td>
-                                    <td><select name='cust_req3_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req3_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -892,7 +892,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req3_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req3_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td3'>
@@ -922,7 +922,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req4_score" value="3">
                                     </td>
-                                    <td><select name='cust_req4_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req4_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -935,7 +935,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req4_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req4_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td4'>
@@ -965,7 +965,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req5_score" value="3">
                                     </td>
-                                    <td><select name='cust_req5_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req5_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -978,7 +978,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req5_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req5_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td5'>
@@ -1008,7 +1008,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req6_score" value="3">
                                     </td>
-                                    <td><select name='cust_req6_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req6_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1021,7 +1021,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req6_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req6_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td6'>
@@ -1051,7 +1051,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req7_score" value="3">
                                     </td>
-                                    <td><select name='cust_req7_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req7_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1064,7 +1064,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req7_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req7_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td7'>
@@ -1094,7 +1094,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req8_score" value="3">
                                     </td>
-                                    <td><select name='cust_req8_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req8_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1107,7 +1107,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req8_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req8_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td8'>
@@ -1137,7 +1137,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req9_score" value="3">
                                     </td>
-                                    <td><select name='cust_req9_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req9_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1150,7 +1150,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req9_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req9_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td9'>
@@ -1180,7 +1180,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req10_score" value="3">
                                     </td>
-                                    <td><select name='cust_req10_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req10_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1193,7 +1193,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req10_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req10_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td10'>
@@ -1223,7 +1223,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req11_score" value="3">
                                     </td>
-                                    <td><select name='cust_req11_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req11_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1236,7 +1236,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req11_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req11_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td11'>
@@ -1266,7 +1266,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req12_score" value="3">
                                     </td>
-                                    <td><select name='cust_req12_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req12_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1279,7 +1279,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req12_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req12_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td12'>
@@ -1309,7 +1309,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req13_score" value="3">
                                     </td>
-                                    <td><select name='cust_req13_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req13_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1322,7 +1322,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req13_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req13_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td13'>
@@ -1352,7 +1352,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req14_score" value="3">
                                     </td>
-                                    <td><select name='cust_req14_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req14_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1365,7 +1365,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req14_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req14_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td14'>
@@ -1395,7 +1395,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req15_score" value="3">
                                     </td>
-                                    <td><select name='cust_req15_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req15_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1408,7 +1408,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req15_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req15_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td15'>
@@ -1438,7 +1438,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req16_score" value="3">
                                     </td>
-                                    <td><select name='cust_req16_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req16_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1451,7 +1451,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req16_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req16_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td16'>
@@ -1481,7 +1481,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req17_score" value="3">
                                     </td>
-                                    <td><select name='cust_req17_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req17_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1494,7 +1494,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req17_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req17_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td17'>
@@ -1524,7 +1524,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req18_score" value="3">
                                     </td>
-                                    <td><select name='cust_req18_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req18_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1537,7 +1537,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req18_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req18_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td18'>
@@ -1568,7 +1568,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req19_score" value="3">
                                     </td>
-                                    <td><select name='cust_req19_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req19_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1581,7 +1581,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req19_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req19_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td19'>
@@ -1611,7 +1611,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req20_score" value="3">
                                     </td>
-                                    <td><select name='cust_req20_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req20_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1624,7 +1624,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req20_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req20_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td20'>
@@ -1654,7 +1654,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req21_score" value="3">
                                     </td>
-                                    <td><select name='cust_req21_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req21_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1667,7 +1667,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req21_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req21_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td21'>
@@ -1697,7 +1697,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req22_score" value="3">
                                     </td>
-                                    <td><select name='cust_req22_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req22_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1710,7 +1710,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req22_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req22_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td22'>
@@ -1740,7 +1740,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req23_score" value="3">
                                     </td>
-                                    <td><select name='cust_req23_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req23_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1753,7 +1753,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req23_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req23_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td23'>
@@ -1783,7 +1783,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req24_score" value="3">
                                     </td>
-                                    <td><select name='cust_req24_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req24_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1796,7 +1796,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req24_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req24_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td24'>
@@ -1827,7 +1827,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req25_score" value="3">
                                     </td>
-                                    <td><select name='cust_req25_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req25_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1840,7 +1840,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req25_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req25_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td25'>
@@ -1871,7 +1871,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req26_score" value="3">
                                     </td>
-                                    <td><select name='cust_req26_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req26_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1884,7 +1884,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req26_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req26_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td26'>
@@ -1914,7 +1914,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req27_score" value="3">
                                     </td>
-                                    <td><select name='cust_req27_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req27_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -1927,7 +1927,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req27_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req27_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td27'>
@@ -2005,7 +2005,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry1_score" value="3">
                                     </td>
-                                    <td><select name='rivalry1_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry1_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2018,7 +2018,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry1_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry1_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td1'>
@@ -2048,7 +2048,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry2_score" value="3">
                                     </td>
-                                    <td><select name='rivalry2_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry2_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2061,7 +2061,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry2_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry2_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td2'>
@@ -2091,7 +2091,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry3_score" value="3">
                                     </td>
-                                    <td><select name='rivalry3_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry3_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2104,7 +2104,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry3_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry3_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td3'>
@@ -2134,7 +2134,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry4_score" value="3">
                                     </td>
-                                    <td><select name='rivalry4_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry4_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2147,7 +2147,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry4_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry4_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td4'>
@@ -2177,7 +2177,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry5_score" value="3">
                                     </td>
-                                    <td><select name='rivalry5_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry5_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2190,7 +2190,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry5_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry5_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td5'>
@@ -2220,7 +2220,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry6_score" value="3">
                                     </td>
-                                    <td><select name='rivalry6_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry6_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2233,7 +2233,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry6_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry6_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td6'>
@@ -2263,7 +2263,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry7_score" value="3">
                                     </td>
-                                    <td><select name='rivalry7_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry7_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2276,7 +2276,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry7_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry7_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td7'>
@@ -2306,7 +2306,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry8_score" value="3">
                                     </td>
-                                    <td><select name='rivalry8_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry8_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2319,7 +2319,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry8_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry8_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td8'>
@@ -2349,7 +2349,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry9_score" value="3">
                                     </td>
-                                    <td><select name='rivalry9_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry9_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2362,7 +2362,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry9_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry9_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td9'>
@@ -2392,7 +2392,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry10_score" value="3">
                                     </td>
-                                    <td><select name='rivalry10_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry10_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2405,7 +2405,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry10_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry10_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td10'>
@@ -2435,7 +2435,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry11_score" value="3">
                                     </td>
-                                    <td><select name='rivalry11_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry11_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2448,7 +2448,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry11_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry11_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td11'>
@@ -2478,7 +2478,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry12_score" value="3">
                                     </td>
-                                    <td><select name='rivalry12_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry12_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2491,7 +2491,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry12_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry12_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td12'>
@@ -2521,7 +2521,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry13_score" value="3">
                                     </td>
-                                    <td><select name='rivalry13_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry13_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2534,7 +2534,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry13_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry13_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td13'>
@@ -2564,7 +2564,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry14_score" value="3">
                                     </td>
-                                    <td><select name='rivalry14_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry14_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2577,7 +2577,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry14_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry14_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td14'>
@@ -2607,7 +2607,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry15_score" value="3">
                                     </td>
-                                    <td><select name='rivalry15_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry15_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2620,7 +2620,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry15_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry15_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td15'>
@@ -2650,7 +2650,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry16_score" value="3">
                                     </td>
-                                    <td><select name='rivalry16_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry16_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2663,7 +2663,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry16_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry16_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td16'>
@@ -2693,7 +2693,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry17_score" value="3">
                                     </td>
-                                    <td><select name='rivalry17_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry17_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2706,7 +2706,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry17_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry17_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td17'>
@@ -2736,7 +2736,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry18_score" value="3">
                                     </td>
-                                    <td><select name='rivalry18_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry18_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2749,7 +2749,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry18_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry18_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td18'>
@@ -2828,7 +2828,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing1_score" value="3">
                                     </td>
-                                    <td><select name='purchasing1_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing1_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2841,7 +2841,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing1_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing1_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td1'>
@@ -2871,7 +2871,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing2_score" value="3">
                                     </td>
-                                    <td><select name='purchasing2_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing2_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2884,7 +2884,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing2_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing2_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td2'>
@@ -2914,7 +2914,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing3_score" value="3">
                                     </td>
-                                    <td><select name='purchasing3_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing3_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2927,7 +2927,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing3_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing3_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td3'>
@@ -2957,7 +2957,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing4_score" value="3">
                                     </td>
-                                    <td><select name='purchasing4_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing4_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -2970,7 +2970,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing4_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing4_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td4'>
@@ -3000,7 +3000,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing5_score" value="3">
                                     </td>
-                                    <td><select name='purchasing5_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing5_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3013,7 +3013,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing5_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing5_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td5'>
@@ -3043,7 +3043,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing6_score" value="3">
                                     </td>
-                                    <td><select name='purchasing6_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing6_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3056,7 +3056,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing6_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing6_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td6'>
@@ -3086,7 +3086,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing7_score" value="3">
                                     </td>
-                                    <td><select name='purchasing7_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing7_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3099,7 +3099,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing7_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing7_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td7'>
@@ -3129,7 +3129,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing8_score" value="3">
                                     </td>
-                                    <td><select name='purchasing8_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing8_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3142,7 +3142,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing8_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing8_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td8'>
@@ -3172,7 +3172,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing9_score" value="3">
                                     </td>
-                                    <td><select name='purchasing9_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing9_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3185,7 +3185,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing9_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing9_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td9'>
@@ -3215,7 +3215,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing10_score" value="3">
                                     </td>
-                                    <td><select name='purchasing10_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing10_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3228,7 +3228,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing10_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing10_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td10'>
@@ -3307,7 +3307,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges1_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges1_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='TechChanges1_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3320,7 +3320,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="TechChanges1_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="TechChanges1_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='TechChanges_delete-td1'>
@@ -3350,7 +3350,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges2_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges2_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='TechChanges2_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3363,7 +3363,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="TechChanges2_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="TechChanges2_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='TechChanges_delete-td2'>
@@ -3393,7 +3393,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges3_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges3_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='TechChanges3_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3406,7 +3406,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="TechChanges3_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="TechChanges3_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='TechChanges_delete-td3'>
@@ -3436,7 +3436,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges4_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges4_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='TechChanges4_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3449,7 +3449,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="TechChanges4_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="TechChanges4_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='TechChanges_delete-td4'>
@@ -3479,7 +3479,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges5_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges5_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='TechChanges5_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3492,7 +3492,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="TechChanges5_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="TechChanges5_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='TechChanges_delete-td5'>
@@ -3578,7 +3578,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="supply${next}_score" value="3">
                                     </td>
-                                    <td><select name='supply${next}_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='supply${next}_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3591,7 +3591,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="supply${next}_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="supply${next}_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='supply_delete-td${next}'>
@@ -3639,7 +3639,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="cust_req${next}_score" value="3">
                                     </td>
-                                    <td><select name='cust_req${next}_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='cust_req${next}_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3652,7 +3652,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="cust_req${next}_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="cust_req${next}_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='cust_req_delete-td${next}'>
@@ -3700,7 +3700,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="rivalry${next}_score" value="3">
                                     </td>
-                                    <td><select name='rivalry${next}_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='rivalry${next}_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3713,7 +3713,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="rivalry${next}_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="rivalry${next}_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='rivalry_delete-td${next}'>
@@ -3761,7 +3761,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="purchasing${next}_score" value="3">
                                     </td>
-                                    <td><select name='purchasing${next}_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='purchasing${next}_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3774,7 +3774,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="purchasing${next}_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="purchasing${next}_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='purchasing_delete-td${next}'>
@@ -3822,7 +3822,7 @@
                                     <td>
                                         <input type="text" readonly style="width:30px;" name="TechChanges${next}_score" value="3">
                                     </td>
-                                    <td><select name='TechChanges${next}_threat' class="beaSelect" beaSelect="2">
+                                    <td><select name='TechChanges${next}_threat' class="threat_op beaSelect" beaSelect="2">
 
                                             <option value="1">Threat</option>
                                             <option value="2">Opportunity</option>
@@ -3835,7 +3835,7 @@
                                             <option value="5">5</option>
                                         </select></td>
                                     <td>
-                                        <input type="text" readonly style="width:30px;" name="TechChanges${next}_total" value="3">
+                                        <input type="text" readonly style="width:30px;" name="TechChanges${next}_total"  class="total_score" value="3">
                                     </td>
 
                                     <td id='TechChanges_delete-td${next}'>

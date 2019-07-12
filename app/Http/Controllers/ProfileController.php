@@ -10,6 +10,7 @@ use App\leaderShip;
 use App\trend;
 use App\experience;
 use App\Bea;
+use App\Turbulences;
 class ProfileController extends Controller
 {
     /**
@@ -1256,5 +1257,82 @@ class ProfileController extends Controller
        $beas=Bea::where("profileid",$id)->get();
        return view("bea_details",compact('beas'));
 
+    }
+
+    public function store_trublance(Request $request)
+    {
+       
+            $ret= $this->create_store_trublance($request);
+            if($ret==3)
+            {
+                $message="You Must create Profile before";
+                $background="bg-danger";
+            }
+            else if($ret==1)
+            {
+                $message="Turbulence Factors Edited Succefully";
+                $background="bg-success";
+            }
+            else
+            {
+                $message="New Turbulence Factors Created Succefully";
+                $background="bg-success";
+            }
+         
+
+            return response()->json(['success'=>$message,'background'=>$background]);
+
+    }
+
+    public function create_store_trublance($data)
+    {
+        $factor=$data->factor;
+        $revenue=$data->revenue;
+        $cost=$data->cost;
+        $growth=$data->growth;
+        $comp=$data->comp;
+        $control=$data->control;
+        if($factor!=NULL)
+        $count=count($factor);
+        else
+        $count=0;
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('trubluence_id'))
+        {
+            Turbulences::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $trub=new Turbulences;
+            $trub->profileid=$profileid;
+            $trub->factor=$factor[$i];
+            $trub->control=$control[$i];
+            $trub->revenue=$revenue[$i];
+            $trub->cost=$cost[$i];
+            $trub->growth=$growth[$i];
+            $trub->comp=$comp[$i];
+            $trub->save();
+        }
+      
+        Session::put('trubluence_id', 1);
+        return $ret;
+    }
+
+    public function trub_details($id)
+    {
+        $trubs=Turbulences::where("profileid",$id)->get();
+        return view("trubs_details",compact('trubs'));
     }
 }
