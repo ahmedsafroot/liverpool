@@ -1025,6 +1025,7 @@ function turbulence_impact() {
             $(".modal-footer").hide();
             $('#myModal').modal('show');
             $(".trublance_tools").children().remove();
+            $('#disabledFactor').next('.work_row').remove();
             var x=1;
             $('.total_score').each(function(i, obj) {
                 if($(this).val()>20)
@@ -1069,8 +1070,109 @@ function turbulence_impact() {
                         '<td> <input type="text" readonly style="width:30px;" class="threadop" name="trub_factor'+x+'_opportunity" value="-3"></td></tr>';
                     }
                     elem=elem+threadOp;
-                    x++;
+                    
                     $(".trublance_tools").append(elem);
+
+                    var worksheet_row='<tr id="worksheet_factor'+x+'" class="work_row"><th scope="row" class="tableH tru_factors">'+
+                        '<textarea type="text" class="form-control bea_txtarea" name="worksheet_factor'+x+'" readonly>'+
+                            factor_text+'</textarea></th>'+
+                            '<td><select name="worksheet_feature'+x+'" class="worksheet_select">'+
+                            '<option value="1">1</option>'+
+                            '<option value="2">2</option>'+
+                            '<option value="3">3</option>'+
+                          '</select></td>'+
+                          '<td><select name="worksheet_design_prod'+x+'" class="worksheet_select">'+
+                          '<option value="1">1</option>'+
+                          '<option value="2">2</option>'+
+                          '<option value="3">3</option>'+
+                         '</select></td>'+
+                         '<td><select name="worksheet_tech_prod'+x+'" class="worksheet_select">'+
+                         '<option value="1">1</option>'+
+                         '<option value="2">2</option>'+
+                         '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_skill'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_managed'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_culture'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_design_process'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_tech_process'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_supplier'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_control'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_dev'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_cost'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_sales'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_structure'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_mang'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_part'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td>'+
+                        '<td><select name="worksheet_location'+x+'" class="worksheet_select">'+
+                        '<option value="1">1</option>'+
+                        '<option value="2">2</option>'+
+                        '<option value="3">3</option>'+
+                        '</select></td></tr>';
+                        if($(".work_row:last").length)
+                        {
+                        $(".work_row:last").after(worksheet_row);
+                        }
+                        else
+                        {
+                            $("#disabledFactor").after(worksheet_row);
+
+                        }
+                        $(".worksheet_total").val(x);
+                        $("#worksheet_count").val(x);
+                    x++;
                 }
                 $("#tru_impac").val(x);
             });
@@ -1546,3 +1648,131 @@ function sw() {
 
     return false;
 }
+
+function worksheet() {
+    var count = $("#worksheet_count").val();
+    var factor=[];
+    var features_prod = [];
+    var desingn_prod = [];
+    var Technology_prod = [];
+    var skill_people = [];
+    var managed_people = [];
+    var culture_people = [];
+    var design_process = [];
+    var Technology_process = [];
+    var supplier_operation = [];
+    var control_operation = [];
+    var dev_operation = [];
+    var cost_operation = [];
+    var sales_operation = [];
+    var structure_organ = [];
+    var managed_organ = [];
+    var part_organ = [];
+    var location_organ = [];
+
+    for (var i = 1; i <= count; i++) {
+        if ($('[name=worksheet_factor'+i+']').length) {
+            factor.push($('[name=worksheet_factor'+i+']').val());
+            features_prod.push($('[name=worksheet_feature'+i+']').val());
+            desingn_prod.push($('[name=worksheet_design_prod'+i+']').val());
+            Technology_prod.push($('[name=worksheet_tech_prod'+i+']').val());
+            skill_people.push($('[name=worksheet_skill'+i+']').val());
+            managed_people.push($('[name=worksheet_managed'+i+']').val());
+            culture_people.push($('[name=worksheet_culture'+i+']').val());
+            design_process.push($('[name=worksheet_design_process'+i+']').val());
+            Technology_process.push($('[name=worksheet_tech_process'+i+']').val());
+            supplier_operation.push($('[name=worksheet_supplier'+i+']').val());
+            control_operation.push($('[name=worksheet_control'+i+']').val());
+            dev_operation.push($('[name=worksheet_dev'+i+']').val());
+            cost_operation.push($('[name=worksheet_cost'+i+']').val());
+            sales_operation.push($('[name=worksheet_sales'+i+']').val());
+            structure_organ.push($('[name=worksheet_structure'+i+']').val());
+            managed_organ.push($('[name=worksheet_mang'+i+']').val());
+            part_organ.push($('[name=worksheet_part'+i+']').val());
+            location_organ.push($('[name=worksheet_location'+i+']').val());
+
+
+
+
+
+        }
+
+
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step9";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+             factor: factor,
+             features_prod: features_prod,
+             desingn_prod: desingn_prod,
+             Technology_prod: Technology_prod,
+             skill_people: skill_people,
+             managed_people: managed_people,
+             culture_people: culture_people,
+             design_process: design_process,
+             Technology_process: Technology_process,
+             supplier_operation: supplier_operation,
+             control_operation: control_operation,
+             dev_operation: dev_operation,
+             cost_operation: cost_operation,
+             sales_operation: sales_operation,
+             structure_organ: structure_organ,
+             managed_organ: managed_organ,
+             part_organ: part_organ,
+             location_organ: location_organ,
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "Focus Worksheet";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+        }
+
+    });
+
+    return false;
+
+}
+
+$(document).on("change", ".worksheet_select", function() {
+    var rows=$("#worksheet_count").val();
+    var name=$(this).attr("name");
+    if(name[name.length-2]=="1")
+    {
+        var prefix=name.substr(0, (name.length-2));
+    }
+    else
+    {
+        var prefix=name.substr(0, (name.length-1));
+
+    }
+    var total=0;
+    for (var index = 1; index <= rows; index++) {
+        total+=parseInt($('[name='+prefix+index+']').val());
+    }
+    $('[name='+prefix+'_total]').val(total);
+    
+});

@@ -1,5 +1,6 @@
 <div class="container-fluid">
     <!--second tab-->
+    <input type="hidden" value="0" id="worksheet_count">
     <div class="tab animated">
         <p class="sectionTitle mt-4">Focus Worksheet</p>
         <hr>
@@ -35,7 +36,7 @@
                         <td class="tableH1 supplyWidth rotate">structure</td>
                         <td class="tableH1 supplyWidth rotate">management</td>
                         <td class="tableH1 supplyWidth rotate">partnerships</td>
-                        <td class="tableH1 supplyWidth rotate">others</td>
+                        <td class="tableH1 supplyWidth rotate">location</td>
 
 
                     </tr>
@@ -47,47 +48,45 @@
                                 <textarea type="text" class="form-control
                                     bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea>
                             </th>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score1" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_feature_total" value="0">
                             </td>
 
-                            <td> <input type="text" readonly style="width:30px;" name="total_score2" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_design_prod_total" value="0">
                             </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score3" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_tech_prod" value="0">
                             </td>
-
-                            <td> <input type="text" readonly style="width:30px;" name="total_score4" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_skill_total" value="0">
                             </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score5" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_managed_total" value="0">
                             </td>
-
-                            <td> <input type="text" readonly style="width:30px;" name="total_score6" value="3">
-                            </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score7" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_culture_total" value="0">
                             </td>
 
-                            <td> <input type="text" readonly style="width:30px;" name="total_score8" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_design_process_total" value="0">
                             </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score9" value="3">
-                            </td>
-
-                            <td> <input type="text" readonly style="width:30px;" name="total_score10" value="3">
-                            </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score11" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_tech_process_total" value="0">
                             </td>
 
-                            <td> <input type="text" readonly style="width:30px;" name="total_score12" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_supplier_total" value="0">
                             </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score13" value="3">
-                            </td>
-
-                            <td> <input type="text" readonly style="width:30px;" name="total_score14" value="3">
-                            </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score15" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_control_total" value="0">
                             </td>
 
-                            <td> <input type="text" readonly style="width:30px;" name="total_score16" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_dev_total" value="0">
                             </td>
-                            <td> <input type="text" readonly style="width:30px;" name="total_score17" value="3">
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_cost_total" value="0">
+                            </td>
+
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_sales_total" value="0">
+                            </td>
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_structure_total" value="0">
+                            </td>
+
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_mang_total" value="0">
+                            </td>
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_part_total" value="0">
+                            </td>
+                            <td> <input type="text" readonly style="width:30px;" class="worksheet_total" name="worksheet_location_total" value="0">
                             </td>
                         </tr>
 
@@ -96,128 +95,13 @@
                         </tr>
 
 
-                        <tr id="worksheet_factor1">
-                            <th scope="row" class="tableH tru_factors">
-                                <textarea type="text" class="form-control
-                                    bea_txtarea" name="worksheet__factor1_txtarea" readonly>Training
-                                    Needs</textarea>
-                            </th>
-                            <td><select name='worksheet_factor1_td1' class="datasetTrend" datasetTrend="0">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-
-                                </select></td>
-                            <td><select name='worksheet_factor2_td2' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-                            <td><select name='worksheet_factor3_td3' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-
-                            <td><select name='worksheet_factor4_td4' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-
-                            <td><select name='worksheet_factor5_td5' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select></td>
-                            <td><select name='worksheet_factor6_td6' class="datasetTrend" datasetTrend="0">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-
-                                </select></td>
-                            <td><select name='worksheet_factor7_td7' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-                            <td><select name='worksheet_factor8_td8' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-
-                            <td><select name='worksheet_factor9_td9' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-
-                            <td><select name='worksheet_factor10_td10' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select></td>
-                            <td><select name='worksheet_factor11_td11' class="datasetTrend" datasetTrend="0">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-
-                                </select></td>
-                            <td><select name='worksheet_factor12_td12' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-                            <td><select name='worksheet_factor13_td13' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-
-                            <td><select name='worksheet_factor14_td14' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select></td>
-
-                            <td><select name='worksheet_factor15_td15' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select></td>
-
-                            <td><select name='worksheet_factor16_td16' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select></td>
-                            <td><select name='worksheet_factor17_td17' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select></td>
-                        </tr>
-
                 </tbody>
 
             </table>
             </div>
             <!--Save Data Section-->
             <div>
-                <button type="button" class="btn btn-primary btn-md ml-4">Save</button>
+                <button type="button" class="btn btn-primary btn-md ml-4" onclick="worksheet()">Save</button>
             </div>
             <!--Next and prev-->
             <div class="container-fluid">

@@ -46,7 +46,6 @@
                 <thead>
                     <tr>
                         <th>Company Name</th>
-                        <th>Parent Company</th>
                         <th>Address</th>
                         <th>Telephone</th>
                         <th>Agility Audit Tool</th>
@@ -56,6 +55,7 @@
                         <th>BEA-Turbance Impact</th>
                         <th>Turbance Impact Tool</th>
                         <th>SW</th>
+                        <th>Focus worksheet</th>
                         <th>Ansoff</th>
                         <th>Actions</th>
 
@@ -65,7 +65,6 @@
                     @foreach ($profiles as $profile)
                     <tr>
                             <td><a href="{{ route('profile.details',['id' => $profile->id] ) }}">{{$profile->userName}}</a></td>
-                            <td>{{$profile->userParent}}</td>
                             <td>{{$profile->userAddress}}</td>
                             <td>{{$profile->userTelephone}}</td>
                             <th><a href="{{ route('audit_tools.details',['id' => $profile->id] ) }}">see more</a></th>
@@ -75,6 +74,7 @@
                             <th><a href="{{ route('bea.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('trub.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('sw.details',['id' => $profile->id] ) }}">see more</a></th>
+                            <th><a href="{{ route('worksheet.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('ansoff.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('action.details',['id' => $profile->id] ) }}">see more</a></th>
 

@@ -14,7 +14,7 @@ use App\Turbulences;
 use App\Ansoff;
 use App\action;
 use App\SW;
-
+use App\worksheet;
 class ProfileController extends Controller
 {
     /**
@@ -1571,6 +1571,108 @@ class ProfileController extends Controller
     {
         $actions=SW::where("profileid",$id)->get();
         return view("sw_details",compact('actions'));
+   
+    }
+
+    public function store_worksheet(Request $request)
+    {
+        $ret= $this->create_worksheet($request);
+        if($ret==3)
+        {
+            $message="You Must create Profile before";
+            $background="bg-danger";
+        }
+        else if($ret==1)
+        {
+            $message="Focus Worksheet Edited Succefully";
+            $background="bg-success";
+        }
+        else
+        {
+            $message="New Focus Worksheet Created Succefully";
+            $background="bg-success";
+        }
+     
+
+        return response()->json(['success'=>$message,'background'=>$background]);   
+    }
+
+    public function create_worksheet($data)
+    {
+        $factor=$data->factor;
+        $features_prod=$data->features_prod;
+        $desingn_prod=$data->desingn_prod;
+        $Technology_prod=$data->Technology_prod;
+        $skill_people=$data->skill_people;
+        $managed_people=$data->managed_people;
+        $culture_people=$data->culture_people;
+        $design_process=$data->design_process;
+        $Technology_process=$data->Technology_process;
+        $supplier_operation=$data->supplier_operation;
+        $control_operation=$data->control_operation;
+        $dev_operation=$data->dev_operation;
+        $cost_operation=$data->cost_operation;
+        $sales_operation=$data->sales_operation;
+        $structure_organ=$data->structure_organ;
+        $managed_organ=$data->managed_organ;
+        $part_organ=$data->part_organ;
+        $location_organ=$data->location_organ;
+
+
+        if($factor!=NULL)
+        $count=count($factor);
+        else
+        $count=0;
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('worksheet_id'))
+        {
+            worksheet::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $worksheet=new worksheet;
+            $worksheet->profileid=$profileid;
+            $worksheet->factor=$factor[$i];
+            $worksheet->features_prod=$features_prod[$i];
+            $worksheet->desingn_prod=$desingn_prod[$i];
+            $worksheet->Technology_prod=$Technology_prod[$i];
+            $worksheet->skill_people=$skill_people[$i];
+            $worksheet->managed_people=$managed_people[$i];
+            $worksheet->culture_people=$culture_people[$i];
+            $worksheet->design_process=$design_process[$i];
+            $worksheet->Technology_process=$Technology_process[$i];
+            $worksheet->supplier_operation=$supplier_operation[$i];
+            $worksheet->control_operation=$control_operation[$i];
+            $worksheet->dev_operation=$dev_operation[$i];
+            $worksheet->cost_operation=$cost_operation[$i];
+            $worksheet->sales_operation=$sales_operation[$i];
+            $worksheet->structure_organ=$structure_organ[$i];
+            $worksheet->managed_organ=$managed_organ[$i];
+            $worksheet->part_organ=$part_organ[$i];
+            $worksheet->location_organ=$location_organ[$i];
+
+            $worksheet->save();
+        }
+      
+        Session::put('worksheet_id', 1);
+        return $ret;
+    }
+    public function worksheet_details($id)
+    {
+        $actions=worksheet::where("profileid",$id)->get();
+        return view("worksheet_details",compact('actions'));
    
     }
 }
