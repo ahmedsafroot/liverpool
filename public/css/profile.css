@@ -91,6 +91,13 @@ tr {
     padding: 2% !important;
 }
 
+.tableH1 {
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: lighter !important;
+    padding: 2% 0% 3% 0% !important;
+}
+
 .factors {
     width: 12% !important;
 }
@@ -429,4 +436,9 @@ textarea {
 #disabledFactor th {
     border: none !important;
     text-align: center !important;
+}
+
+.rotate {
+    transform: rotate(270deg);
+    transform-origin: (0, 0);
 }

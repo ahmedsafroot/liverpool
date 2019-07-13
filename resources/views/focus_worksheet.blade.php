@@ -8,20 +8,42 @@
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col" class="tableH supplyWidth" colspan="3">Product
+                        <th scope="col" colspan="3">Product
                         </th>
-                        <th scope="col" class="tableH supplyWidth" colspan="3">People
+                        <th scope="col" colspan="3">People
                         </th>
-                        <th scope="col" class="tableH supplyWidth" colspan="5">Process
+                        <th scope="col" colspan="2">Process
                         </th>
-                        <th scope="col" class="tableH supplyWidth" colspan="5">Operation</th>
-                        <th scope="col" class="tableH supplyWidth" colspan="4">Organization</th>
+                        <th scope="col" colspan="5">Operation</th>
+                        <th scope="col" colspan="4">Organization</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="tableH1 supplyWidth rotate">Features</td>
+                        <td class="tableH1 supplyWidth rotate">Desgin</td>
+                        <td class="tableH1 supplyWidth rotate">Technology</td>
+                        <td class="tableH1 supplyWidth rotate">skill</td>
+                        <td class="tableH1 supplyWidth rotate">managed</td>
+                        <td class="tableH1 supplyWidth rotate">culture</td>
+                        <td class="tableH1 supplyWidth rotate">Desgin</td>
+                        <td class="tableH1 supplyWidth rotate">Technology</td>
+                        <td class="tableH1 supplyWidth rotate">supplier management</td>
+                        <td class="tableH1 supplyWidth rotate">planing and control</td>
+                        <td class="tableH1 supplyWidth rotate">new product dev</td>
+                        <td class="tableH1 supplyWidth rotate">costing</td>
+                        <td class="tableH1 supplyWidth rotate">marketing and sales</td>
+                        <td class="tableH1 supplyWidth rotate">structure</td>
+                        <td class="tableH1 supplyWidth rotate">management</td>
+                        <td class="tableH1 supplyWidth rotate">partnerships</td>
+                        <td class="tableH1 supplyWidth rotate">others</td>
+
+
                     </tr>
                 </thead>
                 <tbody>
                     <div id="worksheet_factors">
                         <tr id="worksheet_factor1">
-                            <th scope="row" class="tableH ">
+                            <th scope="row" class="tableH">
                                 <textarea type="text" class="form-control
                                     bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea>
                             </th>
@@ -77,26 +99,27 @@
                         <tr id="worksheet_factor1">
                             <th scope="row" class="tableH tru_factors">
                                 <textarea type="text" class="form-control
-                                    bea_txtarea" name="worksheet__factor1_txtarea" readonly>Training Needs</textarea>
+                                    bea_txtarea" name="worksheet__factor1_txtarea" readonly>Training
+                                    Needs</textarea>
                             </th>
                             <td><select name='worksheet_factor1_td1' class="datasetTrend" datasetTrend="0">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
-                                   
+
 
                                 </select></td>
                             <td><select name='worksheet_factor2_td2' class="datasetTrend" datasetTrend="2">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
-                                   
+
                                 </select></td>
                             <td><select name='worksheet_factor3_td3' class="datasetTrend" datasetTrend="2">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
-                                   
+
                                 </select></td>
 
                             <td><select name='worksheet_factor4_td4' class="datasetTrend" datasetTrend="2">
@@ -112,80 +135,80 @@
                                     <option value="3">3</option>
                                 </select></td>
                             <td><select name='worksheet_factor6_td6' class="datasetTrend" datasetTrend="0">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                       
-    
-                                    </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+
+                                </select></td>
                             <td><select name='worksheet_factor7_td7' class="datasetTrend" datasetTrend="2">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                       
-                                    </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+                                </select></td>
                             <td><select name='worksheet_factor8_td8' class="datasetTrend" datasetTrend="2">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                       
-                                    </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+                                </select></td>
 
                             <td><select name='worksheet_factor9_td9' class="datasetTrend" datasetTrend="2">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-    
-                                    </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+                                </select></td>
 
                             <td><select name='worksheet_factor10_td10' class="datasetTrend" datasetTrend="2">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select></td>
                             <td><select name='worksheet_factor11_td11' class="datasetTrend" datasetTrend="0">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                           
-        
-                                        </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+
+                                </select></td>
                             <td><select name='worksheet_factor12_td12' class="datasetTrend" datasetTrend="2">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                           
-                                        </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+                                </select></td>
                             <td><select name='worksheet_factor13_td13' class="datasetTrend" datasetTrend="2">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                           
-                                        </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+                                </select></td>
 
                             <td><select name='worksheet_factor14_td14' class="datasetTrend" datasetTrend="2">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-        
-                                        </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+
+                                </select></td>
 
                             <td><select name='worksheet_factor15_td15' class="datasetTrend" datasetTrend="2">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select></td>
 
                             <td><select name='worksheet_factor16_td16' class="datasetTrend" datasetTrend="2">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select></td>
                             <td><select name='worksheet_factor17_td17' class="datasetTrend" datasetTrend="2">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select></td>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select></td>
                         </tr>
 
                 </tbody>
