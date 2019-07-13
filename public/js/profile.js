@@ -1418,3 +1418,131 @@ function actions() {
     return false;
 
 }
+
+function sw() {
+    var count_prodcut = 3;
+    var count_people= 3;
+    var count_process = 2;
+    var count_operation = 5;
+    var count_organisation = 4;
+
+    var factor = [];
+    var type = [];
+    var str = [];
+    var weak = [];
+    var comment = [];
+    var prio = [];
+
+
+    for (var i = 1; i <= count_prodcut; i++) {
+        if ($('[name=sw_product_factor'+i+']').length) {
+            factor.push($('[name=sw_product_factor'+i+']').val());
+            str.push($('[name=sw_product_str'+i+']').val());
+            weak.push($('[name=sw_product_weak'+i+']').val());
+            comment.push($('[name=sw_product_comm'+i+']').val());
+            prio.push($('[name=sw_product_pr'+i+']').val());
+            type.push("Product");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_people; i++) {
+        if ($('[name=sw_people_factor'+i+']').length) {
+            factor.push($('[name=sw_people_factor'+i+']').val());
+            str.push($('[name=sw_people_str'+i+']').val());
+            weak.push($('[name=sw_people_weak'+i+']').val());
+            comment.push($('[name=sw_people_comm'+i+']').val());
+            prio.push($('[name=sw_people_pr'+i+']').val());
+            type.push("People");
+
+        }
+
+    }
+    for (var i = 1; i <= count_process; i++) {
+        if ($('[name=sw_process_factor'+i+']').length) {
+            factor.push($('[name=sw_process_factor'+i+']').val());
+            str.push($('[name=sw_process_str'+i+']').val());
+            weak.push($('[name=sw_process_weak'+i+']').val());
+            comment.push($('[name=sw_process_comm'+i+']').val());
+            prio.push($('[name=sw_process_pr'+i+']').val());
+            type.push("Process");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_operation; i++) {
+        if ($('[name=sw_oper_factor'+i+']').length) {
+            factor.push($('[name=sw_oper_factor'+i+']').val());
+            str.push($('[name=sw_oper_str'+i+']').val());
+            weak.push($('[name=sw_oper_weak'+i+']').val());
+            comment.push($('[name=sw_oper_comm'+i+']').val());
+            prio.push($('[name=sw_oper_pr'+i+']').val());
+            type.push("Operation");
+
+        }
+
+
+    }
+    for (var i = 1; i <= count_organisation; i++) {
+        if ($('[name=sw_organ_factor'+i+']').length) {
+            factor.push($('[name=sw_organ_factor'+i+']').val());
+            str.push($('[name=sw_organ_str'+i+']').val());
+            weak.push($('[name=sw_organ_weak'+i+']').val());
+            comment.push($('[name=sw_organ_comm'+i+']').val());
+            prio.push($('[name=sw_organ_pr'+i+']').val());
+            type.push("Organisation");
+
+        }
+
+
+    }
+
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var url = APP_URL + "/step8";
+
+    $.ajax({
+
+        type: 'POST',
+
+        url: url,
+
+        data: {
+
+            factor: factor,
+            str: str,
+            weak: weak,
+            comment: comment,
+            prio: prio,
+            type: type,
+
+           
+
+
+
+        },
+
+        success: function(mymessage) {
+            $(".hideMe").css('display', 'table-cell');
+            $(".modal-body form").html("");
+            var title = "ansoff";
+            $(".modal-title").text(title);
+            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
+            $(".modal-body form").append(element);
+            $(".modal-footer").hide();
+            $('#myModal').modal('show');
+
+
+
+        }
+
+    });
+
+    return false;
+}

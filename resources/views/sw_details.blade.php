@@ -45,42 +45,31 @@
         <table id="profile" class="display">
                 <thead>
                     <tr>
-                        <th>Company Name</th>
-                        <th>Parent Company</th>
-                        <th>Address</th>
-                        <th>Telephone</th>
-                        <th>Agility Audit Tool</th>
-                        <th>Industry LeaderShip</th>
-                        <th>Market Trends</th>
-                        <th>Customer Experience</th>
-                        <th>BEA-Turbance Impact</th>
-                        <th>Turbance Impact Tool</th>
-                        <th>SW</th>
-                        <th>Ansoff</th>
-                        <th>Actions</th>
+                        <th>Factor</th>
+                        <th>Type</th>
+                        <th>Strengths</th>
+                        <th>Weaknesses</th>
+                        <th>Comments RE. Competitors</th>
+                        <th>Priority</th>
 
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($profiles as $profile)
+                    @foreach ($actions as $action)
+                        
                     <tr>
-                            <td><a href="{{ route('profile.details',['id' => $profile->id] ) }}">{{$profile->userName}}</a></td>
-                            <td>{{$profile->userParent}}</td>
-                            <td>{{$profile->userAddress}}</td>
-                            <td>{{$profile->userTelephone}}</td>
-                            <th><a href="{{ route('audit_tools.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('industry_leadership.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('market_trends.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('customer_experience.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('bea.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('trub.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('sw.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('ansoff.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('action.details',['id' => $profile->id] ) }}">see more</a></th>
+                    <td>{{$action->factor}}</td>
+                    <td>{{$action->type}}</td>
+                    <td>{{$action->strengths}}</td>
+                    <td>{{$action->weaknesses}}</td>
+                    <td>{{$action->comp}}</td>
+                    <td>{{$action->priority}}</td>
 
                     </tr>
+
                     @endforeach
 
+                    
                 </tbody>
             </table>
 
@@ -88,8 +77,14 @@
 
         $(document).ready( function () {
             $('#profile').DataTable( {
-                dom: 'lBfrtip',
+                aLengthMenu: [
+                    [5,10,25, 50, 100, 200, -1],
+                    [5,10,25, 50, 100, 200, "All"]
+                ],
+                iDisplayLength: -1,
                 "ordering": false,
+                dom: 'lBfrtip',
+
                 buttons: [
                     'copyHtml5', 'excelHtml5', 'pdfHtml5', 'csvHtml5'
                 ]

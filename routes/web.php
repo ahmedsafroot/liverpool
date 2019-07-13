@@ -20,7 +20,7 @@ Route::post('step4','ProfileController@store_market_trend');
 Route::post('step5','ProfileController@store_customer_experience');
 Route::post('step6','ProfileController@store_bea');
 Route::post('step7','ProfileController@store_trublance');
-//Route::post('step8','ProfileController@store_trublance');
+Route::post('step8','ProfileController@store_sw');
 //Route::post('step9','ProfileController@store_trublance');
 Route::post('step10','ProfileController@store_ansoff');
 Route::post('step11','ProfileController@store_action');
@@ -33,6 +33,8 @@ Route::get('/market_trends/{id}', 'ProfileController@market_trends_details')->na
 Route::get('/customer_experience/{id}', 'ProfileController@customer_experience_details')->name('customer_experience.details');
 Route::get('/bea/{id}', 'ProfileController@bea_details')->name('bea.details');
 Route::get('/trub/{id}', 'ProfileController@trub_details')->name('trub.details');
+Route::get('/sw/{id}', 'ProfileController@sw_details')->name('sw.details');
+
 Route::get('/ansoff/{id}', 'ProfileController@ansoff_details')->name('ansoff.details');
 Route::get('/actions/{id}', 'ProfileController@action_details')->name('action.details');
 

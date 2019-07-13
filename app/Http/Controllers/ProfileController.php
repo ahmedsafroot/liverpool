@@ -13,6 +13,8 @@ use App\Bea;
 use App\Turbulences;
 use App\Ansoff;
 use App\action;
+use App\SW;
+
 class ProfileController extends Controller
 {
     /**
@@ -1491,6 +1493,84 @@ class ProfileController extends Controller
     {
         $actions=action::where("profileid",$id)->get();
         return view("action_details",compact('actions'));
+   
+    }
+    public function store_sw(Request $request)
+    {
+        $ret= $this->create_sw($request);
+        if($ret==3)
+        {
+            $message="You Must create Profile before";
+            $background="bg-danger";
+        }
+        else if($ret==1)
+        {
+            $message="SW Edited Succefully";
+            $background="bg-success";
+        }
+        else
+        {
+            $message="New SW Created Succefully";
+            $background="bg-success";
+        }
+     
+
+        return response()->json(['success'=>$message,'background'=>$background]);   
+    }
+
+    public function create_sw($data)
+    {
+        $factor=$data->factor;
+        $strengths=$data->str;
+        $weaknesses=$data->weak;
+        $comp=$data->comment;
+        $priority=$data->prio;
+        $type=$data->type;
+
+
+        if($factor!=NULL)
+        $count=count($factor);
+        else
+        $count=0;
+        if(session()->has('profileid'))
+        {
+            $profileid=Session::get('profileid');
+        }
+        else
+        {
+            return 3;   
+        }
+
+        if(session()->has('sw_id'))
+        {
+            SW::where("profileid",$profileid)->delete();
+            $ret=1;
+        }
+        else
+        {
+            $ret=2;
+        }
+        for ($i=0; $i <$count ; $i++) { 
+            $sw=new SW;
+            $sw->profileid=$profileid;
+            $sw->factor=$factor[$i];
+            $sw->strengths=$strengths[$i];
+            $sw->weaknesses=$weaknesses[$i];
+            $sw->comp=$comp[$i];
+            $sw->type=$type[$i];
+            $sw->priority=$priority[$i];
+
+            $sw->save();
+        }
+      
+        Session::put('sw_id', 1);
+        return $ret;
+    }
+
+    public function sw_details($id)
+    {
+        $actions=SW::where("profileid",$id)->get();
+        return view("sw_details",compact('actions'));
    
     }
 }

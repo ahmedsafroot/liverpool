@@ -27,6 +27,7 @@ class VerifyCsrfToken extends Middleware
         '/step5',
         '/step6',
         '/step7',
+        '/step8',
         '/step10',
         '/step11',
 
