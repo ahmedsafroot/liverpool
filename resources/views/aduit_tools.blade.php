@@ -433,11 +433,11 @@
                     </div>
                     <label> Induction:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="inductionInput" aria-describedby="emailHelp" readonly>
+                        <textarea class="form-control" id="inductionInput" aria-describedby="emailHelp" readonly></textarea>
                     </div>
                     <label> What To Do:</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="toDoInput" aria-describedby="emailHelp" readonly>
+                        <textarea class="form-control" id="toDoInput" aria-describedby="emailHelp" readonly></textarea>
                     </div>
                 </div>
             </form>

@@ -71,6 +71,7 @@ function formValidation() {
 
 
 function profileForm() {
+
     var mydata = [];
     mydata["userName"] = $("#userName").val();
     mydata["userParent"] = $("#userParent").val();
@@ -370,14 +371,17 @@ function profileForm() {
         },
 
         success: function(mymessage) {
-            //alert(mymessage.success);
-            $(".modal-body form").html("");
-            var title = "Company Profile";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            if(mymessage.background!="bg-danger"){
+            toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
+
+
+
 
         }
 
@@ -556,21 +560,20 @@ function audit_tool() {
             /*This is to diplay the div of outcomes analysis */
             /*$(".myDialog").css('display', 'block');
             $(".myDialog").addClass('animated fadeInLeft');*/
-            if (mymessage.background == "bg-danger") {
-                $(".modal-body form").html("");
-                var title = "OUTCOME ANALYSIS";
-                $(".modal-title").text(title);
-                var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-                $(".modal-body form").append(element);
-                $(".modal-footer").hide();
-                $('#myModal').modal('show');
-            } else {
-                $("#scoreInput").val(total);
-                $("#inductionInput").val(indeuction);
-                $("#toDoInput").val(what_to_do);
-                $(".myDialog").css('display', 'block');
-                $(".myDialog").addClass('animated fadeInLeft');
-            }
+            if(mymessage.background!="bg-danger"){
+                    toastr.success(mymessage.success);
+                    $("#scoreInput").val(total);
+                    $("#inductionInput").val(indeuction);
+                    $("#toDoInput").val(what_to_do);
+                    $(".myDialog").css('display', 'block');
+                    $(".myDialog").addClass('animated fadeInLeft');
+                }
+                else
+                {
+                    toastr.error(mymessage.success);
+    
+                }
+
 
         }
 
@@ -652,14 +655,15 @@ function leadership() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "Industry LeaderShip";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
         }
@@ -820,14 +824,15 @@ function market_trends() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "Market Trends";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
         }
@@ -883,14 +888,15 @@ function customer_experience() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "Customer Experience";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
         }
@@ -1016,14 +1022,15 @@ function turbulence_impact() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "BEA-TRUBLANCE IMPACT";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
             $(".trublance_tools").children().remove();
             $('#disabledFactor').next('.work_row').remove();
             var x=1;
@@ -1254,14 +1261,15 @@ function trublance_tool() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "Turbulence Factors";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
         }
@@ -1408,14 +1416,15 @@ function ansoff() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "ansoff";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
 
@@ -1503,14 +1512,15 @@ function actions() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "Actions";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
         }
@@ -1631,14 +1641,15 @@ function sw() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "ansoff";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
 
@@ -1739,14 +1750,15 @@ function worksheet() {
         },
 
         success: function(mymessage) {
-            $(".hideMe").css('display', 'table-cell');
-            $(".modal-body form").html("");
-            var title = "Focus Worksheet";
-            $(".modal-title").text(title);
-            var element = $('<div class="form-group ' + mymessage.background + '"><label class="col-form-label">' + mymessage.success + '</label></div>');
-            $(".modal-body form").append(element);
-            $(".modal-footer").hide();
-            $('#myModal').modal('show');
+            //$(".hideMe").css('display', 'table-cell');
+            if(mymessage.background!="bg-danger"){
+                toastr.success(mymessage.success);
+            }
+            else
+            {
+                toastr.error(mymessage.success);
+
+            }
 
 
         }

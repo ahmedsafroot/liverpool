@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class auditTool extends Model
 {
     //
-    protected $table = 'auditTool';
+    protected $table = 'audittool';
 
 }
