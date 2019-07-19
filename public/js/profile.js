@@ -1791,7 +1791,4 @@ $(document).on("change", ".worksheet_select", function() {
 $(".accordion").click(function() {
     $(this).siblings().children(".card").children(".collapse").removeClass("show");
     $("html, body").animate({ scrollTop: $(this).offset().top }, "slow");
-
-
-
 });
