@@ -1,16 +1,17 @@
 body {
     max-width: 100% !important;
+    font-family: "proxima-nova", arial, sans-serif !important;
 }
 
 .title h2 {
     text-align: center !important;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: "proxima-nova", arial, sans-serif !important;
     margin-top: 5% !important;
 }
 
 .title p {
     text-align: center !important;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: "proxima-nova", arial, sans-serif !important;
     font-size: 12px !important;
     color: #1D3C78 !important;
 }
@@ -21,7 +22,7 @@ body {
 
 .sectionTitle {
     text-align: left !important;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", arial, sans-serif !important;
     font-size: 21px !important;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .mainLabel {
     font-size: 21px !important;
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", arial, sans-serif;
 }
 
 .table {
@@ -85,14 +86,14 @@ tr {
 }
 
 .tableH {
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", arial, sans-serif !important;
     font-size: 11px !important;
     font-weight: lighter !important;
     padding: 2% !important;
 }
 
 .tableH1 {
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", arial, sans-serif !important;
     font-size: 11px !important;
     font-weight: lighter !important;
     padding: 2% 0% 3% 0% !important;
@@ -110,7 +111,9 @@ tr {
     font-size: 12px !important;
 }
 
-.btn-primary {}
+.btn-primary {
+    background-color: #1975d9 !important;
+}
 
 .card-footer {
     margin-top: 1% !important;
@@ -192,7 +195,7 @@ textarea {
     border-radius: 50% !important;
     font-weight: 800 !important;
     color: black !important;
-    font-size: 26px !important;
+    font-size: 18px !important;
     overflow: auto !important;
 }
 
@@ -220,7 +223,7 @@ textarea {
     border-radius: 50% !important;
     font-weight: 800 !important;
     color: black !important;
-    font-size: 26px !important;
+    font-size: 18px !important;
     overflow: auto !important;
 }
 
@@ -386,7 +389,6 @@ textarea {
 }
 
 .card-header:hover {
-    color: #0080FF !important;
     cursor: pointer;
 }
 
@@ -399,7 +401,7 @@ textarea {
 }
 
 .customer_tableH {
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", arial, sans-serif !important;
     font-size: 15px !important;
     font-weight: lighter !important;
     padding: 2% !important;
@@ -442,3 +444,9 @@ textarea {
     transform: rotate(270deg);
     transform-origin: (0, 0);
 }
+
+.card-header {
+    background-color: #031F73 !important;
+    color: white;
+}
+

@@ -522,9 +522,9 @@
             <div class="row">
                 <div class="col-12 col-sm-12">
                     <button type="button" class="btn btn-lg
-                    nextBtn" id="nextBtn1" onclick="nextPrev(1)" data-toggle="tooltip" data-placement="left" title="Next">&#8250;</button>
+                    nextBtn" id="nextBtn1" onclick="nextPrev(1)" data-toggle="tooltip" data-placement="left" title="Next">Next</button>
                     <button type="button" class="btn btn-lg
-                    prevBtn" id="prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">&#8249;</button>
+                    prevBtn" id="prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">Previous</button>
                 </div>
             </div>
         </div>

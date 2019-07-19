@@ -244,6 +244,7 @@
         $(".myDialog").css('display', 'none');
     }
     $('.panel-collapse').on('show.bs.collapse', function() {
+        debugger;
         $(this).siblings('.panel-heading').addClass('active');
     });
 
