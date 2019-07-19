@@ -246,7 +246,7 @@
                 <div class="card mb-0">
                     <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
                         <a class="card-title">
-                            Structure
+                            Products
                         </a>
                         <i class="fa fa-angle-down"></i>
                     </div>
