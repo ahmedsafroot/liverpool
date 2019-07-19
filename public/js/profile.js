@@ -490,13 +490,13 @@ function audit_tool() {
 
     indeuction = "";
     what_to_do = "";
-    if (23 <= total && total <= 46) {
+    if (0 <= total && total <= 46) {
         indeuction = "YOU ARE DOING WELL";
         what_to_do = "DO NOT NEED TO DO MUCH BUT KEEP THE STRENGTH UP AND GOING";
-    } else if (70 <= total && total <= 92) {
+    } else if (46 < total && total < 92) {
         indeuction = "THERE ARE AREAS OF VOLUNERABILITY,HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS";
         what_to_do = "LOOK CLOSELY ATTHE SCORES YOU ACHIEVED FOR EACH SECTION;FIND OUT AREAS IN NEED OF ATTENTION WORK ON THOS AREAS IN A STRCUTURED WAY";
-    } else if (92 < total && total <= 115) {
+    } else if (92 <= total && total <= 150) {
         indeuction = "CONSIDERABLE SCOPE FOR IMPROVING BUSINESS";
         what_to_do = "ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS";
     }
