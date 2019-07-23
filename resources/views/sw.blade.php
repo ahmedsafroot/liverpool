@@ -1,482 +1,810 @@
 <div class="container-fluid">
-    <!--second tab-->
-    <div class="tab animated">
-        <p class="sectionTitle mt-4">SW</p>
-        <hr>
-        <input type="hidden" value="1" id="sw_input">
-        <div class="mb-3 ml-2 mt-6 col-md-10">
-            <table class="table table-striped col-md-7" id="sw_tabel">
-                <thead>
-                    <tr>
-                        <th scope="col">Factor</th>
-                        <th scope="col" class="tableH supplyWidth">Strengths
-                        </th>
-                        <th scope="col" class="tableH supplyWidth">Weaknesses
-                        </th>
-                        <th scope="col" class="tableH supplyWidth">Comments RE. Competitors
-                        </th>
-                        <th scope="col" class="tableH supplyWidth">Priority (Low:1, High:5)</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <div id="sw_factors">
-                        <!--Product-->
-                        <tr class="disable" id="sw1_factors">
-                            <th><b>Product</b></b>
-                            </th>
-
-                            <tr id="features_factor">
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_product_factor1" readonly>Features</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_str1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_weak1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_comm1" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_product_pr1' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='features_delete-td1'>
-                                    <button id="features_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="design_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_product_factor2" readonly>Design</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_str2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_weak2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_comm2" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_product_pr2' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                               <!-- <td id='features_delete-td2'>
-                                    <button id="features_remove2" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="technology_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_product_factor3" readonly>Technology</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_str3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_weak3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_product_comm3" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_product_pr3' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='features_delete-td13'>
-                                    <button id="features_remove3" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-                        </tr>
-
-                        <!--People-->
-                        <tr class="disable" id="sw2_factors">
-                            <th><b>People</b></b>
-                            </th>
-
-                            <tr id="skill_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_people_factor1" readonly>Skill</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_str1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_weak1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_comm1" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_people_pr1' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='skill_delete-td1'>
-                                    <button id="skill_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="managed_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_people_factor2" readonly>Managed</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_str2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_weak2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_comm2" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_people_pr2' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='skill_delete-td2'>
-                                    <button id="skill_remove2" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="culture_factor">
-
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_people_factor3" readonly>Culture</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_str3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_weak3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_people_comm3" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_people_pr3' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='skill_delete-td2'>
-                                    <button id="skill_remove3" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-                        </tr>
-
-                        <!--Process-->
-                        <tr class="disable" id="sw3_factors">
-                            <th><b>Process</b></b>
-                            </th>
-
-                            <tr id="design_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_process_factor1" readonly>Design</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_process_str1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_process_weak1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_process_comm1" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_process_pr1' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='design_delete-td1'>
-                                    <button id="design_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="technology2_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_process_factor2" readonly>Technology</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_process_str2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_process_weak2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_process_comm2" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_process_pr2' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='technology2_delete-td2'>
-                                    <button id="technology2_remove2" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-                        </tr>
-
-
-                        <!--Operation-->
-                        <tr class="disable" id="sw4_factors">
-                            <th><b>Operation</b></b>
-                            </th>
-
-                            <tr id="supplier_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_oper_factor1" readonly>Supplier Management</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_str1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_weak1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_comm1" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_oper_pr1' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='supplier_delete-td1'>
-                                    <button id="supplier_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="planning_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_oper_factor2" readonly>Planning & Control</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_str2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_weak2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_comm2" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_oper_pr2' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                               <!-- <td id='planning_delete-td1'>
-                                    <button id="planning_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="newProduct_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_oper_factor3" readonly>New Product Dev.</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_str3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_weak3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_comm3" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_oper_pr3' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='newProduct_delete-td1'>
-                                    <button id="newProduct_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="costing _factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_oper_factor4" readonly>Costing</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_str4" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_weak4" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_comm4" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_oper_pr4' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='costing_delete-td1'>
-                                    <button id="costing_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="sales_factor">
-   
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_oper_factor5" readonly>Marketing & Sales</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_str5" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_weak5" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_oper_comm5" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_oper_pr5' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='sales_delete-td1'>
-                                    <button id="sales_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-                        </tr>
-
-                        <!--Organisation-->
-                        <tr class="disable" id="sw5_factors">
-                            <th><b>Organisation</b></b>
-                            </th>
-
-                            <tr id="structure_factor">
- 
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_organ_factor1" readonly>Structure</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_str1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_weak1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_comm1" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_organ_pr1' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='structure_delete-td1'>
-                                    <button id="structure_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="management_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_organ_factor2" readonly>Management</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_str2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_weak2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_comm2" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_organ_pr2' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='management_delete-td1'>
-                                    <button id="management_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="partnerships_factor">
-
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_organ_factor3" readonly>Partnerships</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_str3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_weak3" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_comm3" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_organ_pr3' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='partnerships_delete-td1'>
-                                    <button id="partnerships_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                            <tr id="Location_factor">
-  
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="sw_organ_factor4" readonly>Location</textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_str4" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_weak4" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="sw_organ_comm4" cols="20" rows="10"></textarea></td>
-                                <td><select name='sw_organ_pr4' class="sw_select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <!--<td id='Location_delete-td1'>
-                                    <button id="Location_remove1" class="btn customer_remove-me">delete</button>
-                                </td>-->
-                            </tr>
-
-                        </tr>
+        <!--second tab-->
+        <div class="tab animated">
+            <p class="sectionTitle mt-4">SW</p>
+            <hr>
+            <!--First Table-->
+            <!--Factor One: SUPPLY CHAIN-->
+            <div id="sw_factor1" class="accordion mb-3 ml-2 mt-6 col-md-10">
+                <div class="card mb-0">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#sw_SUPPLY1">
+                        <a class="card-title">
+                            Product
+                        </a>
+                        <i class="fa fa-angle-down"></i>
                     </div>
-                </tbody>
-            </table>
-        </div>
-        <!--Save Data Section-->
-        <div>
-           <!-- <button id="b3" class="btn  add-moreSW" type="button">add
-                        other
-                        factor</button>-->
-            <button type="button" class="btn btn-primary btn-md ml-4" onclick="sw()">Save</button>
-        </div>
-        <!--Next and prev-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-12">
-                    <button type="button" class="btn btn-lg
-                            nextBtn" id="nextBtn1" onclick="nextPrev(1)" data-toggle="tooltip" data-placement="left" title="Next">Next</button>
-                    <button type="button" class="btn btn-lg
-                            prevBtn" id="prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">Previous</button>
+                    <div id="sw_SUPPLY1" class="card-body collapse" data-parent="#sw_factor1">
+                        <input type="hidden" value="3" id="sw_count_product">
+                        <table class="table table-striped col-md-7" id="sw_products">
+                            <thead>
+                                <tr>
+                                        <th scope="col">Factor</th>
+                                        <th scope="col" class="tableH supplyWidth">Strengths
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">Weaknesses
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">Comments RE. Competitors
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">Priority (Low:1, High:5)</th>
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+                                <div id="sw_supply">
+                                    <tr id="sw_products1">
+                                        <th scope="row" class="tableH tru_factors">
+                                            <textarea type="text" name='sw_factor_prod1' class="dynamicArea fontSize" cols="20" rows="10" >Features</textarea>
+                                        </th>
+                                        <td><textarea class="dynamicArea fontSize" name='sw_str_prod1' cols="20" rows="10"   cols="20" rows="10"></textarea></td>
+                                        <td><textarea class="dynamicArea fontSize" name='sw_weak_prod1' cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                        <td><textarea class="dynamicArea fontSize" name='sw_comm_prod1' cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                        <td><select name='sw_pro_prod1' class="sw_select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select></td>
+    
+                                        <td>
+                                            <button  class="btn removeRow" >delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr id="sw_products2">
+                                            <th scope="row" class="tableH tru_factors">
+                                                <textarea type="text" name='sw_factor_prod2' class="dynamicArea fontSize" cols="20" rows="10">Design</textarea>
+                                            </th>
+                                            <td><textarea name='sw_str_prod2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                            <td><textarea name='sw_weak_prod2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                            <td><textarea name='sw_comm_prod2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                            <td><select name='sw_pro_prod2' class="sw_select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select></td>
+        
+                                            <td>
+                                                <button  class="btn removeRow" >delete</button>
+                                            </td>
+                                        </tr>
+
+                                        <tr id="sw_products3">
+                                                <th scope="row" class="tableH tru_factors">
+                                                    <textarea name='sw_factor_prod3' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Technology</textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_prod3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_prod3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_prod3' class="dynamicArea fontSize" cols="20" rows="10" cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_prod3' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>
+                                            </tr>
+
+    
+                                </div>
+    
+                            </tbody>
+                        </table>
+                        <div>
+                            <button id="add_moreProduct" class="btn add-moreProduct" type="button">add other
+                                factor</button>
+                        </div>
+                        <!--collapse#-->
+                    </div>
+                    <!--card-->
+                </div>
+                <!--accordion-->
+            </div>
+    
+    
+    
+            <!--Second Table-->
+            <!--DYNAMIC CUSTOMER REQUIREMENTS-->
+            <div id="sw_factor2" class="accordion mb-3 ml-2 mt-6 col-md-10">
+                <div class="card mb-0">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#sw_CUST_REQ">
+                        <a class="card-title">
+                                People
+                        </a>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div id="sw_CUST_REQ" class="card-body collapse" data-parent="#sw_factor2">
+                        <input type="hidden" value="3" id="sw_count_people">
+                        <table class="table table-striped col-md-7" id="sw_peoples">
+                            <thead>
+                                    <tr>
+                                            <th scope="col">Factor</th>
+                                            <th scope="col" class="tableH supplyWidth">Strengths
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Weaknesses
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Comments RE. Competitors
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Priority (Low:1, High:5)</th>
+                                    </tr>
+                            </thead>
+    
+                            <tbody>
+                                <div id="sw_cust_req">
+                                    <tr id="sw_peoples1">
+                                            <th scope="row" class="tableH tru_factors">
+                                                    <textarea type="text" name='sw_factor_people1' class="dynamicArea fontSize" cols="20" rows="10" >Skill</textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_people1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_people1' class="dynamicArea fontSize" cols="20" rows="10" cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_people1' class="dynamicArea fontSize" cols="20" rows="10"cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_people1' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>  
+                                   
+                                      
+                                    </tr>
+
+                                    <tr id="sw_peoples2">
+                                            <th scope="row" class="tableH tru_factors">
+                                                    <textarea type="text" name='sw_factor_people2' class="dynamicArea fontSize" cols="20" rows="10" >Managed</textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_people2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_people2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_people2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_people2' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>  
+                                   
+                                      
+                                    </tr>
+                                    <tr id="sw_peoples3">
+                                            <th scope="row" class="tableH tru_factors">
+                                                    <textarea type="text" name='sw_factor_people3' class="dynamicArea fontSize" cols="20" rows="10" >Culture</textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_people3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_people3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_people3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_people3' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>  
+                                   
+                                      
+                                    </tr>
+    
+                                </div>
+    
+                            </tbody>
+                        </table>
+                        <div>
+                            <button  class="btn add-morePeople" type="button">add other factor</button>
+                        </div>
+                        <!--collapse#-->
+                    </div>
+                    <!--card-->
+                </div>
+                <!--accordion-->
+            </div>
+    
+    
+    
+            <!--Third Table-->
+            <!--RIVALRY/COMPTETION-->
+            <div id="sw_factor3" class="accordion mb-3 ml-2 mt-6 col-md-10">
+                <div class="card mb-0">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#sw_RIVALRY">
+                        <a class="card-title">
+                            Process
+                        </a>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div id="sw_RIVALRY" class="card-body collapse" data-parent="#sw_factor3">
+                        <input type="hidden" value="2" id="sw_count_process">
+                        <table class="table table-striped col-md-7" id="sw_process">
+                            <thead>
+                                    <tr>
+                                            <th scope="col">Factor</th>
+                                            <th scope="col" class="tableH supplyWidth">Strengths
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Weaknesses
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Comments RE. Competitors
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Priority (Low:1, High:5)</th>
+                                    </tr>
+                            </thead>
+    
+                            <tbody>
+                                <div id="sw_rivalry">
+                                        <tr id="sw_process1">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea type="text" name='sw_factor_process1' class="dynamicArea fontSize" cols="20" rows="10" >Design</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_process1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_process1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_process1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_process1' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+
+                                        <tr id="sw_process2">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea type="text" name='sw_factor_process2' class="dynamicArea fontSize" cols="20" rows="10" >Technology</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_process2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_process2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_process2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_process2' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+    
+                                </div>
+    
+                            </tbody>
+                        </table>
+                        <div>
+                            <button  class="btn add-moreProcess" type="button">add
+                                other
+                                factor</button>
+                        </div>
+                        <!--collapse#-->
+                    </div>
+                    <!--card-->
+                </div>
+                <!--accordion-->
+            </div>
+    
+    
+    
+            <!--Forth Table-->
+            <!--PURCHASING-->
+            <div id="sw_factor4" class="accordion mb-3 ml-2 mt-6 col-md-10">
+                <div class="card mb-0">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#sw_PURCHASING">
+                        <a class="card-title">
+                                Operation
+                        </a>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div id="sw_PURCHASING" class="card-body collapse" data-parent="#sw_factor4">
+                        <input type="hidden" value="5" id="sw_count_operation">
+                        <table class="table table-striped col-md-7" id="sw_operations">
+                            <thead>
+                                    <tr>
+                                            <th scope="col">Factor</th>
+                                            <th scope="col" class="tableH supplyWidth">Strengths
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Weaknesses
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Comments RE. Competitors
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Priority (Low:1, High:5)</th>
+                                    </tr>
+                            </thead>
+    
+                            <tbody>
+                                <div id="sw_purchasing">
+                                    
+                                        <tr id="sw_operations1">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_operation1' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Supplier Management</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_operation1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_operation1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_operation1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_operation1' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+                                        <tr id="sw_operations2">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_operation2' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Planning & Control</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_operation2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_operation2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_operation2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_operation2' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+                                        <tr id="sw_operations3">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_operation3' type="text" class="dynamicArea fontSize" cols="20" rows="10" >New Product Dev.</textarea>
+                                                    </th>
+                                                    <td><textarea  name='sw_str_operation3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_operation3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_operation3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_operation3' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+                                        <tr id="sw_operations4">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_operation4' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Costing </textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_operation4' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_operation4' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_operation4' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_operation4' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+                                        <tr id="sw_operations5">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_operation5' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Marketing & Sales</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_operation5' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_operation5' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_operation5' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_operation5' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+    
+                                </div>
+    
+                            </tbody>
+                        </table>
+                        <div>
+                            <button  class="btn add-moreOperation" type="button">add
+                                other
+                                factor</button>
+                        </div>
+                        <!--collapse#-->
+                    </div>
+                    <!--card-->
+                </div>
+                <!--accordion-->
+            </div>
+    
+    
+    
+            <!--Fifth Table-->
+            <!--TECHNOLOGICAL CHANGES-->
+            <div id="sw_factor5" class="accordion mb-3 ml-2 mt-6 col-md-10">
+                <div class="card mb-0">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#sw_TechChanges">
+                        <a class="card-title">
+                                Organisation
+                        </a>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div id="sw_TechChanges" class="card-body collapse" data-parent="#sw_factor5">
+                        <input type="hidden" value="4" id="sw_count_organ">
+                        <table class="table table-striped col-md-7" id="sw_organs">
+                            <thead>
+                                    <tr>
+                                            <th scope="col">Factor</th>
+                                            <th scope="col" class="tableH supplyWidth">Strengths
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Weaknesses
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Comments RE. Competitors
+                                            </th>
+                                            <th scope="col" class="tableH supplyWidth">Priority (Low:1, High:5)</th>
+                                    </tr>
+                            </thead>
+    
+                            <tbody>
+                                <div id="sw_TechChanges">
+                                        <tr id="sw_organs1">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_organ1' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Structure</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_organ1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_organ1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_organ1' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_organ1' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+
+                                        <tr id="sw_organs2">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_organ2' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Management</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_organ2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_organ2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_organ2' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_organ2' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+                                        <tr id="sw_organs3">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_organ3' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Partnerships</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_organ3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_organ3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_organ3' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_organ3' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+                                        <tr id="sw_organs4">
+                                                <th scope="row" class="tableH tru_factors">
+                                                        <textarea name='sw_factor_organ4' type="text" class="dynamicArea fontSize" cols="20" rows="10" >Location</textarea>
+                                                    </th>
+                                                    <td><textarea name='sw_str_organ4' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_weak_organ4' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><textarea name='sw_comm_organ4' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                    <td><select name='sw_pro_organ4' class="sw_select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select></td>
+                
+                                                    <td>
+                                                        <button  class="btn removeRow" >delete</button>
+                                                    </td>  
+                                       
+                                          
+                                        </tr>
+                                </div>
+    
+                            </tbody>
+                        </table>
+                        <div>
+                            <button  class="btn add-moreOrgan" type="button">add
+                                other
+                                factor</button>
+                        </div>
+                        <!--collapse#-->
+                    </div>
+                    <!--card-->
+                </div>
+                <!--accordion-->
+            </div>
+    
+    
+            <!--Save Data Section-->
+            <div>
+                <button type="button" class="btn btn-primary btn-md ml-4" onclick="sw()">Save</button>
+            </div>
+    
+    
+            <!--Next and prev-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <button type="button" class="btn btn-lg
+                            nextBtn" id="sw_nextBtn1" onclick="nextPrev(1)" data-toggle="tooltip" data-placement="left" title="Next">Next</button>
+                        <button type="button" class="btn btn-lg
+                            prevBtn" id="sw_prevBtn" onclick="nextPrev(-1)" data-toggle="tooltip" data-placement="top" title="Previous">Previous</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--second tab-->
+    
+        <!--container-->
     </div>
-</div>
-</div>
+    
+    
+    <script>
+        //add more 
+        $(".add-moreProduct").click(function(e) {
+            e.preventDefault();
+            var count = $("#sw_count_product").val();
+            count = parseInt(count) + 1;
+            $("#sw_count_product").val(count);
+            var getLastChild = $("#sw_products tr").last().attr('id');
+            var splitLastChild = getLastChild.split("sw_products");
+            var myNext = splitLastChild[1];
+            console.log("getLastChild", myNext);
+            var next = Number(myNext);
+            var addto = "#sw_products" + next;
+            next = next + 1;
+            var addRemove = "#supply_delete-td" + (next);
+            var markup = `<tr id="sw_products${next}">
+                                                <th scope="row" class="tableH tru_factors">
+                                                    <textarea name='sw_factor_prod${next}' type="text" class="dynamicArea fontSize" cols="20" rows="10" ></textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_prod${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_prod${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_prod${next}' class="dynamicArea fontSize" cols="20" rows="10" cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_prod${next}' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>
+                                            </tr>`
+            var newIn = markup;
+            var newInput = $(newIn);
+            $(addto).after(newInput);
+    
+        });
 
-<script>
-    $(".add-moreSW").click(function(e) {
-        e.preventDefault();
-        var count = $("#sw_input").val();
-        count = parseInt(count) + 1;
-        $("#sw_input").val(count);
-        var getLastChild = $("#sw_tabel tr").last().attr('id');
-        var splitLastChild = getLastChild.split("sw_factors");
-        var myNext = splitLastChild[1];
-        console.log("getLastChild", myNext);
-        var next = Number(myNext);
-        var addto = "#sw_factors" + next;
-        next = next + 1;
-        var addRemove = "#sw_factors_delete-td" + (next);
-        var markup = ` <tr class="disable" id="sw${next}_factors">
-                            <th><b>Product</b></b>
-                            </th>
+        $(".add-morePeople").click(function(e) {
+            e.preventDefault();
+            var count = $("#sw_count_people").val();
+            count = parseInt(count) + 1;
+            $("#sw_count_people").val(count);
+            var getLastChild = $("#sw_peoples tr").last().attr('id');
+            var splitLastChild = getLastChild.split("sw_peoples");
+            var myNext = splitLastChild[1];
+            console.log("getLastChild", myNext);
+            var next = Number(myNext);
+            var addto = "#sw_peoples" + next;
+            next = next + 1;
+            var addRemove = "#supply_delete-td" + (next);
+            var markup = `<tr id="sw_peoples${next}">
+                                                <th scope="row" class="tableH tru_factors">
+                                                    <textarea name='sw_factor_people${next}' type="text" class="dynamicArea fontSize" cols="20" rows="10" ></textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_people${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_people${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_people${next}' class="dynamicArea fontSize" cols="20" rows="10" cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_people${next}' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>
+                                            </tr>`
+            var newIn = markup;
+            var newInput = $(newIn);
+            $(addto).after(newInput);
+    
+        });
 
-                            <tr id="newRow${next}_factor">
-                                <th scope="row" class="tableH tru_factors">
-                                    <textarea type="text" class="form-control fontSize
-                                    bea_txtarea" name="features_factor_txtarea"></textarea>
-                                </th>
-                                <td><textarea class="dynamicArea fontSize" name="newRow${next}_factor1" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="newRow${next}_factor2" cols="20" rows="10"></textarea></td>
-                                <td><textarea class="dynamicArea fontSize" name="newRow${next}_factor3" cols="20" rows="10"></textarea></td>
-                                <td><select name='newRow${next}_factor${next}_Control' class="datasetTrend" datasetTrend="2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></td>
-                                <td id='newRow${next}_delete-td${next}'>
-                                        <button id="customerField_remove13" class="btn customer_remove-me">delete</button>
-                                    </td>
-                            </tr>
-                        </tr>`
-        var newIn = markup;
-        var newInput = $(newIn);
-        $(addto).after(newInput);
+        $(".add-moreProcess").click(function(e) {
+            e.preventDefault();
+            var count = $("#sw_count_process").val();
+            count = parseInt(count) + 1;
+            $("#sw_count_process").val(count);
+            var getLastChild = $("#sw_process tr").last().attr('id');
+            var splitLastChild = getLastChild.split("sw_process");
+            var myNext = splitLastChild[1];
+            console.log("getLastChild", myNext);
+            var next = Number(myNext);
+            var addto = "#sw_process" + next;
+            next = next + 1;
+            var addRemove = "#supply_delete-td" + (next);
+            var markup = `<tr id="sw_process${next}">
+                                                <th scope="row" class="tableH tru_factors">
+                                                    <textarea name='sw_factor_process${next}' type="text" class="dynamicArea fontSize" cols="20" rows="10" ></textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_process${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_process${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_process${next}' class="dynamicArea fontSize" cols="20" rows="10" cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_process${next}' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>
+                                            </tr>`
+            var newIn = markup;
+            var newInput = $(newIn);
+            $(addto).after(newInput);
+    
+        });
 
-    });
-</script>
+        $(".add-moreOperation").click(function(e) {
+            e.preventDefault();
+            var count = $("#sw_count_operation").val();
+            count = parseInt(count) + 1;
+            $("#sw_count_operation").val(count);
+            var getLastChild = $("#sw_operations tr").last().attr('id');
+            var splitLastChild = getLastChild.split("sw_operations");
+            var myNext = splitLastChild[1];
+            console.log("getLastChild", myNext);
+            var next = Number(myNext);
+            var addto = "#sw_operations" + next;
+            next = next + 1;
+            var addRemove = "#supply_delete-td" + (next);
+            var markup = `<tr id="sw_operations${next}">
+                                                <th scope="row" class="tableH tru_factors">
+                                                    <textarea name='sw_factor_operation${next}' type="text" class="dynamicArea fontSize" cols="20" rows="10" ></textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_operation${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_operation${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_operation${next}' class="dynamicArea fontSize" cols="20" rows="10" cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_operation${next}' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>
+                                            </tr>`
+            var newIn = markup;
+            var newInput = $(newIn);
+            $(addto).after(newInput);
+    
+        });
+
+        $(".add-moreOrgan").click(function(e) {
+            e.preventDefault();
+            var count = $("#sw_count_organ").val();
+            count = parseInt(count) + 1;
+            $("#sw_count_organ").val(count);
+            var getLastChild = $("#sw_organs tr").last().attr('id');
+            var splitLastChild = getLastChild.split("sw_organs");
+            var myNext = splitLastChild[1];
+            console.log("getLastChild", myNext);
+            var next = Number(myNext);
+            var addto = "#sw_organs" + next;
+            next = next + 1;
+            var addRemove = "#supply_delete-td" + (next);
+            var markup = `<tr id="sw_organs${next}">
+                                                <th scope="row" class="tableH tru_factors">
+                                                    <textarea name='sw_factor_organ${next}' type="text" class="dynamicArea fontSize" cols="20" rows="10" ></textarea>
+                                                </th>
+                                                <td><textarea name='sw_str_organ${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_weak_organ${next}' class="dynamicArea fontSize" cols="20" rows="10"  cols="20" rows="10"></textarea></td>
+                                                <td><textarea name='sw_comm_organ${next}' class="dynamicArea fontSize" cols="20" rows="10" cols="20" rows="10"></textarea></td>
+                                                <td><select name='sw_pro_organ${next}' class="sw_select">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></td>
+            
+                                                <td>
+                                                    <button  class="btn removeRow" >delete</button>
+                                                </td>
+                                            </tr>`
+            var newIn = markup;
+            var newInput = $(newIn);
+            $(addto).after(newInput);
+    
+        });
+    
+       
+    </script>

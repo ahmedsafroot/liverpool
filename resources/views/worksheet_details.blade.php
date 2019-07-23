@@ -46,59 +46,76 @@
                 <thead>
                         <tr>
                                 <td></td>
-                                <th colspan="3" style="text-align:center">Product</th>
-                                <th colspan="3" style="text-align:center">Peole</th>
-                                <th colspan="2" style="text-align:center">Process</th>
-                                <th colspan="5" style="text-align:center">Operation</th>
-                                <th colspan="4" style="text-align:center">Organisation</th>
+                                @if($product>0)
+                                 <th colspan="{{$product}}" style="text-align:center">Product</th>
+                                @endif
+                                @if($people>0)
+                                <th colspan="{{$people}}" style="text-align:center">People</th>
+                                @endif
+                                @if($process>0)
+                                 <th colspan="{{$process}}" style="text-align:center">Process</th>
+                                @endif
+                                @if($operation>0)
+                                 <th colspan="{{$operation}}" style="text-align:center">Operation</th>
+                                @endif
+                                @if($organization>0)
+                                 <th colspan="{{$organization}}" style="text-align:center">Organisation</th>
+                                @endif
+
 
                             </tr>
                     <tr>
                         <td>Factor</td>
-                        <td class="tableH1 supplyWidth rotate">Features</td>
-                        <td class="tableH1 supplyWidth rotate">Desgin</td>
-                        <td class="tableH1 supplyWidth rotate">Technology</td>
-                        <td class="tableH1 supplyWidth rotate">skill</td>
-                        <td class="tableH1 supplyWidth rotate">managed</td>
-                        <td class="tableH1 supplyWidth rotate">culture</td>
-                        <td class="tableH1 supplyWidth rotate">Desgin</td>
-                        <td class="tableH1 supplyWidth rotate">Technology</td>
-                        <td class="tableH1 supplyWidth rotate">supplier management</td>
-                        <td class="tableH1 supplyWidth rotate">planing and control</td>
-                        <td class="tableH1 supplyWidth rotate">new product dev</td>
-                        <td class="tableH1 supplyWidth rotate">costing</td>
-                        <td class="tableH1 supplyWidth rotate">marketing and sales</td>
-                        <td class="tableH1 supplyWidth rotate">structure</td>
-                        <td class="tableH1 supplyWidth rotate">management</td>
-                        <td class="tableH1 supplyWidth rotate">partnerships</td>
-                        <td class="tableH1 supplyWidth rotate">location</td>
+                        <?php
+                        $features=\App\Http\Controllers\ProfileController::get_features("Product",$id);
+                        ?>
+                        @foreach ($features as $item)
+                          <td>{{$item->feature}}</td>
+
+                        @endforeach
+                        <?php
+                        $features=\App\Http\Controllers\ProfileController::get_features("People",$id);
+                        ?>
+                        @foreach ($features as $item)
+                          <td>{{$item->feature}}</td>
+
+                        @endforeach
+                        <?php
+                        $features=\App\Http\Controllers\ProfileController::get_features("Process",$id);
+                        ?>
+                        @foreach ($features as $item)
+                          <td>{{$item->feature}}</td>
+
+                        @endforeach
+                        <?php
+                        $features=\App\Http\Controllers\ProfileController::get_features("Operation",$id);
+                        ?>
+                        @foreach ($features as $item)
+                          <td>{{$item->feature}}</td>
+
+                        @endforeach
+                        <?php
+                        $features=\App\Http\Controllers\ProfileController::get_features("Organisation",$id);
+                        ?>
+                        @foreach ($features as $item)
+                          <td>{{$item->feature}}</td>
+
+                        @endforeach
+                 
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($actions as $item)
-
-                    
-                    <tr>
-                      <td>{{$item->factor}}</td>
-                      <td>{{$item->features_prod}}</td>
-                      <td>{{$item->desingn_prod}}</td>
-                      <td>{{$item->Technology_prod}}</td>
-                      <td>{{$item->skill_people}}</td>
-                      <td>{{$item->managed_people}}</td>
-                      <td>{{$item->culture_people}}</td>
-                      <td>{{$item->design_process}}</td>
-                      <td>{{$item->Technology_process}}</td>
-                      <td>{{$item->supplier_operation}}</td>
-                      <td>{{$item->control_operation}}</td>
-                      <td>{{$item->dev_operation}}</td>
-                      <td>{{$item->cost_operation}}</td>
-                      <td>{{$item->sales_operation}}</td>
-                      <td>{{$item->structure_organ}}</td>
-                      <td>{{$item->managed_organ}}</td>
-                      <td>{{$item->part_organ}}</td>
-                      <td>{{$item->location_organ}}</td>
-
-                    </tr>
+                    @foreach ($factors as $item)
+                        <tr>
+                            <td>{{$item->factor}}</td>
+                            <?php
+                            $scores=\App\Http\Controllers\ProfileController::get_scores($item->factor,$id);
+                            ?>
+                            @foreach ($scores as $score)
+                              <td>{{$score->score}}</td>
+    
+                            @endforeach
+                        </tr>
                     @endforeach
 
                     

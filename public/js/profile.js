@@ -1,7 +1,7 @@
 var total = 0;
 var indeuction = "";
 var what_to_do = "";
-
+var total_col_sheet=0;
 function getChecked() {
     var checkedValue = document.getElementById("marketCK5").checked;
     if (checkedValue == true) {
@@ -1079,95 +1079,10 @@ function turbulence_impact() {
                     elem=elem+threadOp;
                     
                     $(".trublance_tools").append(elem);
-
+                    
                     var worksheet_row='<tr id="worksheet_factor'+x+'" class="work_row"><th scope="row" class="tableH tru_factors">'+
                         '<textarea type="text" class="form-control bea_txtarea" name="worksheet_factor'+x+'" readonly>'+
-                            factor_text+'</textarea></th>'+
-                            '<td><select name="worksheet_feature'+x+'" class="worksheet_select">'+
-                            '<option value="1">1</option>'+
-                            '<option value="2">2</option>'+
-                            '<option value="3">3</option>'+
-                          '</select></td>'+
-                          '<td><select name="worksheet_design_prod'+x+'" class="worksheet_select">'+
-                          '<option value="1">1</option>'+
-                          '<option value="2">2</option>'+
-                          '<option value="3">3</option>'+
-                         '</select></td>'+
-                         '<td><select name="worksheet_tech_prod'+x+'" class="worksheet_select">'+
-                         '<option value="1">1</option>'+
-                         '<option value="2">2</option>'+
-                         '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_skill'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_managed'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_culture'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_design_process'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_tech_process'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_supplier'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_control'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_dev'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_cost'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_sales'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_structure'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_mang'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_part'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td>'+
-                        '<td><select name="worksheet_location'+x+'" class="worksheet_select">'+
-                        '<option value="1">1</option>'+
-                        '<option value="2">2</option>'+
-                        '<option value="3">3</option>'+
-                        '</select></td></tr>';
+                            factor_text+'</textarea></th></tr>';
                         if($(".work_row:last").length)
                         {
                         $(".work_row:last").after(worksheet_row);
@@ -1532,11 +1447,11 @@ function actions() {
 }
 
 function sw() {
-    var count_prodcut = 3;
-    var count_people= 3;
-    var count_process = 2;
-    var count_operation = 5;
-    var count_organisation = 4;
+    var count_prodcut = $("#sw_count_product").val();
+    var count_people= $("#sw_count_people").val();
+    var count_process = $("#sw_count_process").val();
+    var count_operation = $("#sw_count_operation").val();
+    var count_organisation = $("#sw_count_organ").val();
 
     var factor = [];
     var type = [];
@@ -1544,72 +1459,174 @@ function sw() {
     var weak = [];
     var comment = [];
     var prio = [];
-
-
+    var col_span=0;
+    $(".focus-columns").children(".rotate").remove();
+    $("#worksheet_factor1").children().remove();
+    $("#worksheet_factor1").append('<th scope="row" class="tableH"><textarea type="text" class="form-control bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea></th>');
     for (var i = 1; i <= count_prodcut; i++) {
-        if ($('[name=sw_product_factor'+i+']').length) {
-            factor.push($('[name=sw_product_factor'+i+']').val());
-            str.push($('[name=sw_product_str'+i+']').val());
-            weak.push($('[name=sw_product_weak'+i+']').val());
-            comment.push($('[name=sw_product_comm'+i+']').val());
-            prio.push($('[name=sw_product_pr'+i+']').val());
+        if ($('[name=sw_factor_prod'+i+']').length) {
+            factor.push($('[name=sw_factor_prod'+i+']').val());
+            str.push($('[name=sw_str_prod'+i+']').val());
+            weak.push($('[name=sw_weak_prod'+i+']').val());
+            comment.push($('[name=sw_comm_prod'+i+']').val());
+            prio.push($('[name=sw_pro_prod'+i+']').val());
             type.push("Product");
-
+             if($('[name=sw_pro_prod'+i+']').val()>3)
+             {
+              $(".focus-columns").append('<td>'+$('[name=sw_factor_prod'+i+']').val()+'</td>');
+              $("#worksheet_factor1").append('<td> <input type="text" readonly style="width:30px;" class="total_'+$('[name=sw_factor_prod'+i+']').val()+'" value="'+$('.work_row').length+'"> </td>');
+              $(".work_row").append('<td><select type="Product" feature="'+$('[name=sw_factor_prod'+i+']').val()+'" class="worksheet_select">'+
+              '<option value="1">1</option>'+
+              '<option value="2">2</option>'+
+              '<option value="3">3</option>'+
+             '</select></td>');
+              col_span++;
+              total_col_sheet++;
+             }
         }
 
 
     }
+    if(col_span==0)
+    {
+        $(".focus-columns").append('<td></td>');
+        $("#worksheet_factor1").append('<td> </td>');
+        $(".work_row").append('<td></td>');
+        col_span=1;  
+    }
+    $(".focus-product").attr("colspan",col_span);
+    col_span=0;
     for (var i = 1; i <= count_people; i++) {
-        if ($('[name=sw_people_factor'+i+']').length) {
-            factor.push($('[name=sw_people_factor'+i+']').val());
-            str.push($('[name=sw_people_str'+i+']').val());
-            weak.push($('[name=sw_people_weak'+i+']').val());
-            comment.push($('[name=sw_people_comm'+i+']').val());
-            prio.push($('[name=sw_people_pr'+i+']').val());
+        if ($('[name=sw_factor_people'+i+']').length) {
+            factor.push($('[name=sw_factor_people'+i+']').val());
+            str.push($('[name=sw_str_people'+i+']').val());
+            weak.push($('[name=sw_weak_people'+i+']').val());
+            comment.push($('[name=sw_comm_people'+i+']').val());
+            prio.push($('[name=sw_pro_people'+i+']').val());
             type.push("People");
-
+            if($('[name=sw_pro_people'+i+']').val()>3)
+            {
+             $(".focus-columns").append('<td>'+$('[name=sw_factor_people'+i+']').val()+'</td>');
+             $("#worksheet_factor1").append('<td> <input type="text" readonly style="width:30px;" class="total_'+$('[name=sw_factor_people'+i+']').val()+'" value="'+$('.work_row').length+'"> </td>');
+             $(".work_row").append('<td><select type="People" feature="'+$('[name=sw_factor_people'+i+']').val()+'" class="worksheet_select">'+
+             '<option value="1">1</option>'+
+             '<option value="2">2</option>'+
+             '<option value="3">3</option>'+
+            '</select></td>');
+             col_span++;
+             total_col_sheet++;
+            }
         }
 
     }
+    if(col_span==0)
+    {
+        $(".focus-columns").append('<td></td>');
+        $("#worksheet_factor1").append('<td> </td>');
+        $(".work_row").append('<td></td>');
+        col_span=1;  
+    }
+    $(".focus-people").attr("colspan",col_span);
+
+    col_span=0;
     for (var i = 1; i <= count_process; i++) {
-        if ($('[name=sw_process_factor'+i+']').length) {
-            factor.push($('[name=sw_process_factor'+i+']').val());
-            str.push($('[name=sw_process_str'+i+']').val());
-            weak.push($('[name=sw_process_weak'+i+']').val());
-            comment.push($('[name=sw_process_comm'+i+']').val());
-            prio.push($('[name=sw_process_pr'+i+']').val());
+        if ($('[name=sw_factor_process'+i+']').length) {
+            factor.push($('[name=sw_factor_process'+i+']').val());
+            str.push($('[name=sw_str_process'+i+']').val());
+            weak.push($('[name=sw_weak_process'+i+']').val());
+            comment.push($('[name=sw_comm_process'+i+']').val());
+            prio.push($('[name=sw_pro_process'+i+']').val());
             type.push("Process");
+            if($('[name=sw_pro_process'+i+']').val()>3)
+            {
+             $(".focus-columns").append('<td>'+$('[name=sw_factor_process'+i+']').val()+'</td>');
+             $("#worksheet_factor1").append('<td> <input type="text" readonly style="width:30px;" class="total_'+$('[name=sw_factor_process'+i+']').val()+'" value="'+$('.work_row').length+'"> </td>');
+             $(".work_row").append('<td><select type="Process" feature="'+$('[name=sw_factor_process'+i+']').val()+'" class="worksheet_select">'+
+             '<option value="1">1</option>'+
+             '<option value="2">2</option>'+
+             '<option value="3">3</option>'+
+            '</select></td>');
+             col_span++;
+             total_col_sheet++;
+            }
 
         }
 
 
     }
+    if(col_span==0)
+    {
+        $(".focus-columns").append('<td></td>');
+        $("#worksheet_factor1").append('<td> </td>');
+        $(".work_row").append('<td></td>');
+        col_span=1;  
+    }
+    $(".focus-process").attr("colspan",col_span);
+    col_span=0;
     for (var i = 1; i <= count_operation; i++) {
-        if ($('[name=sw_oper_factor'+i+']').length) {
-            factor.push($('[name=sw_oper_factor'+i+']').val());
-            str.push($('[name=sw_oper_str'+i+']').val());
-            weak.push($('[name=sw_oper_weak'+i+']').val());
-            comment.push($('[name=sw_oper_comm'+i+']').val());
-            prio.push($('[name=sw_oper_pr'+i+']').val());
+        if ($('[name=sw_factor_operation'+i+']').length) {
+            factor.push($('[name=sw_factor_operation'+i+']').val());
+            str.push($('[name=sw_str_operation'+i+']').val());
+            weak.push($('[name=sw_weak_operation'+i+']').val());
+            comment.push($('[name=sw_comm_operation'+i+']').val());
+            prio.push($('[name=sw_pro_operation'+i+']').val());
             type.push("Operation");
-
+            if($('[name=sw_pro_operation'+i+']').val()>3)
+            {
+             $(".focus-columns").append('<td>'+$('[name=sw_factor_operation'+i+']').val()+'</td>');
+             $("#worksheet_factor1").append('<td> <input type="text" readonly style="width:30px;" class="total_'+$('[name=sw_factor_operation'+i+']').val()+'" value="'+$('.work_row').length+'"> </td>');
+             $(".work_row").append('<td><select  type="Operation" feature="'+$('[name=sw_factor_operation'+i+']').val()+'" class="worksheet_select">'+
+             '<option value="1">1</option>'+
+             '<option value="2">2</option>'+
+             '<option value="3">3</option>'+
+            '</select></td>');
+             col_span++;
+             total_col_sheet++;
+            }
         }
 
-
     }
+    if(col_span==0)
+    {
+        $(".focus-columns").append('<td></td>');
+        $("#worksheet_factor1").append('<td> </td>');
+        $(".work_row").append('<td></td>');
+        col_span=1;  
+    }
+    $(".focus-operation").attr("colspan",col_span);
+
     for (var i = 1; i <= count_organisation; i++) {
-        if ($('[name=sw_organ_factor'+i+']').length) {
-            factor.push($('[name=sw_organ_factor'+i+']').val());
-            str.push($('[name=sw_organ_str'+i+']').val());
-            weak.push($('[name=sw_organ_weak'+i+']').val());
-            comment.push($('[name=sw_organ_comm'+i+']').val());
-            prio.push($('[name=sw_organ_pr'+i+']').val());
+        if ($('[name=sw_factor_organ'+i+']').length) {
+            factor.push($('[name=sw_factor_organ'+i+']').val());
+            str.push($('[name=sw_str_organ'+i+']').val());
+            weak.push($('[name=sw_weak_organ'+i+']').val());
+            comment.push($('[name=sw_comm_organ'+i+']').val());
+            prio.push($('[name=sw_pro_organ'+i+']').val());
             type.push("Organisation");
-
+            if($('[name=sw_pro_organ'+i+']').val()>3)
+            {
+             $(".focus-columns").append('<td>'+$('[name=sw_factor_organ'+i+']').val()+'</td>');
+             $("#worksheet_factor1").append('<td> <input type="text" readonly style="width:30px;" class="total_'+$('[name=sw_factor_organ'+i+']').val()+'" value="'+$('.work_row').length+'"> </td>');
+             $(".work_row").append('<td><select type="Organisation" feature="'+$('[name=sw_factor_organ'+i+']').val()+'" class="worksheet_select">'+
+             '<option value="1">1</option>'+
+             '<option value="2">2</option>'+
+             '<option value="3">3</option>'+
+            '</select></td>');
+             col_span++;
+             total_col_sheet++;
+            }
         }
 
 
     }
+    if(col_span==0)
+    {
+        $(".focus-columns").append('<td></td>');
+        $("#worksheet_factor1").append('<td> </td>');
+        $(".work_row").append('<td></td>');
+        col_span=1;  
+    }
+    $(".focus-organ").attr("colspan",col_span);
 
 
     $.ajaxSetup({
@@ -1661,55 +1678,21 @@ function sw() {
 }
 
 function worksheet() {
-    var count = $("#worksheet_count").val();
     var factor=[];
-    var features_prod = [];
-    var desingn_prod = [];
-    var Technology_prod = [];
-    var skill_people = [];
-    var managed_people = [];
-    var culture_people = [];
-    var design_process = [];
-    var Technology_process = [];
-    var supplier_operation = [];
-    var control_operation = [];
-    var dev_operation = [];
-    var cost_operation = [];
-    var sales_operation = [];
-    var structure_organ = [];
-    var managed_organ = [];
-    var part_organ = [];
-    var location_organ = [];
+    var score=[];
+    var type=[];
+    var feature=[];
+    var fac;
+    $('.work_row').each(function(i, obj) {
+         fac=$(this).children(".tru_factors").children("textarea").val();
+        $(this).children("td").children(".worksheet_select").each(function(j, objj) {
+            factor.push(fac);
+            score.push($(this).val());
+            type.push($(this).attr("type"));
+            feature.push($(this).attr("feature"));
 
-    for (var i = 1; i <= count; i++) {
-        if ($('[name=worksheet_factor'+i+']').length) {
-            factor.push($('[name=worksheet_factor'+i+']').val());
-            features_prod.push($('[name=worksheet_feature'+i+']').val());
-            desingn_prod.push($('[name=worksheet_design_prod'+i+']').val());
-            Technology_prod.push($('[name=worksheet_tech_prod'+i+']').val());
-            skill_people.push($('[name=worksheet_skill'+i+']').val());
-            managed_people.push($('[name=worksheet_managed'+i+']').val());
-            culture_people.push($('[name=worksheet_culture'+i+']').val());
-            design_process.push($('[name=worksheet_design_process'+i+']').val());
-            Technology_process.push($('[name=worksheet_tech_process'+i+']').val());
-            supplier_operation.push($('[name=worksheet_supplier'+i+']').val());
-            control_operation.push($('[name=worksheet_control'+i+']').val());
-            dev_operation.push($('[name=worksheet_dev'+i+']').val());
-            cost_operation.push($('[name=worksheet_cost'+i+']').val());
-            sales_operation.push($('[name=worksheet_sales'+i+']').val());
-            structure_organ.push($('[name=worksheet_structure'+i+']').val());
-            managed_organ.push($('[name=worksheet_mang'+i+']').val());
-            part_organ.push($('[name=worksheet_part'+i+']').val());
-            location_organ.push($('[name=worksheet_location'+i+']').val());
-
-
-
-
-
-        }
-
-
-    }
+        });
+    });
 
     $.ajaxSetup({
         headers: {
@@ -1727,25 +1710,9 @@ function worksheet() {
         data: {
 
              factor: factor,
-             features_prod: features_prod,
-             desingn_prod: desingn_prod,
-             Technology_prod: Technology_prod,
-             skill_people: skill_people,
-             managed_people: managed_people,
-             culture_people: culture_people,
-             design_process: design_process,
-             Technology_process: Technology_process,
-             supplier_operation: supplier_operation,
-             control_operation: control_operation,
-             dev_operation: dev_operation,
-             cost_operation: cost_operation,
-             sales_operation: sales_operation,
-             structure_organ: structure_organ,
-             managed_organ: managed_organ,
-             part_organ: part_organ,
-             location_organ: location_organ,
-
-
+             score: score,
+             type: type,
+             feature: feature,
 
         },
 
@@ -1770,23 +1737,12 @@ function worksheet() {
 }
 
 $(document).on("change", ".worksheet_select", function() {
-    var rows=$("#worksheet_count").val();
-    var name=$(this).attr("name");
-    if(name[name.length-2]=="1")
-    {
-        var prefix=name.substr(0, (name.length-2));
-    }
-    else
-    {
-        var prefix=name.substr(0, (name.length-1));
-
-    }
-    var total=0;
-    for (var index = 1; index <= rows; index++) {
-        total+=parseInt($('[name='+prefix+index+']').val());
-    }
-    $('[name='+prefix+'_total]').val(total);
-    
+    var feature=$(this).attr("feature");
+    var sum=0;
+    $(".worksheet_select[feature='"+feature+"']").each(function(){
+        sum+=parseInt($(this).val());
+    });
+    $(".total_"+feature).val(sum);
 });
 $(".accordion").click(function() {
     //$(this).siblings().children(".card").children(".collapse").removeClass("show");
