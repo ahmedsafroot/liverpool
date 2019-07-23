@@ -28,6 +28,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.2.0/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/pdfmake.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/vfs_fonts.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 
    <style>
      body{
@@ -41,7 +43,9 @@
     </style>
 </head>
 <body>
-   
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7">
         <table id="profile" class="display">
                 <thead>
                     <tr>
@@ -58,12 +62,12 @@
                     @foreach ($trends as $trend)
                         
                     <tr>
-                    <td>{{$trend->observed}}</td>
-                    <td style="text-align:center">{{$trend->cont}}</td>
-                    <td style="text-align:center">{{$trend->revenue}}</td>
-                    <td style="text-align:center">{{$trend->cost}}</td>
-                    <td style="text-align:center">{{$trend->growth}}</td>
-                    <td style="text-align:center">{{$trend->comp}}</td>
+                    <td class="question">{{$trend->observed}}</td>
+                    <td style="text-align:center" class="continue">{{$trend->cont}}</td>
+                    <td style="text-align:center" class="revenue">{{$trend->revenue}}</td>
+                    <td style="text-align:center" class="cost">{{$trend->cost}}</td>
+                    <td style="text-align:center" class="growth">{{$trend->growth}}</td>
+                    <td style="text-align:center" class="comp">{{$trend->comp}}</td>
                     <td style="text-align:center">{{$trend->notes}}</td>
 
                     </tr>
@@ -73,6 +77,21 @@
                     
                 </tbody>
             </table>
+        </div>
+            <!--chart section-->
+            <div class="col-md-5">
+                    <div class="chart-container">
+                        <canvas id="market_trends_chart"></canvas>
+                    </div>
+
+                    <div class="chart-container" style="margin-top:15%
+                        !important;">
+                        <canvas id="market1_trends_chart"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     <script>
 
@@ -90,6 +109,99 @@
                     'copyHtml5', 'excelHtml5', 'pdfHtml5', 'csvHtml5'
                 ]
             } );
+           
+             //chart of market trends
+            var label=[];
+            var continu=[];
+            var revenue=[];
+            var cost=[];
+            var growth=[];
+            var comp=[];
+            var total=[];
+            var sum=0;
+            $('.question').each(function(i, obj) {
+            
+              label.push($(this).text().split(' ').slice(0,3).join(' ')+'...');
+              continu.push($(this).siblings(".continue").text());
+              revenue.push($(this).siblings(".revenue").text());
+              cost.push($(this).siblings(".cost").text());
+              growth.push($(this).siblings(".growth").text());
+              comp.push($(this).siblings(".comp").text());
+              sum=parseInt(continu[i])+parseInt(revenue[i])+parseInt(cost[i])+parseInt(growth[i])+parseInt(comp[i]);
+              total.push(sum);
+              sum=0;
+
+            });
+
+             var marketChart = document.getElementById("market_trends_chart");
+            var myMarketChart = new Chart(marketChart, {
+                type: 'bar',
+                data: {
+                    labels: label,
+            
+                    datasets: [{
+                            label: 'Likely To Continu (Low:1- High:5)',
+                            data: continu,
+                            type: 'line',
+                            backgroundColor: "orange",
+                            fill: false,
+                        }, {
+                            label: "Total Impact",
+                            data: total,
+                            backgroundColor: "#0080FF",
+                            hoverBackgroundColor: "#0080FF",
+            
+                            },
+            
+            
+                        ]
+                    },
+                    options: {
+                        elements: {
+                            line: {
+                                tension: 0 // disables bezier curves
+                            }
+                        },
+                        scales: {
+                            xAxes: [{
+                                stacked: true,
+                            }],
+                            yAxes: [{
+                                stacked: true
+                            }]
+                        },
+                        title: {
+                            display: true,
+                            text: 'Total Impact Vs Contineous Probability'
+                        }
+                    },
+                });
+            
+            
+            var marketChart1 = document.getElementById("market1_trends_chart");
+            var myMarketChart1 = new Chart(marketChart1, {
+                type: 'bar',
+                data: {
+                    labels: label,
+                    datasets: [{
+                            label: "Revenue",
+                            backgroundColor: "#0080FF",
+                            data: revenue,
+                        }, {
+                            label: "Cost",
+                            backgroundColor: "orange",
+                            data: cost,
+                        },
+                        {
+                            label: "Growth",
+                            backgroundColor: "grey",
+                            data: growth,
+                        }
+                     ]
+                    },
+                });
+            
+   
         } );
     </script>
 </body>

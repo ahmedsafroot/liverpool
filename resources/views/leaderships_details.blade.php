@@ -29,6 +29,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/pdfmake.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/vfs_fonts.js"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
    <style>
      body{
          margin: 20px;
@@ -41,7 +44,9 @@
     </style>
 </head>
 <body>
-   
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
         <table id="profile" class="display">
                 <thead>
                     <tr>
@@ -57,11 +62,11 @@
                     @foreach ($ships as $ship)
                         
                     <tr>
-                    <td>{{$ship->question}}</td>
-                    <td style="text-align:center">{{$ship->attractiveness}}</td>
-                    <td style="text-align:center">{{$ship->sector}}</td>
-                    <td style="text-align:center">{{$ship->mainting}}</td>
-                    <td style="text-align:center">{{$ship->position}}</td>
+                    <td class="question">{{$ship->question}}</td>
+                    <td style="text-align:center" class="attract">{{$ship->attractiveness}}</td>
+                    <td style="text-align:center" class="sector">{{$ship->sector}}</td>
+                    <td style="text-align:center" class="mainting">{{$ship->mainting}}</td>
+                    <td style="text-align:center" class="position">{{$ship->position}}</td>
                     <td style="text-align:center">{{$ship->comment}}</td>
 
                     </tr>
@@ -71,6 +76,15 @@
                     
                 </tbody>
             </table>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-md-5" style="margin-top: 9%;">
+                    <div class="chart-container">
+                        <canvas id="chart1"></canvas>
+                    </div>
+                </div>
+        </div>
+    </div>
 
     <script>
 
@@ -88,7 +102,114 @@
                     'copyHtml5', 'excelHtml5', 'pdfHtml5', 'csvHtml5'
                 ]
             } );
-        } );
+            var label=[];
+            var attract=[];
+            var sector=[];
+            var mainting=[];
+            var position=[];
+            $('.question').each(function(i, obj) {
+              label.push($(this).text().split(' ').slice(0,3).join(' ')+'...');
+              attract.push($(this).siblings(".attract").text());
+              sector.push($(this).siblings(".sector").text());
+              mainting.push($(this).siblings(".mainting").text());
+              position.push($(this).siblings(".position").text());
+
+            });
+ var barOptions_stacked = {
+    tooltips: {
+        enabled: false
+    },
+    hover: {
+        animationDuration: 0
+    },
+    scales: {
+        xAxes: [{
+            ticks: {
+                beginAtZero: true,
+                fontFamily: "'Open Sans Bold', sans-serif",
+                fontSize: 11
+            },
+            scaleLabel: {
+                display: false
+            },
+            gridLines: {},
+            stacked: true
+        }],
+        yAxes: [{
+            gridLines: {
+                display: false,
+                color: "#fff",
+                zeroLineColor: "#fff",
+                zeroLineWidth: 0,
+            },
+            ticks: {
+                fontFamily: "'Open Sans Bold', sans-serif",
+                fontSize: 11
+            },
+            stacked: true
+        }]
+    },
+    legend: {
+        display: false
+    },
+
+    animation: {
+        onComplete: function() {
+            var chartInstance = this.chart;
+            var ctx = chartInstance.ctx;
+            ctx.textAlign = "center";
+            ctx.font = "9px Open Sans";
+            ctx.fillStyle = "#fff";
+
+            Chart.helpers.each(this.data.datasets.forEach(function(dataset, i) {
+                var meta = chartInstance.controller.getDatasetMeta(i);
+                Chart.helpers.each(meta.data.forEach(function(bar, index) {
+                    data = dataset.data[index];
+                    if (i == 2) {
+                        ctx.fillText(data, bar._model.x - 30, bar._model.y + 4);
+                    } else {
+                        ctx.fillText(data, bar._model.x - 15, bar._model.y + 4);
+                    }
+                }), this)
+            }), this);
+        }
+    },
+    pointLabelFontFamily: "Quadon Extra Bold",
+    scaleFontFamily: "Quadon Extra Bold",
+};
+
+
+//chart of industary leadership
+var ctx1 = document.getElementById("chart1");
+var myChart1 = new Chart(ctx1, {
+    type: 'horizontalBar',
+    data: {
+        labels: label,
+
+        datasets: [{
+            data: attract,
+            backgroundColor: "#0080FF",
+            hoverBackgroundColor: "#0080FF"
+        }, {
+            data: sector,
+            backgroundColor: "#009900",
+            hoverBackgroundColor: "#009900"
+        }, {
+            data: mainting,
+
+            backgroundColor: "rgba(63,203,226,1)",
+            hoverBackgroundColor: "rgba(46,185,235,1)"
+        }, {
+            data: position,
+            backgroundColor: "#FF0000",
+            hoverBackgroundColor: "#FF0000"
+        }, ]
+    },
+
+    options: barOptions_stacked,
+});
+} );
+
     </script>
 </body>
 </html>

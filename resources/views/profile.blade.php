@@ -7,7 +7,7 @@
     <!--Container for top page (logo and title)-->
     <!-- This is a row for logo and company name-->
     <div class="container-fluid">
-        <div class="row">
+        <div class="row header-logo">
             <div class="col-sm-1 col-md-1"></div>
             <div class="col-10 col-sm-10 col-md-4">
                 <img src="{{ asset('public/images/logo.png')}}" class="rounded float-left mt-4" alt="logo" width="70%">
@@ -42,17 +42,17 @@
     </form>
     <!--Indecators-->
     <div style="text-align:center;">
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
+        <span class="step" onclick="gotoTap(0)"></span>
+        <span class="step" onclick="gotoTap(1)"></span>
+        <span class="step" onclick="gotoTap(2)"></span>
+        <span class="step" onclick="gotoTap(3)"></span>
+        <span class="step" onclick="gotoTap(4)"></span>
+        <span class="step" onclick="gotoTap(5)"></span>
+        <span class="step" onclick="gotoTap(6)"></span>
+        <span class="step" onclick="gotoTap(7)"></span>
+        <span class="step" onclick="gotoTap(8)"></span>
+        <span class="step" onclick="gotoTap(9)"></span>
+        <span class="step" onclick="gotoTap(10)"></span>
     </div>
 
 
@@ -156,6 +156,30 @@
         x[currentTab].style.display = "none";
         // Increase or decrease the current tab by 1:
         currentTab = currentTab + n;
+        // if you have reached the end of the form...
+        if (currentTab >= x.length) {
+            // ... the form gets submitted:
+            document.getElementById("submitForm").submit();
+            return false;
+        }
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+    }
+
+    function gotoTap(n) {
+        //to back the page opened at the top .
+        $(".animated").addClass('fadeInUp');
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        // This function will figure out which tab to display
+        var x = document.getElementsByClassName("tab");
+        // Exit the function if any field in the current tab is invalid:
+
+        if (n == 1 && false) return false;
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = n;
         // if you have reached the end of the form...
         if (currentTab >= x.length) {
             // ... the form gets submitted:

@@ -12,7 +12,7 @@ body {
 .title p {
     text-align: center !important;
     font-family: "proxima-nova", arial, sans-serif !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     color: #1D3C78 !important;
 }
 
@@ -23,7 +23,7 @@ body {
 .sectionTitle {
     text-align: left !important;
     font-family: "proxima-nova", arial, sans-serif !important;
-    font-size: 21px !important;
+    font-size: 23px !important;
 }
 
 .descParagrah {
@@ -361,7 +361,7 @@ textarea {
     display: block !important;
     padding: 15px !important;
     color: #555 !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: bold !important;
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
@@ -450,3 +450,7 @@ textarea {
     color: white;
 }
 
+.header-logo
+{
+    margin-bottom: -50px;
+}

@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <!--second tab-->
     <div class="tab animated">
-        <p class="sectionTitle mt-4">Anshof</p>
+        <p class="sectionTitle mt-4">Ansoff</p>
         <hr>
         <!--First Table-->
         <!--Market Penetration (Existing Products in Existing Markets/Customers)-->
