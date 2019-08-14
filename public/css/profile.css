@@ -454,3 +454,9 @@ textarea {
 {
     margin-bottom: -50px;
 }
+.step_title
+{
+    text-align: center;
+    margin: 35px;
+    font-size: 42px;
+}

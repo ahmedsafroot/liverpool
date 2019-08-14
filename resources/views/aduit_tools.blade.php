@@ -1,14 +1,20 @@
 <div class="container-fluid">
     <!--second tab-->
     <div class="tab animated">
-        <p class="sectionTitle">Agility Audit Tool</p>
+        <p class="step_title">Agility Audit Tool</p>
         <hr>
-        <p class="descParagrah">This quick Audit tool is designed to get you thinking seriously about issues that may be affecting your business. The philosophy here is that the more able you are to supply products and services tailored to the needs of your customers, quickly and cost-effectively, the more likely that you can win the competition, and consequently grow.
+        <p class="descParagrah">
+                This quick Audit tool is designed to get you thinking seriously about issues that may be affecting your business. The philosophy here is that the more able you are to supply products and services tailored to the needs of your customers, quickly and cost-effectively, the more likely that you can win the competition, and consequently grow.
         </p>
 
         <p class="sectionTitle mt-4">Instructions</p>
         <hr>
         <p class="descParagrah">Please read through the questions and indicate how true you feel each statement to be for your business and its operations.
+            </p>
+        
+        <p class="sectionTitle mt-4">OUTPUT</p>
+        <hr>
+        <p class="descParagrah">YOU WILL BE GIVEN A QUICK INDICATION OF THE STATE OF THE COMPANY
             </p>
         <!--First Table-->
         <!--Section One: Business and Marketing Strategy-->

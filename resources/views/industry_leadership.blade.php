@@ -1,7 +1,29 @@
 <!--Third Tab-->
 <div class="tab animated">
+      <div style="margin-left:5px">
+        <p class="step_title">Market Leadership(Step 1-1)</p>
+        <hr>
+        <p class="descParagrah">
+                In this part you identify the KEY factors that are important for the company to stay in competition.
+            </p>
+
+        <p class="sectionTitle mt-4">Instructions</p>
+        <hr>
+        <ul class="descParagrah">
+            <li>CHOOSE FROM THE LIST THE FACTORS THAT YOU THINK ARE OF MORE IMPORTANCE FOR THE COMPANY [Factors chosen will appear in the Boxes below]<li>
+            <li>
+                    GIVE SCORES REGARDING:
+                <ul class="descParagrah">
+                    <li>How it is important for (attractive to) CUSTOMERS, COMPANY</li>
+                    <li>How you see your position in this against average of the industry</li>
+                    <li>How difficult it is to maintain your position?</li>
+                </ul>
+            </li>
+            <li>Then, state if it is a QULIFIER (basic condition) or WINNER (important advantage) for you</li>
+            <li>Add any comment you may is needed</li>
+        </ul>
+      </div>
     <div class="ProductLines">
-        <label class="mainLabel" style="margin-left: 5%;">Industry Leadership</label>
         <div class="container-fluid">
             <div class="row">
                 <input type="hidden" value="11" id="count">

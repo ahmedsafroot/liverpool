@@ -3,20 +3,12 @@
     <div class="container-fluid animated">
         <div class="row">
             <div class="mb-3 ml-2 mt-6 col-md-10">
-                    <h3>How does this work?</h3>
-                    <p class="descParagrah">The tool set is designed to allow you enter information about your firm, your business environment (markets and competition), and the functions of your organisation. 
-                            The tools use the input to analytically develop a projection of the firm’s position, function and the requirements for becoming or staying successful.                            
+                    <h2 class="step_title">Company Profile</h2>
+                    <p class="descParagrah">Here you enter a general overview of the company to both help organising the information about your company and also helping further analysis
                         </p><hr>
-                    <h5>INSTRUCTIONS will be provided at each stage.</h5><hr>
-                     <p class="sectionTitle">OUTCOMES:</p>
+                     <p class="sectionTitle">OUTPUT</p>
                      <p class="descParagrah">
-                         <ul class="descParagrah">
-                             <li>Each stage will produce a report (will be saved), which may include diagrams and visual aids to see and understand the state of the firm.</li>
-                             <li>A combinatory analysis of the input information will be generated in the form of a FOCUS SHEET. This is a list of indicated areas which the firm would benefit attending.</li>
-                             <li>A list of actions potentially suitable to the state of the firm will be generated for consideration.</li>
-                             <li>A collective report will be generated in a variety of formats (PDF, Spreadsheet, …) which will be made accessible to the company.</li>
-                             <li>The audit system will provide points of contact for further advice.</li>
-                         </ul>
+                            A brief summary will be produced which can be printed separately or as part of the whole report
                      </p>
             </div>
             <!--First Collapse for company info-->
