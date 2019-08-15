@@ -927,7 +927,7 @@ function turbulence_impact() {
     var sev = [];
 
     for (var i = 1; i <= count_supply; i++) {
-        if ($('[name=supply'+i+'_txtarea]').length) {
+        if ($('[name=supply'+i+'_txtarea]').length && $('[name=supply'+i+'_txtarea]').parent().parent().attr("style")=="display: table-row;") {
             factor.push($('[name=supply'+i+'_txtarea]').val());
             timeLenght.push($('[name=supply'+i+'_timeLen]').val());
             inc_dec.push($('[name=supply'+i+'_increase]').val());
@@ -941,7 +941,7 @@ function turbulence_impact() {
 
     }
     for (var i = 1; i <= count_req; i++) {
-        if ($('[name=cust_req'+i+'_txtarea]').length) {
+        if ($('[name=cust_req'+i+'_txtarea]').length && $('[name=cust_req'+i+'_txtarea]').parent().parent().attr("style")=="display: table-row;") {
             factor.push($('[name=cust_req'+i+'_txtarea]').val());
             timeLenght.push($('[name=cust_req'+i+'_timeLen]').val());
             inc_dec.push($('[name=cust_req'+i+'_increase]').val());
@@ -955,7 +955,7 @@ function turbulence_impact() {
 
     }
     for (var i = 1; i <= count_rivalry; i++) {
-        if ($('[name=rivalry'+i+'_txtarea]').length) {
+        if ($('[name=rivalry'+i+'_txtarea]').length && $('[name=rivalry'+i+'_txtarea]').parent().parent().attr("style")=="display: table-row;") {
             factor.push($('[name=rivalry'+i+'_txtarea]').val());
             timeLenght.push($('[name=rivalry'+i+'_timeLen]').val());
             inc_dec.push($('[name=rivalry'+i+'_increase]').val());
@@ -970,7 +970,7 @@ function turbulence_impact() {
     }
     
     for (var i = 1; i <= count_purchasing; i++) {
-        if ($('[name=purchasing'+i+'_txtarea]').length) {
+        if ($('[name=purchasing'+i+'_txtarea]').length && $('[name=purchasing'+i+'_txtarea]').parent().parent().attr("style")=="display: table-row;") {
             factor.push($('[name=purchasing'+i+'_txtarea]').val());
             timeLenght.push($('[name=purchasing'+i+'_timeLen]').val());
             inc_dec.push($('[name=purchasing'+i+'_increase]').val());
@@ -985,7 +985,7 @@ function turbulence_impact() {
     }
 
     for (var i = 1; i <= count_tech; i++) {
-        if ($('[name=TechChanges'+i+'_txtarea]').length) {
+        if ($('[name=TechChanges'+i+'_txtarea]').length && $('[name=TechChanges'+i+'_txtarea]').parent().parent().attr("style")=="display: table-row;") {
             factor.push($('[name=TechChanges'+i+'_txtarea]').val());
             timeLenght.push($('[name=TechChanges'+i+'_timeLen]').val());
             inc_dec.push($('[name=TechChanges'+i+'_increase]').val());
@@ -997,6 +997,7 @@ function turbulence_impact() {
 
 
     }
+    console.log(factor);
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -1234,9 +1235,9 @@ function ansoff() {
     var control = [];
     var urgency = [];
     var risk = [];
-    var time = [];
+    /*var time = [];
     var resource = [];
-    var invest = [];
+    var invest = [];*/
 
     for (var i = 1; i <= count_penetration; i++) {
         if ($('[name=anshof_penetration'+i+']').length) {
@@ -1245,9 +1246,9 @@ function ansoff() {
             control.push($('[name=anshof_penetration_control_'+i+']').val());
             urgency.push($('[name=anshof_penetration_urgency_'+i+']').val());
             risk.push($('[name=anshof_penetration_risk_'+i+']').val());
-            time.push($('[name=anshof_penetration_time_'+i+']').val());
+            /*time.push($('[name=anshof_penetration_time_'+i+']').val());
             resource.push($('[name=anshof_penetration_resource_'+i+']').val());
-            invest.push($('[name=anshof_penetration_invest_'+i+']').val());
+            invest.push($('[name=anshof_penetration_invest_'+i+']').val());*/
             type.push("Market Penetration (Existing Products in Existing Markets/Customers)");
 
         }
@@ -1261,9 +1262,9 @@ function ansoff() {
             control.push($('[name=anshof_development_control_'+i+']').val());
             urgency.push($('[name=anshof_development_urgency_'+i+']').val());
             risk.push($('[name=anshof_development_risk_'+i+']').val());
-            time.push($('[name=anshof_development_time_'+i+']').val());
+            /*time.push($('[name=anshof_development_time_'+i+']').val());
             resource.push($('[name=anshof_development_resource_'+i+']').val());
-            invest.push($('[name=anshof_development_invest_'+i+']').val());
+            invest.push($('[name=anshof_development_invest_'+i+']').val());*/
             type.push("Market Development (Existing Products in New Markets/Customers)");
 
         }
@@ -1277,9 +1278,9 @@ function ansoff() {
             control.push($('[name=anshof_service_control_'+i+']').val());
             urgency.push($('[name=anshof_service_urgency_'+i+']').val());
             risk.push($('[name=anshof_service_risk_'+i+']').val());
-            time.push($('[name=anshof_service_time_'+i+']').val());
+            /*time.push($('[name=anshof_service_time_'+i+']').val());
             resource.push($('[name=anshof_service_resource_'+i+']').val());
-            invest.push($('[name=anshof_service_invest_'+i+']').val());
+            invest.push($('[name=anshof_service_invest_'+i+']').val());*/
             type.push("Product/Service Development (New/Extended Products in Existing Markets/Customers)");
 
         }
@@ -1293,9 +1294,9 @@ function ansoff() {
             control.push($('[name=anshof_diversification_control_'+i+']').val());
             urgency.push($('[name=anshof_diversification_urgency_'+i+']').val());
             risk.push($('[name=anshof_diversification_risk_'+i+']').val());
-            time.push($('[name=anshof_diversification_time_'+i+']').val());
+            /*time.push($('[name=anshof_diversification_time_'+i+']').val());
             resource.push($('[name=anshof_diversification_resource_'+i+']').val());
-            invest.push($('[name=anshof_diversification_invest_'+i+']').val());
+            invest.push($('[name=anshof_diversification_invest_'+i+']').val());*/
             type.push("Diversification (New/Extended Products in New Markets/Customers)");
 
         }
@@ -1323,10 +1324,7 @@ function ansoff() {
             control: control,
             urgency: urgency,
             risk: risk,
-            time: time,
             type: type,
-            resource: resource,
-            invest: invest,
 
            
 
@@ -1379,12 +1377,12 @@ $(document).on("change", ".anshof_select", function() {
     var control=parseInt($('[name='+prefix+'control_'+rowNumber+']').val());
     var urgency=parseInt($('[name='+prefix+'urgency_'+rowNumber+']').val());
     var risk=parseInt($('[name='+prefix+'risk_'+rowNumber+']').val());
-    var time=parseInt($('[name='+prefix+'time_'+rowNumber+']').val());
+    /*var time=parseInt($('[name='+prefix+'time_'+rowNumber+']').val());
     var resource=parseInt($('[name='+prefix+'resource_'+rowNumber+']').val());
-    var invest=parseInt($('[name='+prefix+'invest_'+rowNumber+']').val());
+    var invest=parseInt($('[name='+prefix+'invest_'+rowNumber+']').val());*/
 
 
-    var total=poten+control+urgency+risk+time+resource+invest;
+    var total=poten+control+urgency+risk;
     $(this).parent().siblings().children(".anshof_total").val(total);
    
 
@@ -1751,4 +1749,17 @@ $(document).on("change", ".worksheet_select", function() {
 $(".accordion").click(function() {
     //$(this).siblings().children(".card").children(".collapse").removeClass("show");
     //$("html, body").animate({ scrollTop: $(this).offset().top }, "slow");
+});
+$(document).on("change", ".custom-control-input", function() {
+  var id=$(this).attr("id");
+  var length=id.length;
+  var number=id.substring(13, length);
+  var elements=document.getElementsByClassName("row_hidden");
+  if($(this).prop("checked") == true){
+  $(elements[number]).show();
+  }
+  else
+  {
+    $(elements[number]).hide(); 
+  }
 });

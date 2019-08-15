@@ -460,3 +460,7 @@ textarea {
     margin: 35px;
     font-size: 42px;
 }
+.row_hidden
+{
+    display: none;
+}

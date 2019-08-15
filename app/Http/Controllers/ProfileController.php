@@ -1218,8 +1218,14 @@ class ProfileController extends Controller
             $thread_oper=$data->thread_oper;
             $sev=$data->sev;
             $type=$data->type;
-     
+        if($factor!=null)
+        {
         $count=count($factor);
+        }
+        else
+        {
+            $count=0;
+        }
         if(session()->has('profileid'))
         {
             $profileid=Session::get('profileid');
@@ -1373,10 +1379,10 @@ class ProfileController extends Controller
         $control=$data->control;
         $urgency=$data->urgency;
         $risk=$data->risk;
-        $time=$data->time;
+        //$time=$data->time;
         $type=$data->type;
-        $resource=$data->resource;
-        $invest=$data->invest;
+        //$resource=$data->resource;
+        //$invest=$data->invest;
 
         if($factor!=NULL)
         $count=count($factor);
@@ -1405,12 +1411,12 @@ class ProfileController extends Controller
             $Ansoff->profileid=$profileid;
             $Ansoff->factor=$factor[$i];
             $Ansoff->potential=$potential[$i];
-            $Ansoff->resource=$resource[$i];
+            //$Ansoff->resource=$resource[$i];
             $Ansoff->control=$control[$i];
-            $Ansoff->invest=$invest[$i];
+            //$Ansoff->invest=$invest[$i];
             $Ansoff->risk=$risk[$i];
             $Ansoff->urgency=$urgency[$i];
-            $Ansoff->time=$time[$i];
+            //$Ansoff->time=$time[$i];
             $Ansoff->type=$type[$i];
             $Ansoff->save();
         }

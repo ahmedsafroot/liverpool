@@ -1,8 +1,23 @@
 <div class="container-fluid">
     <!--second tab-->
     <div class="tab animated">
-        <p class="sectionTitle mt-4">Ansoff</p>
+        <h2 class="step_title">GROWTH Direction(Step 5)</h2>
         <hr>
+        <p class="descParagrah">
+                You will EXAMINE the DIRECTION for your company’s GROWTH and examine the potentials
+        </p>
+
+        <p class="sectionTitle mt-4">Instructions</p>
+        <hr>
+        <p class="descParagrah">Give score for the factors given on their POTENTIAL; IMPORTANCE/URGENCY; RESOURCE REQUIREMENTS; POSSIBLE RETURN on INVESTMENT
+
+            </p>
+        
+        <p class="sectionTitle mt-4">OUTCOME</p>
+        <hr>
+        <p class="descParagrah">PRIORITY Tactics for Growth will be identified, FEEDING into the action worksheets
+
+            </p>
         <!--First Table-->
         <!--Market Penetration (Existing Products in Existing Markets/Customers)-->
         <div id="anshof1_factor1" class="accordion mb-3 ml-2 mt-6 col-md-10">
@@ -21,15 +36,11 @@
                                 <th scope="col"></th>
                                 <th scope="col" class="tableH supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
                                 </th>
-                                <th scope="col" class="tableH supplyWidth">Degree of control</th>
-                                <th scope="col" class="tableH supplyWidth">Importance urgency
+                                <th scope="col" class="tableH supplyWidth">IMPORTANCE/URGENCY
                                 </th>
-                                <th scope="col" class="tableH supplyWidth">Level of risk</th>
-                                <th scope="col" class="tableH supplyWidth">Demands on time
+                                <th scope="col" class="tableH supplyWidth">RESOURCE REQUIREMENTS
                                 </th>
-                                <th scope="col" class="tableH supplyWidth">Resource requirements
-                                </th>
-                                <th scope="col" class="tableH supplyWidth">Return on investment
+                                <th scope="col" class="tableH supplyWidth">POSSIBLE RETURN on INVESTMENT
                                 </th>
                                 <th scope="col" class="tableH supplyWidth">Priority(1-40)
                             </tr>
@@ -71,29 +82,8 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="market_penetration-td8">
+                                   <td>
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="market_penetration-td8">
                                     </td>
 
 
@@ -136,29 +126,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+                                  
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="cross-selling-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="cross-selling-td8">
                                     </td>
 
 
@@ -200,29 +170,8 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="up-selling-td8">
+                                     <td>
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="up-selling-td8">
                                     </td>
 
 
@@ -264,29 +213,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+                   
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="add-ons-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="add-ons-td8">
                                     </td>
 
 
@@ -328,29 +257,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+                          
                                     <td>
-                                <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="anshof_services-td8">
+                                <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="anshof_services-td8">
                                     </td>
 
 
@@ -392,29 +301,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_6' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_6' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_6' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+                  
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="offers-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="offers-td8">
                                     </td>
 
 
@@ -456,29 +345,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_7' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_7' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_7' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+       
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="brand-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="brand-td8">
                                     </td>
 
 
@@ -518,22 +387,18 @@
                     <input type="hidden" value="5" id="anshof2-input">
                     <table class="table table-striped col-md-7" id="anshof2-tabel">
                         <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col" class="tableH supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
-                                </th>
-                                <th scope="col" class="tableH supplyWidth">Degree of control</th>
-                                <th scope="col" class="tableH supplyWidth">Importance urgency
-                                </th>
-                                <th scope="col" class="tableH supplyWidth">Level of risk</th>
-                                <th scope="col" class="tableH supplyWidth">Demands on time
-                                </th>
-                                <th scope="col" class="tableH supplyWidth">Resource requirements
-                                </th>
-                                <th scope="col" class="tableH supplyWidth">Return on investment
-                                </th>
-                                <th scope="col" class="tableH supplyWidth">Priority(1-40)
-                            </tr>
+                                <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="tableH supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">IMPORTANCE/URGENCY
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">RESOURCE REQUIREMENTS
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">POSSIBLE RETURN on INVESTMENT
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">Priority(1-40)
+                                    </tr>
                         </thead>
 
                         <tbody>
@@ -572,29 +437,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_development_time_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_resource_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_invest_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="attract-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="attract-td8">
                                     </td>
 
 
@@ -637,29 +482,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_development_time_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_resource_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_invest_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="competitors-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="competitors-td8">
                                     </td>
 
 
@@ -701,29 +526,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_development_time_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_resource_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_invest_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+       
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="overseas-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="overseas-td8">
                                     </td>
 
 
@@ -765,29 +570,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_development_time_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_resource_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_invest_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="niches-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="niches-td8">
                                     </td>
 
 
@@ -829,29 +614,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_development_time_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_resource_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_invest_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="ventures-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="ventures-td8">
                                     </td>
 
 
@@ -891,30 +656,18 @@
                     <input type="hidden" value="6" id="anshof3-input">
                     <table class="table table-striped col-md-7" id="anshof3-tabel">
                         <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Degree of control</th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Importance urgency
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Level of risk</th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Demands on time
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Resource requirements
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Return on investment
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Priority(1-40)
-                            </tr>
+                                <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="tableH supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">IMPORTANCE/URGENCY
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">RESOURCE REQUIREMENTS
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">POSSIBLE RETURN on INVESTMENT
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">Priority(1-40)
+                                    </tr>
                         </thead>
 
                         <tbody>
@@ -953,29 +706,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_service_time_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_resource_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_invest_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+ 
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="capability-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="capability-td8">
                                     </td>
 
 
@@ -1018,29 +751,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_service_time_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_resource_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_invest_2' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="ranges-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="ranges-td8">
                                     </td>
 
 
@@ -1082,29 +795,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_service_time_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_resource_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_invest_3' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="existing-customers-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="existing-customers-td8">
                                     </td>
 
 
@@ -1146,29 +839,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_service_time_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_resource_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_invest_4' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-services-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="new-services-td8">
                                     </td>
 
 
@@ -1210,29 +883,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_service_time_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_resource_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_invest_5' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="complementary-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="complementary-td8">
                                     </td>
 
 
@@ -1274,29 +927,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_service_time_6' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_resource_6' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_invest_6' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="simplify-products-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="simplify-products-td8">
                                     </td>
 
 
@@ -1334,28 +967,18 @@
                     <input type="hidden" value="1" id="anshof4-input">
                     <table class="table table-striped col-md-7" id="anshof4-tabel">
                         <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col" class="tableH supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
-                                </th>
-                                <th scope="col" class="tableH supplyWidth">Degree of control</th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Importance urgency
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Level of risk</th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Demands on time
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Resource requirements
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Return on investment
-                                </th>
-                                <th scope="col" class="tableH
-                                            supplyWidth">Priority(1-40)
-                            </tr>
+                                <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="tableH supplyWidth">Potential (High:3,Medium:2,Low:1,Nill:0)
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">IMPORTANCE/URGENCY
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">RESOURCE REQUIREMENTS
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">POSSIBLE RETURN on INVESTMENT
+                                        </th>
+                                        <th scope="col" class="tableH supplyWidth">Priority(1-40)
+                                    </tr>
                         </thead>
 
                         <tbody>
@@ -1394,29 +1017,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_diversification_time_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_diversification_resource_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_diversification_invest_1' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-products-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="new-products-td8">
                                     </td>
 
 
@@ -1512,29 +1115,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_penetration_time_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_resource_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_penetration_invest_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="new-market${next}-td8">
                                     </td>
 
 
@@ -1595,29 +1178,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_development_time_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_resource_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_development_invest_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+        
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="new-market${next}-td8">
                                     </td>
 
 
@@ -1678,29 +1241,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_service_time_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_resource_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_service_invest_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="new-market${next}-td8">
                                     </td>
 
 
@@ -1762,29 +1305,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select></td>
-                                    <td><select name='anshof_diversification_time_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_diversification_resource_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
-                                    <td><select name='anshof_diversification_invest_${next}' class="anshof_select">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></td>
+
                                     <td>
-                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="9" name="new-market${next}-td8">
+                                        <input type="text" style="width:30px;" class="anshof_total" readonly value="6" name="new-market${next}-td8">
                                     </td>
 
 

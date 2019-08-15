@@ -46,17 +46,15 @@
                 <thead>
                     <tr>
                         <th>Company Name</th>
-                        <th>Address</th>
-                        <th>Telephone</th>
                         <th>Agility Audit Tool</th>
                         <th>Market Leadership</th>
                         <th>Market Trends</th>
                         <th>Customer Experience</th>
-                        <th>BEA-Turbance Impact</th>
+                        <th>BUSINESS ENVIRONMENT UNCERTAINTY</th>
                         <th>Turbance Impact Tool</th>
-                        <th>SW</th>
+                        <th>An Analysis of the company’s..</th>
                         <th>Focus worksheet</th>
-                        <th>Ansoff</th>
+                        <th>GROWTH Direction</th>
                         <th>Actions</th>
 
                     </tr>
@@ -65,8 +63,6 @@
                     @foreach ($profiles as $profile)
                     <tr>
                             <td><a href="{{ route('profile.details',['id' => $profile->id] ) }}">{{$profile->userName}}</a></td>
-                            <td>{{$profile->userAddress}}</td>
-                            <td>{{$profile->userTelephone}}</td>
                             <th><a href="{{ route('audit_tools.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('industry_leadership.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('market_trends.details',['id' => $profile->id] ) }}">see more</a></th>

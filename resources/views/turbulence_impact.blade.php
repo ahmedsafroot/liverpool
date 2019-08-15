@@ -33,14 +33,54 @@
                     </p>
     
             </div>
-            <hr>
+            <hr><hr>
+            <div class="listing" style="margin-left:5px">
+                <div class="row">
+                    <?php 
+                    $list=["Labour force size","Training needs","Multi-skilled","Staff turnover","Labour cost",
+                           "Labour force productivity","Turnover per employee","% of defects per employee",
+                           "Throughput ration","Number of changes","Number of Machine","Schedule changes",
+                           "% of occasions of stock out","Packaging variation","No of live jobs","No of occasions",
+                          "No of customers in the company’s customer base","No of customers % of customers dictating delivery time",
+                          "No of customers % of customers dictating batch size","Share of sales to min/major customers",
+                          "% of customers you are the preferred supplier for","Market utilisation","Customer loyalty",
+                         "% of cases price is negotiated by customers","% of orders amended by customers","% of orders cancelled",
+                        "% of orders lost due to price negotiation","% of orders lost due","Delayed customers payments",
+                    "Lead time requested by customers","Customer specified suppliers","Customers specified materials",
+                "Customers order volumes","Customers order frequencies","Online customer orders","% of customers involved in design stage",
+                "% of concept changes","% of prototypes generated for customer evaluation","% of products that are maintenance free",
+            "% of products requiring installation/commissioning","% of products that are reconfigurable","% of bespoke products",
+            "% of products dependent on external products","No of competitors","No of Mergers/Acquisitions","Market size","No of customers",
+            "Product pricing","Average product pricing","Number of new products","Average industry/sector","Promotional expenditure",
+        "R&D expenditure within market","New product success rate","Market delivery time","Number of markets targeted",
+        "No of brand names company sells under","No of first-to-market","Life-cycle of products","Sales at reduced costs",
+    "Order winning services","No of active suppliers","% of products with only ONE supplie","Inward supplies defects (rate)",
+        "% of suppliers involved in new product development","% of preferred suppliers","% of suppliers the company is the main customer","% of suppliers’ prices negotiated",
+        "Suppliers lead time","% of suppliers’ delivery time negotiated","New suppliers being sourced","Product technology changes","Process technology changes",
+        "% turnover spent on technology change","Technologies available to the company","Support services improvements"];
+            
+                    for($i=0;$i<count($list);$i++){
+                    ?>
+                    <!-- Default inline 1-->
+                    <div class="col-2 custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="{{'defaultInline'.$i}}">
+                            <label class="custom-control-label" for="{{'defaultInline'.$i}}">{{$list[$i]}}</label>
+                    </div>
+                <?php }?>    
+                        
+                        
+ 
+
+                </div>
+
+            </div>
         <!--First Table-->
         <!--Factor One: SUPPLY CHAIN-->
         <div id="factor1" class="accordion mb-3 ml-2 mt-6 col-md-10">
             <div class="card mb-0">
                 <div class="card-header collapsed" data-toggle="collapse" href="#SUPPLY1">
                     <a class="card-title">
-                        Factor One: SUPPLY CHAIN
+                        Area One: OPERATIONS
                     </a>
                     <i class="fa fa-angle-down"></i>
                 </div>
@@ -64,7 +104,7 @@
 
                         <tbody>
                             <div id="supply">
-                                <tr id="supply1">
+                                <tr class="row_hidden" id="supply1">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply1_txtarea">Labour force
                                             size</textarea>
@@ -108,7 +148,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply2">
+                                <tr class="row_hidden" id="supply2">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply2_txtarea">Training needs</textarea>
                                     </th>
@@ -151,7 +191,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply3">
+                                <tr class="row_hidden" id="supply3">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply3_txtarea">Multi-skilled personnel requirements</textarea>
                                     </th>
@@ -194,7 +234,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply4">
+                                <tr class="row_hidden" id="supply4">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply4_txtarea">Staff turnover (staff leaving over a period of time)</textarea>
                                     </th>
@@ -237,7 +277,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply5">
+                                <tr class="row_hidden" id="supply5">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply5_txtarea">Labour cost</textarea>
                                     </th>
@@ -280,7 +320,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply6">
+                                <tr class="row_hidden" id="supply6">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply6_txtarea">Labour force productivity</textarea>
                                     </th>
@@ -323,7 +363,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply7">
+                                <tr class="row_hidden" id="supply7">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply7_txtarea">Turnover per employee</textarea>
                                     </th>
@@ -366,7 +406,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply8">
+                                <tr class="row_hidden" id="supply8">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply8_txtarea">% of defects per employee</textarea>
                                     </th>
@@ -409,7 +449,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply9">
+                                <tr class="row_hidden" id="supply9">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply9_txtarea">Throughput ration to capacity</textarea>
                                     </th>
@@ -452,7 +492,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply10">
+                                <tr class="row_hidden" id="supply10">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply10_txtarea">Number of changes for process improvement</textarea>
                                     </th>
@@ -495,7 +535,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply11">
+                                <tr class="row_hidden" id="supply11">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply11_txtarea">Number of Machine Breakdowns</textarea>
                                     </th>
@@ -538,7 +578,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply12">
+                                <tr class="row_hidden" id="supply12">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply12_txtarea">Schedule changes</textarea>
                                     </th>
@@ -581,7 +621,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply13">
+                                <tr class="row_hidden" id="supply13">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply13_txtarea">% of occasions of stock out</textarea>
                                     </th>
@@ -624,7 +664,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply14">
+                                <tr class="row_hidden" id="supply14">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply14_txtarea">Packaging variation per product</textarea>
                                     </th>
@@ -667,7 +707,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply15">
+                                <tr class="row_hidden" id="supply15">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply15_txtarea">No of live jobs at any one time</textarea>
                                     </th>
@@ -710,7 +750,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="supply16">
+                                <tr class="row_hidden" id="supply16">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="supply16_txtarea">No of occasions incorrect stocks identified</textarea>
                                     </th>
@@ -777,7 +817,7 @@
             <div class="card mb-0">
                 <div class="card-header collapsed" data-toggle="collapse" href="#CUST_REQ">
                     <a class="card-title">
-                        Factor Two: DYNAMIC CUSTOMER REQUIREMENTS
+                        Area Two: CUSTOMER/MARKETS
                     </a>
                     <i class="fa fa-angle-down"></i>
                 </div>
@@ -801,7 +841,7 @@
 
                         <tbody>
                             <div id="cust_req">
-                                <tr id="cust_req1">
+                                <tr class="row_hidden" id="cust_req1">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req1_txtarea">No of customers in the company’s customer base
                                             size</textarea>
@@ -845,7 +885,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req2">
+                                <tr class="row_hidden" id="cust_req2">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req2_txtarea">No of customers % of customers dictating delivery time</textarea>
                                     </th>
@@ -888,7 +928,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req3">
+                                <tr class="row_hidden" id="cust_req3">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req3_txtarea">No of customers % of customers dictating batch size</textarea>
                                     </th>
@@ -931,7 +971,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req4">
+                                <tr class="row_hidden" id="cust_req4">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req4_txtarea">Share of sales to min/major customers</textarea>
                                     </th>
@@ -974,7 +1014,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req5">
+                                <tr class="row_hidden" id="cust_req5">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req5_txtarea">% of customers you are the preferred supplier for</textarea>
                                     </th>
@@ -1017,7 +1057,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req6">
+                                <tr class="row_hidden" id="cust_req6">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req6_txtarea">Market utilisation (over-capacity hence power with customer vice versa)</textarea>
                                     </th>
@@ -1060,7 +1100,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req7">
+                                <tr class="row_hidden" id="cust_req7">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req7_txtarea">Customer loyalty (% of customers returning)</textarea>
                                     </th>
@@ -1103,7 +1143,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req8">
+                                <tr class="row_hidden" id="cust_req8">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req8_txtarea">% of cases price is negotiated by customers (customer influence)</textarea>
                                     </th>
@@ -1146,7 +1186,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req9">
+                                <tr class="row_hidden" id="cust_req9">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req9_txtarea">% of orders amended by customers</textarea>
                                     </th>
@@ -1189,7 +1229,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req10">
+                                <tr class="row_hidden" id="cust_req10">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req10_txtarea">% of orders cancelled</textarea>
                                     </th>
@@ -1232,7 +1272,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req11">
+                                <tr class="row_hidden" id="cust_req11">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req11_txtarea">% of orders lost due to price negotiation</textarea>
                                     </th>
@@ -1275,7 +1315,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req12">
+                                <tr class="row_hidden" id="cust_req12">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req12_txtarea">% of orders lost due to not meeting delivery time request</textarea>
                                     </th>
@@ -1318,7 +1358,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req13">
+                                <tr class="row_hidden" id="cust_req13">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req13_txtarea">Delayed customers payments</textarea>
                                     </th>
@@ -1361,7 +1401,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req14">
+                                <tr class="row_hidden" id="cust_req14">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req14_txtarea">Lead time requested by customers</textarea>
                                     </th>
@@ -1404,7 +1444,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req15">
+                                <tr class="row_hidden" id="cust_req15">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req15_txtarea">Customer specified suppliers (% of occasions)</textarea>
                                     </th>
@@ -1447,7 +1487,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req16">
+                                <tr class="row_hidden" id="cust_req16">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req16_txtarea">Customers specified materials</textarea>
                                     </th>
@@ -1490,7 +1530,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req17">
+                                <tr class="row_hidden" id="cust_req17">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req17_txtarea">Customers order volumes</textarea>
                                     </th>
@@ -1533,7 +1573,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req18">
+                                <tr class="row_hidden" id="cust_req18">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req18_txtarea">Customers order frequencies</textarea>
                                     </th>
@@ -1577,7 +1617,7 @@
                                 </tr>
 
 
-                                <tr id="cust_req19">
+                                <tr class="row_hidden" id="cust_req19">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req19_txtarea">Online customer orders</textarea>
                                     </th>
@@ -1620,7 +1660,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req20">
+                                <tr class="row_hidden" id="cust_req20">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req20_txtarea">% of customers involved in design stage</textarea>
                                     </th>
@@ -1663,7 +1703,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req21">
+                                <tr class="row_hidden" id="cust_req21">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req21_txtarea">% of concept changes</textarea>
                                     </th>
@@ -1706,7 +1746,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req22">
+                                <tr class="row_hidden" id="cust_req22">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req22_txtarea">% of prototypes generated for customer evaluation</textarea>
                                     </th>
@@ -1749,7 +1789,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req23">
+                                <tr class="row_hidden" id="cust_req23">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req23_txtarea">% of products that are maintenance free</textarea>
                                     </th>
@@ -1792,7 +1832,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req24">
+                                <tr class="row_hidden" id="cust_req24">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req24_txtarea">% of products requiring installation/commissioning</textarea>
                                     </th>
@@ -1836,7 +1876,7 @@
                                 </tr>
 
 
-                                <tr id="cust_req25">
+                                <tr class="row_hidden" id="cust_req25">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req25_txtarea">% of products that are reconfigurable</textarea>
                                     </th>
@@ -1880,7 +1920,7 @@
                                 </tr>
 
 
-                                <tr id="cust_req26">
+                                <tr class="row_hidden" id="cust_req26">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req26_txtarea">% of bespoke products</textarea>
                                     </th>
@@ -1923,7 +1963,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="cust_req27">
+                                <tr class="row_hidden" id="cust_req27">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="cust_req27_txtarea">% of products dependent on external products</textarea>
                                     </th>
@@ -1989,7 +2029,7 @@
             <div class="card mb-0">
                 <div class="card-header collapsed" data-toggle="collapse" href="#RIVALRY">
                     <a class="card-title">
-                        Factor Three: RIVALRY/COMPTETION
+                        Area Three: COMPTETION
                     </a>
                     <i class="fa fa-angle-down"></i>
                 </div>
@@ -2013,7 +2053,7 @@
 
                         <tbody>
                             <div id="rivalry">
-                                <tr id="rivalry1">
+                                <tr class="row_hidden" id="rivalry1">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry1_txtarea">No of competitors
                                         </textarea>
@@ -2057,7 +2097,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry2">
+                                <tr class="row_hidden" id="rivalry2">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry2_txtarea">No of Mergers/Acquisitions</textarea>
                                     </th>
@@ -2100,7 +2140,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry3">
+                                <tr class="row_hidden" id="rivalry3">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry3_txtarea">Market size</textarea>
                                     </th>
@@ -2143,7 +2183,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry4">
+                                <tr class="row_hidden" id="rivalry4">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry4_txtarea">No of customers</textarea>
                                     </th>
@@ -2186,7 +2226,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry5">
+                                <tr class="row_hidden" id="rivalry5">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry5_txtarea">Product pricing</textarea>
                                     </th>
@@ -2229,7 +2269,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry6">
+                                <tr class="row_hidden" id="rivalry6">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry6_txtarea">Average product pricing</textarea>
                                     </th>
@@ -2272,7 +2312,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry7">
+                                <tr class="row_hidden" id="rivalry7">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry7_txtarea">Number of new products to market and their associated services</textarea>
                                     </th>
@@ -2315,7 +2355,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry8">
+                                <tr class="row_hidden" id="rivalry8">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry8_txtarea">Average industry/sector time to market</textarea>
                                     </th>
@@ -2358,7 +2398,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry9">
+                                <tr class="row_hidden" id="rivalry9">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry9_txtarea">Promotional expenditure (gap with industry average)</textarea>
                                     </th>
@@ -2401,7 +2441,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry10">
+                                <tr class="row_hidden" id="rivalry10">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry10_txtarea">R&D expenditure within market</textarea>
                                     </th>
@@ -2444,7 +2484,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry11">
+                                <tr class="row_hidden" id="rivalry11">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry11_txtarea">New product success rate</textarea>
                                     </th>
@@ -2487,7 +2527,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry12">
+                                <tr class="row_hidden" id="rivalry12">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry12_txtarea">Market delivery time (Vs industry average)</textarea>
                                     </th>
@@ -2530,7 +2570,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry13">
+                                <tr class="row_hidden" id="rivalry13">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry13_txtarea">Number of markets targeted</textarea>
                                     </th>
@@ -2573,7 +2613,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry14">
+                                <tr class="row_hidden" id="rivalry14">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry14_txtarea">No of brand names company sells under</textarea>
                                     </th>
@@ -2616,7 +2656,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry15">
+                                <tr class="row_hidden" id="rivalry15">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry15_txtarea">No of first-to-market</textarea>
                                     </th>
@@ -2659,7 +2699,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry16">
+                                <tr class="row_hidden" id="rivalry16">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry16_txtarea">Life-cycle of products</textarea>
                                     </th>
@@ -2702,7 +2742,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry17">
+                                <tr class="row_hidden" id="rivalry17">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry17_txtarea">Sales at reduced costs</textarea>
                                     </th>
@@ -2745,7 +2785,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="rivalry18">
+                                <tr class="row_hidden" id="rivalry18">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="rivalry18_txtarea">Order winning services (No of occasions orders won due to services)</textarea>
                                     </th>
@@ -2812,7 +2852,7 @@
             <div class="card mb-0">
                 <div class="card-header collapsed" data-toggle="collapse" href="#PURCHASING">
                     <a class="card-title">
-                        Factor Four: PURCHASING
+                        Area Four: SUPPLIERS/PURCHASING
                     </a>
                     <i class="fa fa-angle-down"></i>
                 </div>
@@ -2836,7 +2876,7 @@
 
                         <tbody>
                             <div id="purchasing">
-                                <tr id="purchasing1">
+                                <tr class="row_hidden" id="purchasing1">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing1_txtarea">No of active suppliers
                                         </textarea>
@@ -2880,7 +2920,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing2">
+                                <tr class="row_hidden" id="purchasing2">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing2_txtarea">% of products with only ONE supplier</textarea>
                                     </th>
@@ -2923,7 +2963,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing3">
+                                <tr class="row_hidden" id="purchasing3">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing3_txtarea">Inward supplies defects (rate)</textarea>
                                     </th>
@@ -2966,7 +3006,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing4">
+                                <tr class="row_hidden" id="purchasing4">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing4_txtarea">% of suppliers involved in new product development</textarea>
                                     </th>
@@ -3009,7 +3049,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing5">
+                                <tr class="row_hidden" id="purchasing5">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing5_txtarea">% of preferred suppliers</textarea>
                                     </th>
@@ -3052,7 +3092,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing6">
+                                <tr class="row_hidden" id="purchasing6">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing6_txtarea">% of suppliers the company is the main customer</textarea>
                                     </th>
@@ -3095,7 +3135,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing7">
+                                <tr class="row_hidden" id="purchasing7">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing7_txtarea">% of suppliers’ prices negotiated</textarea>
                                     </th>
@@ -3138,7 +3178,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing8">
+                                <tr class="row_hidden" id="purchasing8">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing8_txtarea">Suppliers lead time</textarea>
                                     </th>
@@ -3181,7 +3221,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing9">
+                                <tr class="row_hidden" id="purchasing9">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing9_txtarea">% of suppliers’ delivery time negotiated</textarea>
                                     </th>
@@ -3224,7 +3264,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="purchasing10">
+                                <tr class="row_hidden" id="purchasing10">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="purchasing10_txtarea">New suppliers being sourced</textarea>
                                     </th>
@@ -3291,7 +3331,7 @@
             <div class="card mb-0">
                 <div class="card-header collapsed" data-toggle="collapse" href="#TechChanges">
                     <a class="card-title">
-                        Factor Five: TECHNOLOGICAL CHANGES
+                        Area Five: TECHNOLOGICAL CHANGES
                     </a>
                     <i class="fa fa-angle-down"></i>
                 </div>
@@ -3315,7 +3355,7 @@
 
                         <tbody>
                             <div id="TechChanges">
-                                <tr id="TechChanges1">
+                                <tr class="row_hidden" id="TechChanges1">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges1_txtarea">Product technology changes
                                         </textarea>
@@ -3359,7 +3399,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="TechChanges2">
+                                <tr class="row_hidden" id="TechChanges2">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges2_txtarea">Process technology changes</textarea>
                                     </th>
@@ -3402,7 +3442,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="TechChanges3">
+                                <tr class="row_hidden" id="TechChanges3">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges3_txtarea">% turnover spent on technology change</textarea>
                                     </th>
@@ -3445,7 +3485,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="TechChanges4">
+                                <tr class="row_hidden" id="TechChanges4">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges4_txtarea">Technologies available to the company</textarea>
                                     </th>
@@ -3488,7 +3528,7 @@
                                     </td>
                                 </tr>
 
-                                <tr id="TechChanges5">
+                                <tr class="row_hidden" id="TechChanges5">
                                     <th scope="row" class="tableH tru_factors">
                                         <textarea type="text" class="form-control bea_txtarea" name="TechChanges5_txtarea">Support services improvements</textarea>
                                     </th>

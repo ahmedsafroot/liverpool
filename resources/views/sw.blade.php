@@ -1,8 +1,28 @@
 <div class="container-fluid">
         <!--second tab-->
         <div class="tab animated">
-            <p class="sectionTitle mt-4">SW</p>
+            <h2 class="step_title">An Analysis of the company’s Strengths and Weaknesses in KEY areas(Step 3)
+            </h2>
             <hr>
+            <p class="descParagrah">You will be given areas of key functions and capabilities to identify where you stand and how you find your position.
+                    AREAS: Products; People; Processes; Operations; Organisation
+            </p>
+
+            <p class="sectionTitle mt-4">Instructions</p>
+            <hr>
+            <ol class="descParagrah">
+                <li>In each section choose the important factors and DELETE the rest (or ADD other factors you think are important for you)
+                    </li>
+                <li>EXPLAIN your strength AND/OR weakness in each, and how you see yourself to do Vs your closest competitor
+                    </li>
+                <li>Priority: What is the priority of this factor for you to focus on?
+                    </li>
+                </ol>
+            <p class="sectionTitle mt-4">OUTCOME</p>
+            <hr>
+            <p class="descParagrah">
+                    The factors from this section will be used to IDENTIFY actions for improvement
+            </p>
             <!--First Table-->
             <!--Factor One: SUPPLY CHAIN-->
             <div id="sw_factor1" class="accordion mb-3 ml-2 mt-6 col-md-10">

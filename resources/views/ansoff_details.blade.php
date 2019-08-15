@@ -47,12 +47,9 @@
                     <tr>
                         <th>factor</th>
                         <th>Potential</th>
-                        <th>Degree of control</th>
-                        <th>Importance urgency</th>
-                        <th>Level of risk</th>
-                        <th>Demands on time</th>
-                        <th>Resource requirements</th>
-                        <th>Return on investment</th>
+                        <th>IMPORTANCE/URGENCY</th>
+                        <th>RESOURCE REQUIREMENTS</th>
+                        <th>POSSIBLE RETURN on INVESTMENT</th>
                         <th>Type</th>
 
                     </tr>
@@ -66,9 +63,6 @@
                     <td>{{$ansoff->control}}</td>
                     <td>{{$ansoff->urgency}}</td>
                     <td>{{$ansoff->risk}}</td>
-                    <td>{{$ansoff->time}}</td>
-                    <td>{{$ansoff->resource}}</td>
-                    <td>{{$ansoff->invest}}</td>
                     <td>{{$ansoff->type}}</td>
 
                     </tr>

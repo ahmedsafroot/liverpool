@@ -2,8 +2,19 @@
     <!--second tab-->
     <input type="hidden" value="0" id="worksheet_count">
     <div class="tab animated">
-        <p class="sectionTitle mt-4">Focus Worksheet</p>
+        <h2 class="step_title">FOCUS Worksheet(Step 4)</h2>
         <hr>
+        <p class="descParagrah">You will EXAMINE the High Scored Uncertainty Factors [STEP 2-2] against the SW factors in STEP 3
+        </p>
+        <ol class="descParagrah">
+            <li>Give score for the IMPCAT of factors on the LEFT on each factor brought to this table [LOW to HIGH; 1-3]
+             </li>
+        </ol>
+        <p class="sectionTitle mt-4">OUTCOME</p>
+            <hr>
+            <p class="descParagrah">
+                    Areas of focus will be identified for you to attempt considering actions in the STEP 6
+            </p>
         <div class="mb-3 ml-2 mt-6 col-md-12">
             <table class="table table-striped col-md-7" id="worksheet_tabel" border="1">
                 <thead>
