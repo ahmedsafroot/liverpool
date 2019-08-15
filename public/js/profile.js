@@ -83,6 +83,12 @@ function profileForm() {
     mydata["userAppro"] = $("#userAppro").val();
     mydata["userYears"] = $("#userYears").val();
     mydata["userPortfolio"] = $("#userPortfolio").val();
+    mydata["postCode"] = $("#postCode").val();
+    mydata["Position"] = $("#Position").val();
+    mydata["Email"] = $("#Email").val();
+    mydata["Industry"] = $("#Industry").val();
+    mydata["NACE"] = $("#NACE").val();
+
     if ($('#marketCK1').is(":checked")) {
         mydata["marketCK1"] = 1;
     } else {
@@ -367,6 +373,12 @@ function profileForm() {
             consumerServices: mydata["consumerServices"],
             publicServices: mydata["publicServices"],
             nonProfit: mydata["nonProfit"],
+            postCode:mydata["postCode"],
+            Position:mydata["Position"],
+            Email:mydata["Email"],
+            Industry:mydata["Industry"],
+            NACE:data["NACE"],
+
 
         },
 

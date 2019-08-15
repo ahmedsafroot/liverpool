@@ -32,6 +32,9 @@
                             <input type="text" class="form-control" id="userAddress" placeholder="Address">
                         </div>
                         <div class="form-group">
+                                <input type="text" class="form-control" id="postCode" placeholder="Post Code">
+                        </div>
+                        <div class="form-group">
                             <input type="text" class="form-control" minlength="3" maxlength="11" id="userTelephone" placeholder="Telephone">
                         </div>
                         <p class="errorMsg" id="telephoneValid"></p>
@@ -145,12 +148,23 @@
                             <input type="text" class="form-control" id="userImport" placeholder="Imports">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="userContact" placeholder="Contact Person">
+                            <input type="text" class="form-control" id="userContact" placeholder="Contact Name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="userContactNo" placeholder="Contact Person Telephone No">
+                            <input type="text" class="form-control" id="userContactNo" placeholder="Contact Telephone No">
                         </div>
-
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="Position" placeholder="Position">
+                        </div>
+                        <div class="form-group">
+                                <input type="email" class="form-control" id="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="Industry" placeholder="Industry Sector">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="NACE" placeholder="NACE">
+                        </div>
 
                         <!--collapse-->
                     </div>

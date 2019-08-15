@@ -138,6 +138,12 @@ class ProfileController extends Controller
         $profile->userName=$data->userName;
         $profile->userParent=$data->userParent;
         $profile->userAddress=$data->userAddress;
+        $profile->postCode=$data->postCode;
+        $profile->Position=$data->Position;
+        $profile->Email=$data->Email;
+        $profile->Industry=$data->Industry;
+        $profile->NACE=$data->NACE;
+
         $profile->userTelephone=$data->userTelephone;
         $profile->userFax=$data->userFax;
         $profile->userUrl=$data->userUrl;

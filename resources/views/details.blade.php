@@ -68,6 +68,11 @@
       
                     </tr>
                     <tr>
+                            <td>Post Code</td>
+                            <td>{{$profile->postCode}}</td>
+      
+                    </tr>
+                    <tr>
                             <td>Telephone</td>
                             <td>{{$profile->userTelephone}}</td>
       
@@ -119,14 +124,30 @@
                         <td>{{$profile->userImport}}</td>
                     </tr>
                     <tr>
-                            <td>Contact Person</td>
+                            <td>Contact Name</td>
                             <td>{{$profile->userContact}}</td>
                      </tr>
                      <tr>
-                        <td>Contact Person Telephone No</td>
+                        <td>Contact Telephone No</td>
                         <td>{{$profile->userContactNo}}</td>
                      </tr>
-                               
+                     <tr>
+                                   <td>Position</td>
+                                   <td>{{$profile->Position}}</td>
+                      </tr>
+                      <tr>
+                                   <td>Email</td>
+                                   <td>{{$profile->Email}}</td>
+                     </tr>   
+                     <tr>
+                                   <td>Industry Sector</td>
+                                   <td>{{$profile->Industry}}</td>
+                     </tr>   
+                     <tr>
+                                   <td>NACE</td>
+                                   <td>{{$profile->NACE}}</td>
+                     </tr>      
+                     
                     <tr>
                             <td>Company Status</td>
                             <td>{{$profile->status}}</td>
