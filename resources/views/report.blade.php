@@ -49,7 +49,7 @@
                         <th>Address</th>
                         <th>Telephone</th>
                         <th>Agility Audit Tool</th>
-                        <th>Industry LeaderShip</th>
+                        <th>Market Leadership</th>
                         <th>Market Trends</th>
                         <th>Customer Experience</th>
                         <th>BEA-Turbance Impact</th>

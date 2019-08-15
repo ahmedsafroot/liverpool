@@ -1,7 +1,34 @@
 <!--Third Tab-->
 <div class="tab animated">
     <div class="ProductLines">
-        <label class="mainLabel" style="margin-left: 5%;">Market Trends</label>
+        <h2 class="step_title">Market Trends(Step 1-2)</h2>
+        <div style="margin-left:5px">
+        <p class="descParagrah">In this part you identify the KEY TRENDS in your market that are important for the company.
+            </p>
+        <hr><hr>
+        <p class="sectionTitle mt-4">Instructions</p>
+        <hr>
+        <p class="descParagrah">Think of trends you find to exist or emerge soon [examples: customer demand volume or variety; Technology; Economy; Law and regulation; Environmental; Manpower; Machines; Materials; Political issues; …] and add to the boxes provided
+          <ul class="descParagrah">
+              <li>GIVE SCORES REGARDING:
+                <ol>
+                    <li>How likely it is to continue</li>
+                    <li>If you do NOTHING about it, what is the IMPACT on company’s:
+                       <ul><li>REVENUE; COST; GROWTH [Negative measures are used]</li>
+                       </ul> 
+                    </li>
+                    <li>How do you perform Vs your competitors?
+                        </li>
+                    <li>You can add comment and add more rows if needed
+                        </li>
+                </ol>
+            </li>
+            <li>You will see a graph depicting the state of the company
+                </li>
+          </ul>
+        </p>
+    </div>
+        <label class="mainLabel" style="margin-left: 5%;"></label>
         <div class="container-fluid">
             <div class="row">
                 <input type="hidden" value="4" id="count_trend">

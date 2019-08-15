@@ -1,8 +1,39 @@
 <div class="container-fluid">
     <!--second tab-->
     <div class="tab animated">
-        <p class="sectionTitle mt-4">Turbulance Factors</p>
-        <hr>
+            <h2 class="step_title">BUSINESS ENVIRONMENT UNCERTAINTY(Step 2-1)</h2>
+            <div style="margin-left:5px">
+                    <p class="descParagrah">YOU WILL IDENTIFY THE KEY FACTORS THAT MAY HAVE IMPACT ON THE COMPANY’S FUNCTION AND COMPETITIVENESS
+                    </p>
+                    <p style="font-weight:bold">THESE ARE BROKEN DOWN IN FIVE AREAS: OPERATIONS; CUSTOMER/MARKETS; COMPETITION; SUPPLIERS/PURCHASING; TECHNOLOGY CHANGES
+                    </p>
+                    <hr><hr>
+                    <p class="sectionTitle mt-4">Instructions</p>
+                    <hr>
+                    <p class="descParagrah">
+                        <ol class="descParagrah">
+                            <li>In each section choose the important factors, which will appear in the boxes
+                            </li>
+                            <li>
+                                    SCORE in TWO parts:
+                                    <ul>
+                                        <li>STATE of the changes: LENGTH of the uncertainty factor; Is it increasing or decreasing; How often that occurs (frequency)
+                                        </li>
+                                        <li> Do you consider it as a THREAT or OPPORTUNITY? And HOW SEVERE you find it? 
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ol>
+                            
+                    </p>
+                    <hr><hr>
+                    <p class="sectionTitle mt-4">OUTCOME</p>
+                    <hr>
+                    <p class="descParagrah">The factors from this section with HIGHER scores will be moved to the section 4 after SWOT ANALYSIS
+                    </p>
+    
+            </div>
+            <hr>
         <!--First Table-->
         <!--Factor One: SUPPLY CHAIN-->
         <div id="factor1" class="accordion mb-3 ml-2 mt-6 col-md-10">

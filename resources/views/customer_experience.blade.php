@@ -1,7 +1,22 @@
 <!--Third Tab-->
 <div class="tab animated">
     <div class="ProductLines">
-        <label class="mainLabel" style="margin-left: 5%;">CUSTOMER EXPERIENCE</label>
+        <h2 class="step_title">CUSTOMER EXPERIENCE(Step 1-3)</h2>
+        <div style="margin-left:5px">
+                <p class="descParagrah">In this part you identify your experience in interface and working with customers in some KEY areas.
+                </p>
+                <p style="font-weight:bold">THIS IS A REFLECTION AND FOR YOU TO RECORD THE FACTS
+                </p>
+                <hr><hr>
+                <p class="sectionTitle mt-4">Instructions</p>
+                <hr>
+                <p class="descParagrah">CHECK THE GIVEN FACTORS AND IF RELEVANT (DELETE IF NOT) ADD YOUR COMMENTS IN THE BOXES PROVIDED
+                </p>
+                <p style="font-weight:bold">THE OUTCOME WILL GIVE A BRIEF OVERVIEW OF YOUR STATE IN DEALING WITH CUSTOMERS
+                </p>
+
+        </div>
+        <label class="mainLabel" style="margin-left: 5%;"></label>
         <div class="container-fluid">
             <div class="row">
                 <input type="hidden" value="13" id="count_customer">
