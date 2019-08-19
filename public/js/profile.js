@@ -1692,19 +1692,1617 @@ function sw() {
 }
 
 function worksheet() {
+    var messages=["Redesign product(s) for adding or removing features","Undertake marketing (market study) for identifying and testing product features"
+                  ,"Revise the product design process, team or expertise","Outsource product design process"
+                  ,"Change the philosophy of Design to: DESIGN FOR one or more of these: sustainability; logistics; supply chain; manufacturing/assembly; "
+                  ,"Identify and adopt or improve current technologies","Outsource for new technologies in product design or production"
+                  ,"Improve information management for product development process (Databases, PoS information capture, customer feedback, …)"
+                  ,"Invest on R&D for new product development","Introduce new products"
+                  ,"Improve the current products for efficiency, quality, cost, modularity (design to order) to attract customers"
+                  ,"Identify and collaborate with external partners for new or improved products, or for new or extended markets"
+                  ,"Introduce concurrent engineering for product development and production process"
+                  ,"Introduce product life cycle management system (source-make-deliver-return-recycle)"
+                  ,"Initiate a programme to identify the needs for staff training (skills and knowledge) and deliver training at different levels (leadership, management, technology, techniques, customer/suppliers’ relations, …)"
+                  ,"Reach out and collaborate with external entities (University, Professional bodies and Associations, …) for accessing resources and new knowledge to transfer to the people"
+                  ,"Revise HRM policies for recruitment, development, retainment, ","Introduce initiatives for motivating and engaging people [teamwork, reward system, job design, "
+                  ,"Manage and improve HRM information system","Manage knowledge of people in the organisation using new technologies"
+                  ,"Encourage and reward teamwork, engagement and learning","Change and improve approach to leadership of the company"
+                  ,"Introduce technologies (social media) to encourage communication","Train staff for multitasking and flexible working (remote, from-home, …)"
+                  ,"Use flexible contracts for attracting required skills","Re-Engineer Processes in the organisation for efficiency (cost effectiveness and speed), effectiveness (quality, reliability/dependability, customer satisfaction), flexibility and responsiveness"
+                  ,"Make your processes more market and customer oriented (integrate with marketing and customer data)"
+                  ,"","Identify shortfalls in technologies used, identify new and emerging technologies, and consider investment in changing/improving/adding technologies"
+                  ,"Evaluate automation and data management technologies options (customer relationship management, ERP system, market data and trends, …) and invest in new technologies"
+                  ,"Evaluate and redesign marketing processes of the firm (market awareness, market data access, advertisement, networking, …)"
+                  ,"","Revise outsourcing and purchasing policies and methods of the firm","Introduce or revise supplier management strategies and system (identifying, selecting and evaluating/monitoring suppliers, and types of relationships and contracts (partnership, VMI, 3/4PL, …)"
+                  ,"Evaluate and revise product distribution, transportation, and any reverse logistics processes (related to suppliers/partners)"
+                  ,"Introduce initiatives for process improvement (Methods, tools and techniques related to Lean operations) for material handling (inventory and warehouse), production, delivery"
+                  ,"Revise planning and control system (forecasting, scheduling, workflow, material and product flow, …)"
+                  ,"Evaluate and redesign the information management system in the company","Introduce integrated technologies (ERP, Supplier Information, Customer/Market Data, …)"
+                  ,"Introduce information security measurement in the company’s IS","Outsource or collaborate with external parties for developing or improving the IS/M"
+                  ,"Redesign the NPD system for speed, quality and integration of all stakeholders","Invest on R&D for NPD"
+                  ,"Collaborate for new products with external partners","","Introduce cost saving initiatives (LEAN) in the firm"
+                  ,"Review and revise the accounting system for accuracy in capturing data and information for product and service costing"
+                  ,"Review and revise information management for costing of products and services","Review marketing strategy of the company"
+                  ,"Initiate marketing campaign (outsourcing, identifying new customers or their needs, advertisement, website development, social media, …)"
+                  ,"Identify new distribution channels and potential partners","Review and revise order management system and process"
+                  ,"","Review firm’s formal systems/processes (accounting, documentation, data management, …) for clarity, accuracy and efficiency "
+                  ,"Introduce risk management system (risk identification, register, mitigation, …) into the firm"
+                  ,"Introduce knowledge management system in the firm","Revise the firm’s structure for clarity, flow and good communication"
+                  ,"Introduce emerging approaches such as project-based, matrix, team based, flexible structure in the firm"
+                  ,"","Review and revise the leadership style of the firm and its executive level; introduce improvement measures through organisation redesign, training,"
+                  ,"Introduce autonomous functioning and management in the organisation","Develop a system for change management in the firm"
+                  ,"Introduce collaboration methods within the firm and with external entities","Consider collaboration with sources of knowledge (university, professional bodies, …)"
+                  ,"Consider merger and/or acquisition strategies","Evaluate physical location of the firm (geography (e.g. near markets), cost, size, style (e.g. open space), and introduce measures of change"];
     var factor=[];
     var score=[];
     var type=[];
     var feature=[];
     var fac;
+    var PRACTICES=[];
     $('.work_row').each(function(i, obj) {
+         debugger;
          fac=$(this).children(".tru_factors").children("textarea").val();
         $(this).children("td").children(".worksheet_select").each(function(j, objj) {
             factor.push(fac);
             score.push($(this).val());
             type.push($(this).attr("type"));
             feature.push($(this).attr("feature"));
+            if(fac.toLowerCase()=="training needs" && $(this).attr("type").toLowerCase()=="people" && $(this).val()==3)
+            {
+                if(jQuery.inArray(14, PRACTICES) == -1) {
+                 PRACTICES.push(14);
+                }
+                if(jQuery.inArray(15, PRACTICES) == -1) {
+                    PRACTICES.push(15);
+                }
+                if(jQuery.inArray(19, PRACTICES) == -1) {
+                    PRACTICES.push(19);
+                }
 
+            }
+            else if(fac.toLowerCase()=="multi-skilled personnel requirements" && $(this).attr("type").toLowerCase()=="people" && $(this).val()==3)
+            {
+                   if(jQuery.inArray(14, PRACTICES) == -1) {
+                    PRACTICES.push(14);
+                   }
+                   if(jQuery.inArray(15, PRACTICES) == -1) {
+                       PRACTICES.push(15);
+                   }
+                   if(jQuery.inArray(19, PRACTICES) == -1) {
+                       PRACTICES.push(19);
+                   }
+                   if(jQuery.inArray(22, PRACTICES) == -1) {
+                    PRACTICES.push(22);
+                   }
+                   if(jQuery.inArray(23, PRACTICES) == -1) {
+                       PRACTICES.push(23);
+                   }
+                   if(jQuery.inArray(24, PRACTICES) == -1) {
+                       PRACTICES.push(24);
+                   }
+            }
+            else if(fac.toLowerCase()=="staff turnover (staff leaving over a period of time)" && $(this).attr("type").toLowerCase()=="people" && $(this).val()==3)
+            {
+                   if(jQuery.inArray(16, PRACTICES) == -1) {
+                    PRACTICES.push(16);
+                   }
+                   if(jQuery.inArray(17, PRACTICES) == -1) {
+                       PRACTICES.push(17);
+                   }
+                   if(jQuery.inArray(20, PRACTICES) == -1) {
+                       PRACTICES.push(20);
+                   }
+                   if(jQuery.inArray(21, PRACTICES) == -1) {
+                    PRACTICES.push(21);
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="labour cost")
+            {
+                   if($(this).attr("type").toLowerCase()=="people" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(16, PRACTICES) == -1) {
+                        PRACTICES.push(16);
+                    }
+                    if(jQuery.inArray(23, PRACTICES) == -1) {
+                        PRACTICES.push(23);
+                    }
+                    if(jQuery.inArray(24, PRACTICES) == -1) {
+                        PRACTICES.push(24);
+                    }
+                   }
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(42, PRACTICES) == -1) {
+                        PRACTICES.push(42);
+                    }
+                   }
+                 
+               
+            }
+            else if(fac.toLowerCase()=="labour force productivity")
+            {
+                   if($(this).attr("type").toLowerCase()=="people" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(15, PRACTICES) == -1) {
+                        PRACTICES.push(15);
+                    }
+                    if(jQuery.inArray(19, PRACTICES) == -1) {
+                        PRACTICES.push(19);
+                    }
+                    if(jQuery.inArray(20, PRACTICES) == -1) {
+                        PRACTICES.push(20);
+                    }
+                    if(jQuery.inArray(21, PRACTICES) == -1) {
+                        PRACTICES.push(21);
+                    }
+                    if(jQuery.inArray(22, PRACTICES) == -1) {
+                        PRACTICES.push(22);
+                    }
+                   }
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(42, PRACTICES) == -1) {
+                        PRACTICES.push(42);
+                    }
+                  
+                   }
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(52, PRACTICES) == -1) {
+                        PRACTICES.push(52);
+                    }
+                    if(jQuery.inArray(53, PRACTICES) == -1) {
+                        PRACTICES.push(53);
+                    }
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(27, PRACTICES) == -1) {
+                        PRACTICES.push(27);
+                    }
+                  
+                   }
+                 
+               
+            }
+            else if(fac.toLowerCase()=="number of changes for process improvement")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(27, PRACTICES) == -1) {
+                        PRACTICES.push(27);
+                    }
+                  
+                   }
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(52, PRACTICES) == -1) {
+                        PRACTICES.push(52);
+                    }
+                    if(jQuery.inArray(53, PRACTICES) == -1) {
+                        PRACTICES.push(53);
+                    }
+                    if(jQuery.inArray(56, PRACTICES) == -1) {
+                        PRACTICES.push(56);
+                    }
+                    if(jQuery.inArray(57, PRACTICES) == -1) {
+                        PRACTICES.push(57);
+                    }
+                   }
+                 
+               
+            }
+            else if(fac.toLowerCase()=="number of machine breakdowns")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(27, PRACTICES) == -1) {
+                        PRACTICES.push(27);
+                    }
+                  
+                   }
+
+                 
+               
+            }
+            else if(fac.toLowerCase()=="schedule changes")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(35, PRACTICES) == -1) {
+                        PRACTICES.push(35);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(28, PRACTICES) == -1) {
+                        PRACTICES.push(28);
+                    }
+                  
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="% of occasions of stock out")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(49, PRACTICES) == -1) {
+                        PRACTICES.push(49);
+                    }
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(28, PRACTICES) == -1) {
+                        PRACTICES.push(28);
+                    }
+                  
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="packaging variation per product")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(0, PRACTICES) == -1) {
+                        PRACTICES.push(0);
+                    }
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="no of customers in the company’s customer base size")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(45, PRACTICES) == -1) {
+                        PRACTICES.push(45);
+                    }
+                    if(jQuery.inArray(46, PRACTICES) == -1) {
+                        PRACTICES.push(46);
+                    }
+                    if(jQuery.inArray(47, PRACTICES) == -1) {
+                        PRACTICES.push(47);
+                    }
+                    
+                   }
+              
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(0, PRACTICES) == -1) {
+                        PRACTICES.push(0);
+                    }
+                    if(jQuery.inArray(1, PRACTICES) == -1) {
+                        PRACTICES.push(1);
+                    }
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="no of customers % of customers dictating delivery time")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(35, PRACTICES) == -1) {
+                        PRACTICES.push(35);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                    if(jQuery.inArray(29, PRACTICES) == -1) {
+                        PRACTICES.push(29);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="% of customers you are the preferred supplier for")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(39, PRACTICES) == -1) {
+                        PRACTICES.push(39);
+                    }
+                    if(jQuery.inArray(48, PRACTICES) == -1) {
+                        PRACTICES.push(48);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                    if(jQuery.inArray(29, PRACTICES) == -1) {
+                        PRACTICES.push(29);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(0, PRACTICES) == -1) {
+                        PRACTICES.push(0);
+                    }
+                    if(jQuery.inArray(4, PRACTICES) == -1) {
+                        PRACTICES.push(4);
+                    }
+                    if(jQuery.inArray(7, PRACTICES) == -1) {
+                        PRACTICES.push(7);
+                    }
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                                      
+                   }
+               
+            }
+            //from here
+            else if(fac.toLowerCase()=="customer loyalty (% of customers returning)")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                   
+                    if(jQuery.inArray(45, PRACTICES) == -1) {
+                        PRACTICES.push(45);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                    if(jQuery.inArray(29, PRACTICES) == -1) {
+                        PRACTICES.push(29);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(1, PRACTICES) == -1) {
+                        PRACTICES.push(1);
+                    }
+                    if(jQuery.inArray(8, PRACTICES) == -1) {
+                        PRACTICES.push(8);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(57, PRACTICES) == -1) {
+                        PRACTICES.push(57);
+                    }
+                    if(jQuery.inArray(60, PRACTICES) == -1) {
+                        PRACTICES.push(60);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="% of cases price is negotiated by customers (customer influence)")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(35, PRACTICES) == -1) {
+                        PRACTICES.push(35);
+                    }
+                    if(jQuery.inArray(43, PRACTICES) == -1) {
+                        PRACTICES.push(43);
+                    }
+                    if(jQuery.inArray(44, PRACTICES) == -1) {
+                        PRACTICES.push(44);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                    if(jQuery.inArray(29, PRACTICES) == -1) {
+                        PRACTICES.push(29);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                   
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="% of orders cancelled")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(48, PRACTICES) == -1) {
+                        PRACTICES.push(48);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                   
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(0, PRACTICES) == -1) {
+                        PRACTICES.push(0);
+                    }
+                    if(jQuery.inArray(7, PRACTICES) == -1) {
+                        PRACTICES.push(7);
+                    }
+                    if(jQuery.inArray(8, PRACTICES) == -1) {
+                        PRACTICES.push(8);
+                    }
+                    if(jQuery.inArray(9, PRACTICES) == -1) {
+                        PRACTICES.push(9);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="delayed customers payments")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(48, PRACTICES) == -1) {
+                        PRACTICES.push(48);
+                    }
+                    if(jQuery.inArray(49, PRACTICES) == -1) {
+                        PRACTICES.push(49);
+                    }
+                    if(jQuery.inArray(50, PRACTICES) == -1) {
+                        PRACTICES.push(50);
+                    }
+                                 
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(28, PRACTICES) == -1) {
+                        PRACTICES.push(28);
+                    }
+                    
+                                      
+                   }
+
+               
+            }
+            else if(fac.toLowerCase()=="customers specified materials")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(45, PRACTICES) == -1) {
+                        PRACTICES.push(45);
+                    }
+                    if(jQuery.inArray(48, PRACTICES) == -1) {
+                        PRACTICES.push(48);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(2, PRACTICES) == -1) {
+                        PRACTICES.push(2);
+                    }
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                    if(jQuery.inArray(13, PRACTICES) == -1) {
+                        PRACTICES.push(13);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="% of bespoke products")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(39, PRACTICES) == -1) {
+                        PRACTICES.push(39);
+                    }
+                    if(jQuery.inArray(41, PRACTICES) == -1) {
+                        PRACTICES.push(41);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                    if(jQuery.inArray(27, PRACTICES) == -1) {
+                        PRACTICES.push(27);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(0, PRACTICES) == -1) {
+                        PRACTICES.push(0);
+                    }
+                    if(jQuery.inArray(1, PRACTICES) == -1) {
+                        PRACTICES.push(1);
+                    }
+                    if(jQuery.inArray(2, PRACTICES) == -1) {
+                        PRACTICES.push(2);
+                    }
+                    if(jQuery.inArray(3, PRACTICES) == -1) {
+                        PRACTICES.push(3);
+                    }
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(7, PRACTICES) == -1) {
+                        PRACTICES.push(7);
+                    }
+                    if(jQuery.inArray(8, PRACTICES) == -1) {
+                        PRACTICES.push(8);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                                      
+                   }
+               
+            }
+            //here
+            else if(fac.toLowerCase()=="% of products dependent on external products")
+            {
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(41, PRACTICES) == -1) {
+                        PRACTICES.push(41);
+                    }
+                    
+                    
+                   }
+                  
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(6, PRACTICES) == -1) {
+                        PRACTICES.push(6);
+                    }
+                    if(jQuery.inArray(7, PRACTICES) == -1) {
+                        PRACTICES.push(7);
+                    }
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(57, PRACTICES) == -1) {
+                        PRACTICES.push(57);
+                    }
+                    if(jQuery.inArray(58, PRACTICES) == -1) {
+                        PRACTICES.push(58);
+                    }
+                    if(jQuery.inArray(59, PRACTICES) == -1) {
+                        PRACTICES.push(59);
+                    }
+                    
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="no of competitors")
+            {
+                
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(39, PRACTICES) == -1) {
+                        PRACTICES.push(39);
+                    }
+                    if(jQuery.inArray(40, PRACTICES) == -1) {
+                        PRACTICES.push(40);
+                    }
+                    if(jQuery.inArray(41, PRACTICES) == -1) {
+                        PRACTICES.push(41);
+                    }
+                    if(jQuery.inArray(45, PRACTICES) == -1) {
+                        PRACTICES.push(45);
+                    }
+                    if(jQuery.inArray(47, PRACTICES) == -1) {
+                        PRACTICES.push(47);
+                    }
+                    if(jQuery.inArray(50, PRACTICES) == -1) {
+                        PRACTICES.push(50);
+                    }
+                    if(jQuery.inArray(51, PRACTICES) == -1) {
+                        PRACTICES.push(51);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                    if(jQuery.inArray(29, PRACTICES) == -1) {
+                        PRACTICES.push(29);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(1, PRACTICES) == -1) {
+                        PRACTICES.push(1);
+                    }
+                    if(jQuery.inArray(2, PRACTICES) == -1) {
+                        PRACTICES.push(2);
+                    }
+                    if(jQuery.inArray(3, PRACTICES) == -1) {
+                        PRACTICES.push(3);
+                    }
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(8, PRACTICES) == -1) {
+                        PRACTICES.push(8);
+                    }
+                    if(jQuery.inArray(9, PRACTICES) == -1) {
+                        PRACTICES.push(9);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(54, PRACTICES) == -1) {
+                        PRACTICES.push(54);
+                    }
+                    if(jQuery.inArray(56, PRACTICES) == -1) {
+                        PRACTICES.push(56);
+                    }
+                    if(jQuery.inArray(57, PRACTICES) == -1) {
+                        PRACTICES.push(57);
+                    }
+                    if(jQuery.inArray(58, PRACTICES) == -1) {
+                        PRACTICES.push(58);
+                    }
+                    if(jQuery.inArray(60, PRACTICES) == -1) {
+                        PRACTICES.push(60);
+                    }
+                    
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="no of mergers/acquisitions")
+            {
+               
+                  
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+
+                    if(jQuery.inArray(59, PRACTICES) == -1) {
+                        PRACTICES.push(59);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="Product pricing")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(42, PRACTICES) == -1) {
+                        PRACTICES.push(42);
+                    }
+                    if(jQuery.inArray(43, PRACTICES) == -1) {
+                        PRACTICES.push(43);
+                    }
+                    if(jQuery.inArray(44, PRACTICES) == -1) {
+                        PRACTICES.push(44);
+                    }
+                    if(jQuery.inArray(45, PRACTICES) == -1) {
+                        PRACTICES.push(45);
+                    }
+                    
+                    
+                   }
+
+
+               
+            }
+            else if(fac.toLowerCase()=="number of new products to market and their associated services")
+            {
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(39, PRACTICES) == -1) {
+                        PRACTICES.push(39);
+                    }
+                    if(jQuery.inArray(41, PRACTICES) == -1) {
+                        PRACTICES.push(41);
+                    }
+                   
+                    if(jQuery.inArray(45, PRACTICES) == -1) {
+                        PRACTICES.push(45);
+                    }
+                    if(jQuery.inArray(51, PRACTICES) == -1) {
+                        PRACTICES.push(51);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                    if(jQuery.inArray(29, PRACTICES) == -1) {
+                        PRACTICES.push(29);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(1, PRACTICES) == -1) {
+                        PRACTICES.push(1);
+                    }
+                    if(jQuery.inArray(2, PRACTICES) == -1) {
+                        PRACTICES.push(2);
+                    }
+                    if(jQuery.inArray(3, PRACTICES) == -1) {
+                        PRACTICES.push(3);
+                    }
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(8, PRACTICES) == -1) {
+                        PRACTICES.push(8);
+                    }
+                    if(jQuery.inArray(9, PRACTICES) == -1) {
+                        PRACTICES.push(9);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="average industry/sector time to market")
+            {
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(35, PRACTICES) == -1) {
+                        PRACTICES.push(35);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(39, PRACTICES) == -1) {
+                        PRACTICES.push(39);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(27, PRACTICES) == -1) {
+                        PRACTICES.push(27);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(4, PRACTICES) == -1) {
+                        PRACTICES.push(4);
+                    }
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(6, PRACTICES) == -1) {
+                        PRACTICES.push(6);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                    if(jQuery.inArray(12, PRACTICES) == -1) {
+                        PRACTICES.push(12);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="market delivery time (vs industry average)")
+            {
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                   
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(26, PRACTICES) == -1) {
+                        PRACTICES.push(26);
+                    }
+                                      
+                   }
+
+               
+            }
+            else if(fac.toLowerCase()=="number of markets targeted")
+            {
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(40, PRACTICES) == -1) {
+                        PRACTICES.push(40);
+                    }
+                    if(jQuery.inArray(41, PRACTICES) == -1) {
+                        PRACTICES.push(41);
+                    }
+                    if(jQuery.inArray(45, PRACTICES) == -1) {
+                        PRACTICES.push(45);
+                    }
+                    if(jQuery.inArray(47, PRACTICES) == -1) {
+                        PRACTICES.push(47);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    
+                    if(jQuery.inArray(29, PRACTICES) == -1) {
+                        PRACTICES.push(29);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(0, PRACTICES) == -1) {
+                        PRACTICES.push(0);
+                    }
+                    if(jQuery.inArray(1, PRACTICES) == -1) {
+                        PRACTICES.push(1);
+                    }
+                    if(jQuery.inArray(8, PRACTICES) == -1) {
+                        PRACTICES.push(8);
+                    }
+                    if(jQuery.inArray(9, PRACTICES) == -1) {
+                        PRACTICES.push(9);
+                    }
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                    if(jQuery.inArray(11, PRACTICES) == -1) {
+                        PRACTICES.push(11);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="sales at reduced costs")
+            {
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(33, PRACTICES) == -1) {
+                        PRACTICES.push(33);
+                    }
+                    if(jQuery.inArray(42, PRACTICES) == -1) {
+                        PRACTICES.push(42);
+                    }
+                    if(jQuery.inArray(44, PRACTICES) == -1) {
+                        PRACTICES.push(44);
+                    }
+                    if(jQuery.inArray(49, PRACTICES) == -1) {
+                        PRACTICES.push(49);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    if(jQuery.inArray(27, PRACTICES) == -1) {
+                        PRACTICES.push(27);
+                    }
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(1, PRACTICES) == -1) {
+                        PRACTICES.push(1);
+                    }
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                    
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="no of active suppliers")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+                   
+                    
+                    
+                   }
+ 
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+
+                    if(jQuery.inArray(57, PRACTICES) == -1) {
+                        PRACTICES.push(57);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="% of products with only one supplier")
+            {
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+                    if(jQuery.inArray(39, PRACTICES) == -1) {
+                        PRACTICES.push(39);
+                    }
+                    if(jQuery.inArray(41, PRACTICES) == -1) {
+                        PRACTICES.push(41);
+                    }
+                    if(jQuery.inArray(47, PRACTICES) == -1) {
+                        PRACTICES.push(47);
+                    }
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(10, PRACTICES) == -1) {
+                        PRACTICES.push(10);
+                    }
+                    
+                                      
+                   }
+
+               
+            }
+            else if(fac.toLowerCase()=="inward supplies defects (rate)")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+                  
+                    
+                    
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                   
+                    if(jQuery.inArray(25, PRACTICES) == -1) {
+                        PRACTICES.push(25);
+                    }
+                    
+                                      
+                   }
+
+               
+            }
+            else if(fac.toLowerCase()=="% of preferred suppliers")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+               
+                    
+                    
+                   }
+             
+            }
+            else if(fac.toLowerCase()=="% of suppliers’ prices negotiated")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+                
+                    
+                   }
+
+                   if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                   {
+
+                    if(jQuery.inArray(57, PRACTICES) == -1) {
+                        PRACTICES.push(57);
+                    }
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="suppliers lead time")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+                    if(jQuery.inArray(34, PRACTICES) == -1) {
+                        PRACTICES.push(34);
+                    }
+                    
+                    
+                   }
+
+               
+            }
+            else if(fac.toLowerCase()=="new suppliers being sourced")
+            {
+               
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(30, PRACTICES) == -1) {
+                        PRACTICES.push(30);
+                    }
+                    if(jQuery.inArray(31, PRACTICES) == -1) {
+                        PRACTICES.push(31);
+                    }
+                    if(jQuery.inArray(32, PRACTICES) == -1) {
+                        PRACTICES.push(32);
+                    }
+
+                    
+                    
+                   }
+
+
+               
+            }
+            else if(fac.toLowerCase()=="product technology changes")
+            {
+               
+
+
+                   if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(5, PRACTICES) == -1) {
+                        PRACTICES.push(5);
+                    }
+                    if(jQuery.inArray(6, PRACTICES) == -1) {
+                        PRACTICES.push(6);
+                    }
+                    if(jQuery.inArray(7, PRACTICES) == -1) {
+                        PRACTICES.push(7);
+                    }
+                  
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(36, PRACTICES) == -1) {
+                        PRACTICES.push(36);
+                    }
+                    if(jQuery.inArray(50, PRACTICES) == -1) {
+                        PRACTICES.push(50);
+                    }
+                    if(jQuery.inArray(51, PRACTICES) == -1) {
+                        PRACTICES.push(51);
+                    }
+                  
+                                      
+                   }
+                   if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                   {
+                    if(jQuery.inArray(27, PRACTICES) == -1) {
+                        PRACTICES.push(27);
+                    }
+        
+                                      
+                   }
+               
+            }
+            else if(fac.toLowerCase()=="process technology changes")
+            {
+               
+                if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(5, PRACTICES) == -1) {
+                     PRACTICES.push(5);
+                 }
+                 if(jQuery.inArray(6, PRACTICES) == -1) {
+                     PRACTICES.push(6);
+                 }
+                 if(jQuery.inArray(7, PRACTICES) == -1) {
+                     PRACTICES.push(7);
+                 }
+               
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(36, PRACTICES) == -1) {
+                     PRACTICES.push(36);
+                 }
+                 if(jQuery.inArray(50, PRACTICES) == -1) {
+                     PRACTICES.push(50);
+                 }
+                 if(jQuery.inArray(51, PRACTICES) == -1) {
+                     PRACTICES.push(51);
+                 }
+               
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(27, PRACTICES) == -1) {
+                     PRACTICES.push(27);
+                 }
+                 if(jQuery.inArray(28, PRACTICES) == -1) {
+                    PRACTICES.push(28);
+                }
+                                   
+                }
+            }
+            else if(fac.toLowerCase()=="% turnover spent on technology change")
+            {
+               
+                if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(5, PRACTICES) == -1) {
+                     PRACTICES.push(5);
+                 }
+                 if(jQuery.inArray(6, PRACTICES) == -1) {
+                     PRACTICES.push(6);
+                 }
+                
+               
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(36, PRACTICES) == -1) {
+                     PRACTICES.push(36);
+                 }
+                 if(jQuery.inArray(40, PRACTICES) == -1) {
+                     PRACTICES.push(40);
+                 }
+                 if(jQuery.inArray(51, PRACTICES) == -1) {
+                     PRACTICES.push(51);
+                 }
+               
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(27, PRACTICES) == -1) {
+                     PRACTICES.push(27);
+                 }
+     
+                                   
+                }
+               
+            }
+            else if(fac.toLowerCase()=="technologies available to the company")
+            {
+               
+                if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(5, PRACTICES) == -1) {
+                     PRACTICES.push(5);
+                 }
+                 if(jQuery.inArray(6, PRACTICES) == -1) {
+                     PRACTICES.push(6);
+                 }
+                 
+               
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(36, PRACTICES) == -1) {
+                     PRACTICES.push(36);
+                 }
+                 if(jQuery.inArray(38, PRACTICES) == -1) {
+                     PRACTICES.push(38);
+                 }
+                 if(jQuery.inArray(50, PRACTICES) == -1) {
+                    PRACTICES.push(50);
+                }
+                 if(jQuery.inArray(51, PRACTICES) == -1) {
+                     PRACTICES.push(51);
+                 }
+               
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(27, PRACTICES) == -1) {
+                     PRACTICES.push(27);
+                 }
+                 if(jQuery.inArray(28, PRACTICES) == -1) {
+                    PRACTICES.push(28);
+                }
+                                   
+                }
+               
+            }
+            else if(fac.toLowerCase()=="Support services improvements")
+            {
+                if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(33, PRACTICES) == -1) {
+                     PRACTICES.push(33);
+                 }
+                 if(jQuery.inArray(35, PRACTICES) == -1) {
+                     PRACTICES.push(35);
+                 }
+                 if(jQuery.inArray(36, PRACTICES) == -1) {
+                     PRACTICES.push(36);
+                 }
+                 if(jQuery.inArray(37, PRACTICES) == -1) {
+                    PRACTICES.push(37);
+                }
+                if(jQuery.inArray(38, PRACTICES) == -1) {
+                    PRACTICES.push(38);
+                }
+                if(jQuery.inArray(41, PRACTICES) == -1) {
+                    PRACTICES.push(41);
+                }
+                if(jQuery.inArray(51, PRACTICES) == -1) {
+                    PRACTICES.push(51);
+                }
+               
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="product" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(5, PRACTICES) == -1) {
+                     PRACTICES.push(5);
+                 }
+                 if(jQuery.inArray(6, PRACTICES) == -1) {
+                     PRACTICES.push(6);
+                 }
+                 if(jQuery.inArray(7, PRACTICES) == -1) {
+                     PRACTICES.push(7);
+                 }
+               
+                                   
+                }
+
+                if($(this).attr("type").toLowerCase()=="process" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(25, PRACTICES) == -1) {
+                     PRACTICES.push(25);
+                 }
+                 if(jQuery.inArray(26, PRACTICES) == -1) {
+                    PRACTICES.push(26);
+                }
+                                   
+                }
+                if($(this).attr("type").toLowerCase()=="organisation" && $(this).val()==3)
+                {
+                 if(jQuery.inArray(55, PRACTICES) == -1) {
+                     PRACTICES.push(55);
+                 }
+                 if(jQuery.inArray(57, PRACTICES) == -1) {
+                    PRACTICES.push(57);
+                }
+                if(jQuery.inArray(58, PRACTICES) == -1) {
+                    PRACTICES.push(58);
+                }
+                                   
+                }
+               
+            }
+            PRACTICES.sort();
+            $(".improve_actions li").remove();
+            for(var i=0;i<PRACTICES.length;i++)
+            {
+                $(".improve_actions").append("<li>"+messages[PRACTICES[i]]+"</li>");
+            }
+           
+            
         });
     });
 

@@ -106,8 +106,7 @@
                             <div id="supply">
                                 <tr class="row_hidden" id="supply1">
                                     <th scope="row" class="tableH tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="supply1_txtarea">Labour force
-                                            size</textarea>
+                                        <textarea type="text" class="form-control bea_txtarea" name="supply1_txtarea">Labour force size</textarea>
                                     </th>
                                     <td><select name='supply1_timeLen' class="beaSelect" beaSelect="0">
 
@@ -843,8 +842,7 @@
                             <div id="cust_req">
                                 <tr class="row_hidden" id="cust_req1">
                                     <th scope="row" class="tableH tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="cust_req1_txtarea">No of customers in the company’s customer base
-                                            size</textarea>
+                                        <textarea type="text" class="form-control bea_txtarea" name="cust_req1_txtarea">No of customers in the company’s customer base size</textarea>
                                     </th>
                                     <td><select name='cust_req1_timeLen' class="beaSelect" beaSelect="0">
 
@@ -2055,8 +2053,7 @@
                             <div id="rivalry">
                                 <tr class="row_hidden" id="rivalry1">
                                     <th scope="row" class="tableH tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="rivalry1_txtarea">No of competitors
-                                        </textarea>
+                                        <textarea type="text" class="form-control bea_txtarea" name="rivalry1_txtarea">No of competitors</textarea>
                                     </th>
                                     <td><select name='rivalry1_timeLen' class="beaSelect" beaSelect="0">
 
@@ -2878,8 +2875,7 @@
                             <div id="purchasing">
                                 <tr class="row_hidden" id="purchasing1">
                                     <th scope="row" class="tableH tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="purchasing1_txtarea">No of active suppliers
-                                        </textarea>
+                                        <textarea type="text" class="form-control bea_txtarea" name="purchasing1_txtarea">No of active suppliers</textarea>
                                     </th>
                                     <td><select name='purchasing1_timeLen' class="beaSelect" beaSelect="0">
 
@@ -3357,8 +3353,7 @@
                             <div id="TechChanges">
                                 <tr class="row_hidden" id="TechChanges1">
                                     <th scope="row" class="tableH tru_factors">
-                                        <textarea type="text" class="form-control bea_txtarea" name="TechChanges1_txtarea">Product technology changes
-                                        </textarea>
+                                        <textarea type="text" class="form-control bea_txtarea" name="TechChanges1_txtarea">Product technology changes</textarea>
                                     </th>
                                     <td><select name='TechChanges1_timeLen' class="beaSelect" beaSelect="0">
 

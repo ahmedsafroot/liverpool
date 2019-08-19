@@ -1,7 +1,34 @@
 <!--Third Tab-->
 <div class="tab animated">
     <div class="ProductLines">
-        <label class="mainLabel" style="margin-left: 5%;">Converting decisions into Actions</label>
+        <h2 class="step_title">IDENTIFIED areas for ACTION</h2>
+        <div style="margin-left:5px">
+                <p class="descParagrah">A LIST OF POTENTIAL ACTIONS FOR IMPROVEMENT OR PROACTIVE APPROACH WILL BE PROVIDED FOR YOU TO CONSIDER
+                </p>
+                <hr><hr>
+                <p class="sectionTitle mt-4">Instructions</p>
+                <hr>
+                <p class="descParagrah">
+                    <ol class="descParagrah">
+                        <li>GIVE SCORE TO THE SUGGESTED AREAS AGAINST GIVEN MEASURES [HOW CRITICAL IT IS; CAN YOU CONTROL IT; RISKS IN DOING SO; DIFFICULTY/COMPLEXITY; RESOURCES NEEDED; HOW LONG DOES IT TAKE; EXPECTED ROI]
+                        </li>
+                        <li>
+                                DISCUSS THE PRIORITY FACTORS IDETIFIED IN YOUR TEAM. SELECT THE TOP ACTIONS YOU FIND VIABLE FOR YOUR FIRM
+
+                        </li>
+                        <li>DECIDE ON WHO SHOULD LEAD ON THE PROJECT, BEGIN PLANNING FOR IMPLEMENTATION
+                            </li>
+                    </ol>
+                        
+                </p>
+                <hr><hr>
+                <p class="sectionTitle mt-4">OUTCOME</p>
+                <hr>
+                <h3>PRIORITY ACTIONS/TASKS TO BE UNDERTAKEN</h3>
+                <p class="descParagrah">
+                        YOU WILL HAVE THE OPTION TO DECIDE ON CONSULTING FURTHER WITH THE AGILITY CENTRE WHICH MAY BE ARRANGED VIA APPROPRIATE MECHANISMS OF SUPPORT
+                </p>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <input type="hidden" value="1" id="decisions-input">
