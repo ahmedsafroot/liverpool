@@ -437,14 +437,14 @@
                     <div class="form-group">
                         <input type="text" class="form-control" id="scoreInput" aria-describedby="emailHelp" readonly>
                     </div>
-                    <label> Induction:</label>
+                    <!--<label> Induction:</label>-->
                     <div class="form-group">
                         <textarea class="form-control" id="inductionInput" aria-describedby="emailHelp" readonly></textarea>
                     </div>
-                    <label> What To Do:</label>
+                    <!--<label> What To Do:</label>
                     <div class="form-group">
                         <textarea class="form-control" id="toDoInput" aria-describedby="emailHelp" readonly></textarea>
-                    </div>
+                    </div>-->
                 </div>
             </form>
         </div>

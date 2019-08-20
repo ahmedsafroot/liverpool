@@ -51,7 +51,6 @@
                         <th>Market Trends</th>
                         <th>Customer Experience</th>
                         <th>BUSINESS ENVIRONMENT UNCERTAINTY</th>
-                        <th>Turbance Impact Tool</th>
                         <th>An Analysis of the company’s..</th>
                         <th>Focus worksheet</th>
                         <th>GROWTH Direction</th>
@@ -68,7 +67,6 @@
                             <th><a href="{{ route('market_trends.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('customer_experience.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('bea.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <th><a href="{{ route('trub.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('sw.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('worksheet.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('ansoff.details',['id' => $profile->id] ) }}">see more</a></th>

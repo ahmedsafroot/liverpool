@@ -30,7 +30,7 @@
                         <th scope="col" class="focus-organ">Organization</th>
                     </tr>
                     <tr class="focus-columns">
-                        <td></td>
+                        <td class="focus_feature"></td>
 
 
 
@@ -39,7 +39,7 @@
                 <tbody>
                     <div id="worksheet_factors">
                         <tr id="worksheet_factor1">
-                            <th scope="row" class="tableH">
+                            <th scope="row" class="tableH worksheet_total">
                                 <textarea type="text" class="form-control
                                     bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea>
                             </th>

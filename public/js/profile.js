@@ -580,7 +580,7 @@ function audit_tool() {
                     toastr.success(mymessage.success);
                     $("#scoreInput").val(total);
                     $("#inductionInput").val(indeuction);
-                    $("#toDoInput").val(what_to_do);
+                    //$("#toDoInput").val(what_to_do);
                     $(".myDialog").css('display', 'block');
                     $(".myDialog").addClass('animated fadeInLeft');
                 }
@@ -1049,13 +1049,15 @@ function turbulence_impact() {
 
             }
             $(".trublance_tools").children().remove();
-            $('#disabledFactor').next('.work_row').remove();
+            $('#disabledFactor').nextAll('.work_row').remove();
+            $(".worksheet_total").siblings().remove();
+            $(".focus_feature").siblings().remove();
             var x=1;
             $('.total_score').each(function(i, obj) {
                 if($(this).val()>20)
                 {
                     var factor_text=$(this).parent().siblings(".tableH").children("textarea").val();
-                    var thread_op=$(this).parent().siblings().children(".threat_op").val();
+                    /*var thread_op=$(this).parent().siblings().children(".threat_op").val();
                    var elem='<tr id="trub_factor'+x+'"><th scope="row" class="tableH tru_factors"><textarea type="text" class="form-control bea_txtarea" name="trub_factor'+x+'txtarea" readonly>'+factor_text+'</textarea></th>'
                            +'<td><select name="trub_factor'+x+'_Revenue" class="tru_select_box">'
                             +'<option value="1">1</option>'+
@@ -1095,7 +1097,7 @@ function turbulence_impact() {
                     }
                     elem=elem+threadOp;
                     
-                    $(".trublance_tools").append(elem);
+                    $(".trublance_tools").append(elem);*/
                     
                     var worksheet_row='<tr id="worksheet_factor'+x+'" class="work_row"><th scope="row" class="tableH tru_factors">'+
                         '<textarea type="text" class="form-control bea_txtarea" name="worksheet_factor'+x+'" readonly>'+
@@ -1476,7 +1478,7 @@ function sw() {
     var col_span=0;
     $(".focus-columns").children(".rotate").remove();
     $("#worksheet_factor1").children().remove();
-    $("#worksheet_factor1").append('<th scope="row" class="tableH"><textarea type="text" class="form-control bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea></th>');
+    $("#worksheet_factor1").append('<th scope="row" class="tableH worksheet_total"><textarea type="text" class="form-control bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea></th>');
     for (var i = 1; i <= count_prodcut; i++) {
         if ($('[name=sw_factor_prod'+i+']').length) {
             factor.push($('[name=sw_factor_prod'+i+']').val());
@@ -3227,7 +3229,7 @@ function worksheet() {
                 }
                
             }
-            else if(fac.toLowerCase()=="Support services improvements")
+            else if(fac.toLowerCase()=="support services improvements")
             {
                 if($(this).attr("type").toLowerCase()=="operation" && $(this).val()==3)
                 {

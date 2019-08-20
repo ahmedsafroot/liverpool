@@ -32,7 +32,6 @@
         @include('market_trends')    
         @include('customer_experience')     
         @include('turbulence_impact')
-        @include('turbulence_tool')
         @include('sw')
         @include('focus_worksheet')
         @include('anshof')
@@ -55,7 +54,6 @@
         <span class="step" onclick="gotoTap(9)"></span>
         <span class="step" onclick="gotoTap(10)"></span>
         <span class="step" onclick="gotoTap(11)"></span>
-        <span class="step" onclick="gotoTap(12)"></span>
 
     </div>
 
