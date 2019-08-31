@@ -37,4 +37,5 @@ Route::get('/sw/{id}', 'ProfileController@sw_details')->name('sw.details');
 Route::get('/worksheet/{id}', 'ProfileController@worksheet_details')->name('worksheet.details');
 Route::get('/ansoff/{id}', 'ProfileController@ansoff_details')->name('ansoff.details');
 Route::get('/actions/{id}', 'ProfileController@action_details')->name('action.details');
+Route::get('/messages/{id}', 'ProfileController@message_details')->name('messages.details');
 

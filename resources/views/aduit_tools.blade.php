@@ -441,10 +441,10 @@
                     <div class="form-group">
                         <textarea class="form-control" id="inductionInput" aria-describedby="emailHelp" readonly></textarea>
                     </div>
-                    <!--<label> What To Do:</label>
+                    <label> What To Do:</label>
                     <div class="form-group">
                         <textarea class="form-control" id="toDoInput" aria-describedby="emailHelp" readonly></textarea>
-                    </div>-->
+                    </div>
                 </div>
             </form>
         </div>

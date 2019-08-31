@@ -503,18 +503,18 @@ function audit_tool() {
     indeuction = "";
     what_to_do = "";
     if (0 <= total && total <= 46) {
-        indeuction = "YOUR SURVIVAL MAY BE DOWN TO “LUCK”, SO IMMEDIATE AND SERIOUS ATTENTION IS NEEDED TO AVOID FAILURE";
-        //what_to_do = "DO NOT NEED TO DO MUCH BUT KEEP THE STRENGTH UP AND GOING";
-    } else if (46 < total && total <= 71) {
-        indeuction = "SOME CONSIDERABLE ATTENTION IS NEEDED TO PUT THE COMPANY BACK IN CONTROL";
-        //what_to_do = "LOOK CLOSELY ATTHE SCORES YOU ACHIEVED FOR EACH SECTION;FIND OUT AREAS IN NEED OF ATTENTION WORK ON THOS AREAS IN A STRCUTURED WAY";
-    } else if (72 <= total && total <= 92) {
-        indeuction = "AREAS OF VULNERABILITY EXIST TO ADDRESS";
-        //what_to_do = "ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS";
+        indeuction = "YOUR SURVIVAL MAY BE DOWN TO “LUCK”, SO IMMEDIATE AND SERIOUS ATTENTION IS NEEDED TO AVOID FAILURE.";
+        what_to_do = "ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS. SEEK ASSISTANCE FROM OUTSIDE SOURCES.";
+    } else if (46 < total && total <= 69) {
+        indeuction = "SOME CONSIDERABLE ATTENTION IS NEEDED TO PUT THE COMPANY BACK IN CONTROL.";
+        what_to_do = "YOU NEED TO MAKE SERIOUS ATTEMPT AT IDENTIFYING THE KEY ISSUES AND INVEST ON RESOLVING THEM.";
+    } else if (70 <= total && total < 92) {
+        indeuction = "THERE ARE AREAS OF VOLUNERABILITY, HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS.";
+        what_to_do = "FIND OUT AREAS IN NEED OF ATTENTION; WORK ON THOS AREAS IN A STRCUTURED WAY";
     }
-    else if (92 < total && total <= 115) {
+    else if (92 <= total && total <= 115) {
         indeuction = "YOU ARE DOING WELL";
-        //what_to_do = "ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS";
+        what_to_do = "YOU DO NOT NEED TO DO MAJOR ACTIONS, BUT SHOULD KEEP THE STRENGTH UP AND GOING";
     }
 
 
@@ -580,7 +580,7 @@ function audit_tool() {
                     toastr.success(mymessage.success);
                     $("#scoreInput").val(total);
                     $("#inductionInput").val(indeuction);
-                    //$("#toDoInput").val(what_to_do);
+                    $("#toDoInput").val(what_to_do);
                     $(".myDialog").css('display', 'block');
                     $(".myDialog").addClass('animated fadeInLeft');
                 }
@@ -1117,7 +1117,7 @@ function turbulence_impact() {
                 }
                 $("#tru_impac").val(x);
             });
-
+      
         }
 
     });
@@ -1477,8 +1477,10 @@ function sw() {
     var prio = [];
     var col_span=0;
     $(".focus-columns").children(".rotate").remove();
-    $("#worksheet_factor1").children().remove();
-    $("#worksheet_factor1").append('<th scope="row" class="tableH worksheet_total"><textarea type="text" class="form-control bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea></th>');
+    $(".worksheet_total").siblings().remove();
+    $(".focus_feature").siblings().remove();
+    $(".work_row").children(".tru_factors").siblings().remove();
+
     for (var i = 1; i <= count_prodcut; i++) {
         if ($('[name=sw_factor_prod'+i+']').length) {
             factor.push($('[name=sw_factor_prod'+i+']').val());
@@ -3327,6 +3329,8 @@ function worksheet() {
              score: score,
              type: type,
              feature: feature,
+             messages:messages,
+             PRACTICES:PRACTICES,
 
         },
 

@@ -22,6 +22,9 @@
                         
                 </p>
                 <hr><hr>
+                <div>
+                <img src="{{ asset('public/images/action.png')}}" width="100%">
+                </div>
                 <p class="sectionTitle mt-4">OUTCOME</p>
                 <hr>
                 <h3>PRIORITY ACTIONS/TASKS TO BE UNDERTAKEN</h3>

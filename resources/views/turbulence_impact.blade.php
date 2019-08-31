@@ -62,6 +62,32 @@
                     for($i=0;$i<count($list);$i++){
                     ?>
                     <!-- Default inline 1-->
+                    @if($i==0)
+                     <div class="col-12">
+                     <h3>OPERATIONS</h3>
+                     <br>
+                     </div>
+                    @elseif($i==16)
+                    <div class="col-12">
+                        <h3>CUSTOMER/MARKETS</h3>
+                        <br>
+                    </div>
+                    @elseif($i==43)
+                    <div class="col-12">
+                        <h3>COMPTETION</h3>
+                        <br>
+                    </div>
+                    @elseif($i==61)
+                    <div class="col-12">
+                        <h3>SUPPLIERS/PURCHASING</h3>
+                        <br>
+                    </div>
+                    @elseif($i==71)
+                    <div class="col-12">
+                        <h3>TECHNOLOGICAL CHANGES</h3>
+                        <br>
+                    </div>
+                    @endif
                     <div class="col-2 custom-control custom-checkbox custom-control-inline">
                             <input type="checkbox" class="custom-control-input" id="{{'defaultInline'.$i}}">
                             <label class="custom-control-label" for="{{'defaultInline'.$i}}">{{$list[$i]}}</label>

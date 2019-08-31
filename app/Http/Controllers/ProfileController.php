@@ -16,6 +16,7 @@ use App\action;
 use App\SW;
 use App\worksheet;
 use App\sheets;
+use App\message;
 class ProfileController extends Controller
 {
     /**
@@ -1616,7 +1617,8 @@ class ProfileController extends Controller
         $type=$data->type;
         $score=$data->score;
         $feature=$data->feature;
-
+        $PRACTICES=$data->PRACTICES;
+        $messages=$data->messages;
 
 
         if($factor!=NULL)
@@ -1635,11 +1637,21 @@ class ProfileController extends Controller
         if(session()->has('worksheet_id'))
         {
             sheets::where("profileid",$profileid)->delete();
+            message::where("profileid",$profileid)->delete();
             $ret=1;
         }
         else
         {
             $ret=2;
+        }
+        if($PRACTICES!=NULL)
+        {
+        for ($i=0; $i < count($PRACTICES); $i++) { 
+            $newMessage=new message;
+            $newMessage->message=$messages[$PRACTICES[$i]];
+            $newMessage->profileid=$profileid;
+            $newMessage->save();
+        }
         }
         for ($i=0; $i <$count ; $i++) { 
             $worksheet=new sheets;
@@ -1674,5 +1686,10 @@ class ProfileController extends Controller
     {
         $scores=sheets::select('score')->where("profileid",$id)->where("factor",$factor)->get();   
         return $scores;
+    }
+    public function message_details($id)
+    {
+        $messages=message::where("profileid",$id)->get();
+        return view("messages_details",compact('messages'));
     }
 }
