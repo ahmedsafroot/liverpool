@@ -168,9 +168,14 @@ class ProfileController extends Controller
         $profile->bussinessStructure=$data->bussinessStructure;
         $profile->marketStructure=$data->marketStructure;
         $profile->userLocation=$data->userLocation;
-        $profile->prodLine1=$data->prodLine1;
-        $profile->prodLine2=$data->prodLine2;
-        $profile->prodLine3=$data->prodLine3;
+        $profile->prodLine1=$data->percentage1;
+        $profile->prodLine2=$data->percentage2;
+        $profile->prodLine3=$data->percentage3;
+        $profile->prodLine4=$data->percentage4;
+        $profile->prodLine1_name=$data->product1;
+        $profile->prodLine2_name=$data->product2;
+        $profile->prodLine3_name=$data->product3;
+        $profile->prodLine4_name=$data->product4;
         $profile->services=$data->services;
         $profile->companyProdOther=$data->companyProdOther;
         $profile->marketing=$data->marketing;
@@ -201,6 +206,12 @@ class ProfileController extends Controller
         $profile->consumerServices=$data->consumerServices;
         $profile->publicServices=$data->publicServices;
         $profile->nonProfit=$data->nonProfit;
+        $profile->small_batch=$data->small_batch;
+        $profile->mix=$data->mix;
+        $profile->large_batch=$data->large_batch;
+        $profile->con_mass=$data->con_mass;
+        $profile->one_off=$data->one_off;
+
         $profile->save();
         Session::put('profileid', $profile->id);
         return $ret;
@@ -638,7 +649,7 @@ class ProfileController extends Controller
             $profile->market_structure="";
 
         }
-        if($profile->prodLine1==1)
+       /* if($profile->prodLine1==1)
         {
           $profile->line1="Growing demand";
         }
@@ -694,7 +705,7 @@ class ProfileController extends Controller
         {
             $profile->line3="";
 
-        }
+        }*/
         if($profile->services==1)
         {
           $profile->services="Growing demand";
@@ -841,7 +852,7 @@ class ProfileController extends Controller
               $main_products =$main_products ."Consumer goods";
         }
 
-        if($profile->directConsumers==1)
+        /*if($profile->directConsumers==1)
         {
           $profile->consumer="<10 %";
         }
@@ -1005,7 +1016,7 @@ class ProfileController extends Controller
         else
         {
             $profile->distributors="";
-        }
+        }*/
 
         $types_services="";
         if($profile->kibs==1)
@@ -1040,8 +1051,43 @@ class ProfileController extends Controller
               else
               $types_services =$types_services ."Non-for-Profit";
         }
+        $types_production="";
+        if($profile->one_off==1)
+        {
+              $types_production ="One off";
+        }
+        if($profile->large_batch==1)
+        {
+              if($types_production !="")
+              $types_production =$types_production ." && Large Batch";
+              else
+              $types_production =$types_production ."Large Batch";
+        }
+        if($profile->con_mass==1)
+        {
+              if($types_production !="")
+              $types_production =$types_production ." && Continuous or Mass";
+              else
+              $types_production =$types_production ."Continuous or Mass";
+        }
+        if($profile->mix==1)
+        {
+              if($types_production !="")
+              $types_production =$types_production ." && Process Mix";
+              else
+              $types_production =$types_production ."Process Mix";
+        }
+        if($profile->small_bacth==1)
+        {
+              if($types_production !="")
+              $types_production =$types_production ." && Small Batch";
+              else
+              $types_production =$types_production ."Small Batch";
+        }
        
           $profile->types_services=$types_services;
+          $profile->types_production=$types_production;
+
           $profile->main_products=$main_products;
           $profile->conducted=$conducted;
           $profile->market_sector=$market_sector;
@@ -1050,128 +1096,210 @@ class ProfileController extends Controller
     public function audit_tools_details($id)
     {
        $audit=auditTool::where("profileid",$id)->first();
+       $total=0;
        $myvalues=array("Not at all for us","Only slightly true for us","Moderately true for us","Mostly True for us","Absolutely True for us");
        if($audit!=NULL)
        {
            
        if($audit->question1!=0)
-       $audit->question1=$myvalues[$audit->question1-1];
+       {
+        $total+=$audit->question1;
+        $audit->question1=$myvalues[$audit->question1-1];
+       }
        else
        $audit->question1="";
 
        if($audit->question2!=0)
-       $audit->question2=$myvalues[$audit->question2-1];
+       {
+        $total+=$audit->question2;
+        $audit->question2=$myvalues[$audit->question2-1];
+       }
        else
        $audit->question2="";
 
        if($audit->question3!=0)
-       $audit->question3=$myvalues[$audit->question3-1];
+       {
+        $total+=$audit->question3;
+        $audit->question3=$myvalues[$audit->question3-1];
+       }
        else
        $audit->question3="";
 
        if($audit->question4!=0)
-       $audit->question4=$myvalues[$audit->question4-1];
+       {
+        $total+=$audit->question4;
+        $audit->question4=$myvalues[$audit->question4-1];
+       }
        else
        $audit->question4="";
 
        if($audit->question5!=0)
-       $audit->question5=$myvalues[$audit->question5-1];
+       {
+        $total+=$audit->question5;
+        $audit->question5=$myvalues[$audit->question5-1];
+       }
        else
        $audit->question5="";
 
        if($audit->question6!=0)
-       $audit->question6=$myvalues[$audit->question6-1];
+       {
+        $total+=$audit->question6;
+        $audit->question6=$myvalues[$audit->question6-1];
+       }
        else
        $audit->question6="";
 
        if($audit->question7!=0)
-       $audit->question7=$myvalues[$audit->question7-1];
+       {
+        $total+=$audit->question7;
+        $audit->question7=$myvalues[$audit->question7-1];
+       }
        else
        $audit->question7="";
 
        if($audit->question8!=0)
-       $audit->question8=$myvalues[$audit->question8-1];
+       {
+        $total+=$audit->question8;
+        $audit->question8=$myvalues[$audit->question8-1];
+       }
        else
        $audit->question8="";
 
        if($audit->question9!=0)
-       $audit->question9=$myvalues[$audit->question9-1];
+       {
+        $total+=$audit->question9;
+        $audit->question9=$myvalues[$audit->question9-1];
+       }
        else
        $audit->question9="";
 
        if($audit->question10!=0)
-       $audit->question10=$myvalues[$audit->question10-1];
+       {
+        $total+=$audit->question10;
+        $audit->question10=$myvalues[$audit->question10-1];
+       }
        else
        $audit->question10="";
 
        if($audit->question11!=0)
-       $audit->question11=$myvalues[$audit->question11-1];
+       {
+        $total+=$audit->question11;
+        $audit->question11=$myvalues[$audit->question11-1];
+       }
        else
        $audit->question11="";
 
        if($audit->question12!=0)
-       $audit->question12=$myvalues[$audit->question12-1];
+       {
+        $total+=$audit->question12;
+        $audit->question12=$myvalues[$audit->question12-1];
+       }
        else
        $audit->question12="";
 
        if($audit->question13!=0)
-       $audit->question13=$myvalues[$audit->question13-1];
+       {
+        $total+=$audit->question13;
+        $audit->question13=$myvalues[$audit->question13-1];
+       }
        else
        $audit->question13="";
 
        if($audit->question14!=0)
-       $audit->question14=$myvalues[$audit->question14-1];
+       {
+        $total+=$audit->question14;
+        $audit->question14=$myvalues[$audit->question14-1];
+       }
        else
        $audit->question14="";
 
        if($audit->question15!=0)
-       $audit->question15=$myvalues[$audit->question15-1];
+       {
+        $total+=$audit->question15;
+        $audit->question15=$myvalues[$audit->question15-1];
+       }
        else
        $audit->question15="";
 
        if($audit->question16!=0)
-       $audit->question16=$myvalues[$audit->question16-1];
+       {
+        $total+=$audit->question16;
+        $audit->question16=$myvalues[$audit->question16-1];
+       }
        else
        $audit->question16="";
 
        if($audit->question17!=0)
-       $audit->question17=$myvalues[$audit->question17-1];
+       {
+        $total+=$audit->question17;
+        $audit->question17=$myvalues[$audit->question17-1];
+       }
        else
        $audit->question17="";
 
        if($audit->question18!=0)
-       $audit->question18=$myvalues[$audit->question18-1];
+       {
+        $total+=$audit->question18;
+        $audit->question18=$myvalues[$audit->question18-1];
+       }
        else
        $audit->question18="";
 
        if($audit->question19!=0)
-       $audit->question19=$myvalues[$audit->question19-1];
+       {
+        $total+=$audit->question19;
+        $audit->question19=$myvalues[$audit->question19-1];
+       }
        else
        $audit->question19="";
 
        if($audit->question20!=0)
-       $audit->question20=$myvalues[$audit->question20-1];
+       {
+        $total+=$audit->question20;
+        $audit->question20=$myvalues[$audit->question20-1];
+       }
        else
        $audit->question20="";
 
        if($audit->question21!=0)
-       $audit->question21=$myvalues[$audit->question21-1];
+       {
+        $total+=$audit->question21;
+        $audit->question21=$myvalues[$audit->question21-1];
+       }
        else
        $audit->question21="";
 
        if($audit->question22!=0)
-       $audit->question22=$myvalues[$audit->question22-1];
+       {
+        $total+=$audit->question22;
+        $audit->question22=$myvalues[$audit->question22-1];
+       }
        else
        $audit->question22="";
 
        if($audit->question23!=0)
-       $audit->question23=$myvalues[$audit->question23-1];
+       {
+        $total+=$audit->question23;
+        $audit->question23=$myvalues[$audit->question23-1];
+       }
        else
        $audit->question23="";
        }
-       
-
-       return view("audit_details",compact('audit'));
+       if (0 <= $total && $total <= 46) {
+        $indeuction = "YOUR SURVIVAL MAY BE DOWN TO “LUCK”, SO IMMEDIATE AND SERIOUS ATTENTION IS NEEDED TO AVOID FAILURE.";
+        $what_to_do = "ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS. SEEK ASSISTANCE FROM OUTSIDE SOURCES.";
+        } else if (46 < total && total <= 69) {
+            $indeuction = "SOME CONSIDERABLE ATTENTION IS NEEDED TO PUT THE COMPANY BACK IN CONTROL.";
+            $what_to_do = "YOU NEED TO MAKE SERIOUS ATTEMPT AT IDENTIFYING THE KEY ISSUES AND INVEST ON RESOLVING THEM.";
+        } else if (70 <= total && total < 92) {
+            $indeuction = "THERE ARE AREAS OF VOLUNERABILITY, HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS.";
+            $what_to_do = "FIND OUT AREAS IN NEED OF ATTENTION; WORK ON THOS AREAS IN A STRCUTURED WAY";
+        }
+        else if (92 <= total && total <= 115) {
+            $indeuction = "YOU ARE DOING WELL";
+            $what_to_do = "YOU DO NOT NEED TO DO MAJOR ACTIONS, BUT SHOULD KEEP THE STRENGTH UP AND GOING";
+        }
+       return view("audit_details",compact('audit','indeuction','what_to_do','total'));
     }
 
     public function industry_leadership_details($id)

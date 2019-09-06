@@ -12,257 +12,98 @@
                      </p>
             </div>
             <!--First Collapse for company info-->
-            <div id="accordion" class="accordion mb-3 ml-2 mt-6 col-md-8">
+            <div id="accordion" class="accordion mb-3 ml-2 mt-6 col-md-8" style="margin-top:0% !important">
                 <div class="card mb-0">
                     <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
                         <a class="card-title">
-                        Company Profile
+                        Company Details
                     </a>
                         <i class="fa fa-angle-down"></i>
                     </div>
                     <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
                         <!--first contacts-->
-                        <div class="form-group">
+                    <div class="row">
+
+                        <div class="form-group col-6">
                             <input type="text" class="form-control" id="userName" placeholder="Company Name" maxlength="20">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <input type="text" class="form-control" id="userParent" placeholder="Parent company (if any)" maxlength="20">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <input type="text" class="form-control" id="userAddress" placeholder="Address">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                                 <input type="text" class="form-control" id="postCode" placeholder="Post Code">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <input type="text" class="form-control" minlength="3" maxlength="11" id="userTelephone" placeholder="Telephone">
                         </div>
-                        <p class="errorMsg" id="telephoneValid"></p>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <input type="text" class="form-control" id="userFax" placeholder="Fax">
                         </div>
-                        <p class="errorMsg" id="faxValid"></p>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <input type="url" class="form-control" id="userUrl" placeholder="URL">
                         </div>
-                        <p class="errorMsg" id="urlValid"></p>
-                        <div class="form-group">
-                            <input type="number" class="form-control" id="userNum" placeholder="Number of Employees" min="0">
+                        <div class="form-group col-6">
+                                <input type="text" class="form-control" id="userContact" placeholder="Contact Name">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" class="form-control" id="userContactNo" placeholder="Contact Telephone No">
+                            </div>
+                            <div class="form-group col-6">
+                                    <input type="text" class="form-control" id="Position" placeholder="Position">
+                            </div>
+                            <div class="form-group col-6">
+                                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-6">
+                                    <input type="text" class="form-control" id="Industry" placeholder="Industry Sector">
+                            </div>
+                            <div class="form-group col-6">
+                                    <input type="text" class="form-control" id="NACE" placeholder="NACE">
                         </div>
-                        <p class="errorMsg" id="empNumValid"></p>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="userAppro" placeholder="Approximate turnover">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" id="userYears" placeholder="Years in Business" min="0" max="100">
-                        </div>
-                        <p class="errorMsg" id="expNumValid"></p>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Product Portfolio" id="userPortfolio">
-                        </div>
-                        <!--company status radio buttons-->
-                        <div class="companyStatusParent">
-                            <label class="mainLabel">Company Status</label>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="1">
-                                <label class="custom-control-label" for="customRadio1">Startup</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="2">
-                                <label class="custom-control-label" for="customRadio2">Established</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="3">
-                                <label class="custom-control-label" for="customRadio3">Competitive</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" value="4">
-                                <label class="custom-control-label" for="customRadio4">Market leader</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input" value="5" onclick="getCompanyStatus()">
-                                <label class="custom-control-label" for="customRadio5">Other:</label>
-                                <input type="text" class="form-control
-                                        marketOtherStyle" id="companyStatusOther" onclick="getCompanyStatusFocus()">
-                            </div>
 
-                        </div>
+                    </div>
                         <!--collapse#-->
                     </div>
                     <!--card-->
                 </div>
                 <!--accordion-->
             </div>
-
-            <!--Second Collapse for company info-->
-            <div id="accordion2" class="accordion mb-3 ml-2 col-md-8">
-                <div class="card mb-0">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
-                        <a class="card-title">
-                        Market
-                    </a>
-                        <i class="fa fa-angle-down"></i>
-                    </div>
-                    <div id="collapse2" class="card-body collapse" data-parent="#accordion2">
-                        <!--Market checkboxes-->
-                        <div class="checkboxParent">
-                            <label class="mainLabel">Market Sector(s)</label>
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="marketCK1" id="marketCK1">
-                                <label class="custom-control-label" for="marketCK1">
-                                    Foofstuffs, beverages & tobacco
-                                </label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="marketCK2" id="marketCK2">
-                                <label class="custom-control-label" for="marketCK2">
-                                    Textiles, footwear & wearing apparel
-                                </label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="marketCK3" id="marketCK3">
-                                <label class="custom-control-label" for="marketCK3">
-                                    General Engineering
-                                </label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="marketCK4" id="marketCK4">
-                                <label class="custom-control-label" for="marketCK4">
-                                    Paper products, printing & publishing
-                                </label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="marketCK5" id="marketCK5" onclick="getChecked()">
-                                <label class="custom-control-label" for="marketCK5">
-                                    Other:
-                                </label>
-                                <input type="text" class="form-control
-                                    marketOtherStyle" id="marketOther" onclick="getFocus()">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="userExport" placeholder="Direct Export">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="userImport" placeholder="Imports">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="userContact" placeholder="Contact Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="userContactNo" placeholder="Contact Telephone No">
-                        </div>
-                        <div class="form-group">
-                                <input type="text" class="form-control" id="Position" placeholder="Position">
-                        </div>
-                        <div class="form-group">
-                                <input type="email" class="form-control" id="Email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                                <input type="text" class="form-control" id="Industry" placeholder="Industry Sector">
-                        </div>
-                        <div class="form-group">
-                                <input type="text" class="form-control" id="NACE" placeholder="NACE">
-                        </div>
-
-                        <!--collapse-->
-                    </div>
-                    <!--card-->
-                </div>
-                <!--accordion-->
-            </div>
-
             <!--Third Collapse for company info-->
             <div id="accordion3" class="accordion mb-3 ml-2 col-md-8">
-                <div class="card mb-0">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
-                        <a class="card-title">
-                            Structure
-                        </a>
-                        <i class="fa fa-angle-down"></i>
+                    <div class="card mb-0">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                            <a class="card-title">
+                                Description
+                            </a>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div id="collapse3" class="card-body collapse" data-parent="#accordion3">              
+                              <div class="row">
+                                <div class="form-group col-6">
+                                        <input type="number" class="form-control" id="userYears" placeholder="Years in Business" min="0" max="100">
+                                </div>
+                                <div class="form-group col-6">
+                                        <input type="number" class="form-control" id="userNum" placeholder="Number of Employees" min="0">
+                                </div>
+                                <div class="form-group col-6">
+                                        <input type="text" class="form-control" id="userAppro" placeholder="Approximate turnover">
+                                </div>
+                                <div class="form-group col-6">
+                                        <input type="text" class="form-control" id="userExport" placeholder="Direct Export">
+                                    </div>
+                                <!--<div class="form-group">
+                                        <input type="text" class="form-control" id="userImport" placeholder="Imports">
+                                 </div>-->
+                            <!--collapse-->
+                              </div>
+                        </div>
+                        <!--card-->
                     </div>
-                    <div id="collapse3" class="card-body collapse" data-parent="#accordion3">
-                        <!--Legal Structure Radio buttons-->
-                        <div class="LegalStructureParent">
-                            <label class="mainLabel">Legal Structure</label>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio6" name="structure" class="custom-control-input" value="1">
-                                <label class="custom-control-label" for="customRadio6">Limited</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio7" name="structure" class="custom-control-input" value="2">
-                                <label class="custom-control-label" for="customRadio7">Sole trader</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio8" name="structure" class="custom-control-input" value="3">
-                                <label class="custom-control-label" for="customRadio8">Limited Liability
-                                        Partnership</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio9" name="structure" class="custom-control-input" value="4">
-                                <label class="custom-control-label" for="customRadio9">Corporation</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio10" name="structure" class="custom-control-input" value="5">
-                                <label class="custom-control-label" for="customRadio10">Non-profit</label>
-                            </div>
-
-                        </div>
-
-                        <!--Business Structure Radio buttons-->
-                        <div class="LegalStructureParent">
-                            <label class="mainLabel">Business Structure</label>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio11" name="business" class="custom-control-input" value="1">
-                                <label class="custom-control-label" for="customRadio11">Functional</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio12" name="business" class="custom-control-input" value="2">
-                                <label class="custom-control-label" for="customRadio12">Divisional</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio12" name="business" class="custom-control-input" value="3">
-                                <label class="custom-control-label" for="customRadio12">Matrix</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio13" name="business" class="custom-control-input" value="4">
-                                <label class="custom-control-label" for="customRadio13">Hybrid</label>
-                            </div>
-                        </div>
-
-                        <!--Market Structure Radio buttons-->
-                        <div class="LegalStructureParent">
-                            <label class="mainLabel">Market Structure</label>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio14" name="market" class="custom-control-input" value="1">
-                                <label class="custom-control-label" for="customRadio14">Monopoly</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio15" name="market" class="custom-control-input" value="2">
-                                <label class="custom-control-label" for="customRadio15">Oligopoly</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio16" name="market" class="custom-control-input" value="3">
-                                <label class="custom-control-label" for="customRadio16">Competitive</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio17" name="market" class="custom-control-input" value="4">
-                                <label class="custom-control-label" for="customRadio17">Contestable</label>
-                            </div>
-                        </div>
-
-                        <!--Locations-->
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="userLocation" placeholder="Location(s)">
-                        </div>
-
-                        <!--collapse-->
-                    </div>
-                    <!--card-->
+                    <!--accordion-->
                 </div>
-                <!--accordion-->
-            </div>
 
             <!--Forth Collapse for company info-->
             <div id="accordion4" class="accordion mb-3 ml-2 col-md-8">
@@ -282,34 +123,39 @@
                                 <thead>
                                     <tr>
                                         <th scope="col" class="tableH"></th>
-                                        <th scope="col" class="tableH">Growing demand
+                                        <th scope="col" class="tableH">Percentage
                                         </th>
-                                        <th scope="col" class="tableH">Stable demand
-                                        </th>
-                                        <th scope="col" class="tableH">Declining demand
-                                        </th>
+                                    
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr id="firstRow">
-                                        <th scope="row" class="tableH">Product Line 1
+                                        <th scope="row" class="tableH">
+                                                <textarea type="text"  class="form-control dynamicArea" style="width:50% !important" id="product1" name="product1" ></textarea>
                                         </th>
-                                        <td><input type="radio" name="prod1" value="1"></td>
-                                        <td><input type="radio" name="prod1" value="2"></td>
-                                        <td><input type="radio" name="prod1" value="3"></td>
+                                        <td><input type="number" class="form-control" style="width:50% !important" id="percentage1" name="percentage1"></td>
                                     </tr>
-                                    <tr id="secondRow">
-                                        <th scope="row" class="tableH">Product Line 2 </th>
-                                        <td><input type="radio" name="prod2" value="1"></td>
-                                        <td><input type="radio" name="prod2" value="2"></td>
-                                        <td><input type="radio" name="prod2" value="3"></td>
+                                    <tr id="firstRow">
+                                            <th scope="row" class="tableH">
+                                                    <textarea type="text"  class="form-control dynamicArea" style="width:50% !important" id="product2" name="product2" ></textarea>
+                                            </th>
+                                            <td><input type="number" class="form-control" style="width:50% !important" id="percentage2" name="percentage2"></td>
+
+                                    </tr> 
+                                    <tr id="firstRow">
+                                            <th scope="row" class="tableH">
+                                                    <textarea type="text"  class="form-control dynamicArea" style="width:50% !important" id="product3" name="product3" ></textarea>
+                                            </th>
+                                            <td><input type="number" class="form-control" style="width:50% !important" id="percentage3" name="percentage3"></td>
+
                                     </tr>
-                                    <tr id="thirdRow">
-                                        <th scope="row" class="tableH">Product Line 3 </th>
-                                        <td><input type="radio" name="prod3" value="1"></td>
-                                        <td><input type="radio" name="prod3" value="2"></td>
-                                        <td><input type="radio" name="prod3" value="3"></td>
-                                    </tr>
+                                    <tr id="firstRow">
+                                                <th scope="row" class="tableH">
+                                                        <textarea type="text"  class="form-control dynamicArea" style="width:50% !important" id="product4" name="product4" ></textarea>
+                                                </th>
+                                                <td><input type="number" class="form-control" style="width:50% !important" id="percentage4" name="percentage4"></td>
+
+                                    </tr> 
                                 </tbody>
                             </table>
                         </div>
@@ -438,75 +284,75 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
+                                        <th></th>
                                         <th scope="col" class="tableH">%</th>
-                                        <th scope="col" class="tableH">
-                                            <10</th>
-                                                <th scope="col" class="tableH">10-30</th>
-                                                <th scope="col" class="tableH">30-50</th>
-                                                <th scope="col" class="tableH">50-70</th>
-                                                <th scope="col" class="tableH">70-90</th>
-                                                <th scope="col" class="tableH">>90</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr id="firstRow">
                                         <th scope="row" class="tableH">Direct to consumers
                                         </th>
-                                        <td><input type="radio" name="prod11" value="1"></td>
-                                        <td><input type="radio" name="prod11" value="2"></td>
-                                        <td><input type="radio" name="prod11" value="3"></td>
-                                        <td><input type="radio" name="prod11" value="4"></td>
-                                        <td><input type="radio" name="prod11" value="5"></td>
-                                        <td><input type="radio" name="prod11" value="6"></td>
+                                        <td><input type="number" class="form-control" name="prod11"></td>
                                     </tr>
 
                                     <tr id="secondRow">
                                         <th scope="row" class="tableH">Direct to OEM’s
                                         </th>
-                                        <td><input type="radio" name="prod22" value="1"></td>
-                                        <td><input type="radio" name="prod22" value="2"></td>
-                                        <td><input type="radio" name="prod22" value="3"></td>
-                                        <td><input type="radio" name="prod22" value="4"></td>
-                                        <td><input type="radio" name="prod22" value="5"></td>
-                                        <td><input type="radio" name="prod22" value="6"></td>
+                                        <td><input type="number" class="form-control" name="prod22"></td>
+
                                     </tr>
 
                                     <tr id="thirdRow">
                                         <th scope="row" class="tableH">To companies for more processing
                                         </th>
-                                        <td><input type="radio" name="prod33" value="1"></td>
-                                        <td><input type="radio" name="prod3_per1" value="2"></td>
-                                        <td><input type="radio" name="prod33" value="3"></td>
-                                        <td><input type="radio" name="prod33" value="4"></td>
-                                        <td><input type="radio" name="prod33" value="5"></td>
-                                        <td><input type="radio" name="prod33" value="6"></td>
+                                        <td><input type="number" class="form-control" name="prod33"></td>
+
                                     </tr>
 
                                     <tr id="thirdRow">
                                         <th scope="row" class="tableH">To retailers
                                         </th>
-                                        <td><input type="radio" name="prod44" value="1"></td>
-                                        <td><input type="radio" name="prod44" value="2"></td>
-                                        <td><input type="radio" name="prod44" value="3"></td>
-                                        <td><input type="radio" name="prod44" value="4"></td>
-                                        <td><input type="radio" name="prod44" value="5"></td>
-                                        <td><input type="radio" name="prod44" value="6"></td>
+                                        <td><input type="number" class="form-control" name="prod44"></td>
+
                                     </tr>
 
                                     <tr id="thirdRow">
                                         <th scope="row" class="tableH">To distributors
                                         </th>
-                                        <td><input type="radio" name="prod55" value="1"></td>
-                                        <td><input type="radio" name="prod55" value="2"></td>
-                                        <td><input type="radio" name="prod55" value="3"></td>
-                                        <td><input type="radio" name="prod55" value="4"></td>
-                                        <td><input type="radio" name="prod55" value="5"></td>
-                                        <td><input type="radio" name="prod55" value="6"></td>
+                                        <td><input type="number" class="form-control" name="prod55"></td>
+
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-
+                    <!--What is your company’s main types of Service?-->
+                    <div class="mainBusinesParent">
+                            <label class="mainLabel">What is your company’s main types of production (IF ANY)?
+                            </label>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="one_off">
+                                <label class="custom-control-label" for="one_off"> One-off
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="large_batch">
+                                <label class="custom-control-label" for="large_batch">Large Batch
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="con_mass">
+                                <label class="custom-control-label" for="con_mass">Continuous or Mass </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mix">
+                                <label class="custom-control-label" for="mix">Process Mix</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="small_batch">
+                                <label class="custom-control-label" for="small_batch">Small Batch
+                                </label>
+                            </div>
+                        </div>
                         <!--What is your company’s main types of Service?-->
                         <div class="mainBusinesParent">
                             <label class="mainLabel">What is your company’s main

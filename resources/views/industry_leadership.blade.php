@@ -10,7 +10,7 @@
         <p class="sectionTitle mt-4">Instructions</p>
         <hr>
         <ul class="descParagrah">
-            <li>CHOOSE FROM THE LIST THE FACTORS THAT YOU THINK ARE OF MORE IMPORTANCE FOR THE COMPANY [Factors chosen will appear in the Boxes below]<li>
+            <li>CHECK THE GIVEN FACTORS AND KEEP THOSE YOU FIND OF IMPORTANCE FOR THE COMPANY AND DELETE THE REST BEFORE SCORING. YOU MAY ADD FACTORS YOU FIND MISSING BUT IMPORTANT FOR YOUR FIRM<li>
             <li>
                     GIVE SCORES REGARDING:
                 <ul class="descParagrah">
@@ -53,7 +53,7 @@
                         <div class="field">
                             <tr id="field1">
                                 <th scope="row" class="tableH factors">
-                                    <textarea type="text" rows="3" cols="20" class="form-control" name="factor1" readonly>(Price/Cost)Provide the lowest price, best value for money etc.</textarea>
+                                    <textarea type="text" rows="3" cols="20" class="form-control market_textarea" name="factor1" readonly>(Price/Cost)Provide the lowest price, best value for money etc.</textarea>
                                 </th>
                                 <td><select name="x1" class="dataset" dataset="0">
     
@@ -99,8 +99,8 @@
 
 
                             <tr id="field2">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor2" readonly>(Quality) Reliable products and services,Accreditations etc.
-                </textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor2" readonly>(Quality) Reliable products and services,Accreditations etc.
+                                </textarea>
                                 </th>
                                 <td><select name="x2" class="dataset" dataset="0">
                                     <option value="1">1</option>
@@ -139,8 +139,8 @@
                             </tr>
 
                             <tr id="field3">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor3" readonly>(Service) Responsive to customers problems,(e.g. Pre and Post Sales)
-                </textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor3" readonly>(Service) Responsive to customers problems,(e.g. Pre and Post Sales)
+                               </textarea>
                                 </th>
                                 <td><select name="x3" class="dataset" dataset="0">
     
@@ -182,7 +182,7 @@
                             </tr>
 
                             <tr id="field4">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor4" readonly>(Delivery/Cycle-time) Speedy turnaround time for products</textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor4" readonly>(Delivery/Cycle-time) Speedy turnaround time for products</textarea>
                                 </th>
 
                                 <td><select name="x4" class="dataset" dataset="0">
@@ -224,7 +224,7 @@
                             </tr>
 
                             <tr id="field5">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor5" readonly>(Product Performance) Reowned for high performance products </textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor5" readonly>(Product Performance) Reowned for high performance products </textarea>
                                 </th>
                                 <td><select name="x5" class="dataset" dataset="0">
     
@@ -265,7 +265,7 @@
                             </tr>
 
                             <tr id="field6">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor6" readonly>(Product range) The best/widesr product range </textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor6" readonly>(Product range) The best/widesr product range </textarea>
                                 </th>
 
                                 <td><select name="x6" class="dataset" dataset="0">
@@ -307,7 +307,7 @@
                             </tr>
 
                             <tr id="field7">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor7" readonly>(Flexibility) Flexible products, processes, services, customisation, etc.</textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor7" readonly>(Flexibility) Flexible products, processes, services, customisation, etc.</textarea>
                                 </th>
 
                                 <td><select name="x7" class="dataset" dataset="0">
@@ -349,7 +349,7 @@
                             </tr>
 
                             <tr id="field8">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor8" readonly>(Innovation) Known for innovation and new products
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor8" readonly>(Innovation) Known for innovation and new products
                                              </textarea>
                                 </th>
                                 <td><select name="x8" class="dataset" dataset="0">
@@ -391,7 +391,7 @@
                             </tr>
 
                             <tr id="field9">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor9" readonly>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor9" readonly>
                                         (Marketplace) visibility Known in marketplace (brand visibility)
                                         </textarea>
                                 </th>
@@ -434,7 +434,7 @@
                             </tr>
 
                             <tr id="field10">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor10" readonly>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor10" readonly>
                                         (Trust/Credibility) Well-respected in the marketplace
                                 </textarea>
                                 </th>
@@ -477,7 +477,7 @@
                             </tr>
 
                             <tr id="field11">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control" name="factor11" readonly>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor11" readonly>
                                         (Sales) Not Market Share.                                  
                                     </textarea>
                                 </th>

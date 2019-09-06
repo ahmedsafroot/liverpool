@@ -1,5 +1,5 @@
 <!--first tab-->
-<div class="tab">
+<div class="tab intro_page">
     <div class="container-fluid animated">
         <div class="row">
             <div class="mb-3 ml-2 mt-6 col-md-10">

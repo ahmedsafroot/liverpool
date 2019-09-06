@@ -28,7 +28,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="collapse5" class="card-body collapse" data-parent="#accordion5">
-                    and Marketing Strategy</label>
+                    
                     <table class="table-striped">
                         <thead>
                             <tr>
@@ -112,7 +112,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="collapse6" class="card-body collapse" data-parent="#accordion6">
-                    and Marketing Strategy</label>
+                    
                     <table class="table-striped">
                         <thead>
                             <tr>
@@ -196,7 +196,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="collapse7" class="card-body collapse" data-parent="#accordion7">
-                    and Marketing Strategy</label>
+                    
                     <table class="table-striped">
                         <thead>
                             <tr>
@@ -282,7 +282,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="collapse8" class="card-body collapse" data-parent="#accordion8">
-                    and Marketing Strategy</label>
+                    
                     <table class="table-striped">
                         <thead>
                             <tr>
@@ -358,7 +358,7 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="collapse9" class="card-body collapse" data-parent="#accordion9">
-                    and Marketing Strategy</label>
+                    
                     <table class="table-striped">
                         <thead>
                             <tr>

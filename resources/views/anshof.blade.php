@@ -3,19 +3,19 @@
     <div class="tab animated">
         <h2 class="step_title">GROWTH Direction(Step 5)</h2>
         <hr>
-        <p class="descParagrah">
+        <p class="descParagrah enlarge">
                 You will EXAMINE the DIRECTION for your company’s GROWTH and examine the potentials
         </p>
 
         <p class="sectionTitle mt-4">Instructions</p>
         <hr>
-        <p class="descParagrah">Give score for the factors given on their POTENTIAL; IMPORTANCE/URGENCY; RESOURCE REQUIREMENTS; POSSIBLE RETURN on INVESTMENT
+        <p class="descParagrah enlarge">Give score for the factors given on their POTENTIAL; IMPORTANCE/URGENCY; RESOURCE REQUIREMENTS; POSSIBLE RETURN on INVESTMENT
 
             </p>
         
         <p class="sectionTitle mt-4">OUTCOME</p>
         <hr>
-        <p class="descParagrah">PRIORITY Tactics for Growth will be identified, FEEDING into the action worksheets
+        <p class="descParagrah enlarge">PRIORITY Tactics for Growth will be identified, FEEDING into the action worksheets
 
             </p>
         <!--First Table-->

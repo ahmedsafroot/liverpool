@@ -146,7 +146,18 @@
                             <td>We target customers where we have an opportunity for competitive advantage	</td>
                             <td>{{$audit->question23 ?? ""}}</td>
                     </tr>
-                    
+                    <tr>
+                            <th>Score</th>
+                            <th>{{$total}}</th>
+                    </tr>
+                    <tr>
+                                <th>Induction</th>
+                                <th>{{$indeuction}}</th>
+                     </tr>
+                     <tr>
+                                        <th>What To Do</th>
+                                        <th>{{$what_to_do}}</th>
+                     </tr>
                 </tbody>
             </table>
 

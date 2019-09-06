@@ -106,23 +106,13 @@
             
                     </tr>
         
-                    <tr>
-                              <td>Product Portofilo</td>
-                              <td>{{$profile->userPortfolio}}</td>
-            
-                    </tr>
-                    <tr>
-                               <td>Market Sector(S)</td>
-                               <td>{{$profile->market_sector}}</td>
-                    </tr>
+
+
                     <tr>
                             <td>Direct Export</td>
                             <td>{{$profile->userExport}}</td>
                     </tr>
-                    <tr>
-                        <td>Imports</td>
-                        <td>{{$profile->userImport}}</td>
-                    </tr>
+
                     <tr>
                             <td>Contact Name</td>
                             <td>{{$profile->userContact}}</td>
@@ -148,39 +138,24 @@
                                    <td>{{$profile->NACE}}</td>
                      </tr>      
                      
-                    <tr>
-                            <td>Company Status</td>
-                            <td>{{$profile->status}}</td>
-                    </tr>
-                    <tr>
-                        <td>Legal Structure</td>
-                        <td>{{$profile->legal_structure}}</td>
-                 </tr>
-                 <tr>
-                        <td>Business Structure</td>
-                        <td>{{$profile->business_structure}}</td>
-                 </tr>
 
                  <tr>
-                        <td>Market Structure</td>
-                        <td>{{$profile->market_structure}}</td>
+                     <td>ProdctLine1: {{$profile->prodLine1_name}}</td>
+                     <td>{{$profile->prodLine1}}</td>
                  </tr>
                  <tr>
-                        <td>Location(s)</td>
-                        <td>{{$profile->userLocation}}</td>
-                 </tr>
-                 <tr>
-                        <td>Product Line 1</td>
-                        <td>{{$profile->line1}}</td>
-                 </tr>
-                 <tr>
-                        <td>Product Line 2</td>
-                        <td>{{$profile->line2}}</td>
-                 </tr>
-                 <tr>
-                        <td>Product Line 3</td>
-                        <td>{{$profile->line3}}</td>
-                 </tr>
+                       <td>ProdctLine2: {{$profile->prodLine1_name}}</td>
+                        <td>{{$profile->prodLine2}}</td>
+                     </tr>
+                     <tr>
+                        <td>ProdctLine3: {{$profile->prodLine1_name}}</td>
+                        <td>{{$profile->prodLine3}}</td>
+                     </tr>
+                     <tr>
+                        <td>ProdctLine4: {{$profile->prodLine1_name}}</td>
+                        <td>{{$profile->prodLine4}}</td>
+                      </tr>
+
                  <tr>
                         <td>How would you describe the technology used in producing your main products/services?</td>
                         <td>{{$profile->services}}</td>
@@ -196,17 +171,17 @@
 
                  <tr>
                         <td>Direct to consumers</td>                           
-                        <td>{{$profile->consumer}}</td>
+                        <td>{{$profile->directConsumers}}</td>
                  </tr>
 
                  <tr>
                         <td>Direct to OEM’s	</td>                           
-                        <td>{{$profile->oem}}</td>
+                        <td>{{$profile->directOem}}</td>
                  </tr>
 
                  <tr>
                         <td>To companies for more processing</td>
-                        <td>{{$profile->processing}}</td>
+                        <td>{{$profile->moreProcessing}}</td>
                  </tr>
 
                  <tr>
@@ -221,6 +196,11 @@
                  <tr>
                         <td>What is your company’s main types of Service?</td>
                         <td>{{$profile->types_services}}</td>
+                 </tr>
+                 <tr>
+                            <td>What is your company’s main types of production (IF ANY)?
+                                   </td>
+                            <td>{{$profile->types_production}}</td>
                  </tr>
                 </tbody>
             </table>

@@ -3,7 +3,7 @@
     <div class="ProductLines">
         <h2 class="step_title">Market Trends(Step 1-2)</h2>
         <div style="margin-left:5px">
-        <p class="descParagrah">In this part you identify the KEY TRENDS in your market that are important for the company.
+        <p class="descParagrah enlarge">In this part you identify the KEY TRENDS in your market that are important for the company.
             </p>
         <hr><hr>
         <p class="sectionTitle mt-4">Instructions</p>

@@ -88,6 +88,14 @@ function profileForm() {
     mydata["Email"] = $("#Email").val();
     mydata["Industry"] = $("#Industry").val();
     mydata["NACE"] = $("#NACE").val();
+    mydata["product1"] = $("#product1").val();
+    mydata["product2"] = $("#product2").val();
+    mydata["product3"] = $("#product3").val();
+    mydata["product4"] = $("#product4").val();
+    mydata["percentage1"] = $("#percentage1").val();
+    mydata["percentage2"] = $("#percentage2").val();
+    mydata["percentage4"] = $("#percentage3").val();
+    mydata["percentage4"] = $("#percentage4").val();
 
     if ($('#marketCK1').is(":checked")) {
         mydata["marketCK1"] = 1;
@@ -143,7 +151,7 @@ function profileForm() {
     mydata["userLocation"] = $("#userLocation").val();
 
 
-    mydata["prodLine1"] = $('input[name=prod1]:checked').val();
+    /*mydata["prodLine1"] = $('input[name=prod1]:checked').val();
     if (!mydata["prodLine1"])
         mydata["prodLine1"] = 0;
 
@@ -153,7 +161,7 @@ function profileForm() {
 
     mydata["prodLine3"] = $('input[name=prod3]:checked').val();
     if (!mydata["prodLine3"])
-        mydata["prodLine3"] = 0;
+        mydata["prodLine3"] = 0;*/
 
     mydata["services"] = $('input[name=services]:checked').val();
     if (!mydata["services"])
@@ -252,25 +260,15 @@ function profileForm() {
     } else {
         mydata["consumerGoods"] = 0;
     }
-    mydata["directConsumers"] = $('input[name=prod11]:checked').val();
-    if (!mydata["directConsumers"])
-        mydata["directConsumers"] = 0;
+    mydata["directConsumers"] = $('input[name=prod11]').val();
 
-    mydata["directOem"] = $('input[name=prod22]:checked').val();
-    if (!mydata["directOem"])
-        mydata["directOem"] = 0;
+    mydata["directOem"] = $('input[name=prod22]').val();
 
-    mydata["moreProcessing"] = $('input[name=prod33]:checked').val();
-    if (!mydata["moreProcessing"])
-        mydata["moreProcessing"] = 0;
+    mydata["moreProcessing"] = $('input[name=prod33]').val();
 
-    mydata["retailers"] = $('input[name=prod44]:checked').val();
-    if (!mydata["retailers"])
-        mydata["retailers"] = 0;
+    mydata["retailers"] = $('input[name=prod44]').val();
 
-    mydata["distributors"] = $('input[name=prod55]:checked').val();
-    if (!mydata["distributors"])
-        mydata["distributors"] = 0;
+    mydata["distributors"] = $('input[name=prod55]').val();
 
     if ($('#customCheck23').is(":checked")) {
         mydata["kibs"] = 1;
@@ -297,7 +295,31 @@ function profileForm() {
     } else {
         mydata["nonProfit"] = 0;
     }
-
+    if ($('#one_off').is(":checked")) {
+        mydata["one_off"] = 1;
+    } else {
+        mydata["one_off"] = 0;
+    }
+    if ($('#large_batch').is(":checked")) {
+        mydata["large_batch"] = 1;
+    } else {
+        mydata["large_batch"] = 0;
+    }
+    if ($('#con_mass').is(":checked")) {
+        mydata["con_mass"] = 1;
+    } else {
+        mydata["con_mass"] = 0;
+    }
+    if ($('#mix').is(":checked")) {
+        mydata["mix"] = 1;
+    } else {
+        mydata["mix"] = 0;
+    }
+    if ($('#small_batch').is(":checked")) {
+        mydata["small_batch"] = 1;
+    } else {
+        mydata["small_batch"] = 0;
+    }
     //console.log(mydata);
 
     $.ajaxSetup({
@@ -340,9 +362,14 @@ function profileForm() {
             bussinessStructure: mydata["bussinessStructure"],
             marketStructure: mydata["marketStructure"],
             userLocation: mydata["userLocation"],
-            prodLine1: mydata["prodLine1"],
-            prodLine2: mydata["prodLine2"],
-            prodLine3: mydata["prodLine3"],
+            product1: mydata["product1"],
+            product2: mydata["product2"],
+            product3: mydata["product3"],
+            product4: mydata["product4"],
+            percentage1: mydata["percentage1"],
+            percentage2: mydata["percentage2"],
+            percentage3: mydata["percentage3"],
+            percentage4: mydata["percentage4"],
             services: mydata["services"],
             companyProdOther: mydata["companyProdOther"],
             marketing: mydata["marketing"],
@@ -377,8 +404,12 @@ function profileForm() {
             Position:mydata["Position"],
             Email:mydata["Email"],
             Industry:mydata["Industry"],
-            NACE:data["NACE"],
-
+            NACE:mydata["NACE"],
+            one_off:mydata["one_off"],
+            large_batch:mydata["large_batch"],
+            con_mass:mydata["con_mass"],
+            mix:mydata["mix"],
+            small_batch:mydata["small_batch"]
 
         },
 

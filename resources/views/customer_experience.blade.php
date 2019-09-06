@@ -3,7 +3,7 @@
     <div class="ProductLines">
         <h2 class="step_title">CUSTOMER EXPERIENCE(Step 1-3)</h2>
         <div style="margin-left:5px">
-                <p class="descParagrah">In this part you identify your experience in interface and working with customers in some KEY areas.
+                <p class="descParagrah enlarge">In this part you identify your experience in interface and working with customers in some KEY areas.
                 </p>
                 <p style="font-weight:bold">THIS IS A REFLECTION AND FOR YOU TO RECORD THE FACTS
                 </p>
@@ -35,7 +35,7 @@
                             <div id="customerField">
                                 <tr id="customerField1">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface1">Awareness of company</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface1">Awareness of company</textarea>
 
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how1" cols="30" rows="10"></textarea></td>
@@ -47,7 +47,7 @@
 
                                 <tr id="customerField2">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface2">Search and evaluation</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface2">Search and evaluation</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how2" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten2" cols="30" rows="10"></textarea></td>
@@ -57,7 +57,7 @@
                                 </tr>
                                 <tr id="customerField3">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface3">Order and purchase</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface3">Order and purchase</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how3" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten3" cols="30" rows="10"></textarea></td>
@@ -67,7 +67,7 @@
                                 </tr>
                                 <tr id="customerField4">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface4">Management of project</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface4">Management of project</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how4" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten4" cols="30" rows="10"></textarea></td>
@@ -77,7 +77,7 @@
                                 </tr>
                                 <tr id="customerField5">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface5">Packaging</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface5">Packaging</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how5" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten5" cols="30" rows="10"></textarea></td>
@@ -87,7 +87,7 @@
                                 </tr>
                                 <tr id="customerField6">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface6">payment</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface6">payment</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how6" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten6" cols="30" rows="10"></textarea></td>
@@ -97,7 +97,7 @@
                                 </tr>
                                 <tr id="customerField7">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface7">Financing</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface7">Financing</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how7" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten7" cols="30" rows="10"></textarea></td>
@@ -107,7 +107,7 @@
                                 </tr>
                                 <tr id="customerField8">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface8">Storage and transport</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface8">Storage and transport</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how8" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten8" cols="30" rows="10"></textarea></td>
@@ -117,7 +117,7 @@
                                 </tr>
                                 <tr id="customerField9">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface9">Installation/assembly</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface9">Installation/assembly</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how9" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten9" cols="30" rows="10"></textarea></td>
@@ -127,7 +127,7 @@
                                 </tr>
                                 <tr id="customerField10">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface10">Product in use</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface10">Product in use</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how10" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten10" cols="30" rows="10"></textarea></td>
@@ -137,7 +137,7 @@
                                 </tr>
                                 <tr id="customerField11">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface11">Service</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface11">Service</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how11" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten11" cols="30" rows="10"></textarea></td>
@@ -147,7 +147,7 @@
                                 </tr>
                                 <tr id="customerField12">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface12">Repairs and returns</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface12">Repairs and returns</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how12" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten12" cols="30" rows="10"></textarea></td>
@@ -157,7 +157,7 @@
                                 </tr>
                                 <tr id="customerField13">
                                     <th scope="row" class="customer_tableH">
-                                    <textarea type="text" class="form-control" name="factor_interface13">Final Disposal</textarea>
+                                    <textarea type="text" class="form-control customer_textarea" name="factor_interface13">Final Disposal</textarea>
                                     </th>
                                     <td><textarea class="dynamicArea fontSize" name="how13" cols="30" rows="10"></textarea></td>
                                     <td><textarea class="dynamicArea fontSize" name="poten13" cols="30" rows="10"></textarea></td>

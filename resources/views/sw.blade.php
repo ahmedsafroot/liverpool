@@ -10,7 +10,7 @@
 
             <p class="sectionTitle mt-4">Instructions</p>
             <hr>
-            <ol class="descParagrah">
+            <ol class="descParagrah enlarge">
                 <li>In each section choose the important factors and DELETE the rest (or ADD other factors you think are important for you)
                     </li>
                 <li>EXPLAIN your strength AND/OR weakness in each, and how you see yourself to do Vs your closest competitor
