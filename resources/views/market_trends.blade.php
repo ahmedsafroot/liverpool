@@ -425,7 +425,7 @@
                         },
                         title: {
                             display: true,
-                            text: 'Total Impact Vs Contineous Probability'
+                            text: 'Total Impact Vs Continuous Probability'
                         }
                     },
                 });

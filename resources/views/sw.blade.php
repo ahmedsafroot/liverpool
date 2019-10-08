@@ -4,16 +4,15 @@
             <h2 class="step_title">An Analysis of the company’s Strengths and Weaknesses in KEY areas(Step 3)
             </h2>
             <hr>
-            <p class="descParagrah">You will be given areas of key functions and capabilities to identify where you stand and how you find your position.
-                    AREAS: Products; People; Processes; Operations; Organisation
+            <p class="descParagrah">Identify your strengths and weaknesses in terms of: Products; People; Processes; Operations; Organisation
             </p>
 
             <p class="sectionTitle mt-4">Instructions</p>
             <hr>
             <ol class="descParagrah enlarge">
-                <li>In each section choose the important factors and DELETE the rest (or ADD other factors you think are important for you)
+                <li>In each section, choose the important factors and DELETE the rest (or ADD other factors you think are important to you)
                     </li>
-                <li>EXPLAIN your strength AND/OR weakness in each, and how you see yourself to do Vs your closest competitor
+                <li>EXPLAIN your strength AND/OR weakness for each factor, and how you assess yourself Vs your closest competitor
                     </li>
                 <li>Priority: What is the priority of this factor for you to focus on?
                     </li>

@@ -1594,7 +1594,7 @@ class ProfileController extends Controller
     public function create_action($data)
     {
         $task=$data->task;
-        $owner=$data->cont;
+        $owner=$data->owner;
         $date=$data->date;
         $count=count($task);
 
@@ -1819,5 +1819,11 @@ class ProfileController extends Controller
     {
         $messages=message::where("profileid",$id)->get();
         return view("messages_details",compact('messages'));
+    }
+    public function myreport()
+    {
+        $profileid=Session::get('profileid');
+        $profiles=Profile::where("id",$profileid)->get();
+        return view("report",compact('profiles'));
     }
 }

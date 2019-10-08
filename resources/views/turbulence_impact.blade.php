@@ -5,7 +5,7 @@
             <div style="margin-left:5px">
                     <p class="descParagrah enlarge">YOU WILL IDENTIFY THE KEY FACTORS THAT MAY HAVE IMPACT ON THE COMPANY’S FUNCTION AND COMPETITIVENESS
                     </p>
-                    <p style="font-weight:bold">THESE ARE BROKEN DOWN IN FIVE AREAS: OPERATIONS; CUSTOMER/MARKETS; COMPETITION; SUPPLIERS/PURCHASING; TECHNOLOGY CHANGES
+                    <p style="font-weight:bold">THESE ARE BROKEN DOWN INTO FIVE AREAS: OPERATIONS; CUSTOMER/MARKETS; COMPETITION; SUPPLIERS/PURCHASING; TECHNOLOGY CHANGES
                     </p>
                     <hr><hr>
                     <p class="sectionTitle mt-4">Instructions</p>
@@ -29,7 +29,7 @@
                     <hr><hr>
                     <p class="sectionTitle mt-4">OUTCOME</p>
                     <hr>
-                    <p class="descParagrah enlarge">The factors from this section with HIGHER scores will be moved to the section 4 after SWOT ANALYSIS
+                    <p class="descParagrah enlarge">The factors from this section with HIGHER scores will be moved to section 4 after the SWOT ANALYSIS
                     </p>
     
             </div>
@@ -74,7 +74,7 @@
                     </div>
                     @elseif($i==43)
                     <div class="col-12">
-                        <h3>COMPTETION</h3>
+                        <h3>COMPETITION</h3>
                         <br>
                     </div>
                     @elseif($i==61)
@@ -2048,12 +2048,12 @@
 
 
         <!--Third Table-->
-        <!--RIVALRY/COMPTETION-->
+        <!--RIVALRY/COMPETITION-->
         <div id="factor3" class="accordion mb-3 ml-2 mt-6 col-md-10">
             <div class="card mb-0">
                 <div class="card-header collapsed" data-toggle="collapse" href="#RIVALRY">
                     <a class="card-title">
-                        Area Three: COMPTETION
+                        Area Three: COMPETITION
                     </a>
                     <i class="fa fa-angle-down"></i>
                 </div>

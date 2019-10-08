@@ -26,6 +26,7 @@ Route::post('step10','ProfileController@store_ansoff');
 Route::post('step11','ProfileController@store_action');
 
 Route::get("/report",'ProfileController@report');
+Route::get("/myreport",'ProfileController@myreport');
 Route::get('/details/{id}', 'ProfileController@profile_details')->name('profile.details');
 Route::get('/audit_tools/{id}', 'ProfileController@audit_tools_details')->name('audit_tools.details');
 Route::get('/industry_leadership/{id}', 'ProfileController@industry_leadership_details')->name('industry_leadership.details');

@@ -4,7 +4,7 @@
         <div class="row">
             <div class="mb-3 ml-2 mt-6 col-md-10">
                     <h2 class="step_title">Company Profile</h2>
-                    <p class="descParagrah">Here you enter a general overview of the company to both help organising the information about your company and also helping further analysis
+                    <p class="descParagrah">Here you enter general summary details about your company to provide background context to support subsequent analyses
                         </p><hr>
                      <p class="sectionTitle">OUTPUT</p>
                      <p class="descParagrah">
@@ -278,9 +278,7 @@
 
                         <!--company's main product lines table of radio buttons-->
                         <div class="ProductLines">
-                            <label class="mainLabel">What percentage of
-                                your
-                                products/Services are sold?</label>
+                            <label class="mainLabel">What percentage of your products/services are sold?</label>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -327,7 +325,7 @@
                         </div>
                     <!--What is your company’s main types of Service?-->
                     <div class="mainBusinesParent">
-                            <label class="mainLabel">What is your company’s main types of production (IF ANY)?
+                            <label class="mainLabel">What are your company’s main types of production (IF ANY)?
                             </label>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="one_off">

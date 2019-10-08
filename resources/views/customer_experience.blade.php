@@ -3,16 +3,16 @@
     <div class="ProductLines">
         <h2 class="step_title">CUSTOMER EXPERIENCE(Step 1-3)</h2>
         <div style="margin-left:5px">
-                <p class="descParagrah enlarge">In this part you identify your experience in interface and working with customers in some KEY areas.
+                <p class="descParagrah enlarge">In this part you identify your experience in working with customers in some KEY areas.
                 </p>
-                <p style="font-weight:bold">THIS IS A REFLECTION AND FOR YOU TO RECORD THE FACTS
+                <p style="font-weight:bold">THIS IS FOR REFLECTION AND FOR YOU TO RECORD KEY DETAILS
                 </p>
                 <hr><hr>
                 <p class="sectionTitle mt-4">Instructions</p>
                 <hr>
                 <p class="descParagrah">CHECK THE GIVEN FACTORS AND IF RELEVANT (DELETE IF NOT) ADD YOUR COMMENTS IN THE BOXES PROVIDED
                 </p>
-                <p style="font-weight:bold">THE OUTCOME WILL GIVE A BRIEF OVERVIEW OF YOUR STATE IN DEALING WITH CUSTOMERS
+                <p style="font-weight:bold">THE OUTCOME PROVIDES A BRIEF OVERVIEW OF YOUR PERFORMANCE IN DEALING WITH CUSTOMERS
                 </p>
 
         </div>

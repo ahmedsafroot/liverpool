@@ -63,7 +63,7 @@
                             </tr>
 
                             <tr id="sec1-thirdRow">
-                                <th scope="row" class="tableH">We are prepared to trade-off short term goals in the interest of long run growth
+                                <th scope="row" class="tableH">We are prepared to trade-off short term goals in the interest of long-term growth
                                 </th>
                                 <td><input type="radio" name="question3" value="1"></td>
                                 <td><input type="radio" name="question3" value="2"></td>
@@ -328,7 +328,7 @@
                             </tr>
 
                             <tr id="sec4-forthRow">
-                                <th scope="row" class="tableH">Our employees really understand that their behaviour reflects the firm’s image
+                                <th scope="row" class="tableH">Our employees understand that their behaviour reflects the firm’s image
                                 </th>
                                 <td><input type="radio" name="question19" value="1"></td>
                                 <td><input type="radio" name="question19" value="2"></td>

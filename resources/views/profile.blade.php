@@ -18,13 +18,14 @@
         <div class="row title">
             <div class="col-12 col-sm-12">
                 <h2>Agility Model</h2>
-                <p>Liverpool Agility Center</p>
+                <p>Liverpool Agility Centre throughout</p>
             </div>
         </div>
     </div>
 
     <!--Container for questions-->
     <form id="submitForm">
+        @include('welcome')
         @include('intro')
         @include('company_details')
         @include('aduit_tools')
@@ -54,6 +55,7 @@
         <span class="step" onclick="gotoTap(9)"></span>
         <span class="step" onclick="gotoTap(10)"></span>
         <span class="step" onclick="gotoTap(11)"></span>
+        <span class="step" onclick="gotoTap(12)"></span>
 
     </div>
 

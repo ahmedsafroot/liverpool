@@ -540,8 +540,8 @@ function audit_tool() {
         indeuction = "SOME CONSIDERABLE ATTENTION IS NEEDED TO PUT THE COMPANY BACK IN CONTROL.";
         what_to_do = "YOU NEED TO MAKE SERIOUS ATTEMPT AT IDENTIFYING THE KEY ISSUES AND INVEST ON RESOLVING THEM.";
     } else if (70 <= total && total < 92) {
-        indeuction = "THERE ARE AREAS OF VOLUNERABILITY, HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS.";
-        what_to_do = "FIND OUT AREAS IN NEED OF ATTENTION; WORK ON THOS AREAS IN A STRCUTURED WAY";
+        indeuction = "THERE ARE AREAS OF vulnerability, HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS.";
+        what_to_do = "FIND OUT AREAS IN NEED OF ATTENTION; WORK ON THOSE AREAS IN A STRCUTURED WAY";
     }
     else if (92 <= total && total <= 115) {
         indeuction = "YOU ARE DOING WELL";
@@ -1477,6 +1477,10 @@ function actions() {
             //$(".hideMe").css('display', 'table-cell');
             if(mymessage.background!="bg-danger"){
                 toastr.success(mymessage.success);
+                window.open(
+                    APP_URL+"/myreport",
+                    '_blank' // <- This is what makes it open in a new window.
+                  );
             }
             else
             {

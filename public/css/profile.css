@@ -494,3 +494,15 @@ textarea {
 {
     font-size: 14px !important;
 }
+.welcome_title
+{
+    text-align: center;
+    margin: 0 10% 0 10%;
+    font-size: 40px;
+}
+.intro_page .welcome_descParagrah
+{
+    font-size: 30px !important;
+    text-align: center;
+    color:#1D3C78 !important
+}

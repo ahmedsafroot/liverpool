@@ -4,13 +4,13 @@
         <p class="step_title">Market Leadership(Step 1-1)</p>
         <hr>
         <p class="descParagrah">
-                In this part you identify the KEY factors that are important for the company to stay in competition.
+                In this part you identify the KEY factors that are important for the company to stay in competitive.
             </p>
 
         <p class="sectionTitle mt-4">Instructions</p>
         <hr>
         <ul class="descParagrah">
-            <li>CHECK THE GIVEN FACTORS AND KEEP THOSE YOU FIND OF IMPORTANCE FOR THE COMPANY AND DELETE THE REST BEFORE SCORING. YOU MAY ADD FACTORS YOU FIND MISSING BUT IMPORTANT FOR YOUR FIRM<li>
+            <li>FOR EACH OF THE FOLLOWING FACTORS, PROVIDE A SCORE AS INDICATED. YOU MAY INCLUDE ADDITIONAL FACTORS, DELETE THOSE UNIMPORTANT AND ADD COMMENTS<li>
             <li>
                     GIVE SCORES REGARDING:
                 <ul class="descParagrah">
@@ -224,7 +224,7 @@
                             </tr>
 
                             <tr id="field5">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor5" readonly>(Product Performance) Reowned for high performance products </textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor5" readonly>(Product Performance) renowned for high performance products </textarea>
                                 </th>
                                 <td><select name="x5" class="dataset" dataset="0">
     
@@ -265,7 +265,7 @@
                             </tr>
 
                             <tr id="field6">
-                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor6" readonly>(Product range) The best/widesr product range </textarea>
+                                <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor6" readonly>(Product range) The best/widest product range </textarea>
                                 </th>
 
                                 <td><select name="x6" class="dataset" dataset="0">

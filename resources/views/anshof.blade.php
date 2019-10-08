@@ -9,7 +9,7 @@
 
         <p class="sectionTitle mt-4">Instructions</p>
         <hr>
-        <p class="descParagrah enlarge">Give score for the factors given on their POTENTIAL; IMPORTANCE/URGENCY; RESOURCE REQUIREMENTS; POSSIBLE RETURN on INVESTMENT
+        <p class="descParagrah enlarge">Provide a score for each factor for its POTENTIAL; IMPORTANCE/URGENCY; RESOURCE REQUIREMENTS; POSSIBLE RETURN on INVESTMENT
 
             </p>
         
