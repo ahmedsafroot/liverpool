@@ -3,21 +3,22 @@
     <div class="ProductLines">
         <h2 class="step_title">IDENTIFIED areas for ACTION</h2>
         <div style="margin-left:5px">
-                <p class="descParagrah">A LIST OF POTENTIAL ACTIONS FOR IMPROVEMENT OR PROACTIVE APPROACH WILL BE PROVIDED FOR YOU TO CONSIDER
+                <p class="descParagrah">A LIST OF POTENTIAL ACTIONS FOR IMPROVEMENT IS PROVIDED FOR YOU TO CONSIDER
                 </p>
                 <hr><hr>
                 <p class="sectionTitle mt-4">Instructions</p>
                 <hr>
                 <p class="descParagrah">
                     <ol class="descParagrah">
-                        <li>GIVE SCORE TO THE SUGGESTED AREAS AGAINST GIVEN MEASURES [HOW CRITICAL IT IS; CAN YOU CONTROL IT; RISKS IN DOING SO; DIFFICULTY/COMPLEXITY; RESOURCES NEEDED; HOW LONG DOES IT TAKE; EXPECTED ROI]
+                        <li>
+                            PROVIDE A SCORE FOR EACH OF THE PROPOSED AREAS AGAINST THE GIVEN MEASURES [HOW CRITICAL IT IS; CAN YOU CONTROL IT; RISKS IN DOING SO; DIFFICULTY/COMPLEXITY; RESOURCES NEEDED; HOW LONG DOES IT TAKE; EXPECTED ROI]
                         </li>
                         <li>
-                                DISCUSS THE PRIORITY FACTORS IDETIFIED IN YOUR TEAM. SELECT THE TOP ACTIONS YOU FIND VIABLE FOR YOUR FIRM
-
+                            DISCUSS THE PRIORITY FACTORS IDENTIFIED IN YOUR TEAM. SELECT THE TOP ACTIONS YOU FIND VIABLE FOR YOUR COMPANY
                         </li>
-                        <li>DECIDE ON WHO SHOULD LEAD ON THE PROJECT, BEGIN PLANNING FOR IMPLEMENTATION
-                            </li>
+                        <li>
+                            DECIDE ON WHO SHOULD LEAD ON THE PROJECT, BEGIN PLANNING FOR IMPLEMENTATION
+                        </li>
                     </ol>
                         
                 </p>

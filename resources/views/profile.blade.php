@@ -18,7 +18,7 @@
         <div class="row title">
             <div class="col-12 col-sm-12">
                 <h2>Agility Model</h2>
-                <p>Liverpool Agility Centre throughout</p>
+                <p>Liverpool Agility Centre</p>
             </div>
         </div>
     </div>
