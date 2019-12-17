@@ -17,6 +17,8 @@ use App\SW;
 use App\worksheet;
 use App\sheets;
 use App\message;
+use Auth;
+
 class ProfileController extends Controller
 {
     /**
@@ -24,11 +26,30 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id=0)
     {
         //
-        Session::flush();
+        Session::put('profileid', $id);
         return view('profile');
+    }
+    public function export($id)
+    {
+        return redirect()->route('home'); 
+        /*$userId = Auth::id();
+        $profile=Profile::where("userid",$userId)->where('id',$id)->first();
+        if($profile==null)
+        {
+            return redirect()->route('home');   
+
+        }
+        $profile_details=$this->profile_details($id,1);
+        dd($profile_details);*/
+    }
+    public function home()
+    {
+        $userId = Auth::id();
+        $profiles=Profile::where("userid",$userId)->get();
+        return view("userReport",compact('profiles'));   
     }
 
     /**
@@ -126,7 +147,7 @@ class ProfileController extends Controller
     }
      public function create_profile($data)
     {
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profile=Profile::find(Session::get('profileid'));
             $ret=1;
@@ -136,6 +157,8 @@ class ProfileController extends Controller
             $profile =new Profile;
             $ret=2;
         }
+        $userId = Auth::id();
+        $profile->userid=$userId;
         $profile->userName=$data->userName;
         $profile->userParent=$data->userParent;
         $profile->userAddress=$data->userAddress;
@@ -246,7 +269,7 @@ class ProfileController extends Controller
 
     public function create_audit_tool($data)
     {
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -329,7 +352,7 @@ class ProfileController extends Controller
         $position=$data->position;
         $comment=$data->comment;
         $count=count($factor);
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -402,7 +425,7 @@ class ProfileController extends Controller
         $comp=$data->comp;
         $comment=$data->comment;
         $count=count($observe);
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -469,7 +492,7 @@ class ProfileController extends Controller
         $poten=$data->poten;
      
         $count=count($interface);
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -507,7 +530,7 @@ class ProfileController extends Controller
         $profiles=Profile::all();
         return view("report",compact('profiles'));
     }
-    public function profile_details($id)
+    public function profile_details($id,$export=NULL)
     {
         $profile=Profile::find($id);
         $market_sector="";
@@ -1091,6 +1114,10 @@ class ProfileController extends Controller
           $profile->main_products=$main_products;
           $profile->conducted=$conducted;
           $profile->market_sector=$market_sector;
+          if($export!=NULL)
+          {
+              return $profile;
+          }
         return view("details",compact('profile'));
     }
     public function audit_tools_details($id)
@@ -1288,14 +1315,14 @@ class ProfileController extends Controller
        if (0 <= $total && $total <= 46) {
         $indeuction = "YOUR SURVIVAL MAY BE DOWN TO “LUCK”, SO IMMEDIATE AND SERIOUS ATTENTION IS NEEDED TO AVOID FAILURE.";
         $what_to_do = "ATTEND ISSUES SERIOUSLY AND CONSIDER CHANGING THE WAY YOU DO BUSINESS. SEEK ASSISTANCE FROM OUTSIDE SOURCES.";
-        } else if (46 < total && total <= 69) {
+        } else if (46 < $total && $total <= 69) {
             $indeuction = "SOME CONSIDERABLE ATTENTION IS NEEDED TO PUT THE COMPANY BACK IN CONTROL.";
             $what_to_do = "YOU NEED TO MAKE SERIOUS ATTEMPT AT IDENTIFYING THE KEY ISSUES AND INVEST ON RESOLVING THEM.";
-        } else if (70 <= total && total < 92) {
+        } else if (70 <= $total && $total < 92) {
             $indeuction = "THERE ARE AREAS OF VOLUNERABILITY, HENCE THE NEED FOR TAKING A CLOSER LOOK AT YOUR BUSINESS.";
             $what_to_do = "FIND OUT AREAS IN NEED OF ATTENTION; WORK ON THOS AREAS IN A STRCUTURED WAY";
         }
-        else if (92 <= total && total <= 115) {
+        else if (92 <= $total && $total <= 115) {
             $indeuction = "YOU ARE DOING WELL";
             $what_to_do = "YOU DO NOT NEED TO DO MAJOR ACTIONS, BUT SHOULD KEEP THE STRENGTH UP AND GOING";
         }
@@ -1361,7 +1388,7 @@ class ProfileController extends Controller
         {
             $count=0;
         }
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -1442,7 +1469,7 @@ class ProfileController extends Controller
         $count=count($factor);
         else
         $count=0;
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -1523,7 +1550,7 @@ class ProfileController extends Controller
         $count=count($factor);
         else
         $count=0;
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -1598,7 +1625,7 @@ class ProfileController extends Controller
         $date=$data->date;
         $count=count($task);
 
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -1674,7 +1701,7 @@ class ProfileController extends Controller
         $count=count($factor);
         else
         $count=0;
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }
@@ -1753,7 +1780,7 @@ class ProfileController extends Controller
         $count=count($factor);
         else
         $count=0;
-        if(session()->has('profileid'))
+        if(session()->has('profileid') && Session::get('profileid')!=0)
         {
             $profileid=Session::get('profileid');
         }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 @include('header')
-
+</head>
 <body>
     <!--Container for top page (logo and title)-->
     <!-- This is a row for logo and company name-->
@@ -10,9 +10,18 @@
         <div class="row header-logo">
             <div class="col-sm-1 col-md-1"></div>
             <div class="col-10 col-sm-10 col-md-4">
-                <img src="{{ asset('public/images/logo.png')}}" class="rounded float-left mt-4" alt="logo" width="70%">
+            <a href="{{route('home')}}"> <img src="{{ asset('public/images/logo.png')}}" class="rounded float-left mt-4" alt="logo" width="70%">
+               </a>
             </div>
-            <div class="col"></div>
+            <div class="col-10 col-sm-10 col-md-5">
+            </div>
+            <div class="col-2 col-sm-2 col-md-2" style="margin-top:35px">
+
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="btn btn-info">Logout</button>
+                  </form>
+            </div>
         </div>
         <!-- This is a row for page title-->
         <div class="row title">

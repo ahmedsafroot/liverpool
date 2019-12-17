@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94d4bf9ac7f4a933030e46a346ee2917",
+    "content-hash": "b3d26f550075c9b873d7e5dd897eaeae",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -316,6 +316,43 @@
                 "parser"
             ],
             "time": "2019-03-17T18:48:37+00:00"
+        },
+        {
+            "name": "eugene-melbourne/laravel-csv-generator",
+            "version": "1.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Eugene-Melbourne/laravel-csv-generator.git",
+                "reference": "917a465e225ea86c65cada36a8eedf4beee3cc73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Eugene-Melbourne/laravel-csv-generator/zipball/917a465e225ea86c65cada36a8eedf4beee3cc73",
+                "reference": "917a465e225ea86c65cada36a8eedf4beee3cc73",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.0 || ^6.0",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "LaravelCsvGenerator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene Melbourne",
+                    "email": "test82987@gmail.com"
+                }
+            ],
+            "description": "CSV export in laravel 5",
+            "time": "2019-10-28T23:51:38+00:00"
         },
         {
             "name": "fideloper/proxy",

@@ -10,9 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['middleware' => 'auth'], function () {
 
-Route::get('/','ProfileController@index');
-Route::resource('profile', 'ProfileController');
+Route::get('/','ProfileController@home')->name("home");
+Route::get('profile/{id?}','ProfileController@index')->name('profile');
+Route::get('export/{id}','ProfileController@export')->name('export');
 Route::post('step1','ProfileController@store_profile');
 Route::post('step2','ProfileController@store_audit_tool');
 Route::post('step3','ProfileController@store_industry_leadership');
@@ -39,4 +41,10 @@ Route::get('/worksheet/{id}', 'ProfileController@worksheet_details')->name('work
 Route::get('/ansoff/{id}', 'ProfileController@ansoff_details')->name('ansoff.details');
 Route::get('/actions/{id}', 'ProfileController@action_details')->name('action.details');
 Route::get('/messages/{id}', 'ProfileController@message_details')->name('messages.details');
+
+});
+
+Auth::routes();
+
+
 

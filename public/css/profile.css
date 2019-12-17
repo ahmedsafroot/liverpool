@@ -506,3 +506,15 @@ textarea {
     text-align: center;
     color:#1D3C78 !important
 }
+.add_new_profile
+{
+  
+    margin-left: 40px;
+}
+.report_table
+{
+    margin-top: 20px;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 17px !important;
+}
