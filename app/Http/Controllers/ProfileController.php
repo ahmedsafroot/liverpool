@@ -30,8 +30,21 @@ class ProfileController extends Controller
     {
         //
         Session::put('profileid', $id);
+        if($id==0)
+        {
+        Session::put('audit_tool_id', $id);
+        Session::put('leader_ship_id', $id);
+        Session::put('market_trend_id', $id);
+        Session::put('customer_experience_id', $id);
+        Session::Put('bea_id',$id);
+        Session::Put('sw_id',$id);
+        Session::Put('worksheet_id',$id);
+        Session::Put('ansoff_id',$id);
+
+        }
         return view('profile');
     }
+
     public function export($id)
     {
         return redirect()->route('home'); 
@@ -47,7 +60,14 @@ class ProfileController extends Controller
     }
     public function home()
     {
-        $userId = Auth::id();
+        
+        $user=Auth::user();
+        if($user->role=="admin")
+        {
+            return redirect()->route('admin.home');     
+        }
+
+        $userId = $user->id;
         $profiles=Profile::where("userid",$userId)->get();
         return view("userReport",compact('profiles'));   
     }
@@ -93,6 +113,41 @@ class ProfileController extends Controller
     public function edit($id)
     {
         //
+        
+        Session::put('profileid', $id);
+        $profile=Profile::find($id);
+        $audit=auditTool::where("profileid",$id)->first();
+        $leaderships=leaderShip::where("profileid",$id)->get();
+        $trends=trend::where("profileid",$id)->get();
+        $experiences=experience::where("profileid",$id)->get();
+        $beas=Bea::where("profileid",$id)->get();
+        $sw_products=SW::where("profileid",$id)->where('type',"Product")->get();
+        $sw_peoples=SW::where("profileid",$id)->where('type',"People")->get();
+        $sw_process=SW::where("profileid",$id)->where('type',"Process")->get();
+        $sw_operation=SW::where("profileid",$id)->where('type',"Operation")->get();
+        $sw_organisation=SW::where("profileid",$id)->where('type',"Organisation")->get();
+        $ansoffs_pens=Ansoff::where("profileid",$id)->where('type',"like","%Penetration%")->get();
+        $ansoffs_devs=Ansoff::where("profileid",$id)->where('type',"like","%Market Development%")->get();
+        $ansoffs_services=Ansoff::where("profileid",$id)->where('type',"like","%Service Development%")->get();
+        $ansoffs_divs=Ansoff::where("profileid",$id)->where('type',"like","%Diversification %")->get();
+        $messages=message::where("profileid",$id)->get();
+        if($audit!=NULL)
+        {
+        Session::put('audit_tool_id',$audit->id);
+        }
+        Session::put('leader_ship_id', 1);
+
+        Session::put('market_trend_id', 1);
+        Session::put('customer_experience_id', 1);
+        Session::Put('bea_id',1);
+        Session::Put('sw_id',1);
+        Session::Put('worksheet_id',1);
+        Session::Put('ansoff_id',1);
+
+        return view('edit_profile',compact('profile','audit','leaderships','trends','experiences','beas','sw_products',
+                                           'sw_peoples','sw_process','sw_operation','sw_organisation','ansoffs_pens',
+                                            'ansoffs_devs','ansoffs_services','ansoffs_divs','messages'));
+
     }
 
     /**
@@ -277,7 +332,7 @@ class ProfileController extends Controller
         {
             return 3;   
         }
-        if(session()->has('audit_tool_id'))
+        if(session()->has('audit_tool_id') && Session::get('audit_tool_id')!=0)
         {
             $audit=auditTool::find(Session::get('audit_tool_id'));
             $ret=1;
@@ -361,7 +416,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('leader_ship_id'))
+        if(session()->has('leader_ship_id') && Session::get('leader_ship_id')!=0)
         {
             leaderShip::where("profileid",$profileid)->delete();
             $ret=1;
@@ -434,7 +489,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('market_trend_id'))
+        if(session()->has('market_trend_id') && Session::get('market_trend_id')!=0)
         {
             trend::where("profileid",$profileid)->delete();
             $ret=1;
@@ -501,7 +556,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('customer_experience_id'))
+        if(session()->has('customer_experience_id') && Session::get('customer_experience_id')!=0)
         {
             experience::where("profileid",$profileid)->delete();
             $ret=1;
@@ -525,11 +580,7 @@ class ProfileController extends Controller
         return $ret;   
     }
 
-    public function report()
-    {
-        $profiles=Profile::all();
-        return view("report",compact('profiles'));
-    }
+    
     public function profile_details($id,$export=NULL)
     {
         $profile=Profile::find($id);
@@ -1373,6 +1424,7 @@ class ProfileController extends Controller
     }
     public function create_bea($data)
     {
+         
             $factor=$data->factor;
             $timeLenght=$data->timeLenght;
             $inc_dec=$data->inc_dec;
@@ -1397,7 +1449,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('bea_id'))
+        if(session()->has('bea_id') && Session::get('bea_id')!=0)
         {
             Bea::where("profileid",$profileid)->delete();
             $ret=1;
@@ -1559,7 +1611,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('ansoff_id'))
+        if(session()->has('ansoff_id') && Session::get('ansoff_id')!=0)
         {
             Ansoff::where("profileid",$profileid)->delete();
             $ret=1;
@@ -1710,7 +1762,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('sw_id'))
+        if(session()->has('sw_id') && Session::get('sw_id')!=0)
         {
             SW::where("profileid",$profileid)->delete();
             $ret=1;
@@ -1728,7 +1780,6 @@ class ProfileController extends Controller
             $sw->comp=$comp[$i];
             $sw->type=$type[$i];
             $sw->priority=$priority[$i];
-
             $sw->save();
         }
       
@@ -1789,7 +1840,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('worksheet_id'))
+        if(session()->has('worksheet_id') && Session::get('worksheet_id')!=0)
         {
             sheets::where("profileid",$profileid)->delete();
             message::where("profileid",$profileid)->delete();

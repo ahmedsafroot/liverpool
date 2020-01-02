@@ -27,7 +27,7 @@ var barOptions_stacked = {
             },
             ticks: {
                 fontFamily: "'Open Sans Bold', sans-serif",
-                fontSize: 11
+                fontSize: 11,
             },
             stacked: true
         }]
@@ -49,9 +49,9 @@ var barOptions_stacked = {
                 Chart.helpers.each(meta.data.forEach(function(bar, index) {
                     data = dataset.data[index];
                     if (i == 0) {
-                        ctx.fillText(data, bar._model.x - 25, bar._model.y + 4);
+                        ctx.fillText(data, bar._model.x - 15, bar._model.y + 4);
                     } else {
-                        ctx.fillText(data, bar._model.x - 25, bar._model.y + 4);
+                        ctx.fillText(data, bar._model.x - 15, bar._model.y + 4);
                     }
                 }), this)
             }), this);
@@ -63,7 +63,7 @@ var barOptions_stacked = {
 
 
 //chart of industary leadership
-var ctx1 = document.getElementById("chart1");
+/*var ctx1 = document.getElementById("chart1");
 var myChart1 = new Chart(ctx1, {
     type: 'horizontalBar',
     data: {
@@ -84,6 +84,46 @@ var myChart1 = new Chart(ctx1, {
             hoverBackgroundColor: "rgba(46,185,235,1)"
         }, {
             data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            backgroundColor: "#FF0000",
+            hoverBackgroundColor: "#FF0000"
+        }, ]
+    },
+
+    options: barOptions_stacked,
+});*/
+    var label=[];
+    var attract=[];
+    var sector=[];
+    var mainting=[];
+    var position=[];
+    $('.leadership_row').each(function(i, obj) {
+      label.push($(this).children("th").children(".market_textarea").text().trim().split(' ').slice(0,2).join(' ')+'...');
+      attract.push($(this).children("td").children("select[name*='x']").val());
+      sector.push($(this).children("td").children("select[name*='y']").val());
+      mainting.push($(this).children("td").children("select[name*='z']").val());
+      position.push($(this).children("td").children("select[name*='k']").val());
+
+    });
+var ctx1 = document.getElementById("chart1");
+var myChart1 = new Chart(ctx1, {
+    type: 'horizontalBar',
+    data: {
+        labels: label,
+        datasets: [{
+            data: attract,
+            backgroundColor: "#0080FF",
+            hoverBackgroundColor: "#0080FF"
+        }, {
+            data: sector,
+            backgroundColor: "#009900",
+            hoverBackgroundColor: "#009900"
+        }, {
+            data: mainting,
+
+            backgroundColor: "rgba(63,203,226,1)",
+            hoverBackgroundColor: "rgba(46,185,235,1)"
+        }, {
+            data:position,
             backgroundColor: "#FF0000",
             hoverBackgroundColor: "#FF0000"
         }, ]

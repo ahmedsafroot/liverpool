@@ -7,7 +7,11 @@
                    
                      <p class="descParagrah">
                          <ul class="descParagrah improve_actions">
-
+                           @if(isset($messages) && count($messages)>0)
+                             @foreach ($messages as $item)
+                                 <li>{{$item->message}}</li>
+                             @endforeach
+                           @endif
                          </ul>
                      </p>
                      

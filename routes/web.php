@@ -15,6 +15,7 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/','ProfileController@home')->name("home");
 Route::get('profile/{id?}','ProfileController@index')->name('profile');
 Route::get('export/{id}','ProfileController@export')->name('export');
+Route::get('edit/{id}','ProfileController@edit')->name('profile.edit');
 Route::post('step1','ProfileController@store_profile');
 Route::post('step2','ProfileController@store_audit_tool');
 Route::post('step3','ProfileController@store_industry_leadership');
@@ -47,4 +48,7 @@ Route::get('/messages/{id}', 'ProfileController@message_details')->name('message
 Auth::routes();
 
 
-
+Route::middleware('can:accessAdminpanel')->group(function() {
+    Route::get('/adminpanel/dashboard', 'Adminpanel\Dashboard@index')->name("admin.home");
+    // future adminpanel routes also should belong to the group
+});

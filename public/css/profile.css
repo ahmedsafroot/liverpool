@@ -1,6 +1,7 @@
 body {
     max-width: 100% !important;
     font-family: "proxima-nova", arial, sans-serif !important;
+    overflow-x: hidden;
 }
 
 .title h2 {
@@ -517,4 +518,8 @@ textarea {
 }
 table.dataTable thead th, table.dataTable thead td {
     padding: 10px 17px !important;
+}
+.tru_factors textarea
+{
+    margin-right: 1px !important;
 }

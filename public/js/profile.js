@@ -271,14 +271,14 @@ function profileForm() {
     mydata["distributors"] = $('input[name=prod55]').val();
 
     if ($('#customCheck23').is(":checked")) {
-        mydata["kibs"] = 1;
-    } else {
-        mydata["kibs"] = 0;
-    }
-    if ($('#customCheck24').is(":checked")) {
         mydata["traditional"] = 1;
     } else {
         mydata["traditional"] = 0;
+    }
+    if ($('#customCheck24').is(":checked")) {
+        mydata["kibs"] = 1;
+    } else {
+        mydata["kibs"] = 0;
     }
     if ($('#customCheck25').is(":checked")) {
         mydata["consumerServices"] = 1;
@@ -803,17 +803,68 @@ $(document).on("keyup", ".factors .dynamicArea", function() {
 
 $(document).on("keyup", "[name*='factor_trend']", function() {
     var index = $(this).parent().parent().index();
+    if($(this).parent("th").hasClass("factor_trend"))
+    {
+        edit_myMarketChart.data.labels[index] = $(this).val();
+        edit_myMarketChart.update();
+    
+        edit_myMarketChart1.data.labels[index] = $(this).val();
+        edit_myMarketChart1.update();
+    }
+    else
+    {
     myMarketChart.data.labels[index] = $(this).val();
     myMarketChart.update();
 
     myMarketChart1.data.labels[index] = $(this).val();
     myMarketChart1.update();
+    }
 });
 
-/*$(document).on("keyup",".comments",function() {
-    var value=$(this).val().trim();
-    $(this).attr("title",value);
-});*/
+//start edit market chart
+
+function add_label_trend_edit(label) {
+    edit_myMarketChart.config.data.labels.push(label);
+    edit_myMarketChart.config.data.datasets[0].data.push(1);
+    edit_myMarketChart.config.data.datasets[1].data.push(3);
+    edit_myMarketChart.update();
+
+    edit_myMarketChart1.config.data.labels.push(label);
+    edit_myMarketChart1.config.data.datasets[0].data.push(-1);
+    edit_myMarketChart1.config.data.datasets[1].data.push(-1);
+    edit_myMarketChart1.config.data.datasets[2].data.push(-1);
+
+    edit_myMarketChart1.update();
+
+}
+function update_label_trend_edit(label, datast, value,chart) {
+    if(chart==1)
+    {
+        edit_myMarketChart.data.datasets[datast].data[label] = value;
+        edit_myMarketChart.update();
+    }
+    else
+    {
+        edit_myMarketChart1.data.datasets[datast].data[label] = value;
+        edit_myMarketChart1.update();
+    }
+    
+
+}
+function remove_label_trend_edit(label) {
+    edit_myMarketChart.data.datasets[0].data.splice(label, 1);
+    edit_myMarketChart.data.datasets[1].data.splice(label, 1);
+    edit_myMarketChart.data.labels.splice(label, 1);
+    edit_myMarketChart.update();
+
+    edit_myMarketChart1.data.datasets[0].data.splice(label, 1);
+    edit_myMarketChart1.data.datasets[1].data.splice(label, 1);
+    edit_myMarketChart1.data.datasets[2].data.splice(label, 1);
+    edit_myMarketChart1.data.labels.splice(label, 1);
+    edit_myMarketChart1.update();
+
+}
+//end
 
 
 function market_trends() {
@@ -954,7 +1005,8 @@ function customer_experience() {
 
 }
 
-function turbulence_impact() {
+function turbulence_impact(b=0) {
+
     var count_supply = $("#count_supply").val();
     var count_req = $("#count_req").val();
     var count_rivalry = $("#count_rivalry").val();
@@ -1071,13 +1123,17 @@ function turbulence_impact() {
 
         success: function(mymessage) {
             //$(".hideMe").css('display', 'table-cell');
-            if(mymessage.background!="bg-danger"){
-                toastr.success(mymessage.success);
-            }
-            else
-            {
-                toastr.error(mymessage.success);
 
+            if(b==0)
+            {
+                if(mymessage.background!="bg-danger"){
+                    toastr.success(mymessage.success);
+                }
+                else
+                {
+                    toastr.error(mymessage.success);
+
+                }
             }
             $(".trublance_tools").children().remove();
             $('#disabledFactor').nextAll('.work_row').remove();
@@ -1497,7 +1553,7 @@ function actions() {
 
 }
 
-function sw() {
+function sw(b = 0) {
     var count_prodcut = $("#sw_count_product").val();
     var count_people= $("#sw_count_people").val();
     var count_process = $("#sw_count_process").val();
@@ -1711,14 +1767,18 @@ function sw() {
         },
 
         success: function(mymessage) {
-            //$(".hideMe").css('display', 'table-cell');
-            if(mymessage.background!="bg-danger"){
-                toastr.success(mymessage.success);
-            }
-            else
-            {
-                toastr.error(mymessage.success);
 
+            if(b==0)
+            {
+            //$(".hideMe").css('display', 'table-cell');
+                if(mymessage.background!="bg-danger"){
+                    toastr.success(mymessage.success);
+                }
+                else
+                {
+                    toastr.error(mymessage.success);
+
+                }
             }
 
 
@@ -1779,7 +1839,7 @@ function worksheet() {
     var fac;
     var PRACTICES=[];
     $('.work_row').each(function(i, obj) {
-         debugger;
+     
          fac=$(this).children(".tru_factors").children("textarea").val();
         $(this).children("td").children(".worksheet_select").each(function(j, objj) {
             factor.push(fac);

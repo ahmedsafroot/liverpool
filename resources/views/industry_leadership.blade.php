@@ -51,7 +51,7 @@
                     </thead>
                     <tbody>
                         <div class="field">
-                            <tr id="field1">
+                            <tr id="field1" class="leadership_row">
                                 <th scope="row" class="tableH factors">
                                     <textarea type="text" rows="3" cols="20" class="form-control market_textarea" name="factor1" readonly>(Price/Cost)Provide the lowest price, best value for money etc.</textarea>
                                 </th>
@@ -98,7 +98,7 @@
                             </tr>
 
 
-                            <tr id="field2">
+                            <tr id="field2" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor2" readonly>(Quality) Reliable products and services,Accreditations etc.
                                 </textarea>
                                 </th>
@@ -138,7 +138,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field3">
+                            <tr id="field3" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor3" readonly>(Service) Responsive to customers problems,(e.g. Pre and Post Sales)
                                </textarea>
                                 </th>
@@ -181,7 +181,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field4">
+                            <tr id="field4" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor4" readonly>(Delivery/Cycle-time) Speedy turnaround time for products</textarea>
                                 </th>
 
@@ -223,7 +223,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field5">
+                            <tr id="field5" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor5" readonly>(Product Performance) renowned for high performance products </textarea>
                                 </th>
                                 <td><select name="x5" class="dataset" dataset="0">
@@ -264,7 +264,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field6">
+                            <tr id="field6" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor6" readonly>(Product range) The best/widest product range </textarea>
                                 </th>
 
@@ -306,7 +306,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field7">
+                            <tr id="field7" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor7" readonly>(Flexibility) Flexible products, processes, services, customisation, etc.</textarea>
                                 </th>
 
@@ -348,7 +348,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field8">
+                            <tr id="field8" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor8" readonly>(Innovation) Known for innovation and new products
                                              </textarea>
                                 </th>
@@ -390,7 +390,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field9">
+                            <tr id="field9" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor9" readonly>
                                         (Marketplace) visibility Known in marketplace (brand visibility)
                                         </textarea>
@@ -433,7 +433,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field10">
+                            <tr id="field10" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor10" readonly>
                                         (Trust/Credibility) Well-respected in the marketplace
                                 </textarea>
@@ -476,7 +476,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="field11">
+                            <tr id="field11" class="leadership_row">
                                 <th scope="row" class="tableH factors"><textarea type="text" rows="4" cols="15" class="form-control market_textarea" name="factor11" readonly>
                                         (Sales) Not Market Share.                                  
                                     </textarea>

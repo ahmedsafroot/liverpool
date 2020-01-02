@@ -31,7 +31,8 @@
         <label class="mainLabel" style="margin-left: 5%;"></label>
         <div class="container-fluid">
             <div class="row">
-                <input type="hidden" value="4" id="count_trend">
+                
+                <input type="hidden" value={{ (isset($trends) && count($trends)>0)? count($trends) : 4 }} id="count_trend">
                 <table class="table table-striped col-md-7" id="trends">
                     <thead>
                         <tr>
@@ -47,7 +48,7 @@
                             </th>
                             <th scope="col" class="tableH">Vs competitor (Better:5 or Same:3 or Worse: 1)
                             </th>
-                            <th scope="col" class="tableH factors">Notes
+                            <th scope="col" class="tableH factors factor_trend">Notes
                             </th>
                             <th scope="col" class="tableH">Total
                             </th>
@@ -57,12 +58,13 @@
 
                     <tbody>
                         <div id="marketField">
-                            <tr id="marketField1">
-                                <th scope="row" class="tableH factors">
+                            @if(!isset($trends) || count($trends)==0)
+                            <tr class="trend_row"  id="marketField1">
+                                <th scope="row" class="tableH factors factor_trend">
                                     <textarea type="text" class="form-control
                                         dynamicArea" name="factor_trend1"></textarea>
                                 </th>
-                                <td><select name='cont1' class="datasetTrend" datasetTrend="0">
+                                <td class="cont"><select name='cont1' class="datasetTrend" datasetTrend="0">
 
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -70,7 +72,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='revenue1' class="datasetTrend" datasetTrend="1">
+                                <td class="revenue"><select name='revenue1' class="datasetTrend" datasetTrend="1">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -83,7 +85,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='cost1' class="datasetTrend" datasetTrend="2">
+                                <td class="cost"><select name='cost1' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -96,7 +98,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='growth1' class="datasetTrend" datasetTrend="2">
+                                <td class="growth"><select name='growth1' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -109,30 +111,29 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='comp1' class="datasetTrend" datasetTrend="2">
+                                <td class="comp"><select name='comp1' class="datasetTrend" datasetTrend="2">
                                       
                                         <option value="5">5</option>
                                         <option value="3">3</option>
                                         <option value="1">1</option>
                                     </select></td>
-                                <td scope="row" class="tableH">
-                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea
-                                        comments" name="comment_trend1"></textarea>
+                                <td scope="row" class="tableH comment_trend">
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment_trend1"></textarea>
                                 </td>
                                 <td>
-                                    <input type="text" readonly style="width:30px;" name="total_impact1" value="3">
+                                    <input type="text" readonly style="width:30px;" class="total_impact"  name="total_impact1" value="3">
                                 </td>
 
                                 <td id='market_delete-td1'>
                                     <button id="market_remove1" class="btn market_remove-me" onclick="deleteRow(this,1,1)">delete</button>
                                 </td>
                             </tr>
-                            <tr id="marketField2">
-                                <th scope="row" class="tableH factors">
+                            <tr class="trend_row"  id="marketField2">
+                                <th scope="row" class="tableH factors factor_trend">
                                     <textarea type="text" class="form-control
                                         dynamicArea" name="factor_trend2"></textarea>
                                 </th>
-                                <td><select name='cont2' class="datasetTrend" datasetTrend="0">
+                                <td class="cont"><select name='cont2' class="datasetTrend" datasetTrend="0">
 
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -140,7 +141,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='revenue2' class="datasetTrend" datasetTrend="1">
+                                <td class="revenue"><select name='revenue2' class="datasetTrend" datasetTrend="1">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -153,7 +154,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='cost2' class="datasetTrend" datasetTrend="2">
+                                <td class="cost"><select name='cost2' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -166,7 +167,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='growth2' class="datasetTrend" datasetTrend="2">
+                                <td class="growth"><select name='growth2' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -179,18 +180,18 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='comp2' class="datasetTrend" datasetTrend="2">
+                                <td class="comp"><select name='comp2' class="datasetTrend" datasetTrend="2">
                                       
                                         <option value="5">5</option>
                                         <option value="3">3</option>
                                         <option value="1">1</option>
                                     </select></td>
-                                <td scope="row" class="tableH">
+                                <td scope="row" class="tableH comment_trend">
                                     <textarea type="text" rows="3" cols="20" class="form-control dynamicArea
                                         comments" name="comment_trend2"></textarea>
                                 </td>
                                 <td>
-                                    <input type="text" readonly style="width:30px;" name="total_impact2" value="3">
+                                    <input type="text" readonly style="width:30px;" class="total_impact"  name="total_impact2" value="3">
                                 </td>
 
                                 <td id='market_delete-td2'>
@@ -198,12 +199,12 @@
                                 </td>
                             </tr>
 
-                            <tr id="marketField3">
-                                <th scope="row" class="tableH factors">
+                            <tr class="trend_row"  id="marketField3">
+                                <th scope="row" class="tableH factors factor_trend">
                                     <textarea type="text" class="form-control
                                         dynamicArea" name="factor_trend3"></textarea>
                                 </th>
-                                <td><select name='cont3' class="datasetTrend" datasetTrend="0">
+                                <td class="cont"><select name='cont3' class="datasetTrend" datasetTrend="0">
 
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -211,7 +212,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='revenue3' class="datasetTrend" datasetTrend="1">
+                                <td class="revenue"><select name='revenue3' class="datasetTrend" datasetTrend="1">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -224,7 +225,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='cost3' class="datasetTrend" datasetTrend="2">
+                                <td class="cost"><select name='cost3' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -237,7 +238,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='growth3' class="datasetTrend" datasetTrend="2">
+                                <td class="growth"><select name='growth3' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -250,18 +251,18 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='comp3' class="datasetTrend" datasetTrend="2">
+                                <td class="comp"><select name='comp3' class="datasetTrend" datasetTrend="2">
                                       
                                         <option value="5">5</option>
                                         <option value="3">3</option>
                                         <option value="1">1</option>
                                     </select></td>
-                                <td scope="row" class="tableH">
+                                <td scope="row" class="tableH comment_trend">
                                     <textarea type="text" rows="3" cols="20" class="form-control dynamicArea
                                         comments" name="comment_trend3"></textarea>
                                 </td>
                                 <td>
-                                    <input type="text" readonly style="width:30px;" name="total_impact3" value="3">
+                                    <input type="text" readonly style="width:30px;" class="total_impact"  name="total_impact3" value="3">
                                 </td>
 
                                 <td id='market_delete-td3'>
@@ -269,12 +270,12 @@
                                 </td>
                             </tr>
 
-                            <tr id="marketField4">
-                                <th scope="row" class="tableH factors">
+                            <tr class="trend_row"  id="marketField4">
+                                <th scope="row" class="tableH factors factor_trend">
                                     <textarea type="text" class="form-control
                                         dynamicArea" name="factor_trend4"></textarea>
                                 </th>
-                                <td><select name='cont4' class="datasetTrend" datasetTrend="0">
+                                <td class="cont"><select name='cont4' class="datasetTrend" datasetTrend="0">
 
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -282,7 +283,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='revenue4' class="datasetTrend" datasetTrend="1">
+                                <td class="revenue"><select name='revenue4' class="datasetTrend" datasetTrend="1">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -295,7 +296,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='cost4' class="datasetTrend" datasetTrend="2">
+                                <td class="cost"><select name='cost4' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -308,7 +309,7 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='growth4' class="datasetTrend" datasetTrend="2">
+                                <td class="growth"><select name='growth4' class="datasetTrend" datasetTrend="2">
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
                                         <option value="-3">-3</option>
@@ -321,24 +322,99 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select></td>
-                                <td><select name='comp4' class="datasetTrend" datasetTrend="2">
+                                <td class="comp"><select name='comp4' class="datasetTrend" datasetTrend="2">
                                       
                                         <option value="5">5</option>
                                         <option value="3">3</option>
                                         <option value="1">1</option>
                                     </select></td>
-                                <td scope="row" class="tableH">
+                                <td scope="row" class="tableH comment_trend">
                                     <textarea type="text" rows="3" cols="20" class="form-control dynamicArea
                                         comments" name="comment_trend4"></textarea>
                                 </td>
                                 <td>
-                                    <input type="text" readonly style="width:30px;" name="total_impact4" value="3">
+                                    <input type="text" readonly style="width:30px;" class="total_impact"  name="total_impact4" value="3">
                                 </td>
 
                                 <td id='market_delete-td4'>
                                     <button id="market_remove4" class="btn market_remove-me" onclick="deleteRow(this,4,1)">delete</button>
                                 </td>
                             </tr>
+                            @else
+                              @for ($i = 0; $i < count($trends); $i++)
+                              <tr class="trend_row" id="{{'marketField'.($i+1)}}">
+                                <th scope="row" class="tableH factors factor_trend">
+                                    <textarea type="text" class="form-control dynamicArea" name="{{'factor_trend'.($i+1)}}">{{$trends[$i]->observed}}</textarea>
+                                </th>
+                                <td class="cont"><select name="{{'cont'.($i+1)}}" class="datasetTrend" datasetTrend="0">
+
+                                    <option value="1" {{ ($trends[$i]->cont==1)? "selected=selected" : "" }}>1</option>
+                                    <option value="2" {{ ($trends[$i]->cont==2)? "selected=selected" : "" }}>2</option>
+                                    <option value="3" {{ ($trends[$i]->cont==3)? "selected=selected" : "" }}>3</option>
+                                    <option value="4" {{ ($trends[$i]->cont==4)? "selected=selected" : "" }}>4</option>
+                                    <option value="5" {{ ($trends[$i]->cont==5)? "selected=selected" : "" }}>5</option>
+                                    </select></td>
+                                <td class="revenue"><select name="{{'revenue'.($i+1)}}" class="datasetTrend" datasetTrend="1">
+                                    <option value="-1" {{ ($trends[$i]->revenue==-1)? "selected=selected" : "" }}>-1</option>
+                                    <option value="-2" {{ ($trends[$i]->revenue==-2)? "selected=selected" : "" }}>-2</option>
+                                    <option value="-3" {{ ($trends[$i]->revenue==-3)? "selected=selected" : "" }}>-3</option>
+                                    <option value="-4" {{ ($trends[$i]->revenue==-4)? "selected=selected" : "" }}>-4</option>
+                                    <option value="-5" {{ ($trends[$i]->revenue==-5)? "selected=selected" : "" }}>-5</option>
+                                    <option value="0" {{ ($trends[$i]->revenue==0)? "selected=selected" : "" }}>0</option>
+                                    <option value="1" {{ ($trends[$i]->revenue==1)? "selected=selected" : "" }}>1</option>
+                                    <option value="2" {{ ($trends[$i]->revenue==2)? "selected=selected" : "" }}>2</option>
+                                    <option value="3" {{ ($trends[$i]->revenue==3)? "selected=selected" : "" }}>3</option>
+                                    <option value="4" {{ ($trends[$i]->revenue==4)? "selected=selected" : "" }}>4</option>
+                                    <option value="5" {{ ($trends[$i]->revenue==5)? "selected=selected" : "" }}>5</option>
+                                    </select></td>
+                                <td class="cost"><select name="{{'cost'.($i+1)}}" class="datasetTrend" datasetTrend="2">
+                                    <option value="-1" {{ ($trends[$i]->cost==-1)? "selected=selected" : "" }}>-1</option>
+                                    <option value="-2" {{ ($trends[$i]->cost==-2)? "selected=selected" : "" }}>-2</option>
+                                    <option value="-3" {{ ($trends[$i]->cost==-3)? "selected=selected" : "" }}>-3</option>
+                                    <option value="-4" {{ ($trends[$i]->cost==-4)? "selected=selected" : "" }}>-4</option>
+                                    <option value="-5" {{ ($trends[$i]->cost==-5)? "selected=selected" : "" }}>-5</option>
+                                    <option value="0" {{ ($trends[$i]->cost==0)? "selected=selected" : "" }}>0</option>
+                                    <option value="1" {{ ($trends[$i]->cost==1)? "selected=selected" : "" }}>1</option>
+                                    <option value="2" {{ ($trends[$i]->cost==2)? "selected=selected" : "" }}>2</option>
+                                    <option value="3" {{ ($trends[$i]->cost==3)? "selected=selected" : "" }}>3</option>
+                                    <option value="4" {{ ($trends[$i]->cost==4)? "selected=selected" : "" }}>4</option>
+                                    <option value="5" {{ ($trends[$i]->cost==5)? "selected=selected" : "" }}>5</option>
+                                    </select></td>
+                                <td class="growth"><select name="{{'growth'.($i+1)}}" class="datasetTrend" datasetTrend="2">
+                                    <option value="-1" {{ ($trends[$i]->growth==-1)? "selected=selected" : "" }}>-1</option>
+                                    <option value="-2" {{ ($trends[$i]->growth==-2)? "selected=selected" : "" }}>-2</option>
+                                    <option value="-3" {{ ($trends[$i]->growth==-3)? "selected=selected" : "" }}>-3</option>
+                                    <option value="-4" {{ ($trends[$i]->growth==-4)? "selected=selected" : "" }}>-4</option>
+                                    <option value="-5" {{ ($trends[$i]->growth==-5)? "selected=selected" : "" }}>-5</option>
+                                    <option value="0" {{ ($trends[$i]->growth==0)? "selected=selected" : "" }}>0</option>
+                                    <option value="1" {{ ($trends[$i]->growth==1)? "selected=selected" : "" }}>1</option>
+                                    <option value="2" {{ ($trends[$i]->growth==2)? "selected=selected" : "" }}>2</option>
+                                    <option value="3" {{ ($trends[$i]->growth==3)? "selected=selected" : "" }}>3</option>
+                                    <option value="4" {{ ($trends[$i]->growth==4)? "selected=selected" : "" }}>4</option>
+                                    <option value="5" {{ ($trends[$i]->growth==5)? "selected=selected" : "" }}>5</option>
+                                    </select></td>
+                                <td class="comp"><select name="{{'comp'.($i+1)}}" class="datasetTrend" datasetTrend="2">
+                                      
+                                        <option value="5" {{ ($trends[$i]->comp==5)? "selected=selected" : "" }}>5</option>
+                                        <option value="3" {{ ($trends[$i]->comp==3)? "selected=selected" : "" }}>3</option>
+                                        <option value="1" {{ ($trends[$i]->comp==1)? "selected=selected" : "" }}>1</option>
+                                    </select></td>
+                                <td scope="row" class="tableH comment_trend">
+                                    <textarea type="text" rows="3" cols="20" class="form-control dynamicArea
+                                        comments" name="{{'comment_trend'.($i+1)}}">
+                                    {{$trends[$i]->notes}}
+                                    </textarea>
+                                </td>
+                                <td>
+                                <input type="text" readonly style="width:30px;" class="total_impact" name="{{'total_impact'.($i+1)}}" value="{{ ($trends[$i]->cont+$trends[$i]->revenue+$trends[$i]->cost+$trends[$i]->growth+$trends[$i]->comp)}}">
+                                </td>
+
+                                <td id='market_delete-td1'>
+                                    <button id="{{'market_remove'.($i+1)}}" class="btn market_remove-me" onclick="deleteRow(this,{{$i+1}},1)">delete</button>
+                                </td>
+                            </tr>
+                            @endfor
+                            @endif
                         </div>
 
                     </tbody>
@@ -348,12 +424,12 @@
                 <!--chart section-->
                 <div class="col-md-5">
                     <div class="chart-container">
-                        <canvas id="market_trends_chart"></canvas>
+                        <canvas id="edit_market_trends_chart"></canvas>
                     </div>
 
                     <div class="chart-container" style="margin-top:15%
                         !important;">
-                        <canvas id="market1_trends_chart"></canvas>
+                        <canvas id="edit_market1_trends_chart"></canvas>
                     </div>
 
                 </div>
@@ -386,21 +462,38 @@
 
 <script>
             //chart of market trends
-            var marketChart = document.getElementById("market_trends_chart");
-            var myMarketChart = new Chart(marketChart, {
+            debugger;
+            var labels=[];
+            var conts=[];
+            var total_impacts=[];
+            var revenue=[];
+            var cost=[];
+            var growth=[];
+
+            $('.trend_row').each(function(i, obj) {
+            labels.push($(this).children(".factor_trend").children("textarea").text().trim().split(' ').slice(0,2).join(' ')+'...');
+            conts.push($(this).children(".cont").children("select").val());
+            total_impacts.push($(this).children("td").children(".total_impact").val());
+            revenue.push($(this).children(".revenue").children("select").val());
+            cost.push($(this).children(".cost").children("select").val());
+            growth.push($(this).children(".growth").children("select").val());
+
+            });
+            var edit_marketChart = document.getElementById("edit_market_trends_chart");
+            var edit_myMarketChart = new Chart(edit_marketChart, {
                 type: 'bar',
                 data: {
-                    labels: ["Trend1[Example1]","Trend2[Example2]","Trend3[Example3]","Trend3[Example3]"],
+                    labels: labels,
             
                     datasets: [{
                             label: 'Likely To Continu (Low:1- High:5)',
-                            data: [1,1,1,1],
+                            data: conts,
                             type: 'line',
                             backgroundColor: "orange",
                             fill: false,
                         }, {
                             label: "Total Impact",
-                            data: [3,3,3,3],
+                            data: total_impacts,
                             backgroundColor: "#0080FF",
                             hoverBackgroundColor: "#0080FF",
             
@@ -431,24 +524,24 @@
                 });
             
             
-            var marketChart1 = document.getElementById("market1_trends_chart");
-            var myMarketChart1 = new Chart(marketChart1, {
+            var edit_marketChart1 = document.getElementById("edit_market1_trends_chart");
+            var edit_myMarketChart1 = new Chart(edit_marketChart1, {
                 type: 'bar',
                 data: {
-                    labels: ["Trend1[Example1]","Trend2[Example2]","Trend2[Example2]","Trend2[Example2]"],
+                    labels: labels,
                     datasets: [{
                             label: "Revenue",
                             backgroundColor: "#0080FF",
-                            data: [-1,-1,-1,-1],
+                            data: revenue,
                         }, {
                             label: "Cost",
                             backgroundColor: "orange",
-                            data: [-1,-1,-1,-1],
+                            data: cost,
                         },
                         {
                             label: "Growth",
                             backgroundColor: "grey",
-                            data: [-1,-1,-1,-1],
+                            data: growth,
                         }
                      ]
                     },
@@ -468,18 +561,18 @@
                         var addto = "#marketField" + next;
                         next = next + 1;
                         var addRemove = "#market_delete-td" + (next);
-                        var markup = `<tr id="marketField${next}">
-                                                        <th scope="row" class="tableH factors">
+                        var markup = `<tr class="trend_row"  id="marketField${next}">
+                                                        <th scope="row" class="tableH factors factor_trend">
                                                             <textarea type="text"  class="form-control dynamicArea" name="factor_trend${next}" ></textarea>
                                                         </th>
-                                                        <td><select name='cont${next}' class="datasetTrend" datasetTrend="0">                                               
+                                                        <td class="cont"><select name='cont${next}' class="datasetTrend" datasetTrend="0">                                               
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="3">3</option>
                                                                     <option value="4">4</option>
                                                                     <option value="5">5</option>
                                                                 </select></td>
-                                                        <td><select name='revenue${next}' class="datasetTrend" datasetTrend="1">
+                                                        <td class="revenue"><select name='revenue${next}' class="datasetTrend" datasetTrend="1">
                                                                     <option value="-1">-1</option>
                                                                     <option value="-2">-2</option>
                                                                     <option value="-3">-3</option>
@@ -492,44 +585,44 @@
                                                                     <option value="4">4</option>
                                                                     <option value="5">5</option>
                                                                 </select></td>
-                                                        <td><select name='cost${next}' class="datasetTrend" datasetTrend="2">
+                                                        <td class="cost"><select name='cost${next}' class="datasetTrend" datasetTrend="2">
                                                                 <option value="-1">-1</option>
-                                                                <option value="-2">-2</option>
-                                                                <option value="-3">-3</option>
-                                                                <option value="-4">-4</option>
-                                                                <option value="-5">-5</option>
-                                                                <option value="0">0</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
+                                                                    <option value="-2">-2</option>
+                                                                    <option value="-3">-3</option>
+                                                                    <option value="-4">-4</option>
+                                                                    <option value="-5">-5</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
                                                                 </select></td>
-                                                                <td><select name='growth${next}' class="datasetTrend" datasetTrend="2">
-                                                                 <option value="-1">-1</option>
-                                                                <option value="-2">-2</option>
-                                                                <option value="-3">-3</option>
-                                                                <option value="-4">-4</option>
-                                                                <option value="-5">-5</option>
-                                                                <option value="0">0</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
+                                                                <td class="growth"><select name='growth${next}' class="datasetTrend" datasetTrend="2">
+                                                                    <option value="-1">-1</option>
+                                                                    <option value="-2">-2</option>
+                                                                    <option value="-3">-3</option>
+                                                                    <option value="-4">-4</option>
+                                                                    <option value="-5">-5</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
                                                                 </select></td>
-                                                                <td><select name='comp${next}' class="datasetTrend" datasetTrend="2">
+                                                                <td class="comp"><select name='comp${next}' class="datasetTrend" datasetTrend="2">
                                                                   
                                                                     <option value="5">5</option>
                                                                     <option value="3">3</option>
                                                                     <option value="1">1</option>
                                                                 </select></td>
-                                                                <td scope="row" class="tableH">
+                                                                <td scope="row" class="tableH comment_trend">
                                                                     <textarea type="text" rows="3" cols="20" class="form-control dynamicArea comments" name="comment_trend${next}"></textarea>
                                                                 </td> 
             
                                                         <td>
-                                                <input type="text" readonly style="width:30px;" value="3" name="total_impact${next}">
+                                                <input type="text" readonly style="width:30px;" value="3" class="total_impact"  name="total_impact${next}">
                                             </td>
                                                                                                            
                                                                 <td id='market_delete-td${next}'>
@@ -542,7 +635,7 @@
                         var newInput = $(newIn);
                         $(addto).after(newInput);
                        
-                        add_label_trend("New Label");
+                        add_label_trend_edit("New Labeldddddd");
                     });
             
                     var previous;
@@ -561,26 +654,26 @@
                         debugger;
                         var label = $(this).parent().parent().index();
                         var value = sum;
-                        update_label_trend(label, 1, value,1);
+                        update_label_trend_edit(label, 1, value,1);
             
                         if($(this).attr("name").indexOf('cont') > -1)
                          {
-                            update_label_trend(label,0, $(this).val(),1);
+                            update_label_trend_edit(label,0, $(this).val(),1);
             
                          }
                          if($(this).attr("name").indexOf('revenue') > -1)
                          {
-                            update_label_trend(label,0, $(this).val(),2);
+                            update_label_trend_edit(label,0, $(this).val(),2);
             
                          }
                          if($(this).attr("name").indexOf('cost') > -1)
                          {
-                            update_label_trend(label,1, $(this).val(),2);
+                            update_label_trend_edit(label,1, $(this).val(),2);
             
                          }
                          if($(this).attr("name").indexOf('growth') > -1)
                          {
-                            update_label_trend(label,2, $(this).val(),2);
+                            update_label_trend_edit(label,2, $(this).val(),2);
             
                          }
             
