@@ -41,7 +41,8 @@
     </style>
 </head>
 <body>
-   
+        @include('admin_logout')
+
         <table id="profile" class="display" border="1">
                 <thead>
                         <tr>

@@ -40,8 +40,8 @@
      }
     </style>
 </head>
-<body>
-   
+<body style="overflow-x: hidden">
+   @include('admin_logout')
         <table id="profile" class="display">
                 <thead>
                     <tr>
@@ -56,6 +56,7 @@
                         <th>GROWTH Direction</th>
                         <th>Actions</th>
                         <th>IDENTIFIED areas</th>
+                        <th>Created At</th>
 
                     </tr>
                 </thead>
@@ -73,6 +74,7 @@
                             <th><a href="{{ route('ansoff.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('messages.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('action.details',['id' => $profile->id] ) }}">see more</a></th>
+                            <th>{{$profile->created_at}}</th>
 
                     </tr>
                     @endforeach

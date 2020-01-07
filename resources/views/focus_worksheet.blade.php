@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <!--second tab-->
-    <input type="hidden" value="0" id="worksheet_count">
+<input type="hidden" value="{{(isset($factors) && count($factors)>0)? count($factors) : 0}}" id="worksheet_count">
     <div class="tab animated">
         <h2 class="step_title">FOCUS Worksheet(Step 4)</h2>
         <hr>
@@ -20,18 +20,68 @@
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col"  class="focus-product">Product
+                        <th scope="col"  class="focus-product" colspan="{{ (isset($worksheet_product_feature) && count($worksheet_product_feature)>0)? count($worksheet_product_feature) : 1 }}">Product
                         </th>
-                        <th scope="col"  class="focus-people">People
+                        <th scope="col"  class="focus-people" colspan="{{ (isset($worksheet_people_feature) && count($worksheet_people_feature)>0)? count($worksheet_people_feature) : 1 }}">People
                         </th>
-                        <th scope="col"  class="focus-process">Process
+                        <th scope="col"  class="focus-process" colspan="{{ (isset($worksheet_process_feature) && count($worksheet_process_feature)>0)? count($worksheet_process_feature) : 1 }}">Process
                         </th>
-                        <th scope="col"  class="focus-operation">Operation</th>
-                        <th scope="col" class="focus-organ">Organization</th>
+                        <th scope="col"  class="focus-operation" colspan="{{ (isset($worksheet_oper_feature) && count($worksheet_oper_feature)>0)? count($worksheet_oper_feature) : 1 }}">Operation</th>
+                        <th scope="col" class="focus-organ" colspan="{{ (isset($worksheet_organ_feature) && count($worksheet_organ_feature)>0)? count($worksheet_organ_feature) : 1 }}">Organization</th>
                     </tr>
                     <tr class="focus-columns">
-                        <td class="focus_feature"></td>
+                     <td class="focus_feature"></td>
+                       @if((isset($worksheet_product_feature) && count($worksheet_product_feature)>0)||
+                       (isset($worksheet_people_feature) && count($worksheet_people_feature)>0) ||
+                       (isset($worksheet_process_feature) && count($worksheet_process_feature)>0)||
+                       (isset($worksheet_organ_feature) && count($worksheet_organ_feature)>0)||
+                       (isset($worksheet_oper_feature) && count($worksheet_oper_feature)>0))
+                        @if((isset($worksheet_product_feature) && count($worksheet_product_feature)>0))
+                           @foreach ($worksheet_product_feature as $item)
+                              <td>{{$item->feature}}</td>
+                           @endforeach
+                        @else
+                          <td></td>
+                        @endif
 
+                        @if((isset($worksheet_people_feature) && count($worksheet_people_feature)>0))
+                        @foreach ($worksheet_people_feature as $item)
+                           <td>{{$item->feature}}</td>
+                        @endforeach
+                        @else
+                        <td></td>
+                        @endif
+
+                        @if((isset($worksheet_process_feature) && count($worksheet_process_feature)>0))
+                        @foreach ($worksheet_process_feature as $item)
+                           <td>{{$item->feature}}</td>
+                        @endforeach
+                        @else
+                        <td></td>
+                        @endif
+
+                        @if((isset($worksheet_oper_feature) && count($worksheet_oper_feature)>0))
+                        @foreach ($worksheet_oper_feature as $item)
+                           <td>{{$item->feature}}</td>
+                        @endforeach
+                        @else
+                        <td></td>
+                        @endif
+
+
+                        @if((isset($worksheet_organ_feature) && count($worksheet_organ_feature)>0))
+                        @foreach ($worksheet_organ_feature as $item)
+                           <td>{{$item->feature}}</td>
+                        @endforeach
+                        @else
+                        <td></td>
+                        @endif
+
+                       
+
+
+
+                       @endif
 
 
                     </tr>
@@ -43,14 +93,178 @@
                                 <textarea type="text" class="form-control
                                     bea_txtarea" name="trub_factor1_txtarea" readonly>Total Score</textarea>
                             </th>
+
+                            @if((isset($worksheet_product_feature) && count($worksheet_product_feature)>0)||
+                            (isset($worksheet_people_feature) && count($worksheet_people_feature)>0) ||
+                            (isset($worksheet_process_feature) && count($worksheet_process_feature)>0)||
+                            (isset($worksheet_organ_feature) && count($worksheet_organ_feature)>0)||
+                            (isset($worksheet_oper_feature) && count($worksheet_oper_feature)>0))
+                             @if((isset($worksheet_product_feature) && count($worksheet_product_feature)>0))
+                                @foreach ($worksheet_product_feature as $item)
+                                   <td>
+                                   <input type="text" readonly="" style="width:30px;" class={{"total_".$item->feature}} value="{{$item->sum}}">
+                                   </td>
+                                @endforeach
+                             @else
+                               <td></td>
+                             @endif
+     
+                             @if((isset($worksheet_people_feature) && count($worksheet_people_feature)>0))
+                             @foreach ($worksheet_people_feature as $item)
+                                    <td>
+                                    <input type="text" readonly="" style="width:30px;" class={{"total_".$item->feature}} value="{{$item->sum}}">
+                                    </td>
+                             @endforeach
+                             @else
+                             <td></td>
+                             @endif
+     
+                             @if((isset($worksheet_process_feature) && count($worksheet_process_feature)>0))
+                             @foreach ($worksheet_process_feature as $item)
+                                    <td>
+                                    <input type="text" readonly="" style="width:30px;" class={{"total_".$item->feature}} value="{{$item->sum}}">
+                                    </td>                             
+                             @endforeach
+                             @else
+                             <td></td>
+                             @endif
+     
+                             @if((isset($worksheet_oper_feature) && count($worksheet_oper_feature)>0))
+                             @foreach ($worksheet_oper_feature as $item)
+                                    <td>
+                                    <input type="text" readonly="" style="width:30px;" class={{"total_".$item->feature}} value="{{$item->sum}}">
+                                    </td>
+                             @endforeach
+                             @else
+                             <td></td>
+                             @endif
+     
+                             
+                             @if((isset($worksheet_organ_feature) && count($worksheet_organ_feature)>0))
+                             @foreach ($worksheet_organ_feature as $item)
+                                    <td>
+                                    <input type="text" readonly="" style="width:30px;" class={{"total_".$item->feature}} value="{{$item->sum}}">
+                                    </td>
+                             @endforeach
+                             @else
+                             <td></td>
+                             @endif
+     
+                            
+     
+     
+     
+                            @endif
     
                         </tr>
 
                         <tr id="disabledFactor">
                             <th><b>Factors</b></th>
                         </tr>
-
-
+                        @if(isset($factors) && count($factors)>0)
+                          @for($i = 0; $i<count($factors); $i++)
+                          <tr id="{{'worksheet_factor'.($i+1)}}" class="work_row">
+                              <th scope="row" class="tableH tru_factors">
+                              <textarea type="text" class="form-control bea_txtarea" name="{{'worksheet_factor'.($i+1)}}" readonly="">{{$factors[$i]->factor}}</textarea>
+                              </th>
+                              @if((isset($worksheet_product_feature) && count($worksheet_product_feature)>0)||
+                              (isset($worksheet_people_feature) && count($worksheet_people_feature)>0) ||
+                              (isset($worksheet_process_feature) && count($worksheet_process_feature)>0)||
+                              (isset($worksheet_organ_feature) && count($worksheet_organ_feature)>0)||
+                              (isset($worksheet_oper_feature) && count($worksheet_oper_feature)>0))
+                               @if((isset($worksheet_product_feature) && count($worksheet_product_feature)>0))
+                                      <?php $j=0;?>
+                                  @foreach ($worksheet_product_feature as $item)
+                                   <td>
+                                        <select type="Product" feature="{{$item->feature}}" class="worksheet_select">
+                                            <option value="1" {{ ($factors[$i]->scores_prodcut[$j]["score"]==1)? "selected=selected" : "" }}>1</option>
+                                            <option value="2" {{ ($factors[$i]->scores_prodcut[$j]["score"]===2)? "selected=selected" : "" }}>2</option>
+                                            <option value="3" {{ ($factors[$i]->scores_prodcut[$j]["score"]===3)? "selected=selected" : "" }}>3</option>
+                                         </select>
+                                    </td>
+                                    <?php $j++;?>
+                                  @endforeach
+                               @else
+                                 <td></td>
+                               @endif
+       
+                               @if((isset($worksheet_people_feature) && count($worksheet_people_feature)>0))
+                               <?php $j=0;?>
+                               @foreach ($worksheet_people_feature as $item)
+                                <td>
+                                     <select type="People" feature="{{$item->feature}}" class="worksheet_select">
+                                         <option value="1" {{ ($factors[$i]->scores_people[$j]["score"]==1)? "selected=selected" : "" }}>1</option>
+                                         <option value="2" {{ ($factors[$i]->scores_people[$j]["score"]===2)? "selected=selected" : "" }}>2</option>
+                                         <option value="3" {{ ($factors[$i]->scores_people[$j]["score"]===3)? "selected=selected" : "" }}>3</option>
+                                      </select>
+                                 </td>
+                                 <?php $j++;?>
+                               @endforeach
+                               @else
+                               <td></td>
+                               @endif
+       
+                               @if((isset($worksheet_process_feature) && count($worksheet_process_feature)>0))
+                               <?php $j=0;?>
+                               @foreach ($worksheet_process_feature as $item)
+                                <td>
+                                     <select type="Process" feature="{{$item->feature}}" class="worksheet_select">
+                                         <option value="1" {{ ($factors[$i]->scores_process[$j]["score"]==1)? "selected=selected" : "" }}>1</option>
+                                         <option value="2" {{ ($factors[$i]->scores_process[$j]["score"]===2)? "selected=selected" : "" }}>2</option>
+                                         <option value="3" {{ ($factors[$i]->scores_process[$j]["score"]===3)? "selected=selected" : "" }}>3</option>
+                                      </select>
+                                 </td>
+                                 <?php $j++;?>
+                               @endforeach
+                               @else
+                               <td></td>
+                               @endif
+       
+                               @if((isset($worksheet_oper_feature) && count($worksheet_oper_feature)>0))
+                               <?php $j=0;?>
+                               @foreach ($worksheet_oper_feature as $item)
+                                <td>
+                                     <select type="Operation" feature="{{$item->feature}}" class="worksheet_select">
+                                         <option value="1" {{ ($factors[$i]->scores_oper[$j]["score"]==1)? "selected=selected" : "" }}>1</option>
+                                         <option value="2" {{ ($factors[$i]->scores_oper[$j]["score"]===2)? "selected=selected" : "" }}>2</option>
+                                         <option value="3" {{ ($factors[$i]->scores_oper[$j]["score"]===3)? "selected=selected" : "" }}>3</option>
+                                      </select>
+                                 </td>
+                                 <?php $j++;?>
+                               @endforeach
+                               @else
+                               <td></td>
+                               @endif
+       
+                               
+                               @if((isset($worksheet_organ_feature) && count($worksheet_organ_feature)>0))
+                               <?php $j=0;?>
+                               @foreach ($worksheet_organ_feature as $item)
+                                <td>
+                                     <select type="Organisation" feature="{{$item->feature}}" class="worksheet_select">
+                                         <option value="1" {{ ($factors[$i]->scores_organ[$j]["score"]==1)? "selected=selected" : "" }}>1</option>
+                                         <option value="2" {{ ($factors[$i]->scores_organ[$j]["score"]===2)? "selected=selected" : "" }}>2</option>
+                                         <option value="3" {{ ($factors[$i]->scores_organ[$j]["score"]===3)? "selected=selected" : "" }}>3</option>
+                                      </select>
+                                 </td>
+                                 <?php $j++;?>
+                               @endforeach
+                               @else
+                               <td></td>
+                               @endif
+       
+                              
+       
+       
+       
+                              @endif
+                              
+                            
+                              
+                              </tr>
+                          @endfor
+                        @endif
+                       
                 </tbody>
 
             </table>

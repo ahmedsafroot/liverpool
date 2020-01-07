@@ -749,6 +749,7 @@ function add_label(label) {
 
 }
 function add_label_trend(label) {
+    console.log("add label1");
     myMarketChart.config.data.labels.push(label);
     myMarketChart.config.data.datasets[0].data.push(1);
     myMarketChart.config.data.datasets[1].data.push(3);
@@ -827,12 +828,13 @@ function add_label_trend_edit(label) {
     edit_myMarketChart.config.data.labels.push(label);
     edit_myMarketChart.config.data.datasets[0].data.push(1);
     edit_myMarketChart.config.data.datasets[1].data.push(3);
-    edit_myMarketChart.update();
 
     edit_myMarketChart1.config.data.labels.push(label);
     edit_myMarketChart1.config.data.datasets[0].data.push(-1);
     edit_myMarketChart1.config.data.datasets[1].data.push(-1);
     edit_myMarketChart1.config.data.datasets[2].data.push(-1);
+    remove_label_trend_edit((edit_myMarketChart.config.data.labels.length)-1);
+    edit_myMarketChart.update();
 
     edit_myMarketChart1.update();
 
@@ -1533,10 +1535,11 @@ function actions() {
             //$(".hideMe").css('display', 'table-cell');
             if(mymessage.background!="bg-danger"){
                 toastr.success(mymessage.success);
-                window.open(
-                    APP_URL+"/myreport",
+                window.location.href=APP_URL+"/";
+                /*window.open(
+                    APP_URL+"/",
                     '_blank' // <- This is what makes it open in a new window.
-                  );
+                  );*/
             }
             else
             {

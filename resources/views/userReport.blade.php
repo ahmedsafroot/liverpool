@@ -91,6 +91,7 @@ crossorigin="anonymous"></script>
                         <th>GROWTH Direction</th>
                         <th>Actions</th>
                         <th>IDENTIFIED areas</th>
+                        <th>Created At</th>
                         <th>Edit</th>
 
                     </tr>
@@ -109,7 +110,7 @@ crossorigin="anonymous"></script>
                             <th><a href="{{ route('ansoff.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('messages.details',['id' => $profile->id] ) }}">see more</a></th>
                             <th><a href="{{ route('action.details',['id' => $profile->id] ) }}">see more</a></th>
-                            <!--<th><a href="{{--route('export',['id' => $profile->id] ) --}}">Export</a></th>-->
+                            <th>{{$profile->created_at}}</th>
                             <th><a href="{{ route('profile.edit',['id' => $profile->id] ) }}">Edit</a></th>
                     </tr>
                     @endforeach

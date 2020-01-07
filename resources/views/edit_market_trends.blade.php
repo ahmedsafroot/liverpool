@@ -635,7 +635,7 @@
                         var newInput = $(newIn);
                         $(addto).after(newInput);
                        
-                        add_label_trend_edit("New Labeldddddd");
+                        add_label_trend_edit("New Label");
                     });
             
                     var previous;

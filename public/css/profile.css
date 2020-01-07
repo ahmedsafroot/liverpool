@@ -523,3 +523,7 @@ table.dataTable thead th, table.dataTable thead td {
 {
     margin-right: 1px !important;
 }
+#profile th,#profile td
+{
+    font-size: 15px !important;
+}

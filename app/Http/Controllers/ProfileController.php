@@ -40,6 +40,7 @@ class ProfileController extends Controller
         Session::Put('sw_id',$id);
         Session::Put('worksheet_id',$id);
         Session::Put('ansoff_id',$id);
+        Session::Put('action_id',$id);
 
         }
         return view('profile');
@@ -131,6 +132,36 @@ class ProfileController extends Controller
         $ansoffs_services=Ansoff::where("profileid",$id)->where('type',"like","%Service Development%")->get();
         $ansoffs_divs=Ansoff::where("profileid",$id)->where('type',"like","%Diversification %")->get();
         $messages=message::where("profileid",$id)->get();
+        $actions=action::where("profileid",$id)->get();
+        $worksheet_product_feature=sheets::where("type","Product")->where("profileid",$id)->distinct()->get(['feature']);
+        $worksheet_people_feature=sheets::where("type","People")->where("profileid",$id)->distinct()->get(['feature']);
+        $worksheet_process_feature=sheets::where("type","Process")->where("profileid",$id)->distinct()->get(['feature']);
+        $worksheet_organ_feature=sheets::where("type","Organisation")->where("profileid",$id)->distinct()->get(['feature']);
+        $worksheet_oper_feature=sheets::where("type","Operation")->where("profileid",$id)->distinct()->get(['feature']);
+        $factors=sheets::where("profileid",$id)->distinct()->get(['factor']);
+        foreach ($worksheet_product_feature as $item) {
+            $item->sum=sheets::where("feature",$item->feature)->where("profileid",$id)->sum("score");
+        }
+        foreach ($worksheet_people_feature as $item) {
+            $item->sum=sheets::where("feature",$item->feature)->where("profileid",$id)->sum("score");
+        }
+        foreach ($worksheet_process_feature as $item) {
+            $item->sum=sheets::where("feature",$item->feature)->where("profileid",$id)->sum("score");
+        }
+        foreach ($worksheet_organ_feature as $item) {
+            $item->sum=sheets::where("feature",$item->feature)->where("profileid",$id)->sum("score");
+        }
+        foreach ($worksheet_oper_feature as $item) {
+            $item->sum=sheets::where("feature",$item->feature)->where("profileid",$id)->sum("score");
+        }
+        foreach ($factors as $item) {
+          $item->scores_prodcut=sheets::where("type","Product")->where("factor",$item->factor)->where("profileid",$id)->get(['score'])->toArray();
+          $item->scores_people=sheets::where("type","People")->where("factor",$item->factor)->where("profileid",$id)->get(['score'])->toArray();
+          $item->scores_process=sheets::where("type","Process")->where("factor",$item->factor)->where("profileid",$id)->get(['score'])->toArray();
+          $item->scores_organ=sheets::where("type","Organisation")->where("factor",$item->factor)->where("profileid",$id)->get(['score'])->toArray();
+          $item->scores_oper=sheets::where("type","Operation")->where("factor",$item->factor)->where("profileid",$id)->get(['score'])->toArray();
+
+        }
         if($audit!=NULL)
         {
         Session::put('audit_tool_id',$audit->id);
@@ -143,10 +174,11 @@ class ProfileController extends Controller
         Session::Put('sw_id',1);
         Session::Put('worksheet_id',1);
         Session::Put('ansoff_id',1);
-
         return view('edit_profile',compact('profile','audit','leaderships','trends','experiences','beas','sw_products',
                                            'sw_peoples','sw_process','sw_operation','sw_organisation','ansoffs_pens',
-                                            'ansoffs_devs','ansoffs_services','ansoffs_divs','messages'));
+                                            'ansoffs_devs','ansoffs_services','ansoffs_divs','messages','actions',
+                                          'worksheet_product_feature','worksheet_people_feature','worksheet_process_feature',
+                                        'worksheet_organ_feature','worksheet_oper_feature','factors'));
 
     }
 
@@ -1686,7 +1718,7 @@ class ProfileController extends Controller
             return 3;   
         }
 
-        if(session()->has('action_id'))
+        if(session()->has('action_id') && Session::get('action_id')!=0)
         {
             action::where("profileid",$profileid)->delete();
             $ret=1;

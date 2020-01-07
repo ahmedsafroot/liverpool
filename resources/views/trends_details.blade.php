@@ -43,6 +43,8 @@
     </style>
 </head>
 <body>
+        @include('admin_logout')
+
         <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-7">

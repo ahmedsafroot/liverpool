@@ -123,7 +123,7 @@
     var me = this;
     $(document).ready(function() {
 
-        turbulence_impact(1);
+        //turbulence_impact(1);
         $(".animated").addClass('fadeInUp');
 
       
@@ -170,7 +170,7 @@
         //... and run a function that will display the correct step indicator:
         if(n==9)
         {
-            sw(1);
+            //sw(1);
         }
         fixStepIndicator(n)
     }

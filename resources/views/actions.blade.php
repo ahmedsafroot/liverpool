@@ -35,7 +35,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <input type="hidden" value="1" id="decisions-input">
+                <input type="hidden" value="{{ (isset($actions) && count($actions)>0)? count($actions) : 1 }}" id="decisions-input">
                 <!--company's main product lines table of radio buttons-->
                 <div class="ProductLines col-md-8">
                     <table class="table table-striped" id="decisions_tabel">
@@ -49,14 +49,28 @@
                         </thead>
                         <tbody>
                             <div id="decisions">
+                                @if(isset($actions) && count($actions)>0)
+                                  @for($i=0;$i<count($actions);$i++)
+                                        <tr id="{{'decisions'.($i+1)}}">
+                                        <td><textarea class="dynamicArea fontSize" name="{{'task'.($i+1)}}" cols="30" rows="10">{{$actions[$i]->task}}</textarea></td>
+                                                <td><textarea class="dynamicArea fontSize" name="{{'owner'.($i+1)}}"cols="30" rows="10">{{$actions[$i]->owner}}</textarea></td>
+                                                <td><textarea class="dynamicArea fontSize" name="{{'date'.($i+1)}}"cols="30" rows="10">{{$actions[$i]->dueDate}}</textarea></td>                                   
+                                                <td id='decisions_delete-td1'>
+                                                    <button id="decisions1_remove1" class="btn removeRow">delete</button>
+                                                </td>
+                                            </tr>
+                                  @endfor
+                                @else
                                 <tr id="decisions1">
-                                    <td><textarea class="dynamicArea fontSize" name="task1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="owner1" cols="30" rows="10"></textarea></td>
-                                    <td><textarea class="dynamicArea fontSize" name="date1" cols="30" rows="10"></textarea></td>                                   
-                                    <td id='decisions_delete-td1'>
-                                        <button id="decisions1_remove1" class="btn removeRow">delete</button>
-                                    </td>
-                                </tr>
+                                        <td><textarea class="dynamicArea fontSize" name="task1" cols="30" rows="10"></textarea></td>
+                                        <td><textarea class="dynamicArea fontSize" name="owner1" cols="30" rows="10"></textarea></td>
+                                        <td><textarea class="dynamicArea fontSize" name="date1" cols="30" rows="10"></textarea></td>                                   
+                                        <td id='decisions_delete-td1'>
+                                            <button id="decisions1_remove1" class="btn removeRow">delete</button>
+                                        </td>
+                                    </tr>
+                                @endif
+
 
                             </div>
                         </tbody>
